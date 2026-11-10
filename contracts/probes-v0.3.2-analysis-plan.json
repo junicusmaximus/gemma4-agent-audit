@@ -1,0 +1,88 @@
+{
+  "baseline_result_hashes": {
+    "A0": "edb5fb5e3252035ac1ae2fd67a3ac6d79b55c2a98d89222079f6a02db77f7283",
+    "A1": "fc0a0cbe8b85279c24b8b27c009c3c1d664526c2beb766b90341ec15ef0fe7a2",
+    "A2": "34a0a8bf64661a5fefbbee8999110facdc8ec1136ae7d9f0d3ee111d10cfd704"
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "interval": "95% percentile",
+    "quantile_method": "linear",
+    "rng": "NumPy PCG64",
+    "seed": 20261103,
+    "unit": "paired whole task"
+  },
+  "claim_limits": [
+    "single decoding seed per new condition",
+    "one public repository",
+    "no multiplicity-adjusted confirmatory claims",
+    "no causal attribution from scaling, temperature, or future bundled treatment",
+    "timing comparisons across server sessions descriptive only",
+    "zero-vs-zero does not establish equivalence"
+  ],
+  "conditions": {
+    "A0": "results/a0_e4b_s1",
+    "A0_t07": "results/v032_A0_t07",
+    "A1": "results/v025_a1_e4b_s1",
+    "A1_t07": "results/v032_A1_t07",
+    "A1a8": "results/v032_A1a8",
+    "A2": "results/v025_a2_e4b_s1",
+    "A2a8": "results/v032_A2a8"
+  },
+  "contrasts": [
+    [
+      "A1a8",
+      "A1"
+    ],
+    [
+      "A2a8",
+      "A2"
+    ],
+    [
+      "A1_t07",
+      "A1"
+    ],
+    [
+      "A0_t07",
+      "A0"
+    ],
+    [
+      "A1_t07",
+      "A0_t07"
+    ],
+    [
+      "A1a8",
+      "A0"
+    ],
+    [
+      "A2a8",
+      "A0"
+    ]
+  ],
+  "execution_plan_sha256": "d1b13d9873f44f967114c566fff81880c31357c2f6db3d1b811687ac792f2630",
+  "failure": "task-local error/timeouts unsolved; infrastructure-invalid/incomplete runs not analyzed as completed; any retry preserved under a separately registered fresh generation",
+  "known_before_registration": "all qualified v025 primary outcomes and exploration-informed mechanism summaries",
+  "label": "prospective serving interventions prompted by exploratory findings; descriptive sensitivity comparisons, not causal mechanism identification",
+  "m5": "common-support tasks where both compared conditions have eligible transitions; no zero filling; counts reported; fewer than2 pairs=>CI undefined",
+  "m6": "retained-thinking-text length with pinned E4B tokenizer and add_special_tokens=True; descriptive, not provider token count",
+  "metrics_producer_sha256": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+  "metrics_test_sha256": "17bea63bbc62c6d31be60f076d62bb3e9fc1994c11730bf44a3d0a33f779ae62",
+  "missingness": "missing trace metrics remain missing; common paired support and coverage reported per contrast; resolution rows require all48 unique validboolean outcomes",
+  "outcomes": [
+    "resolved",
+    "M1 observed thinking-step presence",
+    "M2 loop rate and max-repeat",
+    "M3 submit-call presence",
+    "M4 opener categories and any target",
+    "M5 error/silent/normal repeated-next-call rate"
+  ],
+  "primary_population_ids_path": "analysis/mechanism-v032/primary40_ids.txt",
+  "primary_population_ids_sha256": "c71257437c5c518ab0077f2ee59d61d1b2653a1a4a1ba2ded36f682ccda0cba2",
+  "recorded_at_utc": "2026-11-04T10:21:00.365231+00:00",
+  "reporting_populations": [
+    40,
+    48
+  ],
+  "seed_per_condition": 1,
+  "version": "v0.3.2"
+}

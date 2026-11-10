@@ -1,0 +1,362 @@
+[
+  {
+    "run": "a1_e4b_s1",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.5,
+    "max_repeat_median": 4.0,
+    "distinct_ratio_mean": 0.24058092776986226,
+    "submit_rate": 0.3958333333333333,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.5416666666666666,
+      "other": 0.020833333333333332,
+      "no_tool_call": 0.4166666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.6911842340097514,
+        "n_tasks": 27
+      },
+      "silent": {
+        "mean_repeat_rate": 0.032229965156794424,
+        "n_tasks": 28
+      },
+      "normal": {
+        "mean_repeat_rate": 0.4578262146064004,
+        "n_tasks": 19
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 24,
+      "no_parsed_tool_call": 20,
+      "submitted": 0,
+      "neither": 4
+    },
+    "label_totals": {
+      "tool_call": 1544,
+      "truncated": 92,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 27,
+      "turn_cap": 11,
+      "context_overflow": 7,
+      "no_submit": 0,
+      "other": 0,
+      "none": 3
+    },
+    "empty_patch_count": 22,
+    "mean_total_llm_calls": 34.083333333333336,
+    "mean_duration_seconds": 237.21020833333333
+  },
+  {
+    "run": "a1_e4b_s2",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.375,
+    "max_repeat_median": 2.5,
+    "distinct_ratio_mean": 0.41752316693629016,
+    "submit_rate": 0.2916666666666667,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.041666666666666664,
+      "repro_script_opener": 0.6041666666666666,
+      "other": 0.0,
+      "no_tool_call": 0.3541666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.42371937641493335,
+        "n_tasks": 25
+      },
+      "silent": {
+        "mean_repeat_rate": 0.008333333333333333,
+        "n_tasks": 30
+      },
+      "normal": {
+        "mean_repeat_rate": 0.13200020749040356,
+        "n_tasks": 15
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 18,
+      "no_parsed_tool_call": 17,
+      "submitted": 0,
+      "neither": 13
+    },
+    "label_totals": {
+      "tool_call": 987,
+      "truncated": 92,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 40,
+      "turn_cap": 6,
+      "context_overflow": 1,
+      "no_submit": 0,
+      "other": 0,
+      "none": 1
+    },
+    "empty_patch_count": 19,
+    "mean_total_llm_calls": 22.479166666666668,
+    "mean_duration_seconds": 246.92583333333334
+  },
+  {
+    "run": "a1_e4b_s3",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.001488095238095238,
+    "thinking_steps": 1,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.4791666666666667,
+    "max_repeat_median": 3.5,
+    "distinct_ratio_mean": 0.241811422202471,
+    "submit_rate": 0.4375,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.5625,
+      "other": 0.0,
+      "no_tool_call": 0.4166666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.421366136038773,
+        "n_tasks": 21
+      },
+      "silent": {
+        "mean_repeat_rate": 0.07022290574922153,
+        "n_tasks": 28
+      },
+      "normal": {
+        "mean_repeat_rate": 0.31717995169082125,
+        "n_tasks": 14
+      }
+    },
+    "thought_tokens_median": 221,
+    "thought_chars_median": 634,
+    "thought_n_tasks": 1,
+    "taxonomy_counts": {
+      "loop": 23,
+      "no_parsed_tool_call": 20,
+      "submitted": 0,
+      "neither": 5
+    },
+    "label_totals": {
+      "tool_call": 1592,
+      "truncated": 92,
+      "unparseable": 1,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 27,
+      "turn_cap": 15,
+      "context_overflow": 4,
+      "no_submit": 0,
+      "other": 0,
+      "none": 2
+    },
+    "empty_patch_count": 21,
+    "mean_total_llm_calls": 35.083333333333336,
+    "mean_duration_seconds": 241.395625
+  },
+  {
+    "run": "a2_e4b_s1",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.7708333333333334,
+    "max_repeat_median": 58.5,
+    "distinct_ratio_mean": 0.1842195501304872,
+    "submit_rate": 0.6458333333333334,
+    "opener_shares": {
+      "find_opener": 0.020833333333333332,
+      "wrapper_opener": 0.5,
+      "repro_script_opener": 0.3125,
+      "other": 0.020833333333333332,
+      "no_tool_call": 0.14583333333333334
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.7585177533085237,
+        "n_tasks": 33
+      },
+      "silent": {
+        "mean_repeat_rate": 0.1551868307131465,
+        "n_tasks": 38
+      },
+      "normal": {
+        "mean_repeat_rate": 0.48806382911130075,
+        "n_tasks": 33
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 37,
+      "no_parsed_tool_call": 7,
+      "submitted": 0,
+      "neither": 4
+    },
+    "label_totals": {
+      "tool_call": 2591,
+      "truncated": 67,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 15,
+      "turn_cap": 28,
+      "context_overflow": 5,
+      "no_submit": 0,
+      "other": 0,
+      "none": 0
+    },
+    "empty_patch_count": 31,
+    "mean_total_llm_calls": 55.375,
+    "mean_duration_seconds": 199.53625
+  },
+  {
+    "run": "a2_e4b_s2",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.9583333333333334,
+    "max_repeat_median": 77.0,
+    "distinct_ratio_mean": 0.06045512482419128,
+    "submit_rate": 0.4583333333333333,
+    "opener_shares": {
+      "find_opener": 0.7916666666666666,
+      "wrapper_opener": 0.1875,
+      "repro_script_opener": 0.020833333333333332,
+      "other": 0.0,
+      "no_tool_call": 0.0
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.8402909080207842,
+        "n_tasks": 48
+      },
+      "silent": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 23
+      },
+      "normal": {
+        "mean_repeat_rate": 0.6975238095238095,
+        "n_tasks": 10
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 46,
+      "no_parsed_tool_call": 0,
+      "submitted": 0,
+      "neither": 2
+    },
+    "label_totals": {
+      "tool_call": 3674,
+      "truncated": 13,
+      "unparseable": 1,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 3,
+      "turn_cap": 45,
+      "context_overflow": 0,
+      "no_submit": 0,
+      "other": 0,
+      "none": 0
+    },
+    "empty_patch_count": 47,
+    "mean_total_llm_calls": 76.83333333333333,
+    "mean_duration_seconds": 72.82229166666666
+  },
+  {
+    "run": "a2_e4b_s3",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.8541666666666666,
+    "max_repeat_median": 39.0,
+    "distinct_ratio_mean": 0.09750980628329832,
+    "submit_rate": 0.8333333333333334,
+    "opener_shares": {
+      "find_opener": 0.6458333333333334,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.22916666666666666,
+      "other": 0.0,
+      "no_tool_call": 0.10416666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.7292519330011528,
+        "n_tasks": 42
+      },
+      "silent": {
+        "mean_repeat_rate": 0.16865601503759398,
+        "n_tasks": 38
+      },
+      "normal": {
+        "mean_repeat_rate": 0.11992890723540879,
+        "n_tasks": 10
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 41,
+      "no_parsed_tool_call": 5,
+      "submitted": 0,
+      "neither": 2
+    },
+    "label_totals": {
+      "tool_call": 2948,
+      "truncated": 32,
+      "unparseable": 3,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 12,
+      "turn_cap": 29,
+      "context_overflow": 2,
+      "no_submit": 0,
+      "other": 0,
+      "none": 5
+    },
+    "empty_patch_count": 36,
+    "mean_total_llm_calls": 62.145833333333336,
+    "mean_duration_seconds": 128.34520833333332
+  }
+]

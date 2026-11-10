@@ -1,0 +1,49 @@
+# Edits of the project to the Gemma 4 E4B QAT chat template (matched-context v049).
+# ORIGINAL = models/gemma-4-e4b-it-qat-w4a16-ct/chat_template.jinja of the checkpoint gemma-4-e4b-it-qat-w4a16-ct (shipped with the model)
+# sha256 of ORIGINAL: 33204f1acb5bd0002713e16a593847f24ceeafe711ed88bda2a352dc996a3373
+# sha256 of the patched result: 855bbbbbef10d51177c5d7eca19a3f3d39a11d9a80c142a9f19784029515a437
+# Apply with: python3 apply_template_diff.py ORIGINAL chat_template.matched.diff chat_template.matched.jinja
+--- ORIGINAL/chat_template.jinja
++++ chat_template.matched.jinja
+@@ -212,6 +212,9 @@
+     {%- endif -%}
+ {%- endfor -%}
+ 
++{#- matched-context v049 (a): true while the rendered prompt ends with a tool response inside an open model turn -#}
++{%- set ns_mc = namespace(open_after_tool_response=false) -%}
++
+ {#- Loop through messages -#}
+ {%- for message in loop_messages -%}
+     {%- if message['role'] != 'tool' -%}
+@@ -236,8 +239,12 @@
+ 
+     {#- Render reasoning/reasoning_content as thinking channel -#}
+     {%- set thinking_text = message.get('reasoning') or message.get('reasoning_content') -%}
++    {#- matched-context v049, thinking enabled only: (c) a re-sent thought is closed exactly as sampled (no added newline); (b) elif = empty thought block before a tool call that has no rendered thought (training form) -#}
++    {%- set mc_close = '<channel|>' if (enable_thinking is defined and enable_thinking) else '\n<channel|>' -%}
+     {%- if thinking_text and loop.index0 > ns_turn.last_user_idx and message.get('tool_calls') -%}
+-        {{- '<|channel>thought\n' + thinking_text + '\n<channel|>' -}}
++        {{- '<|channel>thought\n' + thinking_text + mc_close -}}
++    {%- elif message.get('tool_calls') and enable_thinking is defined and enable_thinking -%}
++        {{- '<|channel>thought\n<channel|>' -}}
+     {%- endif -%}
+ 
+             {%- if message['tool_calls'] -%}
+@@ -341,6 +348,7 @@
+         {%- elif not (ns_tr_out.flag and not has_content) -%}
+             {{- '<turn|>\n' -}}
+         {%- endif -%}
++        {%- set ns_mc.open_after_tool_response = ns_tr_out.flag and not has_content -%}
+     {%- endif -%}
+ {%- endfor -%}
+ 
+@@ -348,4 +356,8 @@
+     {%- if ns.prev_message_type != 'tool_response' and ns.prev_message_type != 'tool_call' -%}
+         {{- '<|turn>model\n' -}}
+     {%- endif -%}
++    {#- matched-context v049 (a): thought opener after a tool response inside the open model turn (training form) -#}
++    {%- if ns_mc.open_after_tool_response and enable_thinking is defined and enable_thinking -%}
++        {{- '<|channel>thought\n' -}}
++    {%- endif -%}
+ {%- endif -%}
+\ No newline at end of file

@@ -1,0 +1,114 @@
+{
+  "aggregate_descendants": {
+    "memory_max": 67108864,
+    "off_success": true,
+    "on_exit_code": -9,
+    "on_oom_contained": true
+  },
+  "allocation_5g": {
+    "off_success": true,
+    "on_exit_code": -9,
+    "on_oom_contained": true
+  },
+  "class_identity_preserved": true,
+  "collector_recovery": {
+    "exception_evidence": "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/collector-exception.txt",
+    "needed": true,
+    "original_collector_exit_code": 1,
+    "original_executed_source_sha256": "c52361649781ff8071a591186758617dcd5fc3ccd1505c3cf84aa7537d8501c6",
+    "post_gc_properties_invented": false,
+    "reason": "Successful service had already released its empty ControlGroup; original collector formed a root cgroup path.",
+    "recovery_collector_sha256": "40896ac6ea1f17ad023807702e2016ff9d1954c737345d0cf12bc35bc78be2fa",
+    "replayed_probes": false
+  },
+  "completed": true,
+  "created_at_utc": "2026-11-05T04:51:26.085494+00:00",
+  "deterministic_replays": {
+    "all_original_fields_preserved": true,
+    "all_semantic_fields_equal": true,
+    "compared_fields": [
+      "status",
+      "stdout",
+      "stderr",
+      "exit_code"
+    ],
+    "count": 4,
+    "duration_excluded": true
+  },
+  "evidence_pins": {
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/aggregate_descendants.guard.commands.jsonl": "ed04d95f2e0fb10204a1e6addc3fe1da2f8b9b032b7c33ec3be2a987f80c10de",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/aggregate_descendants.guard.json": "cdac3584f4f8a14c8bdee0ec511d62863c96c15ddfba02e24690fa8f3625bf39",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/allocation_5g.guard.commands.jsonl": "efefbcb29143c630e5286749599e34cfa6483cccaa940ff75814479dde50c29d",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/allocation_5g.guard.json": "7327b95b961e4b40c005618c4ea737c2428a9e87cdcbf65f23b825d06007d76f",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/compat.guard.commands.jsonl": "5f83b992726555bbfa60f58964c27ec6edf0faf1fa77dfac6b5e3066bc91303e",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/compat.guard.json": "caeeca733a75f511a2c23b4edf5cf54b6fb16524db3aa70014190b9847c7fa87",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/payload.json": "1da230d0d98f1a9318303384f310df7c9f6e157a82bb68fe357838314b65b852",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/service-start.json": "8ad772d4967bd780cbd61ce606a3b0dfa8defb3a7860d45b9b1620818acee962",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/service.log": "5689ba95304bcbb1b1b8d6100b5ee6fcf872ac7a9186ca18afc8aa4af73b6838"
+  },
+  "guard_source_sha256": "5ad9d40d3a1e4d48db3fbffed3164226e0857aee076482cd32ae0072b274ffd6",
+  "limitations": [
+    "duration is retained and excluded from byte-equality gating",
+    "path-emitting find is retained as a path-variant diagnostic, not normalized",
+    "No model sampling, LLM decoding, scoring outcome or patch comparison is performed",
+    "Byte identity is demonstrated only for the four predeclared deterministic recorded commands.",
+    "No claim of bit-identical LLM decoding or universal shell-output equivalence."
+  ],
+  "outer_services": {
+    "MemoryMax": 12884901888,
+    "MemorySwapMax": 0,
+    "RuntimeMaxSec": 180,
+    "all_cgroups_empty": true,
+    "all_exited": true,
+    "captured_ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-oom-replay-v043-b79b6b3311004d6fb91362092b7803a0.service",
+    "captured_InvocationID": "f49fbe25aee247968ce0f434a38b433a",
+    "current_observation": {
+      "LoadState": "not-found",
+      "captured_cgroup_exists": false
+    },
+    "end_evidence": {
+      "main_exit_status": 0,
+      "result": "success",
+      "seconds": 12.716,
+      "source": "preserved systemd-run output"
+    },
+    "memory_peak": 5648736256,
+    "start": {
+      "ActiveState": "activating",
+      "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-oom-replay-v043-b79b6b3311004d6fb91362092b7803a0.service",
+      "InvocationID": "f49fbe25aee247968ce0f434a38b433a",
+      "LoadState": "loaded",
+      "MemoryMax": "12884901888",
+      "MemoryPeak": "1310720",
+      "MemorySwapMax": "0",
+      "Result": "success",
+      "RuntimeMaxUSec": "3min",
+      "SubState": "start"
+    },
+    "unit": "gemma-oom-replay-v043-b79b6b3311004d6fb91362092b7803a0.service"
+  },
+  "path_variant": {
+    "all_raw_fields_preserved": true,
+    "declared_non_gating_before_execution": true,
+    "label": "find_path_output",
+    "observed_difference": "Absolute disposable workspace paths differ. The guarded find|head run also emitted Broken pipe diagnostics; the uncapped run did not. No output normalization was applied.",
+    "status_and_exit_code_equal": true,
+    "stdout_stderr_equal": false
+  },
+  "schema": "oom-replay-v043",
+  "source_pins": {
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/collect_recovery.py": "40896ac6ea1f17ad023807702e2016ff9d1954c737345d0cf12bc35bc78be2fa",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/collector-exception.txt": "f3a66d9a1d1aa011f9ab9544948dcfb46059832b95ed613e60ab0d0778ecc9b4",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/replay.py": "c52361649781ff8071a591186758617dcd5fc3ccd1505c3cf84aa7537d8501c6",
+    "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/selection.json": "cbd406809084ea3e95ab6635cfbe4dcc28c2d040d49689ee23cb1b8ef9222261",
+    "PROJECT_ROOT/gemma4/tools/sandbox_memory_guard_v043.py": "5ad9d40d3a1e4d48db3fbffed3164226e0857aee076482cd32ae0072b274ffd6",
+    "HOME_DIR/miniconda3/envs/swegemma/lib/python3.12/site-packages/adk_eval_core/sandbox/subprocess_sandbox.py": "09dc213bd71f4ad33a2a403732271efbc78bd09db2d2999817d55f4e630ac6fc",
+    "HOME_DIR/miniconda3/envs/swegemma/lib/python3.12/site-packages/swegemma/sandbox/subprocess.py": "a26e9265d93f0387dd0a820ea451d1c530884bebca41583738f3ab2cc31df1f2"
+  },
+  "source_snapshot_pins": {
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/fastapi_11194.tgz": "21e42341f416904a0e464cac84f227ff8351bb652d522192212737e6dec663d1",
+    "PROJECT_ROOT/gemma4/results/v039_canary_v035_M0_s1/traces/trace_fastapi_11194.json": "f7cdc9a6feeabf502db2a40ea7d91de4c701b043ba8e632f8a49561a6d24e5c0",
+    "PROJECT_ROOT/gemma4/results/v039_canary_v035_M1_s1/traces/trace_fastapi_11194.json": "0b90c32cb8ca4271a78bf80db973be8780e96eb204893abaee00d99d245e8b63",
+    "PROJECT_ROOT/gemma4/results/v039_canary_v035_M1_s2/traces/trace_fastapi_11194.json": "7da4c5dba5065e74d48ffebf3abdcb17c76ffc6d4353f54bb2c7fe0f0664656e"
+  }
+}

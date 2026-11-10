@@ -1,0 +1,211 @@
+{
+  "amendment_sha256": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99",
+  "cases": [
+    {
+      "kind": "gold",
+      "name": "mpmath__mpmath-854--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/mpmath__mpmath-854--gold.json",
+      "sha256": "e37e30b86a3b057e7868af72420ed3d61c7214d44226d794f43baa2df93d3be9",
+      "task": "mpmath__mpmath-854"
+    },
+    {
+      "kind": "empty",
+      "name": "mpmath__mpmath-854--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/mpmath__mpmath-854--empty.json",
+      "sha256": "e74ed934c69471bbfffaeb3f303c33f95f581a76cc9f0fa560b5186d7b0df330",
+      "task": "mpmath__mpmath-854"
+    },
+    {
+      "kind": "gold",
+      "name": "kayak__pypika-267--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/kayak__pypika-267--gold.json",
+      "sha256": "c87d23adf3f45354822fb609badf694d68495015884413505030ca5e7346a698",
+      "task": "kayak__pypika-267"
+    },
+    {
+      "kind": "empty",
+      "name": "kayak__pypika-267--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/kayak__pypika-267--empty.json",
+      "sha256": "9a9a1aa6416ef21a17c18c5a60fc68023c28acd5442280cb7d09124ffc56e6c5",
+      "task": "kayak__pypika-267"
+    },
+    {
+      "kind": "gold",
+      "name": "python-semver__python-semver-264--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/python-semver__python-semver-264--gold.json",
+      "sha256": "54ca0d438dc6895fdf76ad7c61cb19175c4f73c86a09e59abad75ca8d6045a65",
+      "task": "python-semver__python-semver-264"
+    },
+    {
+      "kind": "empty",
+      "name": "python-semver__python-semver-264--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/python-semver__python-semver-264--empty.json",
+      "sha256": "d010cd10c83b4df82646118dbed18a574ce8ce0724713be518dd02485107a132",
+      "task": "python-semver__python-semver-264"
+    },
+    {
+      "kind": "gold",
+      "name": "python-attrs__attrs-888--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/python-attrs__attrs-888--gold.json",
+      "sha256": "36535c1862296c1d4b7e25b7ef0f3381cc51c705aa6878866b98904096a902fb",
+      "task": "python-attrs__attrs-888"
+    },
+    {
+      "kind": "empty",
+      "name": "python-attrs__attrs-888--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/python-attrs__attrs-888--empty.json",
+      "sha256": "f3553429d815db2c38d1237a2dde3c9ec6330ee399e4a9e1fc71e07c45df860a",
+      "task": "python-attrs__attrs-888"
+    },
+    {
+      "kind": "gold",
+      "name": "pycqa__docformatter-313--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pycqa__docformatter-313--gold.json",
+      "sha256": "400f3284b2a880d17df3c80db61fdfe40f4b9dfc1ceacba1b35153db94c37697",
+      "task": "pycqa__docformatter-313"
+    },
+    {
+      "kind": "empty",
+      "name": "pycqa__docformatter-313--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pycqa__docformatter-313--empty.json",
+      "sha256": "98803987fedc60b40c5528e60093def6d44d70167865e9fc7376c7bcbdd4b6ce",
+      "task": "pycqa__docformatter-313"
+    },
+    {
+      "kind": "gold",
+      "name": "more-itertools__more-itertools-892--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/more-itertools__more-itertools-892--gold.json",
+      "sha256": "23dd26d7213c64eb249d8c654e04ac6e1ca37d5e72362f4df207af41c180aff7",
+      "task": "more-itertools__more-itertools-892"
+    },
+    {
+      "kind": "empty",
+      "name": "more-itertools__more-itertools-892--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/more-itertools__more-itertools-892--empty.json",
+      "sha256": "8f80760aa1c6adda876726a814c463c4ad2b1b245e9eadfacef918eabdece8a9",
+      "task": "more-itertools__more-itertools-892"
+    },
+    {
+      "kind": "gold",
+      "name": "wtforms__wtforms-694--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/wtforms__wtforms-694--gold.json",
+      "sha256": "1d8aa6d974f9a71351aeaa5dcdf58721bc154da3ac2db6677ffec0abc99c8f32",
+      "task": "wtforms__wtforms-694"
+    },
+    {
+      "kind": "empty",
+      "name": "wtforms__wtforms-694--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/wtforms__wtforms-694--empty.json",
+      "sha256": "688e66a6ef2b75b18e548ea3850c015364806fe38b33f02b9e430475404f3339",
+      "task": "wtforms__wtforms-694"
+    },
+    {
+      "kind": "gold",
+      "name": "delgan__loguru-1299--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/delgan__loguru-1299--gold.json",
+      "sha256": "fc9790722589ea401ec45b06fda332892dbe9ed15f6aa157e968fb454726efb9",
+      "task": "delgan__loguru-1299"
+    },
+    {
+      "kind": "empty",
+      "name": "delgan__loguru-1299--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/delgan__loguru-1299--empty.json",
+      "sha256": "6fc548634400da07cb06f5e4bfaf3e8cdf99012c54395b68c8a775ff34a9fd5a",
+      "task": "delgan__loguru-1299"
+    },
+    {
+      "kind": "gold",
+      "name": "tox-dev__pipdeptree-274--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/tox-dev__pipdeptree-274--gold.json",
+      "sha256": "9d930d7ea8a96acca78df0e34a3b4ea68846a90f96c78467ccd4193a389fd4bd",
+      "task": "tox-dev__pipdeptree-274"
+    },
+    {
+      "kind": "empty",
+      "name": "tox-dev__pipdeptree-274--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/tox-dev__pipdeptree-274--empty.json",
+      "sha256": "0d650d17015aaa107d153b2a76f9f2790163e9ca076d859479dde5a9d4a25300",
+      "task": "tox-dev__pipdeptree-274"
+    },
+    {
+      "kind": "gold",
+      "name": "pallets__jinja-2033--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pallets__jinja-2033--gold.json",
+      "sha256": "9e8f845bf895467bd7017c5a3a48e99a6e308c0600df6784f82bf37efeef6d2e",
+      "task": "pallets__jinja-2033"
+    },
+    {
+      "kind": "empty",
+      "name": "pallets__jinja-2033--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pallets__jinja-2033--empty.json",
+      "sha256": "e7947b988e4fbbd126dea3aeddd2e157fda653c867165a0de79398b78881fc28",
+      "task": "pallets__jinja-2033"
+    },
+    {
+      "kind": "gold",
+      "name": "pallets__werkzeug-2997--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pallets__werkzeug-2997--gold.json",
+      "sha256": "189ea94b927a60f87706d3b29f3ee90d443b0e2563f557b0412e07049f7b66fd",
+      "task": "pallets__werkzeug-2997"
+    },
+    {
+      "kind": "empty",
+      "name": "pallets__werkzeug-2997--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/pallets__werkzeug-2997--empty.json",
+      "sha256": "c5c7d650a291f8ad615a4336984c01e6928d39fe8073416212b39dc07e818759",
+      "task": "pallets__werkzeug-2997"
+    },
+    {
+      "kind": "gold",
+      "name": "ipython__traitlets-727--gold",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/ipython__traitlets-727--gold.json",
+      "sha256": "416403b40d8d7b0935ad44e23515830359fbe58dd3527beb266579573f71a140",
+      "task": "ipython__traitlets-727"
+    },
+    {
+      "kind": "empty",
+      "name": "ipython__traitlets-727--empty",
+      "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/cases/ipython__traitlets-727--empty.json",
+      "sha256": "d7fcf9f45f94a621f7f601c8bb5cec74d818f828534b1764bd4e846a2d13a668",
+      "task": "ipython__traitlets-727"
+    }
+  ],
+  "git_fixture_receipt": {
+    "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/unit-test-report.json",
+    "sha256": "c6ab39f51b52c078cbf197c0fb96338fb1343ebe7a93e830b51835a4ab59e018",
+    "tests": 8
+  },
+  "gpu": false,
+  "operational_temp_clarification_sha256": "95742adc0c8ea8fc863b5e53937f0754dc0cdabdd6e84f083f93477b0472626d",
+  "parent": {
+    "path": "PROJECT_ROOT/gemma4/contracts/external-e4b-v068-r22-runtime-PINNED.json",
+    "sha256": "9788264284a296e36ec07da7726259db1aae87759a487fd3b889a90ce80f3db2"
+  },
+  "prepared_utc": "2026-11-09T14:01:52.433295+00:00",
+  "runner_reference": {
+    "path": "PROJECT_ROOT/gemma4/tools/run_external_e4b_v070.py",
+    "sha256": "a1d1a9c9ead94fa93be5f295035a7c0080985a8ba5ad6bcce00d3a2a41ef7ff6"
+  },
+  "schema": "v070-git-control-plan-v1",
+  "source_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/control_case_v070.py": "c22f40a09039129d83a7145a4536769bff9293c6383e2f3e0079ea0662ca738d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/run_controls_v070.py": "0f97c1719aa45af4528e6ff70595e86f1945d5799cfb7e858cee99689c255de2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/git_baseline_v070.py": "b6d21a5483f1c74effbdeace595e284842945c4405b3c662741f743d5723d2c2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/run_guarded_git_v070.py": "c788810937d19f7ecabf49116e8608be3fced4fc1c9eba96ce6cea69aa991040"
+  },
+  "stop": "first failed real control; no retry and no filtering",
+  "tasks": [
+    "mpmath__mpmath-854",
+    "kayak__pypika-267",
+    "python-semver__python-semver-264",
+    "python-attrs__attrs-888",
+    "pycqa__docformatter-313",
+    "more-itertools__more-itertools-892",
+    "wtforms__wtforms-694",
+    "delgan__loguru-1299",
+    "tox-dev__pipdeptree-274",
+    "pallets__jinja-2033",
+    "pallets__werkzeug-2997",
+    "ipython__traitlets-727"
+  ]
+}

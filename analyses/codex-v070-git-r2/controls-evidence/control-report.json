@@ -1,0 +1,2503 @@
+{
+  "all_passed": true,
+  "amendment_sha256": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99",
+  "completed": true,
+  "control_plan_sha256": "f8bbb522f74c04434fb9671bfcfa2860ea3fa0f38b44fbb5404c70efc95d9c00",
+  "control_runner_sha256": "0f97c1719aa45af4528e6ff70595e86f1945d5799cfb7e858cee99689c255de2",
+  "evidence_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty.memory-guard.commands.jsonl": "1d93d46b4ba7c6c7ad149666a9ad47660f4586a8b4db44c79f6c0958d0816125",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty.memory-guard.json": "26f0c865f555ef0297c22717b5e96dcaeea3a335c230feb3d5d3a2f5045d894b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty.memory-guard.json.git-setup.json": "574d2384017263821c5af7471e78520b14d280a547577ba1b013e9cd31420c4b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/case-report.json": "ac3016f1086bc40261616d43f421e8b1940c2f083df335e64fccf6203c2a6d8d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/results/logs/delgan__loguru-1299.log": "6f26dbc7a3079da901675cbb4efcec8c959ae5db30f460349875deea9bb54a5f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/results/summary.json": "162ff2b1af006f32a7d14182658ba0bae865fd6cd29b881b25073bb29f8fd311",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/results/task_results.jsonl": "42b1739ccf0cd3c5312738c51a512ea5c9983c1145dc97b8d449848573de0b40",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/results/test_outputs/delgan__loguru-1299.log": "e18fd67b635054a935239d85716318c92747b95d10e88371144ea81a4cc8c72e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/results/traces/trace_delgan__loguru-1299.json": "67e32acbbb51392daa56bdb1aec0645b087aee5cfb1e30779f278f2207a5d5d1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty/verification-junit.xml": "09d715dbef71efeecb4a6bdea8d9fde15cbe3613acb8b3423982f81a87242412",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold.memory-guard.commands.jsonl": "1d68d5f3561aab3c5efba56a948e0e3574294a5d72b1fb72829cfe50424969b3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold.memory-guard.json": "0abe03fb31b7b77a1700588247720ada53c3f0975ffbd551df93ee8df50f8018",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold.memory-guard.json.git-setup.json": "0f3d58d94719f21c5edf2a0d0014e04c030d728d3c2d0052f7622ceee5dfd1df",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/captured.patch": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/case-report.json": "33c17ce2d0cedf09dae64e07b4b5ee1d8738be88bfe59de3d565164555fa02ce",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/logs/delgan__loguru-1299.log": "0fea1c2dc2894ab99bc170baba76a24830c0aac951f15b40cc8c2089d02da745",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/patches/delgan__loguru-1299.patch": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/summary.json": "5aec3476021f444625790543727bf49f8c6c057a16ad0844ca5b61f925a756b3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/task_results.jsonl": "7f92ce49a051e958a1b0e4b897a7e8777afb8493081723e7f20e72d4cfa54968",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/test_outputs/delgan__loguru-1299.log": "51c2c4e2f4d87f7ff5d5582c373ea3f9b0558eb102830dde4f8d258911f7c097",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/results/traces/trace_delgan__loguru-1299.json": "8ae36a4a4bf2ac30359dacdfe7d62d48b97fbde278443644009a6a05c112b042",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold/verification-junit.xml": "6526f8f30d330325224d5d50811b357aab969176d3b0e8a7722ed8ca0df74e32",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty.memory-guard.commands.jsonl": "b1552007259886c64624275176e02267908fd519109e5af391937a2beeeb904f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty.memory-guard.json": "b731770909a5cb3e537f2c26b280261be1b9fda334a2d0e21034d31019167686",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty.memory-guard.json.git-setup.json": "32feba24ab1cd3d4f1ccead1dd95b738e9ac20c4d1fc2eb72805556c66e056e5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/case-report.json": "b8061eeac3fc2bbeb75ced6d0f9187859f990db9cccfcc8aad9079c95d244f41",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/results/logs/ipython__traitlets-727.log": "f1ca034d4d20481b31a13e7d72461f8d8dc5aabbc62651cdb895b125cd86ebe0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/results/summary.json": "820f958e87790a478695717c142f5662e482cf8a5c8f6e39abe56a0b9a1073a8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/results/task_results.jsonl": "27520075c95a4beebc30490d1be2670a5ebdf7abc89459efe35cc18be6e08f70",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/results/test_outputs/ipython__traitlets-727.log": "b577176d38ebd110b7dd415160b15b29456d664d9eba8165eddcb70999fef27d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/results/traces/trace_ipython__traitlets-727.json": "4bb71caa0b53fe81a69dfaff5207c0137b9a9dc63578fbcd9432a9a68d846f09",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty/verification-junit.xml": "8f7f59e12f1aa9321fcf5f5bc40a1609c70da272ead3ef9119330248c36fc2bb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold.memory-guard.commands.jsonl": "c674af930466b073bfdaff904dcbfdf0305485db0a7793ca25a5e965feca3369",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold.memory-guard.json": "f2190b9b4bc3d940b9fb2aebcb422453113f8e23f7121911831f7b479546b625",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold.memory-guard.json.git-setup.json": "f783e5fe21db60ae87f22f50b20c7b308ce48e254c2d38347d7a89ec5a129ad7",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/captured.patch": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/case-report.json": "84dcd4be617b300c77dde33e78e72609eb8a281e930434c19d2172bf3d622487",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/logs/ipython__traitlets-727.log": "dfe1b28411eec122ce13d5e91c4df5b540df5180dad3347fc93924890bff7659",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/patches/ipython__traitlets-727.patch": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/summary.json": "4d695beed5dc74f161bb496d7600585581371f1b2ae01a0c90390f7ea2dd19b7",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/task_results.jsonl": "885b88cc4b125ca05b5b6a082e6c541d960d88b895c7373ecef26256de119b6f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/test_outputs/ipython__traitlets-727.log": "5b8b6c6b49617be2fd829281ae3d8e58a7cd29981adcefc6f2d8a9090f80f093",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/results/traces/trace_ipython__traitlets-727.json": "3b28e37ccf08402fe03aaaa4eac50d7b0b5c3e159163d58dc4d5aa8120a59f12",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold/verification-junit.xml": "0c2fafe810725f09c0714cf50e7f1eab795957d19c1dfeaaf9e1caf11f16b85e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty.memory-guard.commands.jsonl": "e14c8bd50e526d787094bce3c799968f8645ab08a7529d13ba65accc8b1ea802",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty.memory-guard.json": "2c08ba6db0b8056f8a19c5f2a41d0fbef9afe17a3c37c1f68e802f70c871eecc",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty.memory-guard.json.git-setup.json": "46b1a1a7416a7956fdb4e69e56074f8d3cfdc471a06f3b9701879a668529d059",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/case-report.json": "8aff2f0525694ae6e326141d02ad46d66570cf6c9f9bf707a6862e2446c35f47",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/results/logs/kayak__pypika-267.log": "434c333f5befda02b32ea159d683349a6cd8eefed25aac8f80b65f66d7f03938",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/results/summary.json": "bb97bf892f3a3d9148f50734721ffd05bd6404d08f599b99362e6195d43202f3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/results/task_results.jsonl": "052d07625907e484c66fab26b3cd2945b48f8e844784d7954a46e58dbab82b28",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/results/test_outputs/kayak__pypika-267.log": "c3e745714da98aadcec90cddd8ec8d1156c6d89ed47ff508e539b90ce969da39",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/results/traces/trace_kayak__pypika-267.json": "42ac5ee461dcdd4426b4b421afd8233f9228615a09255c4e18ee2383993304ad",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty/verification-junit.xml": "e9f3ef8baf1976d1688adcb7e3cf802bcc054ec9c2d0dcb708a7dff850f5d10a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold.memory-guard.commands.jsonl": "27d753698b80da480d6e5b2a52680a6cf4c2807715bfeae9b22c806354c92f98",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold.memory-guard.json": "9506d49774bfb1967b941d0c0d483b851696b25c3195c8e06a864a5420f514c5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold.memory-guard.json.git-setup.json": "482438562a3a8210a22231f29bca361d6728ec6fbfc040b41f79c7bd54b1eb4c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/captured.patch": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/case-report.json": "40d481ecbea5c6de12731ae4a6e82333b9872f855318d267af8074e04cc55bfe",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/logs/kayak__pypika-267.log": "2c53ac192bd1f3d8defc25f5c7262f31818266c490524db7b86e21cb21fe1a6d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/patches/kayak__pypika-267.patch": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/summary.json": "7fd523205fbae1bf92f48ccbb0fc420e8ee89a1b3913f1523b295c4828a532be",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/task_results.jsonl": "d0d7b96204c8442f09502629269954461706a354e0dc84ba4e6b09c4b54d0823",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/test_outputs/kayak__pypika-267.log": "cc25fe89e4cfe36db6271e9e7e110f62e6173b065ae27145775a2d188327fd25",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/results/traces/trace_kayak__pypika-267.json": "01c78f441f80b6fb838c64fb4c5d142b65055cf786450c5bbff4ef2a41553eec",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold/verification-junit.xml": "b65ceda46c8c620d4f16bc637e0d3ffa71fc1dcef6155159ad6aeb7a6e77b648",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty.memory-guard.commands.jsonl": "d1d63207d603bf729c1e86d0d0bf1a042815daa38730bf0635f5e62226d3f8e9",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty.memory-guard.json": "c8260cdeecbf380f6afb51deca754d8cc4f43f69bc6232bff02bda2e89b102de",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty.memory-guard.json.git-setup.json": "185fa4dc51659a0568ee12ec0b70bdf9a61d5fa4e9d99d118b63e71b7ff3e4f2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/case-report.json": "fb5f028be885699cc5f438a66c46f0614356f33bdd1b68ae4f8c59eb0bbccb3f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/results/logs/more-itertools__more-itertools-892.log": "a57b7ad23c6addd9cd5168ff5dcc268eb081f565185a3b35255c575ecee80a15",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/results/summary.json": "0db66e9196b928f0b12623e849665892c139cfa06a4f18d376437e5184479d0f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/results/task_results.jsonl": "3d6b2d2e52e9c13e1f37f03fb781ebd784a588769a0a139edc16d8458b66c8ed",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/results/test_outputs/more-itertools__more-itertools-892.log": "79ce4afc0c917f86e1f0d352eda56ebeb7988e95d81072f0d54863eb32bbce5c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/results/traces/trace_more-itertools__more-itertools-892.json": "52c45305aefab8449120e8a82561210feee3e9ba091952317a40bdc8ea52284c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty/verification-junit.xml": "0e33955b5a5215b1d306109c4c289e0c6e038b4eb8c968f9aaf9b2972b98846e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold.memory-guard.commands.jsonl": "8c3411a9b395bd2005c5af666ca3f813e82ad4dc76e8c147cc3e47304750398f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold.memory-guard.json": "1893110b029469fb3381947bf1676153d73bff085a44533d87099d484a3966a3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold.memory-guard.json.git-setup.json": "fb0ae41ae1fad459d07db226961e463451df4597129f6eeb27030718495b6b4f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/captured.patch": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/case-report.json": "ee26fcd10c87f1213f0ee5487e26253dcb7b9faa27dee9f72d202db5e337df22",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/logs/more-itertools__more-itertools-892.log": "040cf80764c8dd9ee8e84471d216bd81bca010d315a7443dba5ed7eecc1bcebb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/patches/more-itertools__more-itertools-892.patch": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/summary.json": "b3de9c5c858ee594d689be3554a68d20941c4edc3a151d3d9e8cbfbd04afa0f0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/task_results.jsonl": "1bbd021fd8393bdfb3119a46f6330c275d775306f3b8ca8e3cc45aa96400b86e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/test_outputs/more-itertools__more-itertools-892.log": "03d325fa647136e33195302fe2499a1c348a547147f4fa4f1e9d985fb17c48f5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/results/traces/trace_more-itertools__more-itertools-892.json": "c432c2caeafe52108e2b19dd2281459e68f8fd333ec252b3f77cade560e4706f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold/verification-junit.xml": "7e660ad428423469a61cbd77ca26cd9ba59714b5c9c074a57a1909738c0238ce",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty.memory-guard.commands.jsonl": "3958b3e942dac84ca829240ae950582005fcfc564bfd35d75bbc6ca8963779b2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty.memory-guard.json": "a8ea1fcd52aef803bb11560c62956906fa44fc1164b588b9642aaa9f4f64ecf9",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty.memory-guard.json.git-setup.json": "274f7d7ba95140265edbe83de6c0475db6353367700616123d32e09c8639e2c0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/case-report.json": "c3b784726615140927c91f2fdbaa8db4944d1bdeb336dc8ac37dfae1f560507a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/results/logs/mpmath__mpmath-854.log": "24715bb487901649b08b7b54c639fe62427e3ed18fd95dc3d787791e4b0f1d5b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/results/summary.json": "5e0252e3556b47b6fd5c06b6cb01d0457b4b93a780140ff194373d31c64f6859",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/results/task_results.jsonl": "657aa2e10a2477b487371d825e4b3b6ce74d766b9265b8b7128785cedd961372",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/results/test_outputs/mpmath__mpmath-854.log": "d6eebf3fb261bdd4115cda27504c40b9d0028450e75eaafc13daf87fe781aa04",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/results/traces/trace_mpmath__mpmath-854.json": "cfafe61c38ec2a634a10dfbce2467ddb31c2c641ecb44e192460936e3c9ca33d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty/verification-junit.xml": "3c8c2bf09ce2523b931f5700f2f24878fcb49f94e8dc59c76929106a5ee9443e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold.memory-guard.commands.jsonl": "3fa7a90da0cca5ee067ac477e3a31c83c0ee10b49715e86099f55b81f3cc07c3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold.memory-guard.json": "cc0ea4683970fb2dc489a58a612d6b792611b3f6f68934bb4c49b84adea669f0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold.memory-guard.json.git-setup.json": "bbe0e0c3d3524307f099c43949e0772a3a069066beab4172c75917d0c669b6dc",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/captured.patch": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/case-report.json": "df89486eebd16478bf2644ad67061cb10a66d045881375f129985fd6726d5b21",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/logs/mpmath__mpmath-854.log": "2a802e4092c7db54d21d2a76c2a1d895d1445a74fb44226952babfe0ffe281b2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/patches/mpmath__mpmath-854.patch": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/summary.json": "19addfc846d5798d6a36ce92a18390bc29255af59e517dced5e8d3d5f3f9dcc8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/task_results.jsonl": "db3812f72eeb5ddb26609f6f633d492e85cb4548adfce5440950a279359c5b30",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/test_outputs/mpmath__mpmath-854.log": "4b3c63fb53962d397f9e9d311bbb23aa3039196b1e5014daa721914b08958fd2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/results/traces/trace_mpmath__mpmath-854.json": "189b9fb941073175deab974509f2a1e57312b326a84513e5d991c15010edfadb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold/verification-junit.xml": "ff13c36224baa3587454e184839028c7f2777ddd53b788bd333f33a524e6ba82",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty.memory-guard.commands.jsonl": "6691dcd5ad6ea0d05fc01445986f9228e734098848d784d484faee5cbadcd39f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty.memory-guard.json": "e5e1a4b89ea2a462d4272d887b1e1d6136d148c3bfebbe2cc269de2eaa7158a6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty.memory-guard.json.git-setup.json": "80e8820e3e049a2dd1d24d8eb244d5a4190fac01a3acac919456da864266f7a3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/case-report.json": "2a5d06638cad48e6d5e577dd60d9137e960966456e86a8d31f4fca73d48fe425",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/results/logs/pallets__jinja-2033.log": "cac9b05ea6da2fc7b84bfa91d168997c479b2d2cf09d2a483c3fe5b965bbc657",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/results/summary.json": "b0ded825069bced2db0ad5c0cec842702264cc9fa20c1e894550fb9273d522be",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/results/task_results.jsonl": "cdb269594524c8d9ad38094d43f1048bb3aa6f40b12f5c24f32d8c5dd9a24e83",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/results/test_outputs/pallets__jinja-2033.log": "16c1b5fe41ba0b12adee4a6d03ae241a6e29fd6e2931fc845fdfc7a5d18ce1a9",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/results/traces/trace_pallets__jinja-2033.json": "91e2a089c9b531e9cbf23ea214e15038ad6874c2c4c89540545472f9e223e629",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty/verification-junit.xml": "0c8415ca11c67781d3b8c8ff67190d65f77f5984af533b4a540095dc9213d8c6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold.memory-guard.commands.jsonl": "b14e70e05f37bba14e997696d4c75c1837fe980b026ab81d05108b60cf302144",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold.memory-guard.json": "137c7bcde238260a0d05b6265d1ab14590a4171874804cf2b3f41e5774c6f30e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold.memory-guard.json.git-setup.json": "5913680676369819ad485404c01da335d97a527a144ee97bbd1f789d87bd9409",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/captured.patch": "9404c627684f51837c9856c6e8926c25afce0785d2317f52f0362530ff4adc1c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/case-report.json": "5bc4dfbbe992ca68d72304ea690c43b443419444dc5a392194d292b1f4e954cf",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/logs/pallets__jinja-2033.log": "763a997d6535efaf9de6f6b9b39a2c59fa11127acecdcbce410e708d9b3bed24",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/patches/pallets__jinja-2033.patch": "9404c627684f51837c9856c6e8926c25afce0785d2317f52f0362530ff4adc1c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/summary.json": "e25068743a896d258973f829b4002e9a82fba172a169f7623f623862d3f48de3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/task_results.jsonl": "9dd7b0c3f1e78ff5d88a363a39c3f78407ea74e771ef1c55e763304d7a55fd82",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/test_outputs/pallets__jinja-2033.log": "cdfa154114cb64d4946d47e3c81c002afe595c5ed095c26c971c13c6c19b1a2f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/results/traces/trace_pallets__jinja-2033.json": "a1817f1468f4115cf57604f65412a0e380d3848c7262355bf6b105ea134da335",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold/verification-junit.xml": "e97b5208d38187b6c22aedecc4b51c24f107408ea6baa9aea3a434484476d3a6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty.memory-guard.commands.jsonl": "badf2a83431cf9326652a2f519fd21d9ea8ba573f0ec72fbb5b97120cce4be9d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty.memory-guard.json": "78f731526e088f2fb2ec4b4b1231195f47b28216bb6d1fe4fd474618d30e14ec",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty.memory-guard.json.git-setup.json": "6abd70c94363f7ac5fd3e562eef8272112e1ba52ff8103f05e186632bef503e4",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/case-report.json": "527b67485a7b697afabceeb2be03879f1b731fcd1de2ee66dc858e30fcdbf50d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/results/logs/pallets__werkzeug-2997.log": "f2217c811f09692d053a55e828bc4f13bf50c2b1f7ef4fdde63bc0e2948c27a4",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/results/summary.json": "fbc2d0f4a0541a2b687cb4277a3c564364024f3bc024c2d60fc268e32f264208",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/results/task_results.jsonl": "cd84febb514e6d3b71d37f8c4a6873d358189b554ede0185a394286adf3c9601",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/results/test_outputs/pallets__werkzeug-2997.log": "e5e4ae5d81d8f3972ba91fafdc07e8185bcee02b25f047436402109e4d347c9b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/results/traces/trace_pallets__werkzeug-2997.json": "3a7245a98e3d4ab8b3ba325419456e6744c3f6e29e3465a6cbf283815743d4ed",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty/verification-junit.xml": "8197d6909419041d39c2e605f48ac8c598c96708a89ceb112ba2a231c61909eb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold.memory-guard.commands.jsonl": "5a0c39dc04bd70b519db925f09a2fafae1b286a9cdb729c8a5d599ea3066f47a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold.memory-guard.json": "a1065a0ae2f3e3eaefb619ea152244a1bda605401eb202b5aec36526d93af649",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold.memory-guard.json.git-setup.json": "d91698e6ce0837ee82c5c606e942c56e24919e61a10b6ff3efc4f16f9184dcf8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/captured.patch": "70ed65826afbdec0e1b64c45de8dff7777f5d87e8edb3d665cb6fd34c1824589",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/case-report.json": "c8c4dab2371c92d40394fc2e7e4bb4f7bc7039630cd8d8c8fb7113f60e19ae60",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/logs/pallets__werkzeug-2997.log": "06c77626c3f3d03ed5715ae41d96448f25ac8c2680bba8ade606e90e247a821b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/patches/pallets__werkzeug-2997.patch": "70ed65826afbdec0e1b64c45de8dff7777f5d87e8edb3d665cb6fd34c1824589",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/summary.json": "31f7a3f18464e023fc389793d03ff23ce56324f13001093dcd647419ff73192a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/task_results.jsonl": "b74ef444f6dd6cfb012c128599919163eabe69b26b63313fb6e2ae47e3cd0ffc",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/test_outputs/pallets__werkzeug-2997.log": "ab6db8c8642fe2d524df1bca4ae1afd6ccb90616f238e3e0eb37b30a9c58a8da",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/results/traces/trace_pallets__werkzeug-2997.json": "f792e9cdf213aac6c77d2e32af96abcb968788f42cd1879e903b51bbf36afeed",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold/verification-junit.xml": "d4737daac5df5e823768d93bad421f15334d9a8106bddd55ad4e941434f28051",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty.memory-guard.commands.jsonl": "65a19d88d13452a65ff4a58bce5d1532945a8387d6b59598f0f146b79d704455",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty.memory-guard.json": "5d1a0a73f9c1e4d047a6c13936af8734698f0f0d41d94617e2ded4b3514e863a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty.memory-guard.json.git-setup.json": "69c98e4f74de8047c964f1d4af7f5594b01a0448eab99aad2e17bd463e23855c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/case-report.json": "780b207f16910c909966e6a987c591243f62e0e8d389ab129be1a17c1f390b81",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/results/logs/pycqa__docformatter-313.log": "f1b4e27c08e1c24cdee11c8891ad0e92e3ae303a6d5a9615df9cdde8ba743881",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/results/summary.json": "a5173afc71f9ce493ca08514358442224660d186094cf3201e8e49db8dc2e45e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/results/task_results.jsonl": "b3acbf3738ba47b0e8a7ba8854491bfdf0e5a775e02db4569ae32a8c681028a2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/results/test_outputs/pycqa__docformatter-313.log": "7d00d4acb7be9a667bf59c42ceb968d6fd35001435b14aa368accd2973dbe065",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/results/traces/trace_pycqa__docformatter-313.json": "14402c52b177b6cd73192d10295168c319ac6bf3e6f9037487f10932a6cec4ab",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty/verification-junit.xml": "6e4c297e26fa53d84f0400ff24b78442b170a12032fc31021a170b0d936dab43",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold.memory-guard.commands.jsonl": "f940a7b65815097207a65c74af9f5a1ed119ab78efba9f4994d9df735ff5bd0e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold.memory-guard.json": "720b37b235728e0f26513b78e81de430e49e35131c896b2fdb3c9f2e5b87dc34",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold.memory-guard.json.git-setup.json": "54ab16b025277d24111f7de3e77adc920a91de44d7828252fa4138b0f43b3d9b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/captured.patch": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/case-report.json": "7d74d63b6fedd86fa12b8c0d3f63ebed635f9dc3cc08e1e9e93c2b7c5b4e3dae",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/logs/pycqa__docformatter-313.log": "37095ce68f5fad6a0fc47b13fdff93f907b76fbc56fa798043564d6708df812d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/patches/pycqa__docformatter-313.patch": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/summary.json": "c6c3a5a50af236c2370766a9a9ed7c659f7ed57ee4b6e6f9210692a9c40c5080",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/task_results.jsonl": "37c7789a27169db3d6305cb2e4d0cf64e4b0bdb7f2499fca4c0cc54f94790cad",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/test_outputs/pycqa__docformatter-313.log": "07a2883cd55bd34e3e69f303afd85c0d2464331bbcdffba1345b45653c63c088",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/results/traces/trace_pycqa__docformatter-313.json": "2ac656f952cae6bb3dde4a48399fa1b93a8b4327cfb5fa67b404f329f7a8813c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold/verification-junit.xml": "8b3ad97ee870e16214ec0a02f719c3ea42ce5b98521858681fe0e0cff808f251",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty.memory-guard.commands.jsonl": "b10a000b6abc87954c21458122129a04953b8c32e6e9535a8817143774a4bf87",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty.memory-guard.json": "defad08bb15b6566cd3da66fd1abb2378e1e8de294d118b80c500b5fd89fbbe0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty.memory-guard.json.git-setup.json": "8a49d8fc7f17b2c805c70278e408c725182d5e8283e60d67b8094f9da8ca3522",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/case-report.json": "3d891f732f1424414a1fcfff80ac4db8cc69241f45f787c7786cfd5bf0ebcdfa",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/results/logs/python-attrs__attrs-888.log": "d07b765d987c54498002091f46863649d486f6c91071aa743cdd426f165700ba",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/results/summary.json": "ea4d7f52095a5b5b3bf40eaeea239fc5468aabb64c89e6dfdc5796a88d88ae7d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/results/task_results.jsonl": "dac41a7d9793ea96833bd412d4d2e75ba17314c92f518a9afc3779d700d9975e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/results/test_outputs/python-attrs__attrs-888.log": "2d237ce1b7cbcfa2a9b70c6dae55fe69f4a50a469ed5e08e816c361617ce454c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/results/traces/trace_python-attrs__attrs-888.json": "00bcdc404f8c72e919152f28773bca0c9aa7014b206b85ca7cd58edca25ff927",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty/verification-junit.xml": "7db140a236042ca57708d55dd1287b65a3cd271a8856b41b34e0070201d80fed",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold.memory-guard.commands.jsonl": "4cdde277cfecb4b797b7cb49b553c6a09bfb8b33474fd704755d4d77c0c3e117",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold.memory-guard.json": "9a479e30343adde8a59e66dace836b45d19edd06b539e25a61295a75bc9da205",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold.memory-guard.json.git-setup.json": "3eea9acb8831875e0c72c95d81174d0d8b663ee97a99fefa1810162210cd50a6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/captured.patch": "bd782904b3ceabcd20a108b0fce2178b7ae217acb366170e0e87e3425296e7c1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/case-report.json": "8144775d37e8fde1de759e2dccb69c7fb9629d0064e5132522494ee36a121154",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/logs/python-attrs__attrs-888.log": "b8804d2b03ebd89ee39b3959ee0b8c10f9a84377e86c8727e1300c5f6621033a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/patches/python-attrs__attrs-888.patch": "bd782904b3ceabcd20a108b0fce2178b7ae217acb366170e0e87e3425296e7c1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/summary.json": "bb8c9467e55ff48cbc65a169d0969b004c58a9a9585e30da2cafa04f889eb26b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/task_results.jsonl": "5eee4b6c7323843c0a63e44aea75f4b81f4250b1314fc2e68a703b614e17aa83",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/test_outputs/python-attrs__attrs-888.log": "e1f7c8a8e4d2bd366c63874a4f883e7f840442b36463623e7a847028b47804bd",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/results/traces/trace_python-attrs__attrs-888.json": "444c73e06b218a01288d519401acf995e5143f493fe3c41c191aeba110909988",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold/verification-junit.xml": "ba7f181c7e8884af9b63e843b6b08fb3dca51aee84cf58217afaf535d9f2cde4",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty.memory-guard.commands.jsonl": "174ecc8cbb61be26adc51ddbf6fc1fedd3d5cf4ed6c2bd520a0a7a9714ec8414",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty.memory-guard.json": "10e998016ad56168c5b0785a6f1f02920ea6e00cbf6e23ebdc7ce6b48faeb08e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty.memory-guard.json.git-setup.json": "7c74e1d2d9e775c345922fc17365947a220ab119f68f45e465f710438783344d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/case-report.json": "74c2eeb38787e65b95ae4ad7f7eb1be8b4de61b39a6c5fa3c7196c71d165458e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/results/logs/python-semver__python-semver-264.log": "0c34927909d4a15d085057ebdf965d72db4a9ed4433a78a52bb0b93ce27c496e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/results/summary.json": "e5a6997e60ef62c6fce971c528152928fdadb4843eb394b7f244400d339b7b20",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/results/task_results.jsonl": "a9619113e2110d0a88443cafad82315e33c3d3127759423a79e25664958d644b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/results/test_outputs/python-semver__python-semver-264.log": "19052307692bcbc0fb22870da6dac88623d234fe56d128177dc52a4cd041cb3f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/results/traces/trace_python-semver__python-semver-264.json": "dff0fa534eeb784e24f25e72cb547d9905ee04f515237b880e2d5c431f860885",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty/verification-junit.xml": "071b41937c05e10de5257e737ec00b8b92403baffc1662d8273a1a73392be854",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold.memory-guard.commands.jsonl": "c1c947c91e069cf5744ee244d5f00bd906ffdcc2cea19564930ce03deb984266",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold.memory-guard.json": "8d46932dc019f0ebf90927ea429d507db1b35ad3fb35e5c6632f03601de01138",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold.memory-guard.json.git-setup.json": "36061aced58c504635d9f8f72759fbcd3548726c508e6c0d23845ddfc3c2f74d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/captured.patch": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/case-report.json": "04a6a5ac33dd089a84b51834ac9316899c4346d49f492394d61278e6d33d6114",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/logs/python-semver__python-semver-264.log": "f9efc85350136d1c9759a8d006d260a96df752fc9d7391fdc9c306b6d5158227",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/patches/python-semver__python-semver-264.patch": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/summary.json": "a17199aa420ede929f841d0070b52255215e364d9a7ef95b4bc687de8a9fa526",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/task_results.jsonl": "c91928a81d67124f29acb166698355bd79b6f74237b48d0f1add681ff427e9da",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/test_outputs/python-semver__python-semver-264.log": "2eee14055ac2731d98e28361305d2ca6c279e37a1cba7c1cec4c17ff8c0e9302",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/results/traces/trace_python-semver__python-semver-264.json": "a2531dd54210b883b78dcad0f9a148f0d6418f950cb23d6fc473b23b8023d81c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold/verification-junit.xml": "2e5659b0b09367e1d0c4b383490565f05d31f426caafe363193bafc65b631c4f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty.memory-guard.commands.jsonl": "44591f4627c3732772cf8dcec34295db22de5a700dbf4979c20757d5b161401b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty.memory-guard.json": "1f710df5b76ba8d1352d4411c80b077ca0eff9fc847cbadaff502da0b0a42993",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty.memory-guard.json.git-setup.json": "0a64831a704a99b95fabc32cecbe7b32772757a4df2c507e411840a385eea651",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/case-report.json": "1076f7dc832cb6dc2f761b62daa7793ce71587f746f244e3df1d80e515698b0a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/results/logs/tox-dev__pipdeptree-274.log": "c96be38d79ea423453500f307902d48e3444a5847da06c717e6df496dadd04bc",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/results/summary.json": "8ef8b416af247b68c780e4c9279b0853f58587f76ab5a789ea525d13bc8c4276",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/results/task_results.jsonl": "8e2a519b506b96c45d114fa24612e5bd53b68a8a3c0f06d064bbd674d1ee2930",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/results/test_outputs/tox-dev__pipdeptree-274.log": "4a5b83b4e55e0999d11cab90c1dc07977dc8a57438b6e1d8a7676ee6d81b7a89",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/results/traces/trace_tox-dev__pipdeptree-274.json": "9066a1e3c20afbbb14e7e77f3d70d0d13fc8de557f13987b783fc8dca492262f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty/verification-junit.xml": "52bdf0a5dee374cdb01d69406245b4df5e3e1276e31b04ca17ec0ab780fd0e72",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold.memory-guard.commands.jsonl": "1da6f350898dd89b2af7656223935bc39597787f410ba7baf04d5af724c3b6a0",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold.memory-guard.json": "6becae9d8d31f36c94853eef136f4b5936cba971d2b7fc2df7e4febac383f6a5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold.memory-guard.json.git-setup.json": "ad4eb450b2b15cfd2dfa31de16f626d6ac1346323e1765e54e6a4e2454123bfb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/captured.patch": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/case-report.json": "448f673ea350681f024193f75ae5565ef2722487e99db921697e0fbe042c978a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/logs/tox-dev__pipdeptree-274.log": "229f2d2406cd3fa06215786da94b738dc29a0a3f0c90a39fb4c09ddeb1e20db2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/patches/tox-dev__pipdeptree-274.patch": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/summary.json": "4660869315424653a90f7b6d495f4d6a4e597895280d84827b8ef8973b123dad",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/task_results.jsonl": "4a06e85b5391bb7150930dfc90fc1e0eb035c730021124273b630a5421d6a8c8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/test_outputs/tox-dev__pipdeptree-274.log": "2045eef47d6cad33ff668748f7861716f67bb5d576f29a94d46653155b39157c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/results/traces/trace_tox-dev__pipdeptree-274.json": "92a0d7e31ee80b50b78422b6e59bafb3b52f31364dc64a0cbff1b4b7fa096798",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold/verification-junit.xml": "8ef24aac8e64681399737b1ba42e1e90df5b6e921b7ab0586051806dda7a8fd9",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty.memory-guard.commands.jsonl": "43e90da0fa434c141403b285fd8cb9fa8b96430c590abea6eef5dc37ffcb0d12",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty.memory-guard.json": "788c9f44c4461d9162993d1c84be8d6185d4ff0f4b80a61f8ac0ab1c84631d71",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty.memory-guard.json.git-setup.json": "80e77c3b8b530d0ce72e691e5137f7ee5d3682a878ba21cc8011e6b6bcf7288e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/captured.patch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/case-report.json": "72b859d1f5e4abfe492ad4dfdce252ffdfea0ff559d544e0f9c51bc1abf5de86",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/results/logs/wtforms__wtforms-694.log": "1391a53318da172bd90bb4d94a8df66480ae0fdba0ad07425a56df5eb94373f2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/results/summary.json": "7262ebdfae1578345697fb7e2e474c9b8720e7c482e4df119be07508a003693d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/results/task_results.jsonl": "c0d4604414bd3c5aa752bff296cce6dc94d1197053990812bd1c445bbcd1f52b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/results/test_outputs/wtforms__wtforms-694.log": "4b1e897356c1fe499a83c069dd6d0432dad6b121db983029da01bb7b7db8316a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/results/traces/trace_wtforms__wtforms-694.json": "a713710edffa4e5ed3113b623d5c11d18cb23d76f221c51b1f029621a71731b1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty/verification-junit.xml": "64d3b925b9c018d430143ae0f3a36e5f94f72f06f6f760c75672c5f647b7def2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold.memory-guard.commands.jsonl": "8133755488b1081a4e9bc988640668c58a42e2bc6fe4dee93d7b4caeaff25b05",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold.memory-guard.json": "6d148d6df10054a4ff3f7f0bdeff5c1d06f57f5fb2bb6b2d28c99d0367d4acc9",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold.memory-guard.json.git-setup.json": "728c9cf14dd253432b88c3fdb43ef7be18fbe4906db836c3ddfb19e57152f6b7",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/captured.patch": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/case-report.json": "2cbf01ca037dab35948c4794bf7af6537c8ea9649b04ffd31b636bf02949bdb5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/logs/wtforms__wtforms-694.log": "3a4db3a0ddcc229a08f1df1b666a3a11b5ffdf2f89fd8c21f835605968b03280",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/patches/wtforms__wtforms-694.patch": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/summary.json": "2534c5f33a18600433d605a6b7efa0da23fce724f6f35c3cdbc07205e9f6ff9e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/task_results.jsonl": "cb2a31c20afe5c6136acdc1c93898539fef4fecfbffe9700492578b03153da52",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/test_outputs/wtforms__wtforms-694.log": "b39d27a77d9798bfd93a5f39ab44f56242bb7721b241eb671f017bc0a9498947",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/results/traces/trace_wtforms__wtforms-694.json": "6f14aef905c066398105159fab823fbc26e47d51ba6cb614755c34d92af3ec4a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold/verification-junit.xml": "6d61e515b5e2e57987af678b941c766ebf8de37a0dec3df34598db43c7c8b884",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/delgan__loguru-1299--empty.log": "8d62f4245b555d87f5efc9eee71add7d5860340055ab17d02bf45cee0726d577",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/delgan__loguru-1299--gold.log": "8d580a0c7e27dedbeef8bee4845af88372bf574715bd7b3a5383889617f22714",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/ipython__traitlets-727--empty.log": "6357c0f779c8b446b5c08a5c3f9214ef6b0f0920bb86356f94d527f74ed8f97e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/ipython__traitlets-727--gold.log": "d433381bd86c6150e2d1a1970270503008380d77ef67b52fd0a52f067f425aaf",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/kayak__pypika-267--empty.log": "32aa273d71f6dbb16b5a88e9e666398083a43f6ea197cefefc9b3e54c1133e4f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/kayak__pypika-267--gold.log": "195d713af599b66385f128d9c81bc7e36b8517980c6986a6911cf337171771df",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/more-itertools__more-itertools-892--empty.log": "ceaca66444e60c6d9be14cb8f28815cce2828b3bdb6e40fd11b24a34af491207",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/more-itertools__more-itertools-892--gold.log": "43bc9ff43fc0eccff344787ad584c05cf3d3d648a51895f3f6cdb81551151cfc",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/mpmath__mpmath-854--empty.log": "d90d4decfc1e4da2f09615ece964b4b921e4143581ab9b97be419e9ba0ab57d5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/mpmath__mpmath-854--gold.log": "b9b571814e9060e2aca5c0b2027dae5b3f03c45be2031c1ff9cf8bff991cfda2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pallets__jinja-2033--empty.log": "c2b72d0469fe21e4dd75a461dad17d84f77b54434b82494b890f46127b9b0299",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pallets__jinja-2033--gold.log": "839872f9c937263bc11bc0a3ede7cf0fcd362f2322d3eed6e358d19d72d17920",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pallets__werkzeug-2997--empty.log": "cc9281aa2b67574eefdf2c529153409380b699e4c7f93865f4349d6efd004298",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pallets__werkzeug-2997--gold.log": "18566f35cc8bf0565f2e3589747547e4f77280f9fe47f897cb6ce00892ee106f",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pycqa__docformatter-313--empty.log": "fae2638925ffeb831cdf119e8e7cd572deffa306f85faf9e169f2910fb59ef03",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/pycqa__docformatter-313--gold.log": "6a5ed64c5accde622a65f57c038213b373cb6c5f58381f67da50158c8236c6ee",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/python-attrs__attrs-888--empty.log": "7575c142d78d071246a78d2e0c8877b0ec4cdf99ab1511ce11d619c6927e9e00",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/python-attrs__attrs-888--gold.log": "0df54593068271c340cb99aeaae9622e4b50f357851d63d8b2cde45e9de1c0e5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/python-semver__python-semver-264--empty.log": "b39bea36d225a4defef37ab8c4cb0c17cab9f7686d16a1e4695e70d297b69d5b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/python-semver__python-semver-264--gold.log": "68f1ce0ea694dcf100749dffa76cab908fa9061b6a1c50dc4e4c71a2f7994582",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/delgan__loguru-1299--empty.log.service-end.json": "4625727106aa8dde7a02c1f40c230f2c0f34119784a71aabed9fdc23778e78c5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/delgan__loguru-1299--empty.log.service-start.json": "697661f55b0848b20cd1aa1f73a0364561b3841480e4e9a485549f60a5c40a01",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/delgan__loguru-1299--gold.log.service-end.json": "2066b9ca2b5c22f1a4ed447294d4be110fc069eab03299f8f5d190799d43e546",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/delgan__loguru-1299--gold.log.service-start.json": "f131ba542b22d2abc99834843844992bce45068bb8b1918f6bac742f566ada99",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-1c8ccdf95b224975824d2e930d63ae53.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-375b25e94bf947abbbf1b82273983392.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-4fff31932de84b0fbc510f61edcb02da.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-646d63a5300a4f098254d3ec5a089871.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-822b6956b20640f9b341efcf98c36754.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-853c62fb314e4b40870204afb1b3afc2.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-8f8b41bf0da54227b080fe77a5ccc118.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-a2875e319ac8498789eed1262fc0c54b.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-b3e7032f80d746069bd7c62d56474d7c.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-c4b59124b4d744bf834a91c703b1a97d.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-cbfc7331c72644c595ddedd64226a87d.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-cc980fc312074678bbecfc59661fa7b1.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-d5f203a4040b4aa39ca37bc75683ab3e.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-d633e78963aa4d77a25962992a61dd56.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-dd3218b0953c4a93bffe081a62be7b5f.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-ddab9d34052e4d1386a9a3762ea996a8.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-e014a713f6ab4334b4f18611ab61bc4f.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-e3308eae30514f69a6c8092e167cf37a.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-e5272c981f86440e9f1828d538de6d38.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-ea362c4c2b724c3ba311736f677febfa.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-ee3f18afee234f9e83afadf388b43f9b.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-f200552f29c647cbaba1d9d2c1726e8d.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-f3951ccf33ee4085b4e2f7ed1a505a3e.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/gemma-v070-eval-fbf7a6f76e404a34902d931314312353.service.release": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/ipython__traitlets-727--empty.log.service-end.json": "f44684c18f18ee20006f90aed173b61692f710b63cfb74b52779053c7d1b6392",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/ipython__traitlets-727--empty.log.service-start.json": "0d5742b7fabf3706df93430f3d0abf576550bca6770c05085006890666b4c5b5",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/ipython__traitlets-727--gold.log.service-end.json": "77cbf945e3c0337d400ab4c4afba3adb763ad9abb766be276ce8b993a5f942a3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/ipython__traitlets-727--gold.log.service-start.json": "289555738d4278f0be635347545f4176e8acfbe2e6c499f70322832518f8e695",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/kayak__pypika-267--empty.log.service-end.json": "529cc847dff0d273444835aedd463f4a962981c9162fb5a74ba13b91768d4a88",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/kayak__pypika-267--empty.log.service-start.json": "9f1ed3c8e7a235f33d4baef0cc04d06cf075b367777ae3650ac72f7cde213400",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/kayak__pypika-267--gold.log.service-end.json": "90b22b793512547ee96ebee420987b41a887b3f9a6b144629790f5a5f7e4a2e6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/kayak__pypika-267--gold.log.service-start.json": "e5ce9891d28d729bd688bb5d1ede4857509668cc849308ce23e4b9f40a8ab76b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/more-itertools__more-itertools-892--empty.log.service-end.json": "ec823abcc74c766b42bd6cfc561c647f362803073ba519a3572a9cbe1f1cee35",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/more-itertools__more-itertools-892--empty.log.service-start.json": "a0251b9de83acdb29c7bb604538ebd00e6785617020015c099bfc2d46a276aa8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/more-itertools__more-itertools-892--gold.log.service-end.json": "9b7b37cde253fc372ea9ace8bb25d27bfc470bca751eb63fe7211c536aa78578",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/more-itertools__more-itertools-892--gold.log.service-start.json": "372e45e2e29bc52647dac6e7d3ec1436924b614ff51adead11ae73799bdbde23",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/mpmath__mpmath-854--empty.log.service-end.json": "8d5417c7ccbe9db3a9b13290dcf15d390288fb9df6f92bf54b98408b4e0f9ea6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/mpmath__mpmath-854--empty.log.service-start.json": "ae596802fda38ba72bf3ac21daa217c55db0bf0adb5cb5254bdb979b44b30bb6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/mpmath__mpmath-854--gold.log.service-end.json": "a8a2e86bf55b20eb69bcf8d48f114b394e3eb79d927e6d6e81df4c7f7c8701cf",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/mpmath__mpmath-854--gold.log.service-start.json": "a4b9d7c2a422d5f83faaf1ee3b071c17e89d291a65b07dbeaf35fec3aab5a073",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__jinja-2033--empty.log.service-end.json": "772138d5591ced1c27906e2e1f11ce5cdcd973da1ebac2464034ad65add94139",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__jinja-2033--empty.log.service-start.json": "6832d41c99b9cb56f0be271a8fc41f271c806afd0de44bab596782ad087c5d2b",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__jinja-2033--gold.log.service-end.json": "34cc1e3af813811121b414016e418cc64e92b0f1dfc277c9d2a073b395aa0bfe",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__jinja-2033--gold.log.service-start.json": "6334a6ae9fb78b92dc03f69ab5af3d38d15bd405c5424f8950f526a907e72839",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__werkzeug-2997--empty.log.service-end.json": "7bddfabf95fee87674327c1ec8c203cd108cfe46ecaccb62ab1bdac5f6111e2a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__werkzeug-2997--empty.log.service-start.json": "1181fd2b13613485093ed05ad4691c959831284e3dc8474ac33b3bf3fd021925",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__werkzeug-2997--gold.log.service-end.json": "3381641894512f7988070c710bb2e96d1443c22fab3d4da3360c1798fc1a2fe2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pallets__werkzeug-2997--gold.log.service-start.json": "5f2e3083f509550a2430f0c3425141bc393346454a947c96132b980ff20bfaba",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pycqa__docformatter-313--empty.log.service-end.json": "fffcf1e3a34945c5052d2c13a9edbc1e5e0429b47775b4e83ebc9ef53ceeaaf1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pycqa__docformatter-313--empty.log.service-start.json": "3969f80211c5366ca2e46cea11596c71bb9188b4c2c078e84dc12ba03b261557",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pycqa__docformatter-313--gold.log.service-end.json": "280d987a4455c10a64d06d8c99e9fcdbfb39f95f25468bdd4ce5d34d45822b52",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/pycqa__docformatter-313--gold.log.service-start.json": "41f5230f109cb7ab706202db9831f1674f119963f89b7fbdfe15ec1a48eb01b2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-attrs__attrs-888--empty.log.service-end.json": "444d882d9a5aefbee1fad51c5331c32ddf70d7ec5ddb3e8be51a137ffa24e47d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-attrs__attrs-888--empty.log.service-start.json": "1a441d2b0851f081515027d342d4344874c155bf0455835c622c3f81cba4738d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-attrs__attrs-888--gold.log.service-end.json": "22076526e93d1bb8c95f03a6f83a0da04886eafc0138f711664a5bb334974b34",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-attrs__attrs-888--gold.log.service-start.json": "be1ec8999ca289b89193a6b7932944e5bb9e436f7c6a0fcf1d85998a779b57a3",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-semver__python-semver-264--empty.log.service-end.json": "b451653290b3ca048655af562cc104425460fc14ed10ba48bad88ba2ec134959",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-semver__python-semver-264--empty.log.service-start.json": "c5e036c51bfca33ed57897e2c05ddeac6dc49a40861b2fbbd7671d878b886b4e",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-semver__python-semver-264--gold.log.service-end.json": "6a9d41843f2d2beab8ccbfafc982155c90a31fbb1c93e04b1eaf0a4613cbd0a8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/python-semver__python-semver-264--gold.log.service-start.json": "8f5729c922586aa05b6cf43ee8016babe99c41d4c2767aa6d83d5e831cf5df70",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/tox-dev__pipdeptree-274--empty.log.service-end.json": "fa515a5f7c705d1e74ceec6f3cf91116614cdf6020df20089b713734aa6cf62a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/tox-dev__pipdeptree-274--empty.log.service-start.json": "5382e3b1031badaa739838cd0f253a2d16bb0020b63deb9550d4a6837e967b72",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/tox-dev__pipdeptree-274--gold.log.service-end.json": "1debb7d3d453a970813467d91da534b0c12317644aeee3475b1abcf2a981e0b4",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/tox-dev__pipdeptree-274--gold.log.service-start.json": "baf291222795bba0ce1c0d73b467b21770e627516a10755ad34a86c9b802ea88",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/wtforms__wtforms-694--empty.log.service-end.json": "3a6290da0a92d183e7a3ab4c60f043da3429a685d44f2b92cd2abd3ba102b779",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/wtforms__wtforms-694--empty.log.service-start.json": "55bdcf20b9ae3abb5a0fc56fcfede5b31294a98ea0798ea0bef810add2f86358",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/wtforms__wtforms-694--gold.log.service-end.json": "c636997ffbff83d6cdf970413aea527dd4f19ce6b973943ba2fd538783cf6310",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/services/wtforms__wtforms-694--gold.log.service-start.json": "dd267a9b2dfc31fabd97c481cb294860b46a2ee22778874f7cc757cc7fadc591",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/tox-dev__pipdeptree-274--empty.log": "b35419b16559c8e3949f0f9378fe5ce17fafcff92da374abf30ec2965758ddf4",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/tox-dev__pipdeptree-274--gold.log": "d4335e8b70c8a5bab8ddecb6ba5f20379baec8f7a3f6be2da016308527b2a81c",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/wtforms__wtforms-694--empty.log": "da7bb21df858258ffd21410734004ca1a72df3d094f434fee6a61bbcdc6b7b52",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/wtforms__wtforms-694--gold.log": "9db970cf838ee593da2a62aaa330ed3bda0779c370d7239e6305380d71eec4a1",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/unit-test-report.json": "c6ab39f51b52c078cbf197c0fb96338fb1343ebe7a93e830b51835a4ab59e018"
+  },
+  "finished_utc": "2026-11-09T14:04:36.485107+00:00",
+  "git_fixture_passed": true,
+  "git_fixture_receipt": {
+    "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/unit-test-report.json",
+    "sha256": "c6ab39f51b52c078cbf197c0fb96338fb1343ebe7a93e830b51835a4ab59e018",
+    "tests": 8
+  },
+  "global_oom_check": {
+    "checked_at": 1794233076.4850917,
+    "no_global_oom": true,
+    "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=1874f1;b=6efd82b9fad64f13b49ecaa98348fd0d;m=478b4b9a594;t=65fd8655b057d;x=39e9907abbf6c101"
+  },
+  "gpu": false,
+  "rows": [
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.96242733579129,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty.memory-guard.json.git-setup.json",
+          "sha256": "274f7d7ba95140265edbe83de6c0475db6353367700616123d32e09c8639e2c0"
+        },
+        "gold_patch_sha256": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 52,
+          "errors": [],
+          "failing": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "passed": [],
+          "required": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 371544064,
+          "sha256": "a8ea1fcd52aef803bb11560c62956906fa44fc1164b588b9642aaa9f4f64ecf9"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "mpmath__mpmath-854",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+        "captured_patch_bytes": 493,
+        "captured_patch_sha256": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+        "duration_seconds": 4.125388277694583,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold.memory-guard.json.git-setup.json",
+          "sha256": "bbe0e0c3d3524307f099c43949e0772a3a069066beab4172c75917d0c669b6dc"
+        },
+        "gold_patch_sha256": "a5d56e854af2689e4c446b4f5c696065c5e64d0670e77f386ada1dc9b11bdbb0",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 52,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "passed": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "required": [
+            "mpmath/tests/test_functions.py::test_log1p"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/mpmath__mpmath-854--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 372166656,
+          "sha256": "cc0ea4683970fb2dc489a58a612d6b792611b3f6f68934bb4c49b84adea669f0"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 1,
+            "patch_size": 493,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "mpmath__mpmath-854",
+        "test_exit_code": 0
+      },
+      "task": "mpmath__mpmath-854"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.4216178422793746,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty.memory-guard.json.git-setup.json",
+          "sha256": "46b1a1a7416a7956fdb4e69e56074f8d3cfdc471a06f3b9701879a668529d059"
+        },
+        "gold_patch_sha256": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 214,
+          "errors": [],
+          "failing": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "passed": [],
+          "required": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343949312,
+          "sha256": "2c08ba6db0b8056f8a19c5f2a41d0fbef9afe17a3c37c1f68e802f70c871eecc"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "kayak__pypika-267",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+        "captured_patch_bytes": 3626,
+        "captured_patch_sha256": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+        "duration_seconds": 3.528378621675074,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold.memory-guard.json.git-setup.json",
+          "sha256": "482438562a3a8210a22231f29bca361d6728ec6fbfc040b41f79c7bd54b1eb4c"
+        },
+        "gold_patch_sha256": "072362a9639fec866b53a6d78b10bf8b80d4e3ce944e692fabb415df89f9914f",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 214,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "passed": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "required": [
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_alias_with_chain",
+            "pypika/tests/test_inserts.py::InsertIntoTests::test_insert_column_using_table_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias",
+            "pypika/tests/test_selects.py::SelectTests::test_table_select_alias_with_offset_and_limit",
+            "pypika/tests/test_selects.py::WhereTests::test_where_field_equals",
+            "pypika/tests/test_selects.py::PreWhereTests::test_where_field_equals",
+            "pypika/tests/test_updates.py::UpdateTests::test_update_with_limit"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/kayak__pypika-267--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344043520,
+          "sha256": "9506d49774bfb1967b941d0c0d483b851696b25c3195c8e06a864a5420f514c5"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 3626,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "kayak__pypika-267",
+        "test_exit_code": 0
+      },
+      "task": "kayak__pypika-267"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.387211052700877,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty.memory-guard.json.git-setup.json",
+          "sha256": "7c74e1d2d9e775c345922fc17365947a220ab119f68f45e465f710438783344d"
+        },
+        "gold_patch_sha256": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 276,
+          "errors": [],
+          "failing": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "passed": [],
+          "required": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 342355968,
+          "sha256": "10e998016ad56168c5b0785a6f1f02920ea6e00cbf6e23ebdc7ce6b48faeb08e"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "python-semver__python-semver-264",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+        "captured_patch_bytes": 5762,
+        "captured_patch_sha256": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+        "duration_seconds": 3.55527522880584,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold.memory-guard.json.git-setup.json",
+          "sha256": "36061aced58c504635d9f8f72759fbcd3548726c508e6c0d23845ddfc3c2f74d"
+        },
+        "gold_patch_sha256": "967a8f073f34e68795bbaa0899c95bbb0eca21681de28824963ffd06284ea3c3",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 276,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "passed": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "required": [
+            "test_semver.py::test_should_raise_deprecation_warnings[max_ver-args12-kwargs12]",
+            "test_semver.py::test_should_raise_deprecation_warnings[min_ver-args13-kwargs13]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-semver__python-semver-264--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344276992,
+          "sha256": "8d46932dc019f0ebf90927ea429d507db1b35ad3fb35e5c6632f03601de01138"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 3,
+            "patch_size": 5762,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "python-semver__python-semver-264",
+        "test_exit_code": 0
+      },
+      "task": "python-semver__python-semver-264"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 5.63812976423651,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty.memory-guard.json.git-setup.json",
+          "sha256": "8a49d8fc7f17b2c805c70278e408c725182d5e8283e60d67b8094f9da8ca3522"
+        },
+        "gold_patch_sha256": "6a76ab3a1640e3b44b30f4dd47dbc7f15814b8935917ba1916a9f09c451f11c7",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 43,
+          "errors": [],
+          "failing": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 540815360,
+          "sha256": "defad08bb15b6566cd3da66fd1abb2378e1e8de294d118b80c500b5fd89fbbe0"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "python-attrs__attrs-888",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "bd782904b3ceabcd20a108b0fce2178b7ae217acb366170e0e87e3425296e7c1",
+        "captured_patch_bytes": 6430,
+        "captured_patch_sha256": "bd782904b3ceabcd20a108b0fce2178b7ae217acb366170e0e87e3425296e7c1",
+        "duration_seconds": 5.616924210451543,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold.memory-guard.json.git-setup.json",
+          "sha256": "3eea9acb8831875e0c72c95d81174d0d8b663ee97a99fefa1810162210cd50a6"
+        },
+        "gold_patch_sha256": "6a76ab3a1640e3b44b30f4dd47dbc7f15814b8935917ba1916a9f09c451f11c7",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 43,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "passed": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "required": [
+            "tests/test_funcs.py::TestAsDict::test_tuple_keys"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/python-attrs__attrs-888--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 541495296,
+          "sha256": "9a479e30343adde8a59e66dace836b45d19edd06b539e25a61295a75bc9da205"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 4,
+            "patch_size": 6430,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "python-attrs__attrs-888",
+        "test_exit_code": 0
+      },
+      "task": "python-attrs__attrs-888"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.394490965642035,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty.memory-guard.json.git-setup.json",
+          "sha256": "69c98e4f74de8047c964f1d4af7f5594b01a0448eab99aad2e17bd463e23855c"
+        },
+        "gold_patch_sha256": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 33,
+          "errors": [],
+          "failing": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343261184,
+          "sha256": "5d1a0a73f9c1e4d047a6c13936af8734698f0f0d41d94617e2ded4b3514e863a"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pycqa__docformatter-313",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+        "captured_patch_bytes": 3175,
+        "captured_patch_sha256": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+        "duration_seconds": 3.443278145045042,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold.memory-guard.json.git-setup.json",
+          "sha256": "54ab16b025277d24111f7de3e77adc920a91de44d7828252fa4138b0f43b3d9b"
+        },
+        "gold_patch_sha256": "bc9a42c6a47f7bd3e446921b2d71eb2b4ea02a0e63e58eea9fbad33ab608e433",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 33,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "passed": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "required": [
+            "tests/test_string_functions.py::TestSplitters::test_split_one_sentence_summary",
+            "tests/test_string_functions.py::TestSplitters::test_split_multi_sentence_summary"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pycqa__docformatter-313--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343957504,
+          "sha256": "720b37b235728e0f26513b78e81de430e49e35131c896b2fdb3c9f2e5b87dc34"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 3175,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pycqa__docformatter-313",
+        "test_exit_code": 0
+      },
+      "task": "pycqa__docformatter-313"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 4.302519244141877,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty.memory-guard.json.git-setup.json",
+          "sha256": "185fa4dc51659a0568ee12ec0b70bdf9a61d5fa4e9d99d118b63e71b7ff3e4f2"
+        },
+        "gold_patch_sha256": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 534,
+          "errors": [],
+          "failing": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 354574336,
+          "sha256": "c8260cdeecbf380f6afb51deca754d8cc4f43f69bc6232bff02bda2e89b102de"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "more-itertools__more-itertools-892",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+        "captured_patch_bytes": 1951,
+        "captured_patch_sha256": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+        "duration_seconds": 4.43448397424072,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold.memory-guard.json.git-setup.json",
+          "sha256": "fb0ae41ae1fad459d07db226961e463451df4597129f6eeb27030718495b6b4f"
+        },
+        "gold_patch_sha256": "4b1f485365cc25829ad5d1fe3a38724f52dd2172aa3c1ed65e585159047b17cd",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 534,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "passed": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "required": [
+            "tests/test_more.py::SortTogetherTest::test_strict"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/more-itertools__more-itertools-892--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344801280,
+          "sha256": "1893110b029469fb3381947bf1676153d73bff085a44533d87099d484a3966a3"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 1951,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "more-itertools__more-itertools-892",
+        "test_exit_code": 0
+      },
+      "task": "more-itertools__more-itertools-892"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.3986557498574257,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty.memory-guard.json.git-setup.json",
+          "sha256": "80e77c3b8b530d0ce72e691e5137f7ee5d3682a878ba21cc8011e6b6bcf7288e"
+        },
+        "gold_patch_sha256": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 13,
+          "errors": [],
+          "failing": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "passed": [],
+          "required": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343486464,
+          "sha256": "788c9f44c4461d9162993d1c84be8d6185d4ff0f4b80a61f8ac0ab1c84631d71"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "wtforms__wtforms-694",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+        "captured_patch_bytes": 3366,
+        "captured_patch_sha256": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+        "duration_seconds": 3.5632506795227528,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold.memory-guard.json.git-setup.json",
+          "sha256": "728c9cf14dd253432b88c3fdb43ef7be18fbe4906db836c3ddfb19e57152f6b7"
+        },
+        "gold_patch_sha256": "99a07891d33c2aa2108e50029647ac1850c00fb154dae9b19d4146c6a9739b4e",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 13,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "passed": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "required": [
+            "tests/fields/test_list.py::test_custom_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_list_separator",
+            "tests/fields/test_list.py::test_enclosed_subform_uniform_separators",
+            "tests/fields/test_list.py::test_enclosed_subform_mixed_separators"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/wtforms__wtforms-694--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343289856,
+          "sha256": "6d148d6df10054a4ff3f7f0bdeff5c1d06f57f5fb2bb6b2d28c99d0367d4acc9"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 3,
+            "patch_size": 3366,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "wtforms__wtforms-694",
+        "test_exit_code": 0
+      },
+      "task": "wtforms__wtforms-694"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.441959966905415,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty.memory-guard.json.git-setup.json",
+          "sha256": "574d2384017263821c5af7471e78520b14d280a547577ba1b013e9cd31420c4b"
+        },
+        "gold_patch_sha256": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 81,
+          "errors": [],
+          "failing": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 24,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343097344,
+          "sha256": "26f0c865f555ef0297c22717b5e96dcaeea3a335c230feb3d5d3a2f5045d894b"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "delgan__loguru-1299",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+        "captured_patch_bytes": 4446,
+        "captured_patch_sha256": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+        "duration_seconds": 3.6204930003732443,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold.memory-guard.json.git-setup.json",
+          "sha256": "0f3d58d94719f21c5edf2a0d0014e04c030d728d3c2d0052f7622ceee5dfd1df"
+        },
+        "gold_patch_sha256": "200ee8a6ebc874b72cdfdae31822e9f1e28644f5ecee93bd34e220fd19cc777d",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 81,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "passed": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "required": [
+            "tests/test_colorama.py::test_honor_no_color_standard[__stdout__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[__stderr__-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stdout-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[stderr-False]",
+            "tests/test_colorama.py::test_honor_no_color_standard[-False]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 24,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/delgan__loguru-1299--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344158208,
+          "sha256": "0abe03fb31b7b77a1700588247720ada53c3f0975ffbd551df93ee8df50f8018"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 3,
+            "patch_size": 4446,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "delgan__loguru-1299",
+        "test_exit_code": 0
+      },
+      "task": "delgan__loguru-1299"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.3397910511121154,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty.memory-guard.json.git-setup.json",
+          "sha256": "0a64831a704a99b95fabc32cecbe7b32772757a4df2c507e411840a385eea651"
+        },
+        "gold_patch_sha256": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 9,
+          "errors": [],
+          "failing": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344752128,
+          "sha256": "1f710df5b76ba8d1352d4411c80b077ca0eff9fc847cbadaff502da0b0a42993"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "tox-dev__pipdeptree-274",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+        "captured_patch_bytes": 3796,
+        "captured_patch_sha256": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+        "duration_seconds": 3.4990611569955945,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold.memory-guard.json.git-setup.json",
+          "sha256": "ad4eb450b2b15cfd2dfa31de16f626d6ac1346323e1765e54e6a4e2454123bfb"
+        },
+        "gold_patch_sha256": "a62f96f5f1d975275fc89ccd0f7d0698f4e5e89da474a9518b0769b1bb6e1591",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 9,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "passed": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "required": [
+            "tests/test_validate.py::test_cyclic_deps[depth-greater-than-2]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/tox-dev__pipdeptree-274--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344506368,
+          "sha256": "6becae9d8d31f36c94853eef136f4b5936cba971d2b7fc2df7e4febac383f6a5"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 1,
+            "patch_size": 3796,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "tox-dev__pipdeptree-274",
+        "test_exit_code": 0
+      },
+      "task": "tox-dev__pipdeptree-274"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.375401098281145,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty.memory-guard.json.git-setup.json",
+          "sha256": "80e8820e3e049a2dd1d24d8eb244d5a4190fac01a3acac919456da864266f7a3"
+        },
+        "gold_patch_sha256": "2f3748e8c997385e56f2fe6c918b6b72cc9b00c8db6fcc32ac32229814850f56",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 15,
+          "errors": [],
+          "failing": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "passed": [],
+          "required": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344301568,
+          "sha256": "e5e1a4b89ea2a462d4272d887b1e1d6136d148c3bfebbe2cc269de2eaa7158a6"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pallets__jinja-2033",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "9404c627684f51837c9856c6e8926c25afce0785d2317f52f0362530ff4adc1c",
+        "captured_patch_bytes": 887,
+        "captured_patch_sha256": "9404c627684f51837c9856c6e8926c25afce0785d2317f52f0362530ff4adc1c",
+        "duration_seconds": 3.4561288096010685,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold.memory-guard.json.git-setup.json",
+          "sha256": "5913680676369819ad485404c01da335d97a527a144ee97bbd1f789d87bd9409"
+        },
+        "gold_patch_sha256": "2f3748e8c997385e56f2fe6c918b6b72cc9b00c8db6fcc32ac32229814850f56",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 15,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "passed": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "required": [
+            "tests/test_security.py::TestSandbox::test_immutable_environment"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__jinja-2033--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 344240128,
+          "sha256": "137c7bcde238260a0d05b6265d1ab14590a4171874804cf2b3f41e5774c6f30e"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 887,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pallets__jinja-2033",
+        "test_exit_code": 0
+      },
+      "task": "pallets__jinja-2033"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.4700532434508204,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty.memory-guard.json.git-setup.json",
+          "sha256": "6abd70c94363f7ac5fd3e562eef8272112e1ba52ff8103f05e186632bef503e4"
+        },
+        "gold_patch_sha256": "94f110c315a8d09948a25518076bed308e407106246ee51ebb0d81e8a0bad5e7",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 24,
+          "errors": [],
+          "failing": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "passed": [],
+          "required": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 343519232,
+          "sha256": "78f731526e088f2fb2ec4b4b1231195f47b28216bb6d1fe4fd474618d30e14ec"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pallets__werkzeug-2997",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "70ed65826afbdec0e1b64c45de8dff7777f5d87e8edb3d665cb6fd34c1824589",
+        "captured_patch_bytes": 1431,
+        "captured_patch_sha256": "70ed65826afbdec0e1b64c45de8dff7777f5d87e8edb3d665cb6fd34c1824589",
+        "duration_seconds": 3.5996457152068615,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold.memory-guard.json.git-setup.json",
+          "sha256": "d91698e6ce0837ee82c5c606e942c56e24919e61a10b6ff3efc4f16f9184dcf8"
+        },
+        "gold_patch_sha256": "94f110c315a8d09948a25518076bed308e407106246ee51ebb0d81e8a0bad5e7",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 24,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "passed": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "required": [
+            "tests/sansio/test_utils.py::test_get_host[http-None-server14-[::1]:8080]"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/pallets__werkzeug-2997--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 342704128,
+          "sha256": "a1065a0ae2f3e3eaefb619ea152244a1bda605401eb202b5aec36526d93af649"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 1431,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "pallets__werkzeug-2997",
+        "test_exit_code": 0
+      },
+      "task": "pallets__werkzeug-2997"
+    },
+    {
+      "empty": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": false,
+        "artifact_sha256": null,
+        "captured_patch_bytes": 0,
+        "captured_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "duration_seconds": 3.6896117869764566,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty.memory-guard.json.git-setup.json",
+          "sha256": "32feba24ab1cd3d4f1ccead1dd95b738e9ac20c4d1fc2eb72805556c66e056e5"
+        },
+        "gold_patch_sha256": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 41,
+          "errors": [],
+          "failing": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "passed": [],
+          "required": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "empty",
+        "memory_guard": {
+          "command_count": 27,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--empty.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 347590656,
+          "sha256": "b731770909a5cb3e537f2c26b280261be1b9fda334a2d0e21034d31019167686"
+        },
+        "official_artifact_expected": false,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": false,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 0,
+            "patch_size": 0,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "ipython__traitlets-727",
+        "test_exit_code": 1
+      },
+      "gold": {
+        "agent_error": null,
+        "artifact_equal": true,
+        "artifact_nonempty": true,
+        "artifact_sha256": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+        "captured_patch_bytes": 1727,
+        "captured_patch_sha256": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+        "duration_seconds": 3.8624313166365027,
+        "git_setup": {
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold.memory-guard.json.git-setup.json",
+          "sha256": "f783e5fe21db60ae87f22f50b20c7b308ce48e254c2d38347d7a89ec5a129ad7"
+        },
+        "gold_patch_sha256": "e0238a4a719f3a967b2b9eecfc8860b21b19c52145e380297d01d94979ef9b61",
+        "infrastructure_errors": 0,
+        "junit": {
+          "ambiguous": [],
+          "collected": 41,
+          "errors": [],
+          "failing": [],
+          "junit_error_count": 0,
+          "missing": [],
+          "observed": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "passed": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "required": [
+            "traitlets/config/tests/test_application.py::test_logging_teardown_on_error"
+          ],
+          "skipped": [],
+          "skipped_testcases": 0,
+          "target_tests_verified": true
+        },
+        "kind": "gold",
+        "memory_guard": {
+          "command_count": 32,
+          "oom_command_count": 0,
+          "outer_memory_events_local_after": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "outer_memory_events_local_before": {
+            "high": 0,
+            "low": 0,
+            "max": 0,
+            "oom": 0,
+            "oom_group_kill": 0,
+            "oom_kill": 0,
+            "sock_throttled": 0
+          },
+          "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/evidence/cases/ipython__traitlets-727--gold.memory-guard.json",
+          "recursive_cleanup": true,
+          "service_memory_peak": 348024832,
+          "sha256": "f2190b9b4bc3d940b9fb2aebcb422453113f8e23f7121911831f7b479546b625"
+        },
+        "official_artifact_expected": true,
+        "passed": true,
+        "patch_submitted": true,
+        "resolved": true,
+        "schema": "v070-git-control-case-v1",
+        "scripted_calls": [
+          "run_command",
+          "submit_patch"
+        ],
+        "submit_ok": true,
+        "submit_responses": [
+          {
+            "files_changed": 2,
+            "patch_size": 1727,
+            "status": "ok"
+          }
+        ],
+        "target_tests_verified": true,
+        "task": "ipython__traitlets-727",
+        "test_exit_code": 0
+      },
+      "task": "ipython__traitlets-727"
+    }
+  ],
+  "schema": "v070-git-controls-v1",
+  "source_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/control_case_v070.py": "c22f40a09039129d83a7145a4536769bff9293c6383e2f3e0079ea0662ca738d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/run_controls_v070.py": "0f97c1719aa45af4528e6ff70595e86f1945d5799cfb7e858cee99689c255de2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/git_baseline_v070.py": "b6d21a5483f1c74effbdeace595e284842945c4405b3c662741f743d5723d2c2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/run_guarded_git_v070.py": "c788810937d19f7ecabf49116e8608be3fced4fc1c9eba96ce6cea69aa991040"
+  },
+  "started_utc": "2026-11-09T14:02:07.076500+00:00",
+  "status": "PASS",
+  "tasks": [
+    "mpmath__mpmath-854",
+    "kayak__pypika-267",
+    "python-semver__python-semver-264",
+    "python-attrs__attrs-888",
+    "pycqa__docformatter-313",
+    "more-itertools__more-itertools-892",
+    "wtforms__wtforms-694",
+    "delgan__loguru-1299",
+    "tox-dev__pipdeptree-274",
+    "pallets__jinja-2033",
+    "pallets__werkzeug-2997",
+    "ipython__traitlets-727"
+  ],
+  "wrapper_sha256": "c788810937d19f7ecabf49116e8608be3fced4fc1c9eba96ce6cea69aa991040"
+}

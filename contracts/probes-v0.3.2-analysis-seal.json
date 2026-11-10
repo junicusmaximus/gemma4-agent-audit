@@ -1,0 +1,34 @@
+{
+  "analysis_plan_sha": "f63610c9babf5754183135b84b0a9a09a2d31a5d3e793931394650d7e44df9f9",
+  "created_at_utc": "2026-11-04T10:45:42.637961+00:00",
+  "execution_plan_sha": "d1b13d9873f44f967114c566fff81880c31357c2f6db3d1b811687ac792f2630",
+  "file_pins": {
+    "analysis/mechanism-v032/source-trace-manifest.json": "f6a1138406313e6e27a41d59fc442ca51b0b727230b19fdc3c5568945034c262",
+    "contracts/probes-v0.3.2-analysis-plan.json": "f63610c9babf5754183135b84b0a9a09a2d31a5d3e793931394650d7e44df9f9",
+    "contracts/probes-v0.3.2-plan.json": "d1b13d9873f44f967114c566fff81880c31357c2f6db3d1b811687ac792f2630",
+    "models/gemma-4-e4b-it/chat_template.jinja": "55572b8d3c8342044e25874c73fe5234b661fa0a57a57f6ef75b58e03d7d959a",
+    "models/gemma-4-e4b-it/tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "models/gemma-4-e4b-it/tokenizer_config.json": "97af7f9a43d9c26b4ae9558b39c2d6ffed60b9869f2cf2b9a5282b05c6dac67c",
+    "tools/README-probe-analysis.md": "f4e17942ce56b4c4d907f4492215734d69dce1320255fb269e4f38908ae70d79",
+    "tools/analyze_contract_v02_v025.py": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+    "tools/analyze_mechanism_v031.py": "821f2294661bf8928979d3df7da6c94fd8f662ee2ed17621a8c8dfaa06207478",
+    "tools/analyze_probes_v032.py": "3a9cb907e03d8ec5aff686a9bcd572305504ea217ad37c0d431be47f44df550c",
+    "tools/mechanism_metrics_v032.py": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+    "tools/recover_eval_v025.py": "0d352ff5815408adaf62a76b9c0218c18628ad85a9f653207b5929e48a35d93c",
+    "tools/test_analyze_probes_v032.py": "ad609b957d3dd3c1ae1edea18d7dbdd8d5dcc532cb1a2193883789c18443d81b",
+    "tools/test_wait_probe_analysis_v032.py": "5539e80c2c22f0a06428c6e972bbd2f7bfd5fc332e005c2d2d547b400dfefd6c",
+    "tools/wait_probe_analysis_v032.py": "3a72c9b52a6fb6d0135083a83de8d81877ccc8c9b0b8770a1a88c0b83b7d3bfa"
+  },
+  "interpretation": "Prospective serving interventions motivated by exploration; prior baseline outcomes known; no new probe outcomes inspected before this seal.",
+  "output_dir": "analysis/probes-v032",
+  "parent_controller": {
+    "pid": 2933108,
+    "starttime": "447142571"
+  },
+  "schema_version": 1,
+  "verification": {
+    "analyzer_independent_tests": 26,
+    "review": "analysis_review and gate_code_review approved exact hashes",
+    "waiter_independent_tests": 16
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "FROZEN",
+  "frozen_utc": "2026-11-09T13:03:43.774717+00:00",
+  "amendment": "PROJECT_ROOT/codex/experiments/v070-git-r1/amendment-FROZEN.md",
+  "sha256": "8ca2602bb353e1ab146de875cb00e93787ae48e061a50b1ead523ac525d1b188",
+  "reviewer": "momus /root/v070_git_path_review",
+  "verdict": "OKAY exact draft",
+  "implementation_started": false,
+  "user_execution_owner": "Codex",
+  "independent_verifier": "Claude",
+  "deadline_pin_utc": "2026-11-09T22:00:00Z",
+  "fallback": "B on real-control failure or deadline"
+}

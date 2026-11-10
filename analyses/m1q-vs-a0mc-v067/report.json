@@ -1,0 +1,2035 @@
+{
+  "created_at_utc": "2026-11-07T15:15:16.874877+00:00",
+  "status": "qualified_v067_A_m1q_minus_a0mc_reading",
+  "contract_sha256": "7b434cf024d66eac4322653a5b837a0dd7b996a88444730a67497a8192277682",
+  "analyzer_sha256": "911e4ab9c959baaa2c0c6ff0acbb147a13f2c16873d1232124499bd0488e4e62",
+  "preregistration": {
+    "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-seed2-and-a0mc-branches-v067.md",
+    "sha256": "766c1e45386f93121fd29e8beca7de30526b9bb8f52482644608e49d17ce2b46",
+    "section": "## (A) M1q \u2212 A0mc reading (before the A0mc report is read)"
+  },
+  "labels": {
+    "M0": "v066_A0mc",
+    "M1": "v062_M1qmc"
+  },
+  "sign": "M1 - M0 = v062_M1qmc - v066_A0mc (the unchanged v042 resolution_report takes slot M1 as treated)",
+  "statistic": {
+    "function": "v042 resolution_report with the v025 paired_bootstrap (both unchanged and pinned)",
+    "unit": "resolved from task_results, three decoding seeds per task",
+    "pairing": "by task; seeds grouped as task means; task-level bootstrap",
+    "draws": 20000,
+    "seed": 20261103,
+    "interval": "95% percentile, numpy quantile method linear",
+    "primary": "primary40",
+    "sensitivities": [
+      "all48_sensitivity",
+      "control_clean36_sensitivity"
+    ],
+    "populations_source": "frozen readout 6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909 via v042 validate_populations",
+    "boundary_abs_tolerance_pp": 1e-12
+  },
+  "sentence_rule": "primary40 CI: lower > 0 -> lower_bound_above_zero; upper < 0 -> upper_bound_below_zero; otherwise -> otherwise; bounds within 1e-12 pp of 0 count as 0; exactly one applies; chosen by the CI, never after inspection",
+  "reading_primary40": {
+    "sentence_key": "otherwise",
+    "sentence": "relative to the same-template base the difference is uncertain (10/120 vs 12/120; -1.67 pp [-8.33, +5.00])",
+    "x": 10,
+    "y": 12,
+    "denominator": 120,
+    "d_pp": -1.6666666666666667,
+    "l_pp": -8.333333333333332,
+    "u_pp": 5.0
+  },
+  "populations": {
+    "primary40": {
+      "effect_pp": -1.6666666666666667,
+      "ci95_pp": [
+        -8.333333333333332,
+        5.0
+      ],
+      "seed_effects_pp": [
+        0.0,
+        -2.4999999999999996,
+        -2.4999999999999996
+      ],
+      "task_count": 40,
+      "arms": {
+        "v066_A0mc": {
+          "resolved_by_seed": [
+            4,
+            3,
+            5
+          ],
+          "denominator_per_seed": 40,
+          "three_seed_mean_resolution": 0.1
+        },
+        "v062_M1qmc": {
+          "resolved_by_seed": [
+            4,
+            2,
+            4
+          ],
+          "denominator_per_seed": 40,
+          "three_seed_mean_resolution": 0.08333333333333333
+        }
+      },
+      "per_task": [
+        {
+          "instance_id": "rich_2725",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_2943",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3006",
+          "v066_A0mc": [
+            true,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3043",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3052",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3061",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3063",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3067",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3105",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3180",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3278",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3454",
+          "v066_A0mc": [
+            true,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3468",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3470",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3471",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3472",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3480",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3506",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3518",
+          "v066_A0mc": [
+            true,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3521",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3535",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3675",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3676",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3718",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3772",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3777",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3882",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3894",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3905",
+          "v066_A0mc": [
+            true,
+            true,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3930",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3934",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3935",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3938",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3942",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3944",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3953",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4006",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4075",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4076",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4077",
+          "v066_A0mc": [
+            false,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    "all48_sensitivity": {
+      "effect_pp": -1.388888888888889,
+      "ci95_pp": [
+        -6.944444444444444,
+        4.166666666666666
+      ],
+      "seed_effects_pp": [
+        0.0,
+        -2.0833333333333335,
+        -2.0833333333333344
+      ],
+      "task_count": 48,
+      "arms": {
+        "v066_A0mc": {
+          "resolved_by_seed": [
+            4,
+            3,
+            5
+          ],
+          "denominator_per_seed": 48,
+          "three_seed_mean_resolution": 0.08333333333333333
+        },
+        "v062_M1qmc": {
+          "resolved_by_seed": [
+            4,
+            2,
+            4
+          ],
+          "denominator_per_seed": 48,
+          "three_seed_mean_resolution": 0.06944444444444445
+        }
+      },
+      "per_task": [
+        {
+          "instance_id": "rich_2725",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_2943",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3006",
+          "v066_A0mc": [
+            true,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3043",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3052",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3061",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3063",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3064",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3067",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3105",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3130",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3180",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3278",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3296",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3454",
+          "v066_A0mc": [
+            true,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3468",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3469",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3470",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3471",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3472",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3480",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3486",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3506",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3518",
+          "v066_A0mc": [
+            true,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3521",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3535",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3675",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3676",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3718",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3772",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3777",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3782",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3882",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3894",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3905",
+          "v066_A0mc": [
+            true,
+            true,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3930",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3934",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3935",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3938",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3942",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3944",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3953",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4006",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4070",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4075",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4076",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4077",
+          "v066_A0mc": [
+            false,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4079",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        }
+      ]
+    },
+    "control_clean36_sensitivity": {
+      "effect_pp": -1.8518518518518516,
+      "ci95_pp": [
+        -9.25925925925926,
+        5.555555555555555
+      ],
+      "seed_effects_pp": [
+        0.0,
+        -2.7777777777777777,
+        -2.777777777777779
+      ],
+      "task_count": 36,
+      "arms": {
+        "v066_A0mc": {
+          "resolved_by_seed": [
+            4,
+            3,
+            5
+          ],
+          "denominator_per_seed": 36,
+          "three_seed_mean_resolution": 0.1111111111111111
+        },
+        "v062_M1qmc": {
+          "resolved_by_seed": [
+            4,
+            2,
+            4
+          ],
+          "denominator_per_seed": 36,
+          "three_seed_mean_resolution": 0.09259259259259259
+        }
+      },
+      "per_task": [
+        {
+          "instance_id": "rich_2725",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_2943",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3006",
+          "v066_A0mc": [
+            true,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3043",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3052",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3061",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3063",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3067",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3105",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3180",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3278",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3454",
+          "v066_A0mc": [
+            true,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3468",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3470",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3471",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3472",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3506",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3518",
+          "v066_A0mc": [
+            true,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3521",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3535",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3675",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3676",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3718",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3777",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3882",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3894",
+          "v066_A0mc": [
+            false,
+            false,
+            true
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3905",
+          "v066_A0mc": [
+            true,
+            true,
+            false
+          ],
+          "v062_M1qmc": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "instance_id": "rich_3934",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3935",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3938",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3942",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3944",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_3953",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4075",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4076",
+          "v066_A0mc": [
+            false,
+            false,
+            false
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "instance_id": "rich_4077",
+          "v066_A0mc": [
+            false,
+            true,
+            true
+          ],
+          "v062_M1qmc": [
+            false,
+            false,
+            false
+          ]
+        }
+      ]
+    }
+  },
+  "termination_metrics_descriptive": {
+    "v062_M1qmc_primary40_three_seed_means": {
+      "think": 0.9054079430259293,
+      "loop": 0.775,
+      "submit": 0.5750000000000001,
+      "repro": 0.0,
+      "m5_error": 0.3928414952826232,
+      "m5_error_n": [
+        35,
+        39,
+        35
+      ],
+      "solved_by_seed": [
+        4,
+        2,
+        4
+      ]
+    },
+    "v066_A0mc_by_population": {
+      "primary40": {
+        "per_seed": [
+          {
+            "decoding_seed": 1,
+            "resolved": 4,
+            "denominator": 40,
+            "loop": 0.025,
+            "submit": 1.0,
+            "m5_error": 0.015015015015015015,
+            "m5_error_n": 37,
+            "think": 0.9036736019889278,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 2,
+            "resolved": 3,
+            "denominator": 40,
+            "loop": 0.0,
+            "submit": 1.0,
+            "m5_error": 0.022685185185185183,
+            "m5_error_n": 36,
+            "think": 0.8922874611628482,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 3,
+            "resolved": 5,
+            "denominator": 40,
+            "loop": 0.0,
+            "submit": 1.0,
+            "m5_error": 0.005263157894736842,
+            "m5_error_n": 38,
+            "think": 0.9001641312119253,
+            "repro": 0.0
+          }
+        ],
+        "three_seed_means": {
+          "loop": 0.008333333333333333,
+          "submit": 1.0,
+          "m5_error": 0.014321119364979014,
+          "think": 0.8987083981212338,
+          "repro": 0.0
+        },
+        "pooled_resolved": 12,
+        "pooled_denominator": 120
+      },
+      "all48_sensitivity": {
+        "per_seed": [
+          {
+            "decoding_seed": 1,
+            "resolved": 4,
+            "denominator": 48,
+            "loop": 0.020833333333333332,
+            "submit": 1.0,
+            "m5_error": 0.012626262626262626,
+            "m5_error_n": 44,
+            "think": 0.9051157331389211,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 2,
+            "resolved": 3,
+            "denominator": 48,
+            "loop": 0.020833333333333332,
+            "submit": 1.0,
+            "m5_error": 0.02803030303030303,
+            "m5_error_n": 44,
+            "think": 0.8981509655348665,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 3,
+            "resolved": 5,
+            "denominator": 48,
+            "loop": 0.0,
+            "submit": 1.0,
+            "m5_error": 0.022537878787878787,
+            "m5_error_n": 44,
+            "think": 0.8998738749557963,
+            "repro": 0.0
+          }
+        ],
+        "three_seed_means": {
+          "loop": 0.013888888888888888,
+          "submit": 1.0,
+          "m5_error": 0.021064814814814814,
+          "think": 0.9010468578765279,
+          "repro": 0.0
+        },
+        "pooled_resolved": 12,
+        "pooled_denominator": 144
+      },
+      "control_clean36_sensitivity": {
+        "per_seed": [
+          {
+            "decoding_seed": 1,
+            "resolved": 4,
+            "denominator": 36,
+            "loop": 0.027777777777777776,
+            "submit": 1.0,
+            "m5_error": 0.013468013468013467,
+            "m5_error_n": 33,
+            "think": 0.9015765691491533,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 2,
+            "resolved": 3,
+            "denominator": 36,
+            "loop": 0.0,
+            "submit": 1.0,
+            "m5_error": 0.019270833333333334,
+            "m5_error_n": 32,
+            "think": 0.889549187482624,
+            "repro": 0.0
+          },
+          {
+            "decoding_seed": 3,
+            "resolved": 5,
+            "denominator": 36,
+            "loop": 0.0,
+            "submit": 1.0,
+            "m5_error": 0.0,
+            "m5_error_n": 34,
+            "think": 0.8986688352497176,
+            "repro": 0.0
+          }
+        ],
+        "three_seed_means": {
+          "loop": 0.009259259259259259,
+          "submit": 1.0,
+          "m5_error": 0.010912948933782267,
+          "think": 0.8965981972938316,
+          "repro": 0.0
+        },
+        "pooled_resolved": 12,
+        "pooled_denominator": 108
+      }
+    },
+    "wording": "descriptive only, copied from the sealed reports; no label, threshold or contrast (prereg v067 A reads resolution only)"
+  },
+  "reproduction_check_v062": {
+    "primary40": {
+      "effect_pp": 8.333333333333332,
+      "ci95_pp": [
+        1.6666666666666667,
+        16.666666666666664
+      ],
+      "resolved_by_seed": {
+        "v055_M0qmc": [
+          0,
+          0,
+          0
+        ],
+        "v062_M1qmc": [
+          4,
+          2,
+          4
+        ]
+      }
+    },
+    "all48_sensitivity": {
+      "effect_pp": 6.944444444444444,
+      "ci95_pp": [
+        1.3888888888888888,
+        13.888888888888888
+      ],
+      "resolved_by_seed": {
+        "v055_M0qmc": [
+          0,
+          0,
+          0
+        ],
+        "v062_M1qmc": [
+          4,
+          2,
+          4
+        ]
+      }
+    },
+    "control_clean36_sensitivity": {
+      "effect_pp": 9.25925925925926,
+      "ci95_pp": [
+        2.7777777777777777,
+        18.51851851851852
+      ],
+      "resolved_by_seed": {
+        "v055_M0qmc": [
+          0,
+          0,
+          0
+        ],
+        "v062_M1qmc": [
+          4,
+          2,
+          4
+        ]
+      }
+    }
+  },
+  "qualified_runs": {
+    "v066_A0mc_s1": {
+      "task_results_sha256": "40f6d46d994facbe98c052e643dab96b07bda53b37587cba953995deacd7d4d2",
+      "task_rows": 48
+    },
+    "v066_A0mc_s2": {
+      "task_results_sha256": "4c8a0f38de792888ae55ee4bf9d32d9b877a68030c04d85007209dd5b7107fa4",
+      "task_rows": 48
+    },
+    "v066_A0mc_s3": {
+      "task_results_sha256": "54218092d71b8991093ad1bd9fd3244844d10e8c7a849e5f5ddbba8701a55597",
+      "task_rows": 48
+    },
+    "v062_M1qmc_s1": {
+      "task_results_sha256": "9831aed8e9256b4315d4de33fbd44b4686666a9d51f027d2829e1e3be0cce3ee",
+      "task_rows": 48
+    },
+    "v062_M1qmc_s2": {
+      "task_results_sha256": "890dd5825333dd772015b7b93a85137338d96c53a8ab573ac34f2570bbc725e5",
+      "task_rows": 48
+    },
+    "v062_M1qmc_s3": {
+      "task_results_sha256": "7c88f849fbfe35d55a74ea21a28050e977bc9a28732ae56c475895bf2a63dd36",
+      "task_rows": 48
+    }
+  },
+  "inputs": {
+    "v066_report": {
+      "report.json": "c448ed2e31ff77a93a5b9094dfbd33c08e21d3da1a03de66bf60b6295def5f8e",
+      "report.md": "a1e55adfe9cd6b1e08ef36eca2adbd94e6fb4fed79da96175cd04e5c8b5e5f64",
+      "per_task.jsonl": "72fc58d913a2c0f6258ac3719dabdfc6777cf2896fecb601dd0897e8191465b8"
+    },
+    "v062_report": {
+      "report.json": "70f20fc0055cedbb0a4a0c1e2cc82dd1b3afa2d3430084b83e3cac664713ba1d",
+      "report.md": "e1da790b5880fa841519ab82f43785aab92cd8566e2f8f64e6f239e261838ff3",
+      "per_task.jsonl": "2f991e816fc6ce373c597f2a6431b0ea5bbec82a9f01ef7140924e80deb61927"
+    },
+    "pins": {
+      "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-seed2-and-a0mc-branches-v067.md": "766c1e45386f93121fd29e8beca7de30526b9bb8f52482644608e49d17ce2b46",
+      "PROJECT_ROOT/gemma4/tools/analyze_mask_control_v042.py": "23915fb00c2836b00fe14e3adfeecb865bdf52eb34e1fe3a04c4093cffdaf376",
+      "PROJECT_ROOT/gemma4/tools/analyze_contract_v02_v025.py": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+      "PROJECT_ROOT/gemma4/contracts/mask-control-v035-readout.json": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+      "PROJECT_ROOT/gemma4/tools/run_matched_context_v066.py": "0542edbf7d8e3ee57c605b75e15f0d8bd9a090d9fddd9d37fff7abc0c2f72e8a",
+      "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-runtime-PINNED.json": "0f5e04b257ffe1544633f90fba4e51e377dae82a82f97bb029d1b8c3d49944e5",
+      "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-analysis-PINNED.json": "a070f299535872e3231a079b76b8e17f352e83cf2fc2f1b143795b732ac19a67",
+      "PROJECT_ROOT/gemma4/migration/matched-context-v066/evaluation/completed.json": "fb1bf16f96bbb5002d77e0bda8b4a81a5a9c81a40bdd95b6616e72009f4f7500",
+      "PROJECT_ROOT/gemma4/tools/run_matched_context_v062.py": "621cd9363e0523ed6391705c9329d003213c09f34eb8d3ff3ab78047d059da2b",
+      "PROJECT_ROOT/gemma4/contracts/matched-context-v062-runtime-PINNED.json": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "PROJECT_ROOT/gemma4/contracts/matched-context-v062-analysis-PINNED.json": "91295f7cde58104928f6d72aef9f4124a2d2413323edb9005f007d0d0af27a0f",
+      "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/completed.json": "5a41099813ddf91985ac21bc16de560cf9b49dc7903d3ce6ef595938d9dbb677",
+      "PROJECT_ROOT/gemma4/analysis/matched-context-v062/report.json": "70f20fc0055cedbb0a4a0c1e2cc82dd1b3afa2d3430084b83e3cac664713ba1d",
+      "PROJECT_ROOT/gemma4/analysis/matched-context-v062/per_task.jsonl": "2f991e816fc6ce373c597f2a6431b0ea5bbec82a9f01ef7140924e80deb61927"
+    }
+  },
+  "not_claimed": "prereg v067 Not claimed applies; never written: recovery, partial recovery, closed the gap, masking restores / causes repair, no-collapse"
+}

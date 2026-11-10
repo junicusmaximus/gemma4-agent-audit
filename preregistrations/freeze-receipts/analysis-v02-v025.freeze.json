@@ -1,0 +1,26 @@
+{
+  "analysis_code_sha256": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+  "analysis_test_sha256": "52a176398f0ad7c43b9b6873a23cfb33ba11007f67df825fe5a40990275cb371",
+  "authored_by": "Codex; implementation independently reviewed",
+  "excluded_measurements": [
+    "legacy trained-arm runs",
+    "v021",
+    "v022",
+    "v023",
+    "v024"
+  ],
+  "freeze_sha256": "a7a301b7ec6a8ebfe123767b33ed7a95f0f1192a3425e1e2f8c9efe2ecdb8355",
+  "holdout_resolution_outcomes_inspected_before_seal": false,
+  "method": {
+    "bootstrap": "paired whole-task cluster percentile",
+    "draws": 20000,
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "quantile_method": "linear",
+    "rng": "NumPy Generator(PCG64)",
+    "seed": 20261103
+  },
+  "recovery_manifest_sha256": "0c94d960a693aa67d7a77ec05ff3a53a71c52c7027ab8ffa947a10045f910c77",
+  "recovery_version": "v025",
+  "sealed_at_utc": "2026-11-04T03:32:38.261600+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_git_baseline_v070"
+  ],
+  "completed_utc": "2026-11-09T14:00:49.923864+00:00",
+  "exit_code": 0,
+  "output": "test_actual_submit_captures_tracked_edit_and_new_file (test_git_baseline_v070.BaselineTests.test_actual_submit_captures_tracked_edit_and_new_file) ... ok\ntest_checked_error_has_infrastructure_prefix (test_git_baseline_v070.BaselineTests.test_checked_error_has_infrastructure_prefix) ... ok\ntest_empty_submission_is_successfully_captured_empty (test_git_baseline_v070.BaselineTests.test_empty_submission_is_successfully_captured_empty) ... ok\ntest_guarded_entry_installs_three_aliases_and_preserves_argv (test_git_baseline_v070.BaselineTests.test_guarded_entry_installs_three_aliases_and_preserves_argv) ... ok\ntest_initializes_preexisting_git_info_and_preserves_exclude (test_git_baseline_v070.BaselineTests.test_initializes_preexisting_git_info_and_preserves_exclude) ... ok\ntest_receipt_refuses_overwrite (test_git_baseline_v070.BaselineTests.test_receipt_refuses_overwrite) ... ok\ntest_symlink_git_is_rejected (test_git_baseline_v070.BaselineTests.test_symlink_git_is_rejected) ... ok\ntest_workspace_inside_parent_repository_gets_own_git_root (test_git_baseline_v070.BaselineTests.test_workspace_inside_parent_repository_gets_own_git_root) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.862s\n\nOK\n",
+  "schema": "v070-git-isolated-unit-tests-v1",
+  "source_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/git_baseline_v070.py": "b6d21a5483f1c74effbdeace595e284842945c4405b3c662741f743d5723d2c2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/run_guarded_git_v070.py": "c788810937d19f7ecabf49116e8608be3fced4fc1c9eba96ce6cea69aa991040",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/test_git_baseline_v070.py": "92ba4d65926f299a9d27836d5ece3783de06f4bb395bdaa28c7830aa491c55da"
+  },
+  "tests": 8
+}

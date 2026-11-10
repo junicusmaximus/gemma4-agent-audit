@@ -1,0 +1,287 @@
+{
+  "comparator_check": "M0-slot producer rows must equal the v055 analysis per_task.jsonl rows of v055_M0qmc_s1..s3 (144 rows, 682e3492; the writer fields slot, decoding_seed and trace_view are not part of the producer row)",
+  "descriptive_rows": {
+    "v043_M0_sealed": {
+      "location": "prediction_inputs(populations.primary40).M0",
+      "path": "PROJECT_ROOT/gemma4/analysis/mask-control-v043/report.json",
+      "sha256": "1b8d360b9ec246831deb04b46d8886fc69ca764f3791b229aaffee5e988256c2"
+    },
+    "v043_M1_sealed": {
+      "location": "prediction_inputs(populations.primary40).M1",
+      "path": "PROJECT_ROOT/gemma4/analysis/mask-control-v043/report.json",
+      "sha256": "1b8d360b9ec246831deb04b46d8886fc69ca764f3791b229aaffee5e988256c2"
+    },
+    "v051_M0mc": {
+      "location": "readings.inputs_primary40_three_seed_means.v051_M0mc",
+      "path": "PROJECT_ROOT/gemma4/analysis/matched-context-v051/report.json",
+      "sha256": "ea0743c9c4bf2fce04c99d2f1adb72b8ec3034ef09e7b0c3c43c98e49f48a09f"
+    },
+    "v052_A0cap": {
+      "location": "probe_a.inputs.A0cap",
+      "path": "PROJECT_ROOT/gemma4/analysis/a0-capped-v052/report.json",
+      "sha256": "d5850a7e521634e5a62b9d242d1923808b40b34c80fb2be139df561573eca1fd"
+    }
+  },
+  "descriptives": {
+    "compaction_calls": "audit.trace_items LLM calls; call k (1-based, k >= 2) is a compaction call when call k-1 prompt_tokens >= audit.THRESHOLD (14,336), the audit rule at audit.py:165-166; event availability is not re-evaluated",
+    "content_without_reasoning_calls": "trace-observable proxy for responses without <channel|>: calls that directly follow a tool response of a previous call without visible text (the matched template prefills the opener there) and carry visible text but no non-blank thought; an empty thought followed by text looks the same, and a missing <channel|> with a bare tool call leaves no trace (reasoning None and \"\" both drop), so this count is an upper bound for the visible kind only",
+    "descriptive_rows": "v051 M0mc, sealed v043 M0 and M1 (bf16 base) and A0-capped v052 primary40 three-seed means read from their pinned reports; no re-analysis, no contrast and no 2x2",
+    "scope": "Reported for both slots, all48, per run and per task; descriptive, no threshold",
+    "secondary": "find_opener and repro_script_opener shares (M4), max repeat (M2.max_repeat), M5 silent and normal repeat rates: v042 paired effects on primary40, descriptive only",
+    "think_rate": "v032 producer M1: share of agent steps with a non-blank thinking event, i.e. non-empty returned reasoning"
+  },
+  "evaluation_binding": {
+    "v055": {
+      "runtime": "PROJECT_ROOT/gemma4/contracts/matched-context-v055-runtime-DRAFT.json",
+      "runtime_sha256": "776c7f7b4810437e285003492be9cc6465cc7c54eb7d9ab59a76f2317a9038d7",
+      "source": "PROJECT_ROOT/gemma4/tools/run_matched_context_v055.py",
+      "source_sha256": "a24ebfdb154bc3034934d2df9b2a0123fbd038adaeaa105eba39d8d9340f76dd"
+    },
+    "v062": {
+      "runtime": "PROJECT_ROOT/gemma4/contracts/matched-context-v062-runtime-PINNED.json",
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "source": "PROJECT_ROOT/gemma4/tools/run_matched_context_v062.py",
+      "source_sha256": "621cd9363e0523ed6391705c9329d003213c09f34eb8d3ff3ab78047d059da2b"
+    }
+  },
+  "execution_authorized": false,
+  "generation": "v062",
+  "immutable_statistics_sha256": "23915fb00c2836b00fe14e3adfeecb865bdf52eb34e1fe3a04c4093cffdaf376",
+  "labels": {
+    "M0": "v055_M0qmc",
+    "M1": "v062_M1qmc"
+  },
+  "output": "PROJECT_ROOT/gemma4/analysis/matched-context-v062",
+  "pins": {
+    "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-mask-on-qat-base-v062.md": "36972c9e6d35eb43dc93d3950b179da9d16ae4db956df802242a5821564d0d7e",
+    "PROJECT_ROOT/gemma4/analysis/a0-capped-v052/report.json": "d5850a7e521634e5a62b9d242d1923808b40b34c80fb2be139df561573eca1fd",
+    "PROJECT_ROOT/gemma4/analysis/mask-control-v043/report.json": "1b8d360b9ec246831deb04b46d8886fc69ca764f3791b229aaffee5e988256c2",
+    "PROJECT_ROOT/gemma4/analysis/matched-context-v051/report.json": "ea0743c9c4bf2fce04c99d2f1adb72b8ec3034ef09e7b0c3c43c98e49f48a09f",
+    "PROJECT_ROOT/gemma4/analysis/matched-context-v055/per_task.jsonl": "682e3492b1ff45bb1b48f0bf53b06d96d93dcb9780a1ffd0b8fed624aeb57b1e",
+    "PROJECT_ROOT/gemma4/analysis/matched-context-v055/report.json": "163990653084e14e8feb08c1a04b920222d4900f18f8868cdda06d47966713c4",
+    "PROJECT_ROOT/gemma4/analysis/mechanism-v032/primary40_ids.txt": "c71257437c5c518ab0077f2ee59d61d1b2653a1a4a1ba2ded36f682ccda0cba2",
+    "PROJECT_ROOT/gemma4/analysis/serialization-audit-boss-v046/audit.py": "5d26f4cdc9aafa2e9ffc1f527fd88d1ccd58497770f6b4a626b04ef5078cee98",
+    "PROJECT_ROOT/gemma4/contracts/analysis-v02-v025.freeze.json": "7d55146ff65656920e6db8aef13b1d296f8806be181c98071cf05c400578fd8c",
+    "PROJECT_ROOT/gemma4/contracts/contract-v0.2.freeze.json": "a7a301b7ec6a8ebfe123767b33ed7a95f0f1192a3425e1e2f8c9efe2ecdb8355",
+    "PROJECT_ROOT/gemma4/contracts/mask-control-v035-DRAFT.json": "5e42b4bbb9aff915eebf076fa54a0c9f4beffc8d81653d351aa8430efae50b4b",
+    "PROJECT_ROOT/gemma4/contracts/mask-control-v035-readout.json": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v055-runtime-DRAFT.json": "776c7f7b4810437e285003492be9cc6465cc7c54eb7d9ab59a76f2317a9038d7",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v058-analysis-PINNED.json": "997d44dad19a9defb5abfb7bed5d5ab59aa4ec1cac0b624ddfac54814bb4f5b7",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v062-runtime-PINNED.json": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_2725.tgz": "2d33b1ce82f970b008428c29685c245d1d90fbd98293066040cdb2702b214375",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_2943.tgz": "9b7afcf417a93866ce39ec0feec48e8b2448423f098ec28172171f31dd1e05ad",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3006.tgz": "4e30c3acf40c6efe567b2283154d6145dfefc4a3644bace784f223c9a5607a0f",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3043.tgz": "71edf847e2907fcde33ce124f6d57871448c8b55aba059cda75bad05b7653d2d",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3052.tgz": "2b57a80f5b519b99fbea9f908d961daf14035bd2a8b12bdb9b6191ca3a1dfe47",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3061.tgz": "f32c9ed11538db2bf049314ff7c8f08c01ca23006bbd994c25ad72c2815fe905",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3063.tgz": "fcf1bc1b3e7399bd71c14981d31b776a12ecdd3c3d8312a655e1777eb587d5d7",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3064.tgz": "37d7fbf5d2166d5a4d3aff00637977754a47164184ff0d0cbe0373669d5ae9cc",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3067.tgz": "c0438941340c2920daf0b8f2738752b3d7bac9c70b69ec1e264b95927880f4ae",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3105.tgz": "fab34f4a8432542e57a2137cf3d73aaccedbd560c68d939720e314b4916241be",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3130.tgz": "208ec211fdb8819f192660f95d8476ffb43e4de5c068facc7430664306738536",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3180.tgz": "eebbc8e72764dc3a2301061c1d253644153cc94098e76c3671e02cc7ec26b33d",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3278.tgz": "bda96e09e9e02fa372b2cf6c5f3f2760f97d292fb531cc631564632940d6a453",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3296.tgz": "81aea5d138fc9dde9a2f42d384ef63f8749d1ef3a489423eee38bc4489e87f04",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3454.tgz": "d1e26515fa5256e5489098336a276832fa98a2bb23f3e0191adb384159310cc7",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3468.tgz": "d3463cbf7de5e600c583b7ae4c4e9b69f6a53427e7657b1786503ab329804cd1",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3469.tgz": "7af444ed11ebc55db81bc11da24cf665fb9cc564f41473acc5c3e69d3dcd872b",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3470.tgz": "2ac3da705ea7102f7f942449526ff2ebb69d3c2d2930542fef433a290d8549fe",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3471.tgz": "e5741f04e126767135ac1636f15711565a9a96435882bdf0c70564bda080fb8e",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3472.tgz": "2194fe87cfd71dc168a4216f2763cae5a491caa16d5eb49337802450e7c0fa6e",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3480.tgz": "4641202efd1dc64cd7694fb603e0f7bc663e9fecfebf514679fe56cf7baef407",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3486.tgz": "a051941a18c5843335a2fe9485b8d57400a9f038c1c7b65e479a2e97cd203396",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3506.tgz": "ec550f0173f5672b857b4a65206212152b613d2fb4224ac907c10333cd30e474",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3518.tgz": "5d06230e466c59188b4d99275ea5a0546124e66ac2a050253ebf038dec5ad70d",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3521.tgz": "25c32265f1649c4eef6c0f9c295b3f5d16239d0207edb0e0851fe88b15c5d8fd",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3535.tgz": "56a32aaa56ec7e81487f096ed90716dcc3ddb0ef5b6d0563e643b4ffccbc9dce",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3675.tgz": "7cb07e8147469a56f4233136be8e10df024e102d32e4e351d14882b851b72f70",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3676.tgz": "1b710cece4a652416e4c635872032df7bced8b351222c9f5a19ca7d89ba74641",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3718.tgz": "f66ac24cfee77115da4b15dfad5e5adbab07faedb53a62693bf16b75c2750eb6",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3772.tgz": "a7e6040edc80b172491974ef5c8cb4f0f184faf288e6eb6284ad644a3f5516a6",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3777.tgz": "6df90ba3a5f1339ce74e421e0341138add5ec1d9ec3cc8a1794f72726166cd78",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3782.tgz": "7bf98038a7fc6ea522b38d840c1a0e56b5f528f30fe6565cf52247af9afa97f1",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3882.tgz": "0f5d343dab89018c837a58bc0d472434f2eb8abf4bd95a479461fd2e268103a1",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3894.tgz": "0f5d343dab89018c837a58bc0d472434f2eb8abf4bd95a479461fd2e268103a1",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3905.tgz": "ced2a0bc6fdd8e5b663f7f5cd078b609df2bf3666f8535263f0455f3679fad5f",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3930.tgz": "7318f21ad649f40a8ceb9d1cacabdd367c5407a3b649c3ebba360eb882878773",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3934.tgz": "88616c074a9b3a3063977ac18b09a5bdb2e5d309409f95d56a2e0d8d3ded6cd6",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3935.tgz": "f336a85446dc5eb9b1653d23b2a392f46298694ff195a277263b39b5ae6f6992",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3938.tgz": "a1154948ccf775ec6a33386000904dc25da665b4d4e7857ebac4d55fd7836896",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3942.tgz": "6e70935bd690ef22152b1c34ba2654acd1d6078fc975d7dcf1071e7921816e52",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3944.tgz": "d11cc9819e39a7c9297ef338c3ae4890e62160318cc06cbd4e79e9ce1cde34ee",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_3953.tgz": "de9e398789d57d72cf9a4dfc1f1310eeef7492ffcd0283bf5199717bc75b4d7f",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4006.tgz": "37bd5fef0e5b21a62dfecc64daf4e732dfbf10233467ed5d0f781eed2e493bc4",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4070.tgz": "d98b9e30af5d0b278016d5306a9ae33dc9636e808f90929cc6ab1204f8cd2b2d",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4075.tgz": "ade6cb3881a303e23bb2bd605ed636799101d42ddeba5d655e60f04d5b592fde",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4076.tgz": "ce4e70e99012038bd557bab4f677901f7a5da165f8ea661ad1cc72ebc18f4a58",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4077.tgz": "96aab6cf7a51b313a5e203b27c7bc4c557b044eaa65f0120fe0c27357fa6ed4f",
+    "PROJECT_ROOT/gemma4/data/competition/snapshots/rich_4079.tgz": "37df2d8012d21135955db0e1fa1e27c2b718a4dcd359153e56e4cb69a344fb35",
+    "PROJECT_ROOT/gemma4/data/competition/tasks.jsonl": "e4b3fd60f69dbc2b9213e54eeb9636db78aefe92c1d06269d73d9f5f8f3c8ad6",
+    "PROJECT_ROOT/gemma4/models.yaml": "3f92b253fd1fcbdd46a8d34cb96e6be6069d5aff1a9080a8c3f7543544aaee72",
+    "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct/chat_template.jinja": "33204f1acb5bd0002713e16a593847f24ceeafe711ed88bda2a352dc996a3373",
+    "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct/config.json": "7f0cd2d17bdb0d5adc6db8e7168bb9a9aa68a6c4ad879d80ecf83e6819c893d3",
+    "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct/tokenizer.json": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+    "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct/tokenizer_config.json": "a284d1243b62be31faa9c13e1c28cece940c4abaa7bd9ad87b94f61b40687200",
+    "PROJECT_ROOT/gemma4/results/controls_rich/controls.csv": "80ce920fa672a723c4e3a8cc3de61aa34dc173550ecd756e12a0c83ec845d159",
+    "PROJECT_ROOT/gemma4/run_eval.py": "4182a5516e9c14d97630fc36bcc2e94916988db4661bb502a392f6c7ad5496ef",
+    "PROJECT_ROOT/gemma4/serve_vllm.py": "c4b513cc5bb87d4bc3741623a4bedac41cfca5b8bdf95c0a4743b8f9371d576a",
+    "PROJECT_ROOT/gemma4/sft/data/mask_control_v035/manifest.json": "81606298845fdb1ab9680f0f1778679a3a6ffc6ad73dc49a7798734dbc806d17",
+    "PROJECT_ROOT/gemma4/splits/v1.json": "9c99c412a0e094dca93f6867703e535b3a84c9d4878c5bc867bac8d8b5a59f8d",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1/configs/sampling.yaml": "2df78016a612024ed34c3cc1383ecaf35f2735cafdaa1b8d43495934aa45166c",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1/eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1/prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2/configs/sampling.yaml": "7add435195b430d1debfa7fc9d27d8eec37bd52f75ffa619b0326fdbd9c2c7a6",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2/eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2/prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3/configs/sampling.yaml": "9b29a6e21a8dbc327e551bea9b89219be7e76879d07240f9f62d390578d7c2f8",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3/eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3/prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4",
+    "PROJECT_ROOT/gemma4/tools/analyze_contract_v02_v025.py": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+    "PROJECT_ROOT/gemma4/tools/analyze_mask_control_v042.py": "23915fb00c2836b00fe14e3adfeecb865bdf52eb34e1fe3a04c4093cffdaf376",
+    "PROJECT_ROOT/gemma4/tools/analyze_matched_context_v058.py": "d91935b7735c84f6f5720d10f7cfc2b7bc549473dae5a03384e96198c4c4cdf1",
+    "PROJECT_ROOT/gemma4/tools/analyze_matched_context_v062.py": "78b96b54f3d7f648488ab20cf55260869f20776d26a81b08aedf92d830308843",
+    "PROJECT_ROOT/gemma4/tools/analyze_mechanism_v031.py": "821f2294661bf8928979d3df7da6c94fd8f662ee2ed17621a8c8dfaa06207478",
+    "PROJECT_ROOT/gemma4/tools/mechanism_metrics_v032.py": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+    "PROJECT_ROOT/gemma4/tools/overnight_v02.py": "e48419eef233c08cc0465b219157cdf2b6160e2a2b4080bf057860ce4fb6bf5a",
+    "PROJECT_ROOT/gemma4/tools/recover_eval_v025.py": "0d352ff5815408adaf62a76b9c0218c18628ad85a9f653207b5929e48a35d93c",
+    "PROJECT_ROOT/gemma4/tools/run_matched_context_v055.py": "a24ebfdb154bc3034934d2df9b2a0123fbd038adaeaa105eba39d8d9340f76dd",
+    "PROJECT_ROOT/gemma4/tools/run_matched_context_v062.py": "621cd9363e0523ed6391705c9329d003213c09f34eb8d3ff3ab78047d059da2b",
+    "PROJECT_ROOT/gemma4/tools/test_analyze_contract_v02_v025.py": "52a176398f0ad7c43b9b6873a23cfb33ba11007f67df825fe5a40990275cb371",
+    "PROJECT_ROOT/gemma4/tools/test_analyze_matched_context_v062.py": "37fc377b8f32bb8a0021948c9a8af7e363abeba9b61280ba3500113ce266a33b",
+    "PROJECT_ROOT/gemma4/tools/test_analyze_mechanism_v031.py": "c907da676c6c3116966dcfff4b53010e70f2ba5fa5f521a164afab09d0174a39",
+    "PROJECT_ROOT/gemma4/tools/test_mechanism_metrics_v032.py": "17bea63bbc62c6d31be60f076d62bb3e9fc1994c11730bf44a3d0a33f779ae62"
+  },
+  "populations": [
+    "all48_sensitivity",
+    "control_clean36_sensitivity",
+    "primary40"
+  ],
+  "preregistration": {
+    "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-mask-on-qat-base-v062.md",
+    "readings": "section Readings",
+    "sha256": "36972c9e6d35eb43dc93d3950b179da9d16ae4db956df802242a5821564d0d7e",
+    "verbatim": [
+      "- PK-i rescue: loop \u2264 0.30 AND submit \u2265 0.80.",
+      "- PK-ii null vs M0qmc: |\u0394| \u2264 0.10 on loop, submit and M5-error.",
+      "- Otherwise INTERMEDIATE; direction reported with paired task-bootstrap CIs (1,000 resamples, descriptive).",
+      "- Think rate (descriptive, pre-declared label only): \"thinking re-opened on the matched base\" if the three-seed think rate \u2265 0.50 (v043 M1 on the bf16 base: 0.78; M0q: 0.00).",
+      "- Resolution: notable only if \u2265 4 pooled resolved on primary40; all48 and clean36 as sensitivities. All rows reported; exclusions only by the v055/v058 eligibility rule (runner qualification failure or an error outside normal-outcome markers).",
+      "- If M5-error is undefined for an arm (no error events in its rollouts), M5 is reported as undefined and PK-i/PK-ii are read on loop and submit only (v057 clause carried over)."
+    ]
+  },
+  "producers": {
+    "analyze_mechanism": "821f2294661bf8928979d3df7da6c94fd8f662ee2ed17621a8c8dfaa06207478",
+    "mechanism_metrics": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+    "resolution_bootstrap": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c"
+  },
+  "readout_sha256": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+  "requires": "Qualified v062 completion (all_three_m1qmc_evaluations_qualified) and explicit --run with this manifest sha.",
+  "root": "PROJECT_ROOT/gemma4",
+  "sign": "M1 - M0 = v062_M1qmc - v055_M0qmc (v042 resolution_report and paired_slots take M1 as treated)",
+  "slot_runs": [
+    {
+      "adapter_alias": "v053_M0q_s1",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M0q_v053",
+      "arm": "M0",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1",
+      "decoding_seed": 1,
+      "name": "v055_M0qmc_s1",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s1",
+      "scientific_name": "v053_M0q_s1",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v055_M0qmc_s1",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s1/traces"
+    },
+    {
+      "adapter_alias": "v053_M0q_s2",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M0q_v053",
+      "arm": "M0",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2",
+      "decoding_seed": 2,
+      "name": "v055_M0qmc_s2",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s2",
+      "scientific_name": "v053_M0q_s2",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v055_M0qmc_s2",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s2/traces"
+    },
+    {
+      "adapter_alias": "v053_M0q_s3",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M0q_v053",
+      "arm": "M0",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3",
+      "decoding_seed": 3,
+      "name": "v055_M0qmc_s3",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s3",
+      "scientific_name": "v053_M0q_s3",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v055_M0qmc_s3",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v055_M0qmc_s3/traces"
+    },
+    {
+      "adapter_alias": "v062_M1q_s1",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062",
+      "arm": "M1",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s1",
+      "decoding_seed": 1,
+      "name": "v062_M1qmc_s1",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s1",
+      "scientific_name": "v062_M1q_s1",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v062_M1qmc_s1",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s1/traces"
+    },
+    {
+      "adapter_alias": "v062_M1q_s2",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062",
+      "arm": "M1",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s2",
+      "decoding_seed": 2,
+      "name": "v062_M1qmc_s2",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s2",
+      "scientific_name": "v062_M1q_s2",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v062_M1qmc_s2",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s2/traces"
+    },
+    {
+      "adapter_alias": "v062_M1q_s3",
+      "adapter_source": "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062",
+      "arm": "M1",
+      "baseline_config": "PROJECT_ROOT/gemma4/subs/e4b_budgetfit_s3",
+      "decoding_seed": 3,
+      "name": "v062_M1qmc_s3",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s3",
+      "scientific_name": "v062_M1q_s3",
+      "submission_dir": "PROJECT_ROOT/gemma4/subs/v062_M1qmc_s3",
+      "temperature": 0.2,
+      "trace_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s3/traces"
+    }
+  ],
+  "slots": {
+    "M0": "v055_M0qmc_s1..s3: comparator, the M0q adapter under the matched template 855bbbbb (v055 generation)",
+    "M1": "v062_M1qmc_s1..s3: the M1q adapter (mask-control M1 recipe on the dequantized QAT base), same matched template (v062 generation)"
+  },
+  "status": "PREPARED_NOT_ACTIVATED",
+  "thresholds": {
+    "PK-i": {
+      "loop_max": 0.3,
+      "submit_min": 0.8
+    },
+    "PK-ii": {
+      "abs_delta_max": 0.1,
+      "metrics": [
+        "loop",
+        "submit",
+        "m5_error"
+      ]
+    },
+    "boundary_abs_tolerance": 1e-12,
+    "resolution_notable_min_pooled_primary40": 4,
+    "think_label_min": 0.5
+  },
+  "version": "v062-matched-context-m1q-analysis"
+}

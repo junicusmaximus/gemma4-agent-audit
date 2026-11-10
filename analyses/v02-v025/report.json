@@ -1,0 +1,4541 @@
+{
+  "contract_id": "gemma4-v0.2",
+  "created_at_utc": "2026-11-04T07:28:09.651865+00:00",
+  "limitations": [
+    "Conditional on one public repository and fixed task population.",
+    "One training run per trained arm; decoding seeds do not measure training-seed robustness.",
+    "A1-A0 estimates the implemented distillation pipeline, without causal mechanism isolation.",
+    "A2 comparisons and all secondary metrics are exploratory; no multiplicity-free claims.",
+    "Team-wide outcome blinding is not independently established."
+  ],
+  "method": {
+    "bootstrap": "paired whole-task cluster percentile",
+    "draws": 20000,
+    "error_rule": "False+error is unresolved; True+error is rejected",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "quantile_method": "linear",
+    "rng": "NumPy Generator(PCG64)",
+    "seed": 20261103,
+    "union": "Best-of-three union is descriptive; it is not pass@1."
+  },
+  "per_task": {
+    "rich_2725": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 409,
+          "duration_seconds": 68.35,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 522,
+          "duration_seconds": 83.58,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 17,
+          "total_llm_calls": 19
+        },
+        "3": {
+          "agent_patch_size": 842,
+          "duration_seconds": 29.98,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 8
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 2703,
+          "duration_seconds": 242.59,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 51
+        },
+        "2": {
+          "agent_patch_size": 1131,
+          "duration_seconds": 166.43,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 236.98,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 178.19,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 159.3,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 2677,
+          "duration_seconds": 242.57,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 73
+        }
+      }
+    },
+    "rich_2943": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1880,
+          "duration_seconds": 79.52,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 17,
+          "total_llm_calls": 19
+        },
+        "2": {
+          "agent_patch_size": 589,
+          "duration_seconds": 54.8,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "3": {
+          "agent_patch_size": 1121,
+          "duration_seconds": 69.19,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.22,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.17,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 2040,
+          "duration_seconds": 236.28,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 110.29,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.92,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 119.11,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3006": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 558,
+          "duration_seconds": 13.99,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 558,
+          "duration_seconds": 18.05,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 558,
+          "duration_seconds": 16.83,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1323,
+          "duration_seconds": 242.55,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 65
+        },
+        "2": {
+          "agent_patch_size": 3774,
+          "duration_seconds": 242.51,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 20
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 237.87,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.15,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.32,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3043": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 94.9,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 23
+        },
+        "2": {
+          "agent_patch_size": 721,
+          "duration_seconds": 54.95,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "3": {
+          "agent_patch_size": 358,
+          "duration_seconds": 63.27,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 16
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1597,
+          "duration_seconds": 242.62,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 1821,
+          "duration_seconds": 230.34,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 2188,
+          "duration_seconds": 231.11,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 2156,
+          "duration_seconds": 203.45,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.09,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.42,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3052": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 2456,
+          "duration_seconds": 46.77,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 8
+        },
+        "2": {
+          "agent_patch_size": 981,
+          "duration_seconds": 73.31,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 8
+        },
+        "3": {
+          "agent_patch_size": 1853,
+          "duration_seconds": 26.5,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 3,
+          "total_llm_calls": 5
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 2521,
+          "duration_seconds": 242.63,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 3247,
+          "duration_seconds": 242.57,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 66
+        },
+        "3": {
+          "agent_patch_size": 4461,
+          "duration_seconds": 242.64,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 24,
+          "total_llm_calls": 25
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 2658,
+          "duration_seconds": 242.51,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 76
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 43.08,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 3798,
+          "duration_seconds": 168.04,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3061": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1316,
+          "duration_seconds": 184.18,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 23
+        },
+        "2": {
+          "agent_patch_size": 720,
+          "duration_seconds": 91.63,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 21,
+          "total_llm_calls": 23
+        },
+        "3": {
+          "agent_patch_size": 2048,
+          "duration_seconds": 47.9,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1802,
+          "duration_seconds": 242.66,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 1291,
+          "duration_seconds": 193.76,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 33
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1607,
+          "duration_seconds": 203.79,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 37.55,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 3582,
+          "duration_seconds": 242.61,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 58
+        }
+      }
+    },
+    "rich_3063": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 474,
+          "duration_seconds": 28.32,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 503,
+          "duration_seconds": 55.92,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        },
+        "3": {
+          "agent_patch_size": 8812,
+          "duration_seconds": 73.71,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1567,
+          "duration_seconds": 229.03,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 32
+        },
+        "2": {
+          "agent_patch_size": 2636,
+          "duration_seconds": 242.51,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 58
+        },
+        "3": {
+          "agent_patch_size": 905,
+          "duration_seconds": 234.7,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 238.24,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.34,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 52.11,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3064": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 893,
+          "duration_seconds": 53.33,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        },
+        "2": {
+          "agent_patch_size": 496,
+          "duration_seconds": 50.76,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "3": {
+          "agent_patch_size": 3499,
+          "duration_seconds": 66.13,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1330,
+          "duration_seconds": 196.06,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 37
+        },
+        "2": {
+          "agent_patch_size": 1484,
+          "duration_seconds": 214.81,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 49
+        },
+        "3": {
+          "agent_patch_size": 1592,
+          "duration_seconds": 242.61,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 7
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 204.87,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.54,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 51.4,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3067": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 438,
+          "duration_seconds": 43.26,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        },
+        "2": {
+          "agent_patch_size": 500,
+          "duration_seconds": 76.14,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 17
+        },
+        "3": {
+          "agent_patch_size": 22991,
+          "duration_seconds": 76.85,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 17,
+          "total_llm_calls": 19
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 766,
+          "duration_seconds": 242.56,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 11
+        },
+        "2": {
+          "agent_patch_size": 874,
+          "duration_seconds": 242.58,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 1219,
+          "duration_seconds": 178.38,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 2005,
+          "duration_seconds": 242.56,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.01,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 967,
+          "duration_seconds": 174.4,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3105": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 426,
+          "duration_seconds": 34.76,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "2": {
+          "agent_patch_size": 312,
+          "duration_seconds": 25.94,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "3": {
+          "agent_patch_size": 376,
+          "duration_seconds": 32.47,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 5268,
+          "duration_seconds": 210.08,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 31
+        },
+        "3": {
+          "agent_patch_size": 1388,
+          "duration_seconds": 190.21,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 233.9,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 116.6,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 62.47,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3130": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 448,
+          "duration_seconds": 63.3,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 18
+        },
+        "2": {
+          "agent_patch_size": 470,
+          "duration_seconds": 36.4,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 9
+        },
+        "3": {
+          "agent_patch_size": 1732,
+          "duration_seconds": 161.73,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 22
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 237.51,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 1520,
+          "duration_seconds": 208.42,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 2054,
+          "duration_seconds": 242.59,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 49
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 239.65,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 148.02,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 2648,
+          "duration_seconds": 205.87,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3180": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 636,
+          "duration_seconds": 41.7,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 495,
+          "duration_seconds": 38.86,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 8
+        },
+        "3": {
+          "agent_patch_size": 659,
+          "duration_seconds": 52.92,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 3907,
+          "duration_seconds": 242.65,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 22,
+          "total_llm_calls": 24
+        },
+        "3": {
+          "agent_patch_size": 1632,
+          "duration_seconds": 196.21,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 113.09,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 43.7,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1930,
+          "duration_seconds": 205.25,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3278": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 537,
+          "duration_seconds": 43.97,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 11
+        },
+        "2": {
+          "agent_patch_size": 320,
+          "duration_seconds": 28.89,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 522,
+          "duration_seconds": 29.07,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.16,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.16,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.16,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 2
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 150.75,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.79,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.26,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3296": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 3836,
+          "duration_seconds": 161.36,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 17
+        },
+        "2": {
+          "agent_patch_size": 599,
+          "duration_seconds": 37.29,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 907,
+          "duration_seconds": 22.04,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1021,
+          "duration_seconds": 175.47,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 233.99,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 2195,
+          "duration_seconds": 195.03,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 116.61,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 169.44,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1772,
+          "duration_seconds": 178.88,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3454": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 9219,
+          "duration_seconds": 84.64,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 20
+        },
+        "2": {
+          "agent_patch_size": 674,
+          "duration_seconds": 69.05,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 9,
+          "total_llm_calls": 12
+        },
+        "3": {
+          "agent_patch_size": 657,
+          "duration_seconds": 40.21,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 7,
+          "total_llm_calls": 10
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1586,
+          "duration_seconds": 242.71,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 57
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1126,
+          "duration_seconds": 178.8,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 2,
+          "total_llm_calls": 5
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 194.35,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 239.41,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      }
+    },
+    "rich_3468": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1836,
+          "duration_seconds": 54.48,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 20
+        },
+        "2": {
+          "agent_patch_size": 3296,
+          "duration_seconds": 48.32,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "3": {
+          "agent_patch_size": 623,
+          "duration_seconds": 43.81,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 2229,
+          "duration_seconds": 242.81,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 79
+        },
+        "2": {
+          "agent_patch_size": 1584,
+          "duration_seconds": 167.66,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.09,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 59
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.99,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 90.35,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 31
+        }
+      }
+    },
+    "rich_3469": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 524,
+          "duration_seconds": 30.73,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 524,
+          "duration_seconds": 21.58,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 1492,
+          "duration_seconds": 41.8,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 11643,
+          "duration_seconds": 242.98,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 9
+        },
+        "2": {
+          "agent_patch_size": 1003,
+          "duration_seconds": 157.04,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 4292,
+          "duration_seconds": 232.07,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 2626,
+          "duration_seconds": 211.28,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.97,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.98,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3470": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 355,
+          "duration_seconds": 25.6,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 514,
+          "duration_seconds": 36.59,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 9,
+          "total_llm_calls": 11
+        },
+        "3": {
+          "agent_patch_size": 1010,
+          "duration_seconds": 51.59,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 17
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.21,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 1118,
+          "duration_seconds": 147.62,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1005,
+          "duration_seconds": 167.58,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1354,
+          "duration_seconds": 242.83,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 9
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 56.08,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 50.9,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3471": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 488,
+          "duration_seconds": 20.81,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 556,
+          "duration_seconds": 17.66,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 486,
+          "duration_seconds": 33.97,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1616,
+          "duration_seconds": 242.88,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 16,
+          "total_llm_calls": 18
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1615,
+          "duration_seconds": 242.78,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 9
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 224.49,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.59,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.09,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 69
+        }
+      }
+    },
+    "rich_3472": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 488,
+          "duration_seconds": 37.34,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        },
+        "2": {
+          "agent_patch_size": 402,
+          "duration_seconds": 43.74,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "3": {
+          "agent_patch_size": 485,
+          "duration_seconds": 34.15,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 236.11,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1586,
+          "duration_seconds": 193.82,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 231.58,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.4,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1261,
+          "duration_seconds": 242.58,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 56
+        }
+      }
+    },
+    "rich_3480": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1054,
+          "duration_seconds": 356.95,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 380.94,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 16
+        },
+        "3": {
+          "agent_patch_size": 1175,
+          "duration_seconds": 347.29,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 890,
+          "duration_seconds": 538.66,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 3407,
+          "duration_seconds": 490.18,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 909,
+          "duration_seconds": 452.94,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 54
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 39.71,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 48.1,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3486": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 354,
+          "duration_seconds": 150.05,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 19
+        },
+        "2": {
+          "agent_patch_size": 489,
+          "duration_seconds": 39.4,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        },
+        "3": {
+          "agent_patch_size": 1057,
+          "duration_seconds": 37.28,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1724,
+          "duration_seconds": 242.8,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 13179,
+          "duration_seconds": 206.86,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 4460,
+          "duration_seconds": 214.53,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 176.58,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 54
+        }
+      }
+    },
+    "rich_3506": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 2814,
+          "duration_seconds": 38.88,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 2,
+          "total_llm_calls": 4
+        },
+        "2": {
+          "agent_patch_size": 2131,
+          "duration_seconds": 45.65,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 1469,
+          "duration_seconds": 42.43,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 3107,
+          "duration_seconds": 162.04,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 1955,
+          "duration_seconds": 200.46,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1692,
+          "duration_seconds": 184.14,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 5650,
+          "duration_seconds": 240.36,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 895,
+          "duration_seconds": 242.55,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 9,
+          "total_llm_calls": 10
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 36.39,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3518": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 436,
+          "duration_seconds": 35.81,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 103.15,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 23
+        },
+        "3": {
+          "agent_patch_size": 523,
+          "duration_seconds": 39.7,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1534,
+          "duration_seconds": 242.57,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 42
+        },
+        "2": {
+          "agent_patch_size": 1474,
+          "duration_seconds": 242.58,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 41
+        },
+        "3": {
+          "agent_patch_size": 1916,
+          "duration_seconds": 193.88,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.97,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 2082,
+          "duration_seconds": 242.56,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 79
+        }
+      }
+    },
+    "rich_3521": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 26589,
+          "duration_seconds": 92.92,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        },
+        "2": {
+          "agent_patch_size": 2284,
+          "duration_seconds": 36.65,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 22239,
+          "duration_seconds": 84.13,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 197.57,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 38
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.45,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.85,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3535": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 826,
+          "duration_seconds": 65.75,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 15
+        },
+        "2": {
+          "agent_patch_size": 432,
+          "duration_seconds": 47.29,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        },
+        "3": {
+          "agent_patch_size": 459,
+          "duration_seconds": 52.37,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1850,
+          "duration_seconds": 242.54,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 47
+        },
+        "2": {
+          "agent_patch_size": 1243,
+          "duration_seconds": 242.55,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 69
+        },
+        "3": {
+          "agent_patch_size": 1773,
+          "duration_seconds": 232.88,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 234.56,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.54,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.09,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      }
+    },
+    "rich_3675": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1302,
+          "duration_seconds": 74.89,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 21
+        },
+        "2": {
+          "agent_patch_size": 1351,
+          "duration_seconds": 71.93,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 16,
+          "total_llm_calls": 18
+        },
+        "3": {
+          "agent_patch_size": 617,
+          "duration_seconds": 68.05,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 21,
+          "total_llm_calls": 23
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 2373,
+          "duration_seconds": 242.83,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.11,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1281,
+          "duration_seconds": 164.08,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 1248,
+          "duration_seconds": 242.79,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 40
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 34.09,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3676": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 434,
+          "duration_seconds": 30.47,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 8
+        },
+        "2": {
+          "agent_patch_size": 462,
+          "duration_seconds": 24.46,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 482,
+          "duration_seconds": 47.36,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1553,
+          "duration_seconds": 200.49,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 3049,
+          "duration_seconds": 242.78,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 5
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.11,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 164.38,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 45.95,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1183,
+          "duration_seconds": 178.1,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3718": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 448,
+          "duration_seconds": 45.97,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 772,
+          "duration_seconds": 40.02,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 448,
+          "duration_seconds": 27.32,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1183,
+          "duration_seconds": 197.61,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 2606,
+          "duration_seconds": 228.42,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 237.43,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.13,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 64.55,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3772": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1799,
+          "duration_seconds": 340.34,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        },
+        "2": {
+          "agent_patch_size": 1137,
+          "duration_seconds": 387.08,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 17,
+          "total_llm_calls": 19
+        },
+        "3": {
+          "agent_patch_size": 1275,
+          "duration_seconds": 100.27,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 22,
+          "total_llm_calls": 24
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 1,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 239.08,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.23,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 41.23,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3777": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1565,
+          "duration_seconds": 27.84,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 884,
+          "duration_seconds": 31.77,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 961,
+          "duration_seconds": 63.82,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 3663,
+          "duration_seconds": 169.88,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1353,
+          "duration_seconds": 186.42,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 231.79,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.4,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 89.54,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 31
+        }
+      }
+    },
+    "rich_3782": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 594,
+          "duration_seconds": 42.91,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        },
+        "2": {
+          "agent_patch_size": 531,
+          "duration_seconds": 58.44,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "3": {
+          "agent_patch_size": 588,
+          "duration_seconds": 47.92,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 1992,
+          "duration_seconds": 176.2,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 4000,
+          "duration_seconds": 153.27,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1992,
+          "duration_seconds": 242.72,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 76
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 237.02,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.26,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3882": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 13249,
+          "duration_seconds": 66.75,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 20
+        },
+        "2": {
+          "agent_patch_size": 572,
+          "duration_seconds": 52.6,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        },
+        "3": {
+          "agent_patch_size": 738,
+          "duration_seconds": 25.08,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.15,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1995,
+          "duration_seconds": 242.53,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 72
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 3284,
+          "duration_seconds": 242.57,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 45.46,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.11,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      }
+    },
+    "rich_3894": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 698,
+          "duration_seconds": 19.0,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 803,
+          "duration_seconds": 23.09,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 748,
+          "duration_seconds": 23.16,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1595,
+          "duration_seconds": 227.35,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 38
+        },
+        "2": {
+          "agent_patch_size": 2588,
+          "duration_seconds": 242.61,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 61
+        },
+        "3": {
+          "agent_patch_size": 1124,
+          "duration_seconds": 242.59,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1351,
+          "duration_seconds": 242.61,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 32
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 45.68,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1624,
+          "duration_seconds": 242.57,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 62
+        }
+      }
+    },
+    "rich_3905": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 521,
+          "duration_seconds": 29.26,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 451,
+          "duration_seconds": 35.15,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 8,
+          "total_llm_calls": 10
+        },
+        "3": {
+          "agent_patch_size": 543,
+          "duration_seconds": 48.04,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 65.67,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 15680,
+          "duration_seconds": 242.91,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 33
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 232.89,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 162.57,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 169.84,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 61.22,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3930": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 1683,
+          "duration_seconds": 51.59,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "2": {
+          "agent_patch_size": 22443,
+          "duration_seconds": 102.13,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        },
+        "3": {
+          "agent_patch_size": 3854,
+          "duration_seconds": 79.3,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 3507,
+          "duration_seconds": 177.0,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.09,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 191.23,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 43.87,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.12,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3934": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 11191,
+          "duration_seconds": 69.11,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 17
+        },
+        "2": {
+          "agent_patch_size": 475,
+          "duration_seconds": 28.96,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "3": {
+          "agent_patch_size": 678,
+          "duration_seconds": 105.73,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 17,
+          "total_llm_calls": 19
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1847,
+          "duration_seconds": 244.62,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 895,
+          "duration_seconds": 148.5,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 2781,
+          "duration_seconds": 175.1,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.34,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.11,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      }
+    },
+    "rich_3935": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 972,
+          "duration_seconds": 39.8,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "2": {
+          "agent_patch_size": 557,
+          "duration_seconds": 45.48,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        },
+        "3": {
+          "agent_patch_size": 1046,
+          "duration_seconds": 29.65,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 6
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1944,
+          "duration_seconds": 242.6,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 63
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 1381,
+          "duration_seconds": 242.55,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 79
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 148.75,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.18,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 35.31,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3938": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 982,
+          "duration_seconds": 30.03,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 1487,
+          "duration_seconds": 73.85,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 16,
+          "total_llm_calls": 18
+        },
+        "3": {
+          "agent_patch_size": 1131,
+          "duration_seconds": 76.4,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 20
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.15,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 4784,
+          "duration_seconds": 242.72,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 8
+        },
+        "3": {
+          "agent_patch_size": 1438,
+          "duration_seconds": 242.71,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 6
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.32,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.1,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 51
+        }
+      }
+    },
+    "rich_3942": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 2566,
+          "duration_seconds": 52.55,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 8
+        },
+        "2": {
+          "agent_patch_size": 756,
+          "duration_seconds": 17.5,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 3,
+          "total_llm_calls": 5
+        },
+        "3": {
+          "agent_patch_size": 1380,
+          "duration_seconds": 24.86,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 7
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 240.91,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 792,
+          "duration_seconds": 128.76,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.12,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 234.63,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 44.09,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.34,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_3944": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 463,
+          "duration_seconds": 40.91,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 14
+        },
+        "2": {
+          "agent_patch_size": 1973,
+          "duration_seconds": 71.35,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 20
+        },
+        "3": {
+          "agent_patch_size": 3342,
+          "duration_seconds": 36.03,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 225.34,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "2": {
+          "agent_patch_size": 929,
+          "duration_seconds": 170.07,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1579,
+          "duration_seconds": 162.81,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.14,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 42.61,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.11,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      }
+    },
+    "rich_3953": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 543,
+          "duration_seconds": 40.04,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        },
+        "2": {
+          "agent_patch_size": 539,
+          "duration_seconds": 60.91,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 11,
+          "total_llm_calls": 13
+        },
+        "3": {
+          "agent_patch_size": 444,
+          "duration_seconds": 24.32,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 12
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 3084,
+          "duration_seconds": 156.46,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 3869,
+          "duration_seconds": 242.63,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 32
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 232.83,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1054,
+          "duration_seconds": 212.66,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 239.78,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.02,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4006": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 440,
+          "duration_seconds": 335.35,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        },
+        "2": {
+          "agent_patch_size": 485,
+          "duration_seconds": 350.89,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 18,
+          "total_llm_calls": 20
+        },
+        "3": {
+          "agent_patch_size": 485,
+          "duration_seconds": 332.79,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 2053,
+          "duration_seconds": 468.77,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 924,
+          "duration_seconds": 535.92,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 945,
+          "duration_seconds": 542.27,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 8
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 2,
+          "total_llm_calls": 5
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 43.4,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.75,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4070": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 5036,
+          "duration_seconds": 93.84,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 21,
+          "total_llm_calls": 23
+        },
+        "2": {
+          "agent_patch_size": 3498,
+          "duration_seconds": 109.2,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 24,
+          "total_llm_calls": 26
+        },
+        "3": {
+          "agent_patch_size": 3020,
+          "duration_seconds": 118.08,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 24,
+          "total_llm_calls": 26
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 128.57,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 47
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 118.45,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 39
+        },
+        "3": {
+          "agent_patch_size": 1775,
+          "duration_seconds": 89.88,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1576,
+          "duration_seconds": 168.47,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 158.5,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 1052,
+          "duration_seconds": 60.18,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4075": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 21.94,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 4,
+          "total_llm_calls": 8
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 21.48,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 5,
+          "total_llm_calls": 8
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 24.19,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1026,
+          "duration_seconds": 197.19,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 241.13,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 825,
+          "duration_seconds": 242.82,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 12,
+          "total_llm_calls": 13
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1214,
+          "duration_seconds": 147.65,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 43.39,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 56.87,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4076": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 66.71,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 21
+        },
+        "2": {
+          "agent_patch_size": 518,
+          "duration_seconds": 69.86,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 18
+        },
+        "3": {
+          "agent_patch_size": 725,
+          "duration_seconds": 46.05,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1288,
+          "duration_seconds": 243.04,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 15,
+          "total_llm_calls": 16
+        },
+        "2": {
+          "agent_patch_size": 1087,
+          "duration_seconds": 243.18,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 10,
+          "total_llm_calls": 11
+        },
+        "3": {
+          "agent_patch_size": 7354,
+          "duration_seconds": 242.92,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 64
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 1387,
+          "duration_seconds": 113.5,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.31,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 55.61,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4077": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 396,
+          "duration_seconds": 27.86,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 9,
+          "total_llm_calls": 11
+        },
+        "2": {
+          "agent_patch_size": 324,
+          "duration_seconds": 13.61,
+          "error": null,
+          "resolved": true,
+          "tool_calls": 2,
+          "total_llm_calls": 4
+        },
+        "3": {
+          "agent_patch_size": 585,
+          "duration_seconds": 34.91,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 7,
+          "total_llm_calls": 9
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1358,
+          "duration_seconds": 243.02,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 6,
+          "total_llm_calls": 7
+        },
+        "2": {
+          "agent_patch_size": 5328,
+          "duration_seconds": 227.92,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 236.39,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 68.25,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 40.8,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 49.79,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      }
+    },
+    "rich_4079": {
+      "A0": {
+        "1": {
+          "agent_patch_size": 41251,
+          "duration_seconds": 86.28,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 19,
+          "total_llm_calls": 21
+        },
+        "2": {
+          "agent_patch_size": 611,
+          "duration_seconds": 61.2,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 13,
+          "total_llm_calls": 15
+        },
+        "3": {
+          "agent_patch_size": 414,
+          "duration_seconds": 68.15,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 20,
+          "total_llm_calls": 22
+        }
+      },
+      "A1": {
+        "1": {
+          "agent_patch_size": 1263,
+          "duration_seconds": 243.08,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 9,
+          "total_llm_calls": 10
+        },
+        "2": {
+          "agent_patch_size": 2614,
+          "duration_seconds": 243.22,
+          "error": "Agent exceeded session timeout (4.0 min)",
+          "resolved": false,
+          "tool_calls": 3,
+          "total_llm_calls": 4
+        },
+        "3": {
+          "agent_patch_size": 993,
+          "duration_seconds": 159.64,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        }
+      },
+      "A2": {
+        "1": {
+          "agent_patch_size": 0,
+          "duration_seconds": 136.23,
+          "error": "Agent exceeded turns budget (80 turns)",
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 80
+        },
+        "2": {
+          "agent_patch_size": 0,
+          "duration_seconds": 232.18,
+          "error": "Sandbox execution error: litellm.ContextWindowExceededError: litellm.BadRequestError: ContextWindowExceededError: OpenAIException - This model's maximum context length is 32768 tokens. However, you requested 8192 output tokens and your prompt contains at least 24577 input tokens, for a total of at least 32769 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=24577) LiteLLM Retried: 5 times",
+          "resolved": false,
+          "tool_calls": 0,
+          "total_llm_calls": 3
+        },
+        "3": {
+          "agent_patch_size": 0,
+          "duration_seconds": 90.77,
+          "error": null,
+          "resolved": false,
+          "tool_calls": 28,
+          "total_llm_calls": 31
+        }
+      }
+    }
+  },
+  "populations": {
+    "primary40": {
+      "arms": {
+        "A0": {
+          "best_of_three_union_solved": [
+            "rich_3006",
+            "rich_3454",
+            "rich_3905",
+            "rich_4077"
+          ],
+          "majority_solved": [
+            "rich_3006",
+            "rich_4077"
+          ],
+          "mean_resolution_rate": 0.058333333333333334,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 69.68508333333332,
+              "median": 45.81,
+              "p90": 100.45600000000002
+            },
+            "tool_calls": {
+              "mean": 9.541666666666666,
+              "median": 8.0,
+              "p90": 18.0
+            },
+            "total_llm_calls": {
+              "mean": 11.775,
+              "median": 10.5,
+              "p90": 20.0
+            }
+          },
+          "nonempty_patch_rate": 0.9416666666666667,
+          "seed_resolution_rates": {
+            "1": 0.075,
+            "2": 0.05,
+            "3": 0.05
+          },
+          "task_error_count": 0
+        },
+        "A1": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 238.50191666666666,
+              "median": 241.13,
+              "p90": 242.883
+            },
+            "tool_calls": {
+              "mean": 15.133333333333333,
+              "median": 17.5,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 36.36666666666667,
+              "median": 19.0,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.65,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 116
+        },
+        "A2": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 132.30291666666665,
+              "median": 115.05,
+              "p90": 241.277
+            },
+            "tool_calls": {
+              "mean": 22.458333333333332,
+              "median": 28.0,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 61.69166666666667,
+              "median": 80.0,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.2,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 117
+        }
+      },
+      "comparisons": {
+        "A1-A0": {
+          "ci95_pp": [
+            -12.5,
+            -0.8333333333333334
+          ],
+          "effect_pp": -5.833333333333333,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "primary only in primary40",
+          "seed_effects_pp": [
+            -7.5,
+            -5.0,
+            -5.0
+          ]
+        },
+        "A2-A0": {
+          "ci95_pp": [
+            -12.5,
+            -0.8333333333333334
+          ],
+          "effect_pp": -5.833333333333333,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            -7.5,
+            -5.0,
+            -5.0
+          ]
+        },
+        "A2-A1": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "majority_sign_test": {
+            "baseline_only": 0,
+            "exact_two_sided_p": 1.0,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "task_count": 40,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3067",
+        "rich_3105",
+        "rich_3180",
+        "rich_3278",
+        "rich_3454",
+        "rich_3468",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077"
+      ]
+    },
+    "secondary48": {
+      "arms": {
+        "A0": {
+          "best_of_three_union_solved": [
+            "rich_3006",
+            "rich_3454",
+            "rich_3905",
+            "rich_4077"
+          ],
+          "majority_solved": [
+            "rich_3006",
+            "rich_4077"
+          ],
+          "mean_resolution_rate": 0.04861111111111111,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 69.593125,
+              "median": 47.03,
+              "p90": 104.95600000000005
+            },
+            "tool_calls": {
+              "mean": 10.034722222222221,
+              "median": 9.5,
+              "p90": 18.0
+            },
+            "total_llm_calls": {
+              "mean": 12.26388888888889,
+              "median": 12.0,
+              "p90": 20.0
+            }
+          },
+          "nonempty_patch_rate": 0.9513888888888888,
+          "seed_resolution_rates": {
+            "1": 0.0625,
+            "2": 0.041666666666666664,
+            "3": 0.041666666666666664
+          },
+          "task_error_count": 0
+        },
+        "A1": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 232.05868055555553,
+              "median": 241.12,
+              "p90": 242.901
+            },
+            "tool_calls": {
+              "mean": 15.92361111111111,
+              "median": 28.0,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 38.263888888888886,
+              "median": 31.5,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.6736111111111112,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 136
+        },
+        "A2": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 135.81229166666668,
+              "median": 147.835,
+              "p90": 241.13
+            },
+            "tool_calls": {
+              "mean": 22.46527777777778,
+              "median": 28.0,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 62.05555555555556,
+              "median": 80.0,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.20833333333333334,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 140
+        }
+      },
+      "comparisons": {
+        "A1-A0": {
+          "ci95_pp": [
+            -10.416666666666668,
+            -0.6944444444444444
+          ],
+          "effect_pp": -4.861111111111111,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "primary only in primary40",
+          "seed_effects_pp": [
+            -6.25,
+            -4.166666666666666,
+            -4.166666666666666
+          ]
+        },
+        "A2-A0": {
+          "ci95_pp": [
+            -10.416666666666668,
+            -0.6944444444444444
+          ],
+          "effect_pp": -4.861111111111111,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            -6.25,
+            -4.166666666666666,
+            -4.166666666666666
+          ]
+        },
+        "A2-A1": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "majority_sign_test": {
+            "baseline_only": 0,
+            "exact_two_sided_p": 1.0,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "task_count": 48,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ]
+    },
+    "sensitivity36": {
+      "arms": {
+        "A0": {
+          "best_of_three_union_solved": [
+            "rich_3006",
+            "rich_3454",
+            "rich_3905",
+            "rich_4077"
+          ],
+          "majority_solved": [
+            "rich_3006",
+            "rich_4077"
+          ],
+          "mean_resolution_rate": 0.06481481481481481,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 48.12305555555555,
+              "median": 42.845,
+              "p90": 76.535
+            },
+            "tool_calls": {
+              "mean": 9.25,
+              "median": 8.0,
+              "p90": 17.299999999999997
+            },
+            "total_llm_calls": {
+              "mean": 11.5,
+              "median": 10.0,
+              "p90": 20.0
+            }
+          },
+          "nonempty_patch_rate": 0.9444444444444444,
+          "seed_resolution_rates": {
+            "1": 0.08333333333333333,
+            "2": 0.05555555555555555,
+            "3": 0.05555555555555555
+          },
+          "task_error_count": 0
+        },
+        "A1": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 224.15666666666664,
+              "median": 241.13,
+              "p90": 242.78
+            },
+            "tool_calls": {
+              "mean": 15.342592592592593,
+              "median": 20.5,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 36.379629629629626,
+              "median": 22.0,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.6574074074074074,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 104
+        },
+        "A2": {
+          "best_of_three_union_solved": [],
+          "majority_solved": [],
+          "mean_resolution_rate": 0.0,
+          "metrics_all_task_seed_rows": {
+            "duration_seconds": {
+              "mean": 135.40166666666667,
+              "median": 133.38,
+              "p90": 242.522
+            },
+            "tool_calls": {
+              "mean": 22.34259259259259,
+              "median": 28.0,
+              "p90": 28.0
+            },
+            "total_llm_calls": {
+              "mean": 61.30555555555556,
+              "median": 80.0,
+              "p90": 80.0
+            }
+          },
+          "nonempty_patch_rate": 0.2222222222222222,
+          "seed_resolution_rates": {
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0
+          },
+          "task_error_count": 105
+        }
+      },
+      "comparisons": {
+        "A1-A0": {
+          "ci95_pp": [
+            -13.88888888888889,
+            -0.9259259259259258
+          ],
+          "effect_pp": -6.481481481481481,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "primary only in primary40",
+          "seed_effects_pp": [
+            -8.333333333333332,
+            -5.555555555555555,
+            -5.555555555555555
+          ]
+        },
+        "A2-A0": {
+          "ci95_pp": [
+            -13.88888888888889,
+            -0.9259259259259258
+          ],
+          "effect_pp": -6.481481481481481,
+          "majority_sign_test": {
+            "baseline_only": 2,
+            "exact_two_sided_p": 0.5,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            -8.333333333333332,
+            -5.555555555555555,
+            -5.555555555555555
+          ]
+        },
+        "A2-A1": {
+          "ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "effect_pp": 0.0,
+          "majority_sign_test": {
+            "baseline_only": 0,
+            "exact_two_sided_p": 1.0,
+            "interpretation": "Descriptive majority-of-seeds McNemar/sign test; not primary inference.",
+            "treated_only": 0
+          },
+          "role": "exploratory",
+          "seed_effects_pp": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "task_count": 36,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3067",
+        "rich_3105",
+        "rich_3180",
+        "rich_3278",
+        "rich_3454",
+        "rich_3468",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3777",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077"
+      ]
+    }
+  },
+  "primary_conclusion": "supportive local evidence of a decrease",
+  "provenance": {
+    "inputs": {
+      "PROJECT_ROOT/gemma4/results/a0_e4b_s1/task_results.jsonl": "edb5fb5e3252035ac1ae2fd67a3ac6d79b55c2a98d89222079f6a02db77f7283",
+      "PROJECT_ROOT/gemma4/results/a0_e4b_s2/task_results.jsonl": "9a44f66863a070cf32d1bbe302940cea3c76aa625fe7d210d561aac5133a6c5b",
+      "PROJECT_ROOT/gemma4/results/a0_e4b_s3/task_results.jsonl": "66b0838e8ea754b51077a21b3af4d9d822391ffe67c4774f03927aafda6300f8",
+      "PROJECT_ROOT/gemma4/results/v025_a1_e4b_s1/task_results.jsonl": "fc0a0cbe8b85279c24b8b27c009c3c1d664526c2beb766b90341ec15ef0fe7a2",
+      "PROJECT_ROOT/gemma4/results/v025_a1_e4b_s2/task_results.jsonl": "b263ba47b348403f5dba1e4bd7e4bae3e75555622209f534aea64e62176ef693",
+      "PROJECT_ROOT/gemma4/results/v025_a1_e4b_s3/task_results.jsonl": "a005578cac71ee8099a5a6dc7d502e2344960a89bb0120bad700a5c216a4b1a4",
+      "PROJECT_ROOT/gemma4/results/v025_a2_e4b_s1/task_results.jsonl": "34a0a8bf64661a5fefbbee8999110facdc8ec1136ae7d9f0d3ee111d10cfd704",
+      "PROJECT_ROOT/gemma4/results/v025_a2_e4b_s2/task_results.jsonl": "8c7caf598adb41f2b3c4f2ea8d26b713f4e533bca53e1ab4d7551fe26f6a728e",
+      "PROJECT_ROOT/gemma4/results/v025_a2_e4b_s3/task_results.jsonl": "7c30ae6ba190097e95572920b381b003af3fdabca17bdb0bb66e1887d48888f6"
+    },
+    "metadata": {
+      "PROJECT_ROOT/gemma4/contracts/analysis-v02-v025.freeze.json": "7d55146ff65656920e6db8aef13b1d296f8806be181c98071cf05c400578fd8c",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/completed.json": "93453d8aa830038b5ea831e052c84edf1c0d6923d78e417eb7d801e77135888b",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/gates.json": "493ce6b7a7b455bfb8fcdcdbad38f867dbc3af379dc7dd02c493d5380377376d",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/operational-manifest.json": "0c94d960a693aa67d7a77ec05ff3a53a71c52c7027ab8ffa947a10045f910c77"
+    },
+    "receipts": {
+      "PROJECT_ROOT/gemma4/logs/v025_A1_s1.log.routing.json": "96c0a8458137fd0aee81a1bf80e3ccb71b0eb1712866cda2f061d224bec38f55",
+      "PROJECT_ROOT/gemma4/logs/v025_A1_s2.log.routing.json": "17903c66297ea5566e386b3c9d993dd65e45eb9b496fcee46675f3f9db1d4a17",
+      "PROJECT_ROOT/gemma4/logs/v025_A1_s3.log.routing.json": "3035d6931c51ec36ce7e32b6edd6d43d59c6dd8381fec77d522f8227f7d0f1c2",
+      "PROJECT_ROOT/gemma4/logs/v025_A2_s1.log.routing.json": "cd3d4597d4f1b85e6dcdda1cd402857881aca0862a9106089cf26bdfc0937eb9",
+      "PROJECT_ROOT/gemma4/logs/v025_A2_s2.log.routing.json": "8f948fb7e2e0289cb6eb157b0afaf7b907d4d6436f638f26afd53d8ccfac69b8",
+      "PROJECT_ROOT/gemma4/logs/v025_A2_s3.log.routing.json": "58cef5b101f6c2491faae8cf7e80a6f6ec9d5aaf550522e4c6de908eee105aa4",
+      "PROJECT_ROOT/gemma4/logs/v025_canary_A1.log.routing.json": "b922ee2fafd398d71a47638c3880b9738b2ec8519739ef1658cac7790db26e38",
+      "PROJECT_ROOT/gemma4/logs/v025_canary_A2.log.routing.json": "aa8127889ee4f7f54349ac309a6d76e107f6b8b9f316c5510afc8f35c5052ee0",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A1_s1-complete.json": "2e0bfb726705d797e9d87e3a1dccd15213b8ec92088426eb8ea9263cf549063f",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A1_s2-complete.json": "3142448d04f7617841b0a397e2d6c5aa0e5e9c6b6a412dc38e9887ff8ddbaaa4",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A1_s3-complete.json": "fe2ba4594aaba846747330d80d0a3b524fe60add4ebef3d6a11ed42bc8f60abe",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A2_s1-complete.json": "57ae95e57f669ad49fdbc045c65172a9ac322a7873ce882be28f32bafd9cfc94",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A2_s2-complete.json": "af10e4448545f7d1de5b8b767183fed85a54321c9dc712c8c3177e0c2f6f897b",
+      "PROJECT_ROOT/gemma4/migration/recovery-v025/evaluation/A2_s3-complete.json": "5f65979cf29d5e22e7b7c19be028a2c0c17202bd5771de8a014ffdfbbf79806c"
+    },
+    "seal": {
+      "analysis_code_sha256": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+      "analysis_test_sha256": "52a176398f0ad7c43b9b6873a23cfb33ba11007f67df825fe5a40990275cb371",
+      "authored_by": "Codex; implementation independently reviewed",
+      "excluded_measurements": [
+        "legacy trained-arm runs",
+        "v021",
+        "v022",
+        "v023",
+        "v024"
+      ],
+      "freeze_sha256": "a7a301b7ec6a8ebfe123767b33ed7a95f0f1192a3425e1e2f8c9efe2ecdb8355",
+      "holdout_resolution_outcomes_inspected_before_seal": false,
+      "method": {
+        "bootstrap": "paired whole-task cluster percentile",
+        "draws": 20000,
+        "numpy": "2.2.6",
+        "python": "3.12.14",
+        "quantile_method": "linear",
+        "rng": "NumPy Generator(PCG64)",
+        "seed": 20261103
+      },
+      "recovery_manifest_sha256": "0c94d960a693aa67d7a77ec05ff3a53a71c52c7027ab8ffa947a10045f910c77",
+      "recovery_version": "v025",
+      "sealed_at_utc": "2026-11-04T03:32:38.261600+00:00"
+    }
+  },
+  "recovery_version": "v025",
+  "unavailable_metrics": {
+    "generated_tokens": "Not exported by the pinned task-result serializer.",
+    "time_to_first_edit": "Not exported; traces are not interpreted by this analysis.",
+    "typed_context_error_count": "No typed context-error field is exported; no text heuristic is used."
+  }
+}

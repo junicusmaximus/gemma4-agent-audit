@@ -1,0 +1,90 @@
+{
+  "analysis_sha256": "80a2c1823dd1e9cb9d647d8f23ea2cebd85f36b11f3374ade39f5c1a386a7971",
+  "ended_utc": "2026-11-09T14:53:16Z",
+  "generation": {
+    "cleanup": "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/evaluation/server-cleanup.json",
+    "cleanup_sha256": "721bcfca922eedfa43659a09908e3a6c638fac46b7413385f993bb3df594de0b",
+    "marker": "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/evaluation/completed.json",
+    "marker_sha256": "93d7994af2bd3289015ecf6a264cd9a4deb48b7bb675cbd34f9ea12cfd095b06"
+  },
+  "launch_sha256": "c8f0b75e0bea96089daad4469fe9bb12329c0df1602473c1159b5ae4639e94ac",
+  "no_automatic_retry": true,
+  "outputs": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/readout/per_task.jsonl": "211304ac06840412668ea91948911ca7057a6940b0bb4a5a6ce606657e91860a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/readout/report.json": "a682c9e551b14686cc2efeda53be7cef645a4d67c8b8c5877161df1279606823",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/readout/report.md": "866624dc99044e97254d8165a3b150cd20cba629d49218847825264db928eddd"
+  },
+  "runtime_sha256": "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218",
+  "schema": "v070git2-run-and-seal-terminal-v1",
+  "stages": [
+    {
+      "command": [
+        "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+        "-B",
+        "PROJECT_ROOT/codex/experiments/v070-git-r2/runner/run_external_e4b_v070git2.py",
+        "--runtime-sha",
+        "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218",
+        "--replay-receipt-sha",
+        "536e2c3e9dba04ca6d3aee87cb2671e643d0f950739fc7ae73f301f1a125642c"
+      ],
+      "ended_utc": "2026-11-09T14:08:52Z",
+      "exit_code": 0,
+      "log": "PROJECT_ROOT/codex/experiments/v070-git-r2/orchestration/verify-runtime.log",
+      "log_sha256": "15e2c1592db0a9f4eeeebb120a9bc2a320d9510cd704b47a4c4889826af6cddf",
+      "stage": "verify-runtime",
+      "started_utc": "2026-11-09T14:08:46Z"
+    },
+    {
+      "command": [
+        "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+        "-B",
+        "-c",
+        "import sys; sys.path.insert(0, 'PROJECT_ROOT/codex/experiments/v070-git-r2/analysis'); import analyze_external_e4b_v070git2 as m; m.verify_manifest(sys.argv[1], sys.argv[2]); print('analysis_manifest_verified')",
+        "80a2c1823dd1e9cb9d647d8f23ea2cebd85f36b11f3374ade39f5c1a386a7971",
+        "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218"
+      ],
+      "ended_utc": "2026-11-09T14:08:52Z",
+      "exit_code": 0,
+      "log": "PROJECT_ROOT/codex/experiments/v070-git-r2/orchestration/verify-analysis.log",
+      "log_sha256": "7c8db1664e85aeda636828509c319dd4517acb1e69114401b8053659dd13863c",
+      "stage": "verify-analysis",
+      "started_utc": "2026-11-09T14:08:52Z"
+    },
+    {
+      "command": [
+        "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+        "-B",
+        "PROJECT_ROOT/codex/experiments/v070-git-r2/runner/run_external_e4b_v070git2.py",
+        "--activate",
+        "--runtime-sha",
+        "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218",
+        "--replay-receipt-sha",
+        "536e2c3e9dba04ca6d3aee87cb2671e643d0f950739fc7ae73f301f1a125642c"
+      ],
+      "ended_utc": "2026-11-09T14:53:14Z",
+      "exit_code": 0,
+      "log": "PROJECT_ROOT/codex/experiments/v070-git-r2/orchestration/activate.log",
+      "log_sha256": "d5b77c2f385daefc4eb8c3417cccfc6d099dff846db197e922e5ca5c7ed7322d",
+      "stage": "activate",
+      "started_utc": "2026-11-09T14:08:52Z"
+    },
+    {
+      "command": [
+        "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+        "-B",
+        "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/analyze_external_e4b_v070git2.py",
+        "--runtime-sha",
+        "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218",
+        "--analysis-sha",
+        "80a2c1823dd1e9cb9d647d8f23ea2cebd85f36b11f3374ade39f5c1a386a7971"
+      ],
+      "ended_utc": "2026-11-09T14:53:16Z",
+      "exit_code": 0,
+      "log": "PROJECT_ROOT/codex/experiments/v070-git-r2/orchestration/analyze.log",
+      "log_sha256": "c62c533caffeda1236d288ba51595bfce2922267abaec5c0a3d69669b07d40cd",
+      "stage": "analyze",
+      "started_utc": "2026-11-09T14:53:14Z"
+    }
+  ],
+  "status": "sealed"
+}

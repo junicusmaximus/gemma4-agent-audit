@@ -1,0 +1,973 @@
+{
+ "amendment": {
+  "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/amendment-FROZEN.md",
+  "sha256": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99"
+ },
+ "arms": [
+  {
+   "alias": "v070_A_onpol_ts1",
+   "arm": "A_onpol_ts1",
+   "family": "A_onpol",
+   "training_seed": 1
+  },
+  {
+   "alias": "v070_A_onpol_ts2",
+   "arm": "A_onpol_ts2",
+   "family": "A_onpol",
+   "training_seed": 2
+  },
+  {
+   "alias": "v070_T_sub",
+   "arm": "T_sub",
+   "family": "T_sub",
+   "training_seed": 1
+  }
+ ],
+ "cache_state": {
+  "attempt2_ended_at_pin": true,
+  "declared_difference": "(k) v070 starts with the bytecode caches present after v068 attempt 2, so its starting cache list can differ from the starting list of attempt 2. Python reads .pyc files: a module whose cache changed may load from the cache instead of being compiled from source. Leaving cache files out of the dependency-tree hash is not a claim that caches cannot affect execution.",
+  "difference": {
+   "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/cache-state-difference.json",
+   "sha256": "8fed44507ab7309d2208afbb16ac90b863a4533370ec760b5c3dc3ac8004ef96"
+  },
+  "environments": [],
+  "equal_path_sha256": true,
+  "rule": "k-disclose",
+  "rule_text": "cache state is not an identity leaf: the cache files that differ between the starting cache list of v070 and that of v068 attempt 2 are disclosed as declared difference (k) and the comparator follows the frozen identity leaves only",
+  "totals": {
+   "added": 0,
+   "changed": 0,
+   "deleted": 0,
+   "mtime_only": 0
+  }
+ },
+ "canary": [
+  {
+   "agent_patch_size": 536,
+   "arm": "A_onpol_ts1",
+   "decoding_seed": 1,
+   "duration_seconds": 34.79,
+   "empty_actions": 0,
+   "error": null,
+   "guard_command_count": 33,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "submission_diagnostics": {
+    "nonempty_capture_responses": 1,
+    "parsed_submit_attempts": 1,
+    "patch_artifact_bytes": 536,
+    "patch_artifact_present": true,
+    "patch_artifact_sha256": "151e7a1c5316f443465a80094fd7cda66c8d1e3d72d0169c1eb9f3d8451d6755",
+    "successful_capture_responses": 1
+   },
+   "successful_requests": 9,
+   "test_exit_code": 1,
+   "tool_calls": 7,
+   "total_llm_calls": 9,
+   "training_seed": 1
+  },
+  {
+   "agent_patch_size": 429,
+   "arm": "A_onpol_ts2",
+   "decoding_seed": 1,
+   "duration_seconds": 93.13,
+   "empty_actions": 0,
+   "error": null,
+   "guard_command_count": 34,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "submission_diagnostics": {
+    "nonempty_capture_responses": 1,
+    "parsed_submit_attempts": 1,
+    "patch_artifact_bytes": 429,
+    "patch_artifact_present": true,
+    "patch_artifact_sha256": "8a5ec40473b158d06b2c6335c25a57132a7eb3593ada56a9d7d426561ffdc061",
+    "successful_capture_responses": 1
+   },
+   "successful_requests": 17,
+   "test_exit_code": 1,
+   "tool_calls": 14,
+   "total_llm_calls": 16,
+   "training_seed": 2
+  },
+  {
+   "agent_patch_size": 0,
+   "arm": "T_sub",
+   "decoding_seed": 1,
+   "duration_seconds": 76.39,
+   "empty_actions": 0,
+   "error": "Agent exceeded turns budget (80 turns)",
+   "guard_command_count": 39,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "submission_diagnostics": {
+    "nonempty_capture_responses": 0,
+    "parsed_submit_attempts": 0,
+    "patch_artifact_bytes": 0,
+    "patch_artifact_present": false,
+    "patch_artifact_sha256": null,
+    "successful_capture_responses": 0
+   },
+   "successful_requests": 89,
+   "test_exit_code": -1,
+   "tool_calls": 28,
+   "total_llm_calls": 80,
+   "training_seed": 1
+  }
+ ],
+ "canary_task": "mpmath__mpmath-854",
+ "comparator_identity": {
+  "declared_difference": "(j) adapter slots and names (--max-loras, --lora-modules) and the engine session differ from v068 by construction",
+  "differing": [],
+  "excluded_leaves": [
+   "--max-loras",
+   "--lora-modules",
+   "engine session"
+  ],
+  "leaves": [
+   {
+    "equal": true,
+    "name": "pin.ledger_digest",
+    "v068": {
+     "dev_rows_sha256": "e5790487abfef7a0c1f8f29299a934fa27054bdfd9f48f8aee5780c588dcf70d",
+     "status_rule": "ELIGIBLE",
+     "statuses": {
+      "apiflask__apiflask-659": "INCOMPLETE_probe",
+      "delgan__loguru-1299": "ELIGIBLE",
+      "googleapis__python-api-core-197": "INCOMPLETE_probe",
+      "ipython__traitlets-727": "ELIGIBLE",
+      "kayak__pypika-267": "ELIGIBLE",
+      "more-itertools__more-itertools-892": "ELIGIBLE",
+      "mpmath__mpmath-854": "ELIGIBLE",
+      "pallets__jinja-2033": "ELIGIBLE",
+      "pallets__werkzeug-2997": "ELIGIBLE",
+      "pycqa__docformatter-313": "ELIGIBLE",
+      "python-attrs__attrs-888": "ELIGIBLE",
+      "python-semver__python-semver-264": "ELIGIBLE",
+      "tox-dev__pipdeptree-274": "ELIGIBLE",
+      "wtforms__wtforms-694": "ELIGIBLE"
+     }
+    },
+    "v070": {
+     "dev_rows_sha256": "e5790487abfef7a0c1f8f29299a934fa27054bdfd9f48f8aee5780c588dcf70d",
+     "status_rule": "ELIGIBLE",
+     "statuses": {
+      "apiflask__apiflask-659": "INCOMPLETE_probe",
+      "delgan__loguru-1299": "ELIGIBLE",
+      "googleapis__python-api-core-197": "INCOMPLETE_probe",
+      "ipython__traitlets-727": "ELIGIBLE",
+      "kayak__pypika-267": "ELIGIBLE",
+      "more-itertools__more-itertools-892": "ELIGIBLE",
+      "mpmath__mpmath-854": "ELIGIBLE",
+      "pallets__jinja-2033": "ELIGIBLE",
+      "pallets__werkzeug-2997": "ELIGIBLE",
+      "pycqa__docformatter-313": "ELIGIBLE",
+      "python-attrs__attrs-888": "ELIGIBLE",
+      "python-semver__python-semver-264": "ELIGIBLE",
+      "tox-dev__pipdeptree-274": "ELIGIBLE",
+      "wtforms__wtforms-694": "ELIGIBLE"
+     }
+    }
+   },
+   {
+    "equal": true,
+    "name": "eligible list and order",
+    "v068": [
+     "mpmath__mpmath-854",
+     "kayak__pypika-267",
+     "python-semver__python-semver-264",
+     "python-attrs__attrs-888",
+     "pycqa__docformatter-313",
+     "more-itertools__more-itertools-892",
+     "wtforms__wtforms-694",
+     "delgan__loguru-1299",
+     "tox-dev__pipdeptree-274",
+     "pallets__jinja-2033",
+     "pallets__werkzeug-2997",
+     "ipython__traitlets-727"
+    ],
+    "v070": [
+     "mpmath__mpmath-854",
+     "kayak__pypika-267",
+     "python-semver__python-semver-264",
+     "python-attrs__attrs-888",
+     "pycqa__docformatter-313",
+     "more-itertools__more-itertools-892",
+     "wtforms__wtforms-694",
+     "delgan__loguru-1299",
+     "tox-dev__pipdeptree-274",
+     "pallets__jinja-2033",
+     "pallets__werkzeug-2997",
+     "ipython__traitlets-727"
+    ]
+   },
+   {
+    "equal": true,
+    "name": "decoding seeds",
+    "v068": [
+     1,
+     2,
+     3
+    ],
+    "v070": [
+     1,
+     2,
+     3
+    ]
+   },
+   {
+    "equal": true,
+    "name": "evaluation budgets",
+    "v068": {
+     "concurrency": 4,
+     "max_time_minutes": 4,
+     "max_tool_calls": 28,
+     "max_turns": 80,
+     "timeout_seconds": 240
+    },
+    "v070": {
+     "concurrency": 4,
+     "max_time_minutes": 4,
+     "max_tool_calls": 28,
+     "max_turns": 80,
+     "timeout_seconds": 240
+    }
+   },
+   {
+    "equal": true,
+    "name": "chat_template sha",
+    "v068": "855bbbbbef10d51177c5d7eca19a3f3d39a11d9a80c142a9f19784029515a437",
+    "v070": "855bbbbbef10d51177c5d7eca19a3f3d39a11d9a80c142a9f19784029515a437"
+   },
+   {
+    "equal": true,
+    "name": "server_script_sha256",
+    "v068": "683c7ab9c53f1b66a248f019e2e8a13b6df1ac12ad74b53df0bb5f6b862c8633",
+    "v070": "683c7ab9c53f1b66a248f019e2e8a13b6df1ac12ad74b53df0bb5f6b862c8633"
+   },
+   {
+    "equal": true,
+    "name": "vLLM, swegemma and harness versions (server_environment)",
+    "v068": {
+     "HF_HUB_OFFLINE": "1",
+     "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+     "TRANSFORMERS_OFFLINE": "1",
+     "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+     "VLLM_NO_USAGE_STATS": "1",
+     "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+    },
+    "v070": {
+     "HF_HUB_OFFLINE": "1",
+     "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+     "TRANSFORMERS_OFFLINE": "1",
+     "VLLM_ENGINE_READY_TIMEOUT_S": "1200",
+     "VLLM_NO_USAGE_STATS": "1",
+     "VLLM_WORKER_MULTIPROC_METHOD": "spawn"
+    }
+   },
+   {
+    "equal": true,
+    "name": "base model id (--served-model-name)",
+    "v068": "gemma-4-e4b-it-qat-w4a16-ct",
+    "v070": "gemma-4-e4b-it-qat-w4a16-ct"
+   },
+   {
+    "equal": true,
+    "name": "LoRA rank (--max-lora-rank)",
+    "v068": "16",
+    "v070": "16"
+   }
+  ],
+  "rule": "the leaves of the pinned v068 runtime contract named by the pre-registration against this contract; if any differs no comparator is shown",
+  "shown": false,
+  "withheld": true,
+  "withheld_reason": "v068 submit path invalid; amendment withholds A0mc"
+ },
+ "descriptive": {
+  "A_onpol_ts1": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 0.0,
+     "m5_error": 0.0,
+     "m5_error_tasks": 9,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts1_s1",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.9054388898138898
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.0,
+     "m5_error": 0.025974025974025972,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts1_s2",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.9216529498766342
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.0,
+     "m5_error": 0.08636363636363636,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts1_s3",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.9088847155023626
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.0,
+    "m5_error": 0.03744588744588744,
+    "repro": 0.0,
+    "submit": 1.0,
+    "think": 0.9119921850642955
+   }
+  },
+  "A_onpol_ts2": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 0.0,
+     "m5_error": 0.0,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts2_s1",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.8970604395604397
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.0,
+     "m5_error": 0.0,
+     "m5_error_tasks": 7,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts2_s2",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.8961697684124155
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.0,
+     "m5_error": 0.047619047619047616,
+     "m5_error_tasks": 9,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_A_onpol_ts2_s3",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.9083090180516651
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.0,
+    "m5_error": 0.015873015873015872,
+    "repro": 0.0,
+    "submit": 1.0,
+    "think": 0.9005130753415068
+   }
+  },
+  "T_sub": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 1.0,
+     "m5_error": 0.9199873414685577,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_T_sub_s1",
+     "submit": 0.08333333333333333,
+     "tasks": 12,
+     "think": 0.0
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.8333333333333334,
+     "m5_error": 0.806905161544828,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_T_sub_s2",
+     "submit": 0.16666666666666666,
+     "tasks": 12,
+     "think": 0.0
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.75,
+     "m5_error": 0.5499413685391116,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v070git2_T_sub_s3",
+     "submit": 0.0,
+     "tasks": 12,
+     "think": 0.0
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.8611111111111112,
+    "m5_error": 0.7589446238508324,
+    "repro": 0.0,
+    "submit": 0.08333333333333333,
+    "think": 0.0
+   }
+  }
+ },
+ "eligible_tasks": [
+  "mpmath__mpmath-854",
+  "kayak__pypika-267",
+  "python-semver__python-semver-264",
+  "python-attrs__attrs-888",
+  "pycqa__docformatter-313",
+  "more-itertools__more-itertools-892",
+  "wtforms__wtforms-694",
+  "delgan__loguru-1299",
+  "tox-dev__pipdeptree-274",
+  "pallets__jinja-2033",
+  "pallets__werkzeug-2997",
+  "ipython__traitlets-727"
+ ],
+ "feasibility": {
+  "canary_mean_seconds": 70.85985841571043,
+  "canary_wall_seconds": [
+   37.551513290032744,
+   95.8843720946461,
+   79.14368986245245
+  ],
+  "cap_seconds": 10800,
+  "descriptive_only": true,
+  "panel_invocations": 108,
+  "projected_fraction_of_cap": 0.1971841088124482,
+  "projected_panel_seconds": 1913.2161772241818,
+  "projected_seconds_from_ready": 2129.5883751744404,
+  "projected_within_cap": true,
+  "ready_elapsed_seconds": 216.37219795025885,
+  "rule": "ceil(panel invocations / workers) x mean canary wall time, added to the time since server-ready; no effect on launch or stops",
+  "staging_seconds": 8.263857431709766,
+  "startup_seconds": 54.04562735185027,
+  "workers": 4
+ },
+ "invocations": {
+  "completed": 108,
+  "planned": 108
+ },
+ "limitations": [
+  "Execution order: v070 ran after v068 attempts 1 and 2 on the same environment trees.",
+  "Cache accumulation: bytecode caches written by the earlier attempts were present at v070's start; their differences from attempt 2's start are listed under (k)."
+ ],
+ "metric_definition": {
+  "submit": "parsed submit_patch attempt",
+  "successful_capture": "separate descriptive diagnostic"
+ },
+ "not_claimed": [
+  "A panel statement only: no hidden-set estimate, no generalisation beyond these repositories, no mechanism, no pooling across seeds or arms; with small n_c an absence of contrast or repair is not evidence of absence. A termination cell is a statement about termination behaviour only and never implies repair transfer."
+ ],
+ "not_eligible": [
+  {
+   "instance_id": "apiflask__apiflask-659",
+   "rank": 10,
+   "status": "INCOMPLETE_probe"
+  },
+  {
+   "instance_id": "googleapis__python-api-core-197",
+   "rank": 11,
+   "status": "INCOMPLETE_probe"
+  }
+ ],
+ "pin": {
+  "adapters": [
+   {
+    "adapter_model_sha256": "ad0910f5faa92256ace68230cd8e0f7a1ebe7bf209ab5b95f66140a25ca547d5",
+    "arm": "A_onpol_ts1",
+    "expected_prefix": "ad0910f5faa92256",
+    "gates_pass": true,
+    "meta_sha256": "b2e7d584dc9262647826314935f6460ee68ea91f92aa47e44c2d9c8a8f37631f",
+    "prefix_matches": true,
+    "training_seed": 1
+   },
+   {
+    "adapter_model_sha256": "f9e0664295ea7cf6a60f964330726ad2d6c0f220160d64aef1abb01c867107a3",
+    "arm": "A_onpol_ts2",
+    "expected_prefix": "f9e0664295ea7cf6",
+    "gates_pass": true,
+    "meta_sha256": "5f7a30884aacfb7c22db5de8958481fbe1c8ac6cacfd7c38bc75f1819d5b53f6",
+    "prefix_matches": true,
+    "training_seed": 2
+   },
+   {
+    "adapter_model_sha256": "7122a9d67cd0dc5dab5cd3c240db88084031177e2b6422d002a2e47c71d882de",
+    "arm": "T_sub",
+    "expected_prefix": "7122a9d67cd0dc5d",
+    "gates_pass": true,
+    "meta_sha256": "d4d5c3e29536925c150194e8c1e718630fc9ee5aad0511372e0ecf243f0b75f7",
+    "prefix_matches": true,
+    "training_seed": 1
+   }
+  ],
+  "cache_state": {
+   "attempt2_ended_at_pin": true,
+   "difference": {
+    "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/cache-state-difference.json",
+    "sha256": "8fed44507ab7309d2208afbb16ac90b863a4533370ec760b5c3dc3ac8004ef96"
+   },
+   "equal_path_sha256": true,
+   "totals": {
+    "added": 0,
+    "changed": 0,
+    "deleted": 0,
+    "mtime_only": 0
+   }
+  },
+  "ledger_and_eligible_equal_to_v068": true,
+  "prereg_sha256": "b7b4d4be49973aa01407f4b40e0e9e71bdb90f10b342f62837e0bee837a929cb",
+  "supersedes": [],
+  "training_overlap": [
+   {
+    "arm": "A_onpol_ts1",
+    "family": "A_onpol",
+    "manifest": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/manifest.json",
+    "manifest_sha256": "c1b63a142b37e879e58f6c98c828adbe3cc565a9120e373e60947e2516df9467",
+    "n_overlap": 0,
+    "n_training_repositories": 1,
+    "n_training_trajectories": 30,
+    "overlap": [],
+    "overlap_trajectories": 0,
+    "panel_repositories": [
+     "delgan/loguru",
+     "ipython/traitlets",
+     "kayak/pypika",
+     "more-itertools/more-itertools",
+     "mpmath/mpmath",
+     "pallets/jinja",
+     "pallets/werkzeug",
+     "pycqa/docformatter",
+     "python-attrs/attrs",
+     "python-semver/python-semver",
+     "tox-dev/pipdeptree",
+     "wtforms/wtforms"
+    ],
+    "rule": "desc.repositories of the manifest; repository names compared in lower case",
+    "training_repositories": {
+     "fastapi/fastapi": 30
+    }
+   },
+   {
+    "arm": "A_onpol_ts2",
+    "family": "A_onpol",
+    "manifest": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/manifest.json",
+    "manifest_sha256": "c1b63a142b37e879e58f6c98c828adbe3cc565a9120e373e60947e2516df9467",
+    "n_overlap": 0,
+    "n_training_repositories": 1,
+    "n_training_trajectories": 30,
+    "overlap": [],
+    "overlap_trajectories": 0,
+    "panel_repositories": [
+     "delgan/loguru",
+     "ipython/traitlets",
+     "kayak/pypika",
+     "more-itertools/more-itertools",
+     "mpmath/mpmath",
+     "pallets/jinja",
+     "pallets/werkzeug",
+     "pycqa/docformatter",
+     "python-attrs/attrs",
+     "python-semver/python-semver",
+     "tox-dev/pipdeptree",
+     "wtforms/wtforms"
+    ],
+    "rule": "desc.repositories of the manifest; repository names compared in lower case",
+    "training_repositories": {
+     "fastapi/fastapi": 30
+    }
+   },
+   {
+    "arm": "T_sub",
+    "family": "T_sub",
+    "manifest": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/T_sub/manifest.json",
+    "manifest_sha256": "d7c62ddb6df9d966a7bfad44bd5d9c80c95c967e1b4c62899c858da37ab9ad8a",
+    "n_overlap": 0,
+    "n_training_repositories": 18,
+    "n_training_trajectories": 18,
+    "overlap": [],
+    "overlap_trajectories": 0,
+    "panel_repositories": [
+     "delgan/loguru",
+     "ipython/traitlets",
+     "kayak/pypika",
+     "more-itertools/more-itertools",
+     "mpmath/mpmath",
+     "pallets/jinja",
+     "pallets/werkzeug",
+     "pycqa/docformatter",
+     "python-attrs/attrs",
+     "python-semver/python-semver",
+     "tox-dev/pipdeptree",
+     "wtforms/wtforms"
+    ],
+    "rule": "desc.repositories of the manifest; repository names compared in lower case",
+    "training_repositories": {
+     "AI4S2S/lilio": 1,
+     "KyleJamesWalker/yamlsettings": 1,
+     "bloomberg/attrs-strict": 1,
+     "cwacek/python-jsonschema-objects": 1,
+     "duckinator/emanate": 1,
+     "encode/httpx": 1,
+     "fsspec/filesystem_spec": 1,
+     "johnsyweb/python_sparse_list": 1,
+     "kit-iai/pywatts": 1,
+     "kytos/python-openflow": 1,
+     "pre-commit/pre-commit-hooks": 1,
+     "python-control/python-control": 1,
+     "pyvista/pyvista": 1,
+     "rabitt/pysox": 1,
+     "runwayml/model-sdk": 1,
+     "tempoCollaboration/OQuPy": 1,
+     "ucfopen/canvasapi": 1,
+     "wright-group/WrightTools": 1
+    }
+   }
+  ],
+  "tree_evidence": {
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-delgan__loguru.json": "2ddfd5c3e3e22b457df20e69443c052972fd3b6b863b3f0ef60e99640d332cef",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-delgan__loguru.txt": "5f5d97cc41e658c9b6f031d5eb817e175c4f0a3143ae16428d088d9d3df5e3bd",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-ipython__traitlets.json": "242ef7f8530b5fa558f3114f2989cc1bc738b64fb4d0f0c8d758cfc2e18c21fd",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-ipython__traitlets.txt": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-kayak__pypika.json": "8bc2d826597e578fd6305c3e878fd53a38578c9988d5db37b99a96d9a098d41d",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-kayak__pypika.txt": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-more-itertools__more-itertools.json": "db9211078fb1a0952534e1b5f96ac70413384b9cd81c27ca28e8cc97140dc5cf",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-more-itertools__more-itertools.txt": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-mpmath__mpmath.json": "1b340a733366c09731a75b7fb19d31dbc72e01c5560353dc924fd4a58d4278b3",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-mpmath__mpmath.txt": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pallets__jinja.json": "0fc89099647fb1ab5847c48780751c074a62b05a6dfdb10a7d7add2f987fdc68",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pallets__jinja.txt": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pallets__werkzeug.json": "9738428289abf6c46a1a5e3625051f0b0a5d46a9b360b850831f745d41e1e8a3",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pallets__werkzeug.txt": "cf5d127cde3038e210256b62f832e083be8bf4a7eeb9b965e510580b196c5891",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pycqa__docformatter.json": "f8fab5583df348b92c0cc6507a770af6360f41f67b7616bb2922267e9a3826fe",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-pycqa__docformatter.txt": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-python-attrs__attrs.json": "d5b7cf5d74490fd4565c13e872f4048a324b0a4cc1154a104186a7268d06b03f",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-python-attrs__attrs.txt": "672e49af85bef22715e8ba530711af52de25380ea14d04dda1c3976a1c36c2bf",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-python-semver__python-semver.json": "797572cd86d67f020dcc8e8c16d518ff7a53f0958ee1a461d5a05d12dd0781d1",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-python-semver__python-semver.txt": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-tox-dev__pipdeptree.json": "51c5ac8025853871e6e8d2e64670416417c5b0376c56233856636b17fd7b72d5",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-tox-dev__pipdeptree.txt": "36af78d51af34d9e022ba96271e18cdd9c6157d8f84a4169162b824145f71a7b",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-wtforms__wtforms.json": "3fd20603d040b0079970e3fb124b6dedae0a5e428a391b268b192cb580414016",
+   "PROJECT_ROOT/codex/experiments/v070-git-r2/migration/env-evidence/pin-tree-wtforms__wtforms.txt": "05f790c5b38fb56fc0e2917568c0928f0b2a922a8b0f6da5b2cd02483c4d128b"
+  },
+  "trees": {
+   "delgan__loguru": {
+    "admission_sha256": "b7cbe2d6b5ebd5516696e93cf882d5f1a00c2df19eb810f92410dd32f710bb58",
+    "cache_file_count": 211,
+    "environment_id": "delgan__loguru",
+    "files": 1188,
+    "filtered_sha256": "8ab76cae8fdfc4abf4fafc22e12ca7b5b3bce94532e23977650e48295e9446af",
+    "full_sha256": "5f5d97cc41e658c9b6f031d5eb817e175c4f0a3143ae16428d088d9d3df5e3bd",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/delgan__loguru/site-packages"
+   },
+   "ipython__traitlets": {
+    "admission_sha256": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+    "cache_file_count": 188,
+    "environment_id": "ipython__traitlets",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/ipython__traitlets/site-packages"
+   },
+   "kayak__pypika": {
+    "admission_sha256": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+    "cache_file_count": 188,
+    "environment_id": "kayak__pypika",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/kayak__pypika/site-packages"
+   },
+   "more-itertools__more-itertools": {
+    "admission_sha256": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+    "cache_file_count": 188,
+    "environment_id": "more-itertools__more-itertools",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/more-itertools__more-itertools/site-packages"
+   },
+   "mpmath__mpmath": {
+    "admission_sha256": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+    "cache_file_count": 188,
+    "environment_id": "mpmath__mpmath",
+    "files": 2765,
+    "filtered_sha256": "2f2527694b64f605474f0e997110153ffbc91cd316c93d181eaebf89f1af5a50",
+    "full_sha256": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/mpmath__mpmath/site-packages"
+   },
+   "pallets__jinja": {
+    "admission_sha256": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+    "cache_file_count": 189,
+    "environment_id": "pallets__jinja",
+    "files": 2234,
+    "filtered_sha256": "cd527ddab1a677fa0d6a447a5f06c7cfac34af8aaed97750ec1890d0ed0a231f",
+    "full_sha256": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pallets__jinja/site-packages"
+   },
+   "pallets__werkzeug": {
+    "admission_sha256": "59bddd96ad6d15ceac489b5402eb24b834bef2996d6953222e5d91fdf51933b1",
+    "cache_file_count": 203,
+    "environment_id": "pallets__werkzeug",
+    "files": 1403,
+    "filtered_sha256": "6440af4877969a6114c041fdf828cda412ab102808452161c01775e4fbcfcd41",
+    "full_sha256": "cf5d127cde3038e210256b62f832e083be8bf4a7eeb9b965e510580b196c5891",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pallets__werkzeug/site-packages"
+   },
+   "pycqa__docformatter": {
+    "admission_sha256": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+    "cache_file_count": 189,
+    "environment_id": "pycqa__docformatter",
+    "files": 1133,
+    "filtered_sha256": "cbb6c0f476c454e0143c6becbfaccd4cdc8f98bdf148a557d4cbd51d8bfe4d57",
+    "full_sha256": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pycqa__docformatter/site-packages"
+   },
+   "python-attrs__attrs": {
+    "admission_sha256": "3a10a195f0adf8bba65efb76e7ccfca6f2e31be54f85489cc3b2f033b3984d66",
+    "cache_file_count": 191,
+    "environment_id": "python-attrs__attrs",
+    "files": 1110,
+    "filtered_sha256": "065b8753f986c5ecf4d7dcf803e3c8068d6d2d2262b20f390ae13338f08adde6",
+    "full_sha256": "672e49af85bef22715e8ba530711af52de25380ea14d04dda1c3976a1c36c2bf",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/python-attrs__attrs/site-packages"
+   },
+   "python-semver__python-semver": {
+    "admission_sha256": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+    "cache_file_count": 188,
+    "environment_id": "python-semver__python-semver",
+    "files": 1198,
+    "filtered_sha256": "ab95fb5962ac35ef272d5d612ce26554cfb3d4f6ef04de8b4022ec2ec8a2cfa5",
+    "full_sha256": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/python-semver__python-semver/site-packages"
+   },
+   "tox-dev__pipdeptree": {
+    "admission_sha256": "7251d8b63ee7cad69fbad9869cee1b437793d8a045f70db96c9ba841f0245147",
+    "cache_file_count": 269,
+    "environment_id": "tox-dev__pipdeptree",
+    "files": 1432,
+    "filtered_sha256": "9c01ad69293522ab2bf50018a12d57354f9559652657131147e5df914c45c441",
+    "full_sha256": "36af78d51af34d9e022ba96271e18cdd9c6157d8f84a4169162b824145f71a7b",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/tox-dev__pipdeptree/site-packages"
+   },
+   "wtforms__wtforms": {
+    "admission_sha256": "4c379ca014b262a1a0768ca7a812f20585fdebd81c2a67e02281289bb71d71ab",
+    "cache_file_count": 202,
+    "environment_id": "wtforms__wtforms",
+    "files": 2452,
+    "filtered_sha256": "ec259c32992cc1a0083a8c3a7a7ca24f59e3c2f03ae42000bf7f1d591d8c62da",
+    "full_sha256": "05f790c5b38fb56fc0e2917568c0928f0b2a922a8b0f6da5b2cd02483c4d128b",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/wtforms__wtforms/site-packages"
+   }
+  },
+  "v068_r22_runtime": {
+   "path": "PROJECT_ROOT/gemma4/contracts/external-e4b-v068-r22-runtime-PINNED.json",
+   "sha256": "9788264284a296e36ec07da7726259db1aae87759a487fd3b889a90ce80f3db2"
+  },
+  "v068_runtime": {
+   "path": "PROJECT_ROOT/gemma4/contracts/external-e4b-v068-r21-runtime-PINNED.json",
+   "sha256": "8450ed230af0593fce6d38e41f3b6d0ca5856892cf0ed4e672af1a61e7d31eb8"
+  }
+ },
+ "preregistration": {
+  "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-08-external-contrast-onpolicy-v070.md",
+  "sha256": "b7b4d4be49973aa01407f4b40e0e9e71bdb90f10b342f62837e0bee837a929cb"
+ },
+ "readings": {
+  "cell": "E1",
+  "complete_tasks": [
+   "mpmath__mpmath-854",
+   "kayak__pypika-267",
+   "python-semver__python-semver-264",
+   "python-attrs__attrs-888",
+   "pycqa__docformatter-313",
+   "more-itertools__more-itertools-892",
+   "wtforms__wtforms-694",
+   "delgan__loguru-1299",
+   "tox-dev__pipdeptree-274",
+   "pallets__jinja-2033",
+   "pallets__werkzeug-2997",
+   "ipython__traitlets-727"
+  ],
+  "completed_rollouts": 108,
+  "freeze": {
+   "before_freeze": true,
+   "sealed_at": "2026-11-09T14:53:16Z",
+   "utc": "2026-11-10T09:00:00Z"
+  },
+  "kind": "cell",
+  "n_c": 12,
+  "n_e": 12,
+  "planned_paired_set_complete": true,
+  "planned_rollouts": 108,
+  "sentence": "the termination contrast was also observed on an 12-task external panel (A_onpol training seeds 1 and 2: loop 0.000 and 0.000, submit 1.000 and 1.000; T_sub, one training seed: loop 0.861, submit 0.083)",
+  "termination": {
+   "A_onpol_ts1": {
+    "family": "A_onpol",
+    "label": "NON-COLLAPSED",
+    "loop": 0.0,
+    "m5_error": 0.03744588744588744,
+    "repro": 0.0,
+    "submit": 1.0,
+    "think": 0.9119921850642955,
+    "training_seed": 1
+   },
+   "A_onpol_ts2": {
+    "family": "A_onpol",
+    "label": "NON-COLLAPSED",
+    "loop": 0.0,
+    "m5_error": 0.015873015873015872,
+    "repro": 0.0,
+    "submit": 1.0,
+    "think": 0.9005130753415068,
+    "training_seed": 2
+   },
+   "T_sub": {
+    "family": "T_sub",
+    "label": "COLLAPSED",
+    "loop": 0.8611111111111112,
+    "m5_error": 0.7589446238508324,
+    "repro": 0.0,
+    "submit": 0.08333333333333333,
+    "think": 0.0,
+    "training_seed": 1
+   }
+  }
+ },
+ "record": {
+  "excluded": {},
+  "file": "completed.json",
+  "sha256": "93d7994af2bd3289015ecf6a264cd9a4deb48b7bb675cbd34f9ea12cfd095b06",
+  "status": "all_v070_evaluations_qualified",
+  "stop": null
+ },
+ "repair": {
+  "comparator": {
+   "reason": "v068 submit path was infrastructure-invalid; withheld by the amendment",
+   "shown": false,
+   "withheld": true
+  },
+  "comparator_label": "A0mc-ext is withheld: v068 had an invalid submit path; no reused comparator rows or confidence intervals are reported.",
+  "pooled": {
+   "A_onpol_ts1": {
+    "all_rows": {
+     "completed": 36,
+     "errors": {
+      "none": 36
+     },
+     "excluded": 0,
+     "guard_oom_command_count": 0,
+     "not_run": 0,
+     "resolved_of_completed": 6
+    },
+    "complete_tasks": {
+     "denominator": 36,
+     "per_decoding_seed": {
+      "1": 4,
+      "2": 1,
+      "3": 1
+     },
+     "resolved": 6,
+     "resolved_count_distribution": {
+      "0": 8,
+      "1": 2,
+      "2": 2
+     },
+     "tasks_resolved_at_least_once": 4
+    },
+    "family": "A_onpol",
+    "training_seed": 1
+   },
+   "A_onpol_ts2": {
+    "all_rows": {
+     "completed": 36,
+     "errors": {
+      "none": 36
+     },
+     "excluded": 0,
+     "guard_oom_command_count": 0,
+     "not_run": 0,
+     "resolved_of_completed": 7
+    },
+    "complete_tasks": {
+     "denominator": 36,
+     "per_decoding_seed": {
+      "1": 3,
+      "2": 2,
+      "3": 2
+     },
+     "resolved": 7,
+     "resolved_count_distribution": {
+      "0": 9,
+      "1": 1,
+      "3": 2
+     },
+     "tasks_resolved_at_least_once": 3
+    },
+    "family": "A_onpol",
+    "training_seed": 2
+   },
+   "T_sub": {
+    "all_rows": {
+     "completed": 36,
+     "errors": {
+      "Agent exceeded session timeout (4.0 min)": 5,
+      "Agent exceeded turns budget (80 turns)": 31
+     },
+     "excluded": 0,
+     "guard_oom_command_count": 0,
+     "not_run": 0,
+     "resolved_of_completed": 0
+    },
+    "complete_tasks": {
+     "denominator": 36,
+     "per_decoding_seed": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+     },
+     "resolved": 0,
+     "resolved_count_distribution": {
+      "0": 12
+     },
+     "tasks_resolved_at_least_once": 0
+    },
+    "family": "T_sub",
+    "training_seed": 1
+   }
+  }
+ },
+ "runtime_sha256": "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218",
+ "schema": "external-e4b-v070git2-report",
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "statement": "primary forms retained under the Git-repair amendment; repair descriptive, A0mc withheld"
+}

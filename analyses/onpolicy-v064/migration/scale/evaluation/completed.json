@@ -1,0 +1,2852 @@
+{
+  "admission_receipts": {
+    "byte_compatibility": true,
+    "controls_path": "PROJECT_ROOT/gemma4/analysis/oom-controls-v043/final48/report.json",
+    "controls_sha256": "a3b4548bc5ed0a3f67fca47b28391804e69fbb592fc1b41606725ff929418708",
+    "gold_primary40": 40,
+    "original8_classified": true,
+    "replay_path": "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/report.json",
+    "replay_sha256": "536e2c3e9dba04ca6d3aee87cb2671e643d0f950739fc7ae73f301f1a125642c"
+  },
+  "analysis_pending": true,
+  "canaries": {
+    "v064_canary_scale_A0_s1": {
+      "accepted_budget_exhaustion": false,
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "budget_exhaustion_category": null,
+      "canary_episode_error": null,
+      "decoding_seed": 1,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794088805.8490837,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 32,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_canary_scale_A0_s1.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 750731264,
+        "sha256": "d5dcdaac507af546e6a2594a9476f7fadfe533d4ddd6a9fb22f6f2695eb713ff"
+      },
+      "original_row_sha256": "5003bb0aa9ecd6b81321e7058708915dcf2148f66a5d339183d23350ca551d95",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_canary_scale_A0_s1",
+      "route_sha256": "993d5d9addcc68d7eb991315edf422458ca151940591124cc3e8da2c66ce93ef",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 27,
+        "successful_requests": 27,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_canary_scale_A0_s1",
+      "service": {
+        "end_sha256": "8d4e14b9a53d8736dc1d51bbe8c7864cf3cea09d121249d6d54b72e5f483aca4",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-e7574c7d2a934de290d73e76e2203658.service",
+          "InvocationID": "26d8ff93561e44549bedcd50b3cd89c2"
+        },
+        "start_sha256": "84741642826f727a0eca2acdfd8d92be03d705ca7951ccbb9f3618759afac1f7",
+        "unit": "gemma-v064-eval-e7574c7d2a934de290d73e76e2203658.service"
+      },
+      "sha256": "5003bb0aa9ecd6b81321e7058708915dcf2148f66a5d339183d23350ca551d95",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 24,
+          "sha256": "e5e4f3689afb82a0ca7b34150a9761540f3c96f8b3890c67736ac3d966dd03b0"
+        }
+      }
+    }
+  },
+  "capped": null,
+  "cleanup_completed": true,
+  "elapsed_seconds": 6169.294494391419,
+  "evidence_hashes": {
+    "activation.json": "57f7a1d252fb258e82dcbe05967b5ba2044c249b0b50059ebd57cfd80281e13f",
+    "global-oom-final.json": "be22eb7fef6a57caf1aa71781c3ae224407f01f2d84c7f96cb166f4970b23d0a",
+    "records.json": "a9b8f9bed3ab0f61c75382f4ad9ff8c4850e2491193aa110c68d7f6456610979",
+    "server-cleanup.json": "091306f6649331fe437b1b95ca7c748bd28b36d71272dd4a44ef36877d171833",
+    "server-launched.json": "7409202501eb34c0b15206eb07b82ef913bea3090a6151453ee2067674ede127",
+    "server-ready.json": "27375fedd3a185cb237bb2eeb4524dec05d1a11ea27bfe24abddacff697ffe6c",
+    "server-registry.json": "2207c99e5de5726f9fb9499a4bd60e393cd62389265ee633112ac797f7fffbc3",
+    "staged-inputs.json": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+    "v064_canary_scale_A0_s1-complete.json": "9591f576827e40b2d5b5e9b898f8001a380b55360275b08d5b981e8b8f98554d",
+    "v064_canary_scale_A0_s1-oom-check.json": "57b6351609b26207debdef29f778aa641dd2dc03fbd3bbd90919cb678b677596",
+    "v064_canary_scale_A0_s1.log.memory-guard.json": "d5dcdaac507af546e6a2594a9476f7fadfe533d4ddd6a9fb22f6f2695eb713ff",
+    "v064_canary_scale_A0_s1.log.service-end.json": "8d4e14b9a53d8736dc1d51bbe8c7864cf3cea09d121249d6d54b72e5f483aca4",
+    "v064_canary_scale_A0_s1.log.service-start.json": "84741642826f727a0eca2acdfd8d92be03d705ca7951ccbb9f3618759afac1f7",
+    "v064_gen_A0_s10-complete.json": "53451e54ef5e7ec8631ce8d98d463c671227dd250bae2c0a5416e6342f91f158",
+    "v064_gen_A0_s10-oom-check.json": "3d66aa18510453c0934cebd2adfeb6a806ebf40a58b2b8ad4107a6ce9926c73a",
+    "v064_gen_A0_s10.log.memory-guard.json": "51c9fd5a034102106956f272b37b1569c143a0d21d2a8e4f59fef0fc8b3ef1cb",
+    "v064_gen_A0_s10.log.service-end.json": "e40b3379ef44af5af9ffa67870bf7a117be67d99170d12ade891c24f37a12825",
+    "v064_gen_A0_s10.log.service-start.json": "926e6044aa7b87c94efa08666308c940ac1ee7b56a487a65e6278c51593910a5",
+    "v064_gen_A0_s4-complete.json": "3b675029316452eecea62d1b221af817ba8fc9c064700e2b4e0129aa156142a7",
+    "v064_gen_A0_s4-oom-check.json": "67d7bb96d6a91c6215f63b9ffdac2ff091d59efff15128d716afad9b95b9665a",
+    "v064_gen_A0_s4.log.memory-guard.json": "752f6059bcf1bbc8780f504ecd0e95e133271c3e5b2b188508d6bccbec94f49f",
+    "v064_gen_A0_s4.log.service-end.json": "0a9d2a4b81369ac479f046f6eb01d22dff18a1585ccf3452d1eaefc0291ec24a",
+    "v064_gen_A0_s4.log.service-start.json": "7cb054879953e1566a89b422468398255a0d66fdeb584040935b4a4d4b1ece7f",
+    "v064_gen_A0_s5-complete.json": "755ef9e9c51d54de3a5672eff575304b6f65f43f14bd037dcd71a19235953fa4",
+    "v064_gen_A0_s5-oom-check.json": "37b009a9df5c0717b3aef75a3958ee38aaf552617f6e224ab2c802f09533dd91",
+    "v064_gen_A0_s5.log.memory-guard.json": "5185e7dd3785f39dad2f67d343a51c3e09c35f60095dcb24555163776e91ea29",
+    "v064_gen_A0_s5.log.service-end.json": "9cebbe7d6c659a61d6f2fba0c35bb468dc74cac4cac20914102ffc4362451c01",
+    "v064_gen_A0_s5.log.service-start.json": "37ded158d632391874ecba9295462fc2377d6d16012d9a064aa9aacf86238596",
+    "v064_gen_A0_s6-complete.json": "b1e1ca07f4a0b304f2fe843746222593cac1faa060bfd22ee4442cbeecb013fe",
+    "v064_gen_A0_s6-oom-check.json": "6ce746111bceb84a38d694454deaaa93698566ca73fd27386c861f3e42b0fc89",
+    "v064_gen_A0_s6.log.memory-guard.json": "d7ec6691093f4838089c0795fcf08c3cebe3d290458d2c7af9b917fe86f37ad4",
+    "v064_gen_A0_s6.log.service-end.json": "465f12cc594278755a14acb2e8cfd8c00c7a1cba5e53decf3a2504a55ba09d93",
+    "v064_gen_A0_s6.log.service-start.json": "c87f746c9ed8468c4835ff9aecb8c70d7db1cc6771de260d6f73f780d4c476da",
+    "v064_gen_A0_s7-complete.json": "aa2d9cfc7674a44401c9b13b477fefb7adcc2b1305d326c2fba8cad238d83f6f",
+    "v064_gen_A0_s7-oom-check.json": "31ce15aa9a10c8e064f53d45fca8c817fcf4909b4528a97272eeb38034b3b754",
+    "v064_gen_A0_s7.log.memory-guard.json": "273c4ccebae9d25f43411da46dc18ff0d2494ab43955806aaf0b2136647221f6",
+    "v064_gen_A0_s7.log.service-end.json": "6ec865a6cf60e9631a66a8a7092a88f3c47f0afbd12d280e00f9f01d1b5f18ff",
+    "v064_gen_A0_s7.log.service-start.json": "08f27bc5ec1b2bf629113c53fbeb0205dd86ea4d90b9d0305cf86cf614b10aa4",
+    "v064_gen_A0_s8-complete.json": "ae07fac9b06eccf07bcb02a9904faf0d0cdd2a559448c654f21768ffbc09b3f7",
+    "v064_gen_A0_s8-oom-check.json": "204939f4d76373d80eb28620e9e1e1791229636895cd10060c762fa39ca47377",
+    "v064_gen_A0_s8.log.memory-guard.json": "70a021e23a9e7e00adfb3b36ed27413dbfa0433826c5a1029b6234cf6de4c563",
+    "v064_gen_A0_s8.log.service-end.json": "79253f9f09cb9c90b0e7dca9c39bc96e8b0b0451d690c80b2b361f48a5bbe914",
+    "v064_gen_A0_s8.log.service-start.json": "e8029d25ad7128fc587663b972154629224cf2f148ac3ac6e8ae4258b0c542ca",
+    "v064_gen_A0_s9-complete.json": "fb40f40cd345ff46419f7dfccc69e125a46e013eb626c3bee3275f15d374b887",
+    "v064_gen_A0_s9-oom-check.json": "a33c16169518c7fd19de193d4efcfe90271ca163de0cbb78b16d91992db66714",
+    "v064_gen_A0_s9.log.memory-guard.json": "e1ae4db02703831d95197a9b2b6c1b713854d21fa0ae6e68bc7fad8a8d55ab6a",
+    "v064_gen_A0_s9.log.service-end.json": "c464515aa1b5fe4ec9d42ee6ef8eb2f3e3b9d8458bd5b06430f5a71623bc4896",
+    "v064_gen_A0_s9.log.service-start.json": "f01e6d24f651737763db4b541b4dc00d30b7388ae3d6d867e27ae22d1f357d32"
+  },
+  "gate_prerequisite": {
+    "gate_sha256": "a31dc418cb80a56625ae83ebb9a0daf95563904cc334fa430075b505d8b3de74",
+    "pilot_server_seconds": 2726.6025652503595,
+    "records_sha256": "58b09da1f27bc0b113258afd25602c4ca1491093e5e7c589f9c83a75bf4d5d91"
+  },
+  "generation": "v064",
+  "memory_correction": {
+    "comparability": "Frozen numerical thresholds retained descriptively; this infrastructure correction is not evidence of historical exchangeability",
+    "exceptions": "Direct manager.start git/materialization and other direct subprocess host helpers remain under the outer 48GiB service cap only",
+    "global_oom_policy": "No kernel CONSTRAINT_NONE events after admission journal cursor through final cleanup",
+    "host_min_available_bytes": 68719476736,
+    "outer_memory_events_local_zero": [
+      "max",
+      "oom",
+      "oom_kill",
+      "oom_group_kill"
+    ],
+    "per_sandbox": {
+      "memory_max": 4294967296,
+      "memory_swap_max": 0
+    },
+    "scope": "Commands routed through SubprocessManager.exec: agent, verification pytest, and setup commands using that path",
+    "service": {
+      "Delegate": "memory",
+      "DelegateSubgroup": "supervisor",
+      "MemoryMax": 51539607552,
+      "MemorySwapMax": 0,
+      "OOMPolicy": "continue"
+    },
+    "version": "v043_sandbox_cgroup_v1"
+  },
+  "mode": "scale",
+  "outcome": {
+    "kept_manifest": {
+      "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/kept_trajectories.json",
+      "sha256": "4ac513ddd7e32d055c4ea4c47982a482cd174b416f4d6fc8fd2123ce08fd7036"
+    }
+  },
+  "prior_server_seconds": 2726.6025652503595,
+  "readout_sha256": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+  "records_sha256": "a9b8f9bed3ab0f61c75382f4ad9ff8c4850e2491193aa110c68d7f6456610979",
+  "run_wall_seconds": {
+    "v064_gen_A0_s10": 848.7492518564686,
+    "v064_gen_A0_s4": 777.854331124574,
+    "v064_gen_A0_s5": 859.0536007368937,
+    "v064_gen_A0_s6": 882.1628428772092,
+    "v064_gen_A0_s7": 785.1749215936288,
+    "v064_gen_A0_s8": 907.9971183352172,
+    "v064_gen_A0_s9": 913.1127068959177
+  },
+  "runs": {
+    "v064_gen_A0_s10": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 10,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794094824.2050147,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1615,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s10.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2814160896,
+        "sha256": "51c9fd5a034102106956f272b37b1569c143a0d21d2a8e4f59fef0fc8b3ef1cb"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s10",
+      "route_sha256": "1d3a5f29fb4d2a1f9bfa70af2b5021bee11f0f0dca8ce90a47453a8afb3cbf53",
+      "routing": {
+        "cancelled_upstream_requests": 1,
+        "client_disconnects": 1,
+        "empty_actions": 1,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "ca1ee3b6b9b5f3e5c6e3faa014e19465b76b9a8df79f6dd9082bb62ff1081d9f"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 740,
+        "successful_requests": 739,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s10",
+      "service": {
+        "end_sha256": "e40b3379ef44af5af9ffa67870bf7a117be67d99170d12ade891c24f37a12825",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-70e4f333011a44109d0c930ca6bca45c.service",
+          "InvocationID": "a96cf0d61d034383bbf01a9256107389"
+        },
+        "start_sha256": "926e6044aa7b87c94efa08666308c940ac1ee7b56a487a65e6278c51593910a5",
+        "unit": "gemma-v064-eval-70e4f333011a44109d0c930ca6bca45c.service"
+      },
+      "sha256": "9c40c59a06967aced2973583ea733988de5df9b1f16f270f3a535a48997f58c6",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 16,
+          "sha256": "2c6fbdb22ad87bfa986fb9616aa25c7d44e6cf1261cc36c11a12806b472efb6c"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 11,
+          "sha256": "5f43328900be2a866b14f0b799e219e10b126c03ce31e899e08ff8c08e41f41a"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 14,
+          "sha256": "e767709ec7202036a31d0ee30b22e052917c6d5fd44a031e1c60d42579d82095"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 11,
+          "sha256": "3a2dbc64b903db7a275f2bf435ec6fc352cffaa389d3e4b7eb10e4faa296efa7"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 15,
+          "sha256": "6ebff108dc7cc24334affc285dbf750e60c6363178f52f0fb76e3bd623ff8120"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 12,
+          "sha256": "754d838b679517d9939d355f4405a0009f2f7de6e65b2c07bad46f02ac83a952"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 11,
+          "sha256": "c999b8b11f67e898d897c094078658ab699f96a19d09d7e58726251b46fe8b82"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 11,
+          "sha256": "3eb6a722686321f9055584e0df28708f1eafd49887947559b14d5540d6b363c7"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 10,
+          "sha256": "02dbd3e24f673604bafc98658c35d49112ad50d819c0471de0f0bbfd82db775c"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 22,
+          "sha256": "d10aa5b492e8fba3a6356d60929e331e7f918e7f464123c012e82907e0d71f0e"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 14,
+          "sha256": "49d2789a55b2fc75d25f1921e42c537cece6725bf7ea20a944924d0929579b25"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 29,
+          "sha256": "97a987340405896424ba185f02968eaa234bd3740b4e8ebf093a3b1d448f8c6b"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 6,
+          "sha256": "2c9c3553517d9134b511753a73928154d187e19b2c122d11404cedfa45fc3d36"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 6,
+          "sha256": "fd90637f384aa149e7f41652774bfaa7a8e4de67fd08a263caf9408c6171bd5a"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 5,
+          "sha256": "d3dd0403944f0fa774d05a9d9d45b91cdb84de546b2fbb04cbfeba5054b23955"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 7,
+          "sha256": "eef07fd2e102f37ec1ab17ddd90789a5c835b7f314b173d34736b480811f667b"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 14,
+          "sha256": "bcb3811310b20ad95e4769b610f4b722cf1949e58731927b11befbf0f06094df"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 20,
+          "sha256": "21254d08cdb67eb554fb5a621a092a581924c7fcb1d1e30f06ef1319cd9b3e0c"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 14,
+          "sha256": "6a2a361bc31a8bb361383969f6d774596a611305ba765265632725d454d5cc51"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 16,
+          "sha256": "f6e35fbf257b6052bea7bdfe3f539baa3a9a8675b818cbd2b6b47d5f39ea0aa9"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 6,
+          "sha256": "3c04447ee69f0461bab73f7259c0cca8d92dbc2ee29a22fb786e5144f42092cb"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 14,
+          "sha256": "ecfce5529217e64d49248826fb657423f95d28b1b27cb27c2f754752cd82968e"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 14,
+          "sha256": "0455bbfebd0971993c547715c46ba207480bee50faa3b89e8cf58cd8d762e033"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 12,
+          "sha256": "15f6fe7bbffd409b6259c67565a00da8fdae1f567f662ac6672537165be33512"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 29,
+          "sha256": "dcac66cb4b54a975cd77b3066b44076527b1b08aac09b5795c98df6f3836a8e1"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 9,
+          "sha256": "fd8da6d9485bc3d76ccf8f5c744954252bc635757ea18a85f3c91b472bf32716"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 14,
+          "sha256": "54b8b2f096f7e98646cb4a9021fe7a6ae6d1839a47f2c1679f21819b489c5ef2"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 7,
+          "sha256": "2e0cd82c4e49b70c68b725eba03180f83ee35ecc0232b1f4534542cc2341d55f"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 11,
+          "sha256": "6dbbe03e934c7e4fe92c13d9cf492f80e704a0b670f7ac038a9a6a4c30fc304a"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 16,
+          "sha256": "96c046712bc927750ef1273835c501fe67b76c05ba1a33cba1a9c5189598d982"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 7,
+          "sha256": "ba3e50bbc4fa7874573322af3b448630074a0ede4c76d82e0d465ea795d3d572"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 7,
+          "sha256": "5077f0c41e7204f6a88036373d7a2eec88c24a6a614643babe55bad9971cce8e"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 16,
+          "sha256": "5ed60534ed00c8ff7813adea4bc45119c8b85eb32a9006aa4f78d5c48c83930e"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 10,
+          "sha256": "0bd11a93a8fb1386a4d39bd26d1585327a0d107a2dbc7c1e68d13f115bc90937"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 6,
+          "sha256": "f57d3c58ddd81a0f3dd02b3e2898a144fd907470b3e19173910c67627ee72e0d"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 17,
+          "sha256": "2509e3fba531be5c047bb8cc69961415f856333070d524567018c4e54596f05b"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 9,
+          "sha256": "ad2f0c2dd344d87e32e96a8762c4fdbb34030c5f6285d83993e47d99262ae3e6"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 15,
+          "sha256": "17c66e281798a8d8d930d575081235bdbaf626690dd14d3a116e34cf09ab3b49"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 5,
+          "sha256": "38beb1829abc26677b0e415151b7622a3275c0fbfef995a71cfac4305dab3210"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 3,
+          "sha256": "670983eaf7668a30c58da48ef37edb9a9c3c24227b4232f4bc0f37ea7cbc92e5"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 7,
+          "sha256": "a90743b8a1ff78abe0ed2ccb50d556f81f6f8577a1c154ea7523397835866f71"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 14,
+          "sha256": "8ce394a93fbccb5a2b1c506a9770025b2b418d843215836f8b58c2c2a9c8c699"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 9,
+          "sha256": "13987ca919da43ab1fc42f6801571f6fa1d98a6cc9c400fac1f6645caa16130c"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 25,
+          "sha256": "3f51067c182ff01491081be8ab4b43143980c808e91f0d4bd963d8c0ae505255"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 10,
+          "sha256": "488646373a6bdd1f124052eb5f75e664d7d3ecc76502c57c75ea62f09b0cca69"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 8,
+          "sha256": "6cb2b1931e3768d185ad2940cdd64df2e81857ec44ebddf67c72ba16660e4a57"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 5,
+          "sha256": "2c2eb9f6e51c71daf16135d9f886a4521c1c6437032e3a118e6ba1d84fc35a08"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 8,
+          "sha256": "34c39bda306edb04accd0a0a3fd822a0161212e83384f282966cc69874e05d46"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 5,
+          "sha256": "c1f9c488a3c5052d2cec831c78604206b8e1c0348121a00b1cacc27e79890d2b"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 6,
+          "sha256": "0467a6e2afe8d00236f50e799afa1854d56e292b2e64b8419b63e1ade8ea6da6"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 4,
+          "sha256": "bde8c1acd06b7d22684e228abade531ee66ea70eb74907657d3b046304a01c84"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 17,
+          "sha256": "ce70c38e4ea4e1cddb35763eb235a45d9f5a8611bd700eab34c71fa158773894"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 5,
+          "sha256": "62a78a43c2793a51d318ad66fae9abd74bbfc95d62009e3f6338a35cc8d53aa3"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 7,
+          "sha256": "103433610170192dd8510dbb680aed46b4517dc26ab702f287e23590b54b5e79"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 8,
+          "sha256": "df245b40dddd93cfc0e0e80675c18bc05221e2cbee3c8baa44a897e86e8f5570"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 8,
+          "sha256": "a28eb94f9c59559b5152682d7814e776c2ea027c1ce091f06b3c5fefffa77efb"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 9,
+          "sha256": "0edeb3a6b41d33bbd639716ea7cf6c7a6589151be0da35ec423923db375d6ec9"
+        }
+      }
+    },
+    "v064_gen_A0_s4": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 4,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794089590.000633,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1628,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s4.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2732507136,
+        "sha256": "752f6059bcf1bbc8780f504ecd0e95e133271c3e5b2b188508d6bccbec94f49f"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s4",
+      "route_sha256": "0d8d85cd28e6a7af588478777dc84f1d47552adff8a058427f53a3f6cef2cf23",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 2,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "6dac626b7d6a26493ccbfcadcdbd5b33db0cb8c7ac2a9e2a0b282957940f1a36"
+          },
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "e1be7f8bf4955930b438a6c719936aacc7f700b7218e0ba8b9d5be2b169b1a40"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 728,
+        "successful_requests": 726,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s4",
+      "service": {
+        "end_sha256": "0a9d2a4b81369ac479f046f6eb01d22dff18a1585ccf3452d1eaefc0291ec24a",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-94f77b16756a4b408d59a5f178ed47c7.service",
+          "InvocationID": "67cefe1b33da4906a3386b388de77453"
+        },
+        "start_sha256": "7cb054879953e1566a89b422468398255a0d66fdeb584040935b4a4d4b1ece7f",
+        "unit": "gemma-v064-eval-94f77b16756a4b408d59a5f178ed47c7.service"
+      },
+      "sha256": "7e513e71b5461ff4eb75a09014335a747969d8775b43757550e83388b4eb335f",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 11,
+          "sha256": "c692b2a4dab3aba6354acd171bb6c4a05e6b5f7d6a062912b4c2e6c5683c06d4"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 29,
+          "sha256": "a3ebcadee272a809961554bd260e589d33127697d785a4bb61293fc85fa0c730"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 18,
+          "sha256": "7aa8370a52e7d76e406740ba538a333ad84fcab7d886757beb78eaeb487e04d5"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 8,
+          "sha256": "7fedc98c6c6e31a05c1efa94e5b746d833e56fec1d7834015b0237a146a337a8"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 16,
+          "sha256": "c66eb4d07dafe07f27f57b80455597ed539dec4fecd12705a3d2c87e44eb4543"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 17,
+          "sha256": "3cb965a38136709c4dc8c637400a337686dced0ebce5f689f1ceb900d5603e5b"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 13,
+          "sha256": "2a08ace11c71bbb2652eaea1e4f6d8a95517a803b469cb073497e0a15d29680b"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 13,
+          "sha256": "082eeefcdff33af1a9a51afaba08587005e3f0bc1ed002c0dc6eae18bd84ae7c"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 6,
+          "sha256": "6cd1d10fba852cdee618fbd0c0245fdfacd4df1f33fba526ae4f34f4a8802424"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 15,
+          "sha256": "a88fcc2ced8b4cbc2aa06d4c9545c05c8bde1a1eed2a05ad619691531efde133"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 6,
+          "sha256": "951260eed4c07a86b858908519cfaef7b37173bd1f24267c4a28e21074355b1b"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 14,
+          "sha256": "20e9b92df719c8e90a1264c7a4f032055ed7caf9d9e17707f73a5a1c2e2043d7"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 6,
+          "sha256": "d3c0f3a506b6a48cdc7431ff725ee312e2e42a4a584dfa80c7df3355a64bf0f7"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 6,
+          "sha256": "b3e061df6c1c3bc714659dc2609139ba8d8ac2e596c267f80a8c6d7bf4a4756f"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 3,
+          "sha256": "b64bc811fb90c1ee5dd797995e881f440eefea4a2de91165faf4e5901ba6d996"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 9,
+          "sha256": "4353deeeef88cd75f70fb37413d5fd10e38114a0bdb50f09a1c1152b6ca9aa73"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 9,
+          "sha256": "98e388094bbab407d31a49776e8dd261f4cc30393c3b994de430e6410924dd29"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 16,
+          "sha256": "55cf5f248da9618c9242e74f17dddc2114065deeb62ac974e3555d02920122d1"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 16,
+          "sha256": "1c43497fdc59f0d5b46fc9e3ff6ca135f2f4c95e9ecf5a266f58a49c0c22bd9e"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 10,
+          "sha256": "365385e6eb975fe6e68df9891362c43bd4b66d183a9bc6e7f38ca97e8d447cf4"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 8,
+          "sha256": "b115db56cffa5b29854ab96655784f8f641246066457e41e437831fa04db9d2b"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 6,
+          "sha256": "0c009f4aae64ea6146f7d62a8c9b3803ebf64fc42eaf66eb3699bb1c4d9a00d0"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 24,
+          "sha256": "c82a204e531c15b4a83aab5238528795f306fa64784eca347a44d0b2bc776bae"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 6,
+          "sha256": "2f2c1959b69cb5bdf7db9d6beb4f4aaae952ba924bbc50180bca48312b345be2"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 6,
+          "sha256": "b24dff7b5afd0b5beb045a0ae88d09d506afac321dc14f7f75a2ed06ea43e3c5"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 18,
+          "sha256": "16baa78f2ec145f5a924aaa85cb8b58173b8c567fb9ec96e256b6c1f5d670f2a"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 8,
+          "sha256": "658fb67a1059d24e4e27e083a504466640789e9b1a24151785cf03ff1f7f6150"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 7,
+          "sha256": "b81cc3f35db1cdcf3909bec37c4f8691da49385f95c4f3f17e693b6836481410"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 6,
+          "sha256": "4d32c38282265362a7e461dd57fbf77514a2e0b79b2338903e187a2dd9fb61ef"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 24,
+          "sha256": "16703a4f6871309529dc4fbb3e53f4298ac6341a6565a9babbc1a3458d8fcfea"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 7,
+          "sha256": "71da45ee92b4232f4182f09e54fd463885370a478465c837a95bf221fa559dbf"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 10,
+          "sha256": "cd851f00d09003a23ee505890edd68d02714b5e5d248223d3259ecec9f31ce88"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 6,
+          "sha256": "04911812162c0e10cdef77a5fb1cdeb74d4f31cfd1a2827091d14b678b029318"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 13,
+          "sha256": "3d25cc80518e03bec6f6cbf615b4d5d1c91a7c8a94911f59d05e2ae05e74c68a"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 4,
+          "sha256": "b9f9a4fcd5c049ba6c24ccc4a7763e46f6ee72e6f861e3771bab9120fae185a4"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 18,
+          "sha256": "8582893656ff1ee9390a5d5616a231d9a70151aeafaa62bc6a5a85c39dc4bb26"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 10,
+          "sha256": "666fda307497b2f77f1f8eb5a7b0acca6d096f3b031d27c7ad7892ef7d4c929b"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 23,
+          "sha256": "a92e7727abb4558e66d44f24f4a13685bcafb5905f9a35797927a516a6849818"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 5,
+          "sha256": "fcc26b1d0503b78556cb8603fdcdea1998d3b8df1a426830d820122ae3fa776f"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 5,
+          "sha256": "81b2132a3419e76bdf4d97a53495610d4744f917a106f859008ac48433a702e1"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 18,
+          "sha256": "49a298fcaec1466fabaebce686f5c8824705e094a3b485f05da7e4b1adbedea6"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 17,
+          "sha256": "9432250acc55d10d6914421e8afebb85156eaee875b3bc14892456b62232fbda"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 7,
+          "sha256": "bdaab5734152a09679448aea62b3caa204e313eafc90a3ad9429c744eeb08483"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 19,
+          "sha256": "299732d0a759441daec3348f69d35ac6dd94bbc69752f63a7eb98b7be408eda3"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 6,
+          "sha256": "24f8a6d351993184706b097e23d6f605663b7b8319d89b2bb5789d78a176a4e8"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 6,
+          "sha256": "8d8907aced882a9edc0566402f1384e67b0ec3fc0d177d76930ae703cb963bff"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 5,
+          "sha256": "67bf7da7fe00b2271515468bfd9348985b290703e784a0d392e189d9ce4e16ad"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 15,
+          "sha256": "2f4af36e0f06fdbb3b2097c2d2e98ab80aebf91b573076eff193e0725141c813"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 6,
+          "sha256": "6a3672dc7320873d17eac892adc51c8f90f6e5eb51ce5a31ef8a921b12730678"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 12,
+          "sha256": "dada645e61869775d922fdc0ba4ee074525cdd0a32e0d0dee81697116e7e0972"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 9,
+          "sha256": "388c72517b92879690c596e3ab1c481fb92be37298a005e0a43919b5f9587d02"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 11,
+          "sha256": "67299af83bddbf727d10f7d9f6bbcd22d55ed0930ec0eea1da5e14613682f3d8"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 15,
+          "sha256": "4703083fcbded19d8eb8e4482c5882b05046567873bd88e4a6c1f8fd052e6a1b"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 9,
+          "sha256": "b5f4eef8cbe5392c59676079f7d8db4ce0997e23d62f54198be04ca2b300018f"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 9,
+          "sha256": "07decacdc31df1df455b03e55ea9d3bd6ca0ecb09046817b1a5adef3cf1e932c"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 10,
+          "sha256": "bd0fa53f990eb959f5cb7bb407089209b6c6f64fd0d6bef018a014c3a9369342"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 8,
+          "sha256": "73e41e8cf546f7220793f9e5ed01b1ddbd289acc5a7e8a20964993d5ff59dcc0"
+        }
+      }
+    },
+    "v064_gen_A0_s5": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 5,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794090455.380367,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1593,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s5.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2800869376,
+        "sha256": "5185e7dd3785f39dad2f67d343a51c3e09c35f60095dcb24555163776e91ea29"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s5",
+      "route_sha256": "a3d902a5bb9a10619a42dd5fe6c5921255fbf21c034dd9e2d22141c908f780b1",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 3,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "3cdbddcc1b56babea0aa81df65e62c2bf3111fa8dd7a47f1e7d2a8a511ec8020"
+          },
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "d7efab853c82bddc0c9d85479739ee480ca4ed565556558f1005f154f1731593"
+          },
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "str",
+                "finish_reason": "stop",
+                "reasoning_present": false,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "cde6f656d6fc43a9fa1ffc040d7130263d718de997262cbb1b480eaf1c58ae21"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 733,
+        "successful_requests": 730,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s5",
+      "service": {
+        "end_sha256": "9cebbe7d6c659a61d6f2fba0c35bb468dc74cac4cac20914102ffc4362451c01",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-61b0dd47c13d4311a9e930afa23e3b99.service",
+          "InvocationID": "0c5e74a5f5af4e63bcdcee47efd9ded4"
+        },
+        "start_sha256": "37ded158d632391874ecba9295462fc2377d6d16012d9a064aa9aacf86238596",
+        "unit": "gemma-v064-eval-61b0dd47c13d4311a9e930afa23e3b99.service"
+      },
+      "sha256": "1d0eeb07353b3f187d3100d0f7df86455d2ea9344c68bafeeb5230a023f82796",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 10,
+          "sha256": "63365893a060780376f5bc6cec9828e7b242cf1928604ae45551ebaefcf657e7"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 16,
+          "sha256": "25b442d370c17874e972991d56458b9eadeedfbdb9ba0a8af4566e8f308a9e73"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 19,
+          "sha256": "b0f1762e35c07b124335e7b317a249b9e6fe82a0a6f2f66c15022a13e2e48448"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 8,
+          "sha256": "0b37974622589f60886e9f0a0b80c38a1e922a0e02c5071999329b203a5d061d"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 12,
+          "sha256": "19b4417ec7403b614828618ee4fe13e2568c9da4cebae2a5fd6496e32f07dc85"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 23,
+          "sha256": "5483c8f994330ead7eb6de90897ed04c43edb13a25fe4a1b5280566480fcda7a"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 17,
+          "sha256": "64f85a5fb88c5b8945731c80c97c37c43f1bd59a328833e445d1bf57619c033e"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 21,
+          "sha256": "7c603ef5bed770427120494f90a8e2cc79ba041c0218f546244563ea1c03e669"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 24,
+          "sha256": "60c25d06e14c324261612b934d14ed6e52884b18983a2f7c1f61309c616cf70a"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 19,
+          "sha256": "d0de38ca47aaad284be4844272d4db1489e9bd39667d39eea959c7543aa74e15"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 7,
+          "sha256": "b3b79842bec348e68a1fc55c2f4730734d0827d9f2922458cb29c37a10a94a1a"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 22,
+          "sha256": "c0f152bed87cfea5ad220bc278a47d18b91e87ce32b32d40ba29c745af9984ab"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 3,
+          "sha256": "2b7ee223335554f2b4358f1a7f1847f714fe6d76738bb303dd48325e2827c0c1"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 6,
+          "sha256": "b3ed2c9bdb595569fa3e62301dad956dc6ad9fe29c700157143807201eda214f"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 3,
+          "sha256": "fc58f01101b0b1939d1870bbbc23199e562a088dde36e0ad7049e8d5a968b402"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 10,
+          "sha256": "289874237373547272991eaa669024fbe7062f783c21bb318c0df187e22cdcf8"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 7,
+          "sha256": "083cf6dca5c9e5b0a6a7cb04376ca25a287201fade9871eb5ec3e5612509ab89"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 19,
+          "sha256": "37f91d92ec12bfa2a3b027fa9854464abfcfabd6c23a15e929a0ebbd6d41f9a2"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 8,
+          "sha256": "fa27eedbb6960c1a22fe2ddb45fc1addb8d5bb1472c27bc0f6fdf132e74ce8e6"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 12,
+          "sha256": "21331cf42fa2b35efbf093f9c11bd2abbad6840e1337101c74662b618f34ae0c"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 9,
+          "sha256": "bd5ba9d51e982afb6b5d5c121f6da74e7d8d65c442d1b0842d78cb15db8b1ce7"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 7,
+          "sha256": "1953d3d73b481aaa927d073ed8eccbb68ac083112e8b6c504c58db281b58f946"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 10,
+          "sha256": "6ede63063b04e8da848ca854b9d62e8bfe70ca51fa8fafc9f223871a19993721"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 7,
+          "sha256": "6d16a93af4feaecaba9945efc743c19b1070320c252876150f7a0c4ae99e7497"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 10,
+          "sha256": "4f9dd690e1dd074fa3d9b9bceb4a56f710436bb57b18241fa5960b3745aeb793"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 7,
+          "sha256": "146c590513c80a2b44f23dcff5575cb59e35b04e362db6b4c6297113a1b60931"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 6,
+          "sha256": "49a4e720a6582e0bf35da83af8f11e4fe630e02446f11e06d5ddcffafd11725a"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 7,
+          "sha256": "17581c13972162e97b0d12e9910762e1e4e22ec154afd684555962c03c7f2edf"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 18,
+          "sha256": "72cdbdd574ea48e385a804e76cd9703455cc377d85f5e8032ef31be6dd189ee1"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 13,
+          "sha256": "87e9426d73dde3724e991fdeffcbf9d1cf3d263c770b1360a8c0361af04481a9"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 16,
+          "sha256": "3884457c26605d1eb8a98b1bc55e4dea7cc10977afc364af0a96a472e431263a"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 13,
+          "sha256": "7885368f54a003fb4c074de71e84a2f2538181baceac0626be3fad654b854a77"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 8,
+          "sha256": "5c7ae677027d3601f7b309ef2317952193cbcdf0007ef3d24774824e6974f22b"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 18,
+          "sha256": "47f4560ce57e30141807624ff194ff00d3fb54afbcf2911e8dd44ef30823c8f7"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 8,
+          "sha256": "e6f057a9a9aa6d2510a7b3b3984b68402da45d50bf7187f0bf70b73aba229094"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 16,
+          "sha256": "7cd7760edfb40cf80608c639660deeac3376eba9365a8ac225879dbf00f1f368"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 16,
+          "sha256": "c377a43491b0ae773d84fcd1b478e28cb403327159439c0bd2652a4e068f6204"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 11,
+          "sha256": "91e29c9e73da2613ac5a730a5b3c9df4cdc9bae115d8cfa542ccff87dd19590d"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 6,
+          "sha256": "16eec67f360e20b9b6ea71af858bc53f49272249238024bef7d57471be6d41c1"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 3,
+          "sha256": "7311dc7903814d3326f4cf59aca524960b664fe6e9edd82e85988784a4885383"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 6,
+          "sha256": "8d91124f05b161cd460830ddc16b4a2a72267b2bda31e8bc9740149933ea006b"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 10,
+          "sha256": "2239cb97abfcb8dcd89058bfd5608c06f3d67c425380fa311d4def13cec7d8b8"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 16,
+          "sha256": "2f84593f119fe32e3706d2b26514249a7b9b1589501d04626789a5ea619227d1"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 7,
+          "sha256": "3cdad6f78f926e46ef5b6f0d2c5f440fa6696d2d6f73248bab1317ecb2a6a39c"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 8,
+          "sha256": "75c0a5c655599de664e3a1fef08e245086c0884fcc6c6eb3eb882024bb740811"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 7,
+          "sha256": "5055f292ff28cdd5fdd8141857e7dc1dfa0912c47f5b982ab8c93b20dba66485"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 4,
+          "sha256": "21b06140c7a9964690af8833388662526816ff6fad51f7b9dbad30437cefb8db"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 11,
+          "sha256": "01cbb05c817f390a20eb3d4a3ff292e0794de4fa6878b93348e901542346ab66"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 12,
+          "sha256": "c7f8788e25b901a2dbbb0533b7b41eac770edf023e41f512fe97eb909de7bd36"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 7,
+          "sha256": "761d2a67f07ad7c27f85e6525e41b507605ea3b79042bfb7e9f5a58b23ebd511"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 6,
+          "sha256": "3cf799d150bc1c34cd0681ef9d549b79dc55c882382500aa1895e736a498bc1a"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 17,
+          "sha256": "61383aa088600a4a7f1ff4aaeeb1884f952eef92e0697411d2460cf9165cfcc2"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 10,
+          "sha256": "5770608996a059559237daf09b72c2de299b6918f5dfcb562f7e03344890e8bb"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 12,
+          "sha256": "2665e01295bc5b92686e29d8db207d80681bdda7996ab4e0c6a78878822ea6d4"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 9,
+          "sha256": "d87d1fcad55beb15aa31550e2ee9c7860d751bae72250df37378a8c50a177248"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 13,
+          "sha256": "dedeb9866c9645e338065c7cb68b184e74fd0dcf434c6a38a4696ff518128998"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 9,
+          "sha256": "c45f48a3b5840c7e46f8b1b459428eaceaa3097f2f6d11e5ce34d899456377d5"
+        }
+      }
+    },
+    "v064_gen_A0_s6": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 6,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794091343.846212,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1614,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s6.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2798526464,
+        "sha256": "d7ec6691093f4838089c0795fcf08c3cebe3d290458d2c7af9b917fe86f37ad4"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s6",
+      "route_sha256": "478a82e4d57b2e49cbb44cd48ad1bf4de40e25d6b94f16471647ec0651b1a99e",
+      "routing": {
+        "cancelled_upstream_requests": 2,
+        "client_disconnects": 2,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 815,
+        "successful_requests": 815,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s6",
+      "service": {
+        "end_sha256": "465f12cc594278755a14acb2e8cfd8c00c7a1cba5e53decf3a2504a55ba09d93",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-3db10b7fa931481ba49e74b24d4d02ba.service",
+          "InvocationID": "79ff20412ecd4d76b76589488db52554"
+        },
+        "start_sha256": "c87f746c9ed8468c4835ff9aecb8c70d7db1cc6771de260d6f73f780d4c476da",
+        "unit": "gemma-v064-eval-3db10b7fa931481ba49e74b24d4d02ba.service"
+      },
+      "sha256": "9a2cf8429c9017908004e2b206c43a8c057287719b9cc1e616184b0d62e4cdce",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 6,
+          "sha256": "9e0898bb40dadd423088545bb968b858d18afb5632528b50b72829949a639631"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 17,
+          "sha256": "f0f195ee6e2da6d41c0d65372e0c63f5b28c114eb76f468838337f910416d6aa"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 23,
+          "sha256": "fce023b4cd6cb000440b984659313ce98d53a146900d1ecf1b55dd290ba45217"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 18,
+          "sha256": "7ae12fb571db34571e3c450ee1d3fcb55b28a1e99b674c24c713293125636c7b"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 15,
+          "sha256": "b4c9ae1fb791a800c175c19cc72675822c87ea919350f541f6dd6b38a8734821"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 22,
+          "sha256": "1b5b9ea98f8c640d21ec63216c794ca982363b26bca104409a86257e6485f268"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 5,
+          "sha256": "25b4ddfc4260ff64e70b05e902df22b0db40c0e0256eea56d88a2f0f33e226cf"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 13,
+          "sha256": "c3c19a8b0b062bd1f79801bd1b9e668482d70a0bd0f12aa142a40389842a6a00"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 10,
+          "sha256": "21618dc647276a232924d186f771dbe00631f445d275ccb5c095da2f00b51641"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 17,
+          "sha256": "8ac77960e4d187d6b617d8d788093f043c33567a26ef68bcb61d85213b935f4b"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 7,
+          "sha256": "68c04fb83693f03985cdeb825fa966297b303a33415dc0235824a11969a30313"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 18,
+          "sha256": "0d223516bcc9c44ca7e9b419d9b2ab6ac3293d8ef1c072523915d71da04f2f4a"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 3,
+          "sha256": "218ef11785eefa1eca3a575dc4f3e13a3b3de44fdd0c369bf4e0e9f180d647ae"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 7,
+          "sha256": "48e92307ccbbe6784d187a18528c4b4a0761f6f07ecf7be9967026c138265d1e"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 4,
+          "sha256": "7fffedfecb744fa24cfbe6fb02fcb6a5a93b883f84bbdb9f012a33389e36d916"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 7,
+          "sha256": "b42a740121e2a459f1ffb1ce451d07d5babed4e76571ae5fe19d04e5bcd4b052"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 12,
+          "sha256": "c4afc2fa70073583623587fb4c0636699ec0f8eecce9cf31f144c362a9c5e75a"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 19,
+          "sha256": "4d979bb1e7c716019e7d25ba99c30e2e5dd0052d1604ce4a6cfd8fa177944e32"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 17,
+          "sha256": "8cf67d9565c19b79efe17e152d2609c06e0fe45d151c57be6095ae2a9a89b703"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 13,
+          "sha256": "8543b0ffcb5783716a31a4a2d80c606df8b55dda2fece9c5d4a5a741511b619e"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 8,
+          "sha256": "acf6651abe804f8664e07c5e9a48f9d4e34a84e503b02e7598b0b2a9aeee8b1d"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 12,
+          "sha256": "2cfc17fa7277ab1c77ab612dcdf0c1c6eaac7a53ef7f9c2597f363e500fe016d"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 16,
+          "sha256": "909c5a254268a294f05865b9849617b9b8029b9df48d5e4b7c23d9a107d6be14"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 9,
+          "sha256": "bfd8e0d453a2086033dfd13beb07a111fb062ab0069bb679168f30b1a9ed6a11"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 13,
+          "sha256": "8229b3c9b78678e5f1185c2d4186a845d657eec7846ddadad28a71107834a4f8"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 10,
+          "sha256": "766257255608ddab37345f8935c6d3926db99afe1710552afcc0aaddbbb4d282"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 20,
+          "sha256": "5016776c8be0f4582467862d241093760f4a9b94a41a5c19accace95857799c5"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 8,
+          "sha256": "079b20efc33c99b80b6f8ec14daa5a06608eca3a6c09f0a1773a329d9f7827f9"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 12,
+          "sha256": "b41469d639b5093714219b19ee3bc084058d455bc366c021009cfc0621b54854"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 12,
+          "sha256": "ff2ae994cad1afdec237cf7af5afb6cdd0462670d4aa52c21e4f31d43585faa9"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 10,
+          "sha256": "780762746740bfea462d79856a2af97b374eae891199b5d913d05ea5ca1398eb"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 10,
+          "sha256": "b18753f81826ec2516d4d92269064fb0fea5cb49e71f8c45281be24ee80cb737"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 7,
+          "sha256": "4db6c1fc68c94d75dd5bb460c360fbb28358cca22f5ef82559925750ca7e3052"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 22,
+          "sha256": "ae8f74cf31ac02af5fbb00d492440b387ba812c9eece1d00fcb6d7759474000d"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 7,
+          "sha256": "940ff9d79059df14b44e0ebd5ae49bc9ee62b62cc270940e15efdc44751ed8b1"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 19,
+          "sha256": "80bc5f680e4668e1680888fb18489607b13f4c6f1e2356b442eb495666235690"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 29,
+          "sha256": "7f1933b728928b3d39faaabb9cd2922c4c7219f177082fa40de8c31ac2d140b5"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 22,
+          "sha256": "48cd9c20aae0b8bf3ec71ce97e4a6e9b495a54fb388d91580687f44bb8196ba8"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 6,
+          "sha256": "f256b98312a3ef2fc102d1c7deebe0b4ddd5dc9a0b4cda9849196c5188fb2270"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 3,
+          "sha256": "f87bb02bc4220299d8491e5b6128181d746e0543ea4615dcb183f04d870b6c13"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 7,
+          "sha256": "eb09f9054db37f4ed03628f97749655342f60ff035d4e5da114456d509b1360d"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 24,
+          "sha256": "67a7b1cfd4d8c94d7d982d639095f201fc14349340a1e5a9a1930456cb052cae"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 20,
+          "sha256": "831cc4821ec14ee735b37106370b5d99c481027ee175bf515910bb4bef800d5b"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 34,
+          "sha256": "1dac7e511d1f6a6eda19525489ff97027f05ff835cd959683201817461fe2499"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 16,
+          "sha256": "ba66600a95d26b47ec3ffb83a136174eba570fc9fb321e643e48bcbcac5b4de3"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 8,
+          "sha256": "7418405f21fdb73dc5a2229f8f5f0185e9a8f36dae01c85034f9e8529bd1ebb0"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 5,
+          "sha256": "91f7a58977a428d21557d689a724c6dac3c7d1fe140ff4f4af3aeeb251f1b4b9"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 11,
+          "sha256": "283674d2ff091b27f3a91488df6201a6d269064f6108e1d0345a1f7a44dbfdb7"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 7,
+          "sha256": "d6c0b8a6a57ae5d150d39098e3d53bab756a6162d0d5d5793475a7a22e6cb7c6"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 16,
+          "sha256": "a43c0281bb62a0cede3758905606b1377fc49307a42c7fac70f2527b0ae6d486"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 4,
+          "sha256": "658b18491ed64e793e789abe44db485722b19afa5d151d182137ece02674b8bd"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 8,
+          "sha256": "4ca54acf7c08e695717efef1dc41aa414d9d4e0b4bb0e3d00da7f5f4c10ef6b0"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 8,
+          "sha256": "1563bfac00a05d659eb35e91a875f5c47693abeabdc55180266c225c68ba7164"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 7,
+          "sha256": "5a771476dce361f78361a3bf018606d9676b1d9850ec10bcdf6c246823916613"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 13,
+          "sha256": "68e6a764b5b2c9c05656ba8f42751c1e312f3bfff10441cbd4c7d45481876b8d"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 9,
+          "sha256": "56763fffa8a36694fe83eb043ece0167bc37ec5d48df79a1c75e13944203b64a"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 9,
+          "sha256": "b4015a4b54cf9b0e4e8eebe8dd45172dcd2f3bb781f67257edf64c335211b47c"
+        }
+      }
+    },
+    "v064_gen_A0_s7": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 7,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794092135.3684747,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1568,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s7.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2763571200,
+        "sha256": "273c4ccebae9d25f43411da46dc18ff0d2494ab43955806aaf0b2136647221f6"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s7",
+      "route_sha256": "10170204f48a932d95e03cbc0db76b4dd7b957f040c5e9b331eb01890e7e44ac",
+      "routing": {
+        "cancelled_upstream_requests": 1,
+        "client_disconnects": 1,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 641,
+        "successful_requests": 641,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s7",
+      "service": {
+        "end_sha256": "6ec865a6cf60e9631a66a8a7092a88f3c47f0afbd12d280e00f9f01d1b5f18ff",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-67e55b8ddf6c4d81b4798f9c345f28ff.service",
+          "InvocationID": "1257b122820a43929f89939eb776c316"
+        },
+        "start_sha256": "08f27bc5ec1b2bf629113c53fbeb0205dd86ea4d90b9d0305cf86cf614b10aa4",
+        "unit": "gemma-v064-eval-67e55b8ddf6c4d81b4798f9c345f28ff.service"
+      },
+      "sha256": "379b51c6ceaa9db9e477c212bc36e5bfcb2595dc1c65a44fddff18f04ab29771",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 9,
+          "sha256": "edf4dd34e17d9d03e30c8973c5393e4e1061ea4c21eee408990cc6de3078a315"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 9,
+          "sha256": "6ddd98a47f7169f1db31cb61ab7b5f2dbb6f0117d7683ca5a4500502c8049dc3"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 18,
+          "sha256": "202401a87437120285b63c5ceaa14972f60d25fe0df8c39c4264ddd960826838"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 9,
+          "sha256": "a78241deabf5d3e339bcb88ca11dcbf34ddcceca1e419f2c4ee3e93ad892f19e"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 9,
+          "sha256": "c6cbc83216f9b6417d344996fa10a8a3e882d8ca9121aa0fbe5ad7d65e1530b3"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 10,
+          "sha256": "5d6da496914c036d9b283192fc15f00aacd37cba11d6480d2b11f67c83cb41e9"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 9,
+          "sha256": "0fdaef0f0ad2b1f391f9fb44fb1b45549f399066f81be36f42c0f8606d31b4d0"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 24,
+          "sha256": "4eba1f87aa833e7988af1ff1b3514d10256fc13f2f229919f0ad75b79a32f9b0"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 7,
+          "sha256": "b5cba6209e37d04a273408ce561dad4f4e81caaf3f129519b5892edd2b30d4c3"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 12,
+          "sha256": "24e365301c0b09e0da8ded02a0e594fcf73f6bc8e38a25d428dd88a94a3b161f"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 5,
+          "sha256": "85e99f3f7089ef701b2fdb9c0881d5456fc7f534bdf44d4384da5471e321a31f"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 14,
+          "sha256": "f9fdfae030cc9b1123abcf305b0b63a40577883fe3a88288318bc309b7fd57f3"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 3,
+          "sha256": "7c9a1cbef79d4d92b166e3642de433f5a79464783e67ceb4e48c3efcde783945"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 6,
+          "sha256": "d507cee59f0269f5d3f874aca868c1920dca9ee21eed03bbc878750d25562cc3"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 5,
+          "sha256": "9a7ae1ae88a747e15378f1e46b5d5e8b575148955b4dd697abc103a070838c92"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 11,
+          "sha256": "ddba0de9e2a14ec46c675b2e74190056d0b76c3c1d8f1fc1a39bff321a332551"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 7,
+          "sha256": "71135395ef0d40e892dec426869d6ebcf33f4ae91260774b3f2582da05b501fa"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 21,
+          "sha256": "e14fd2dc3edfd3f52028af27bc49c256b97fed9beec1e7a29b5fbd468d8717f7"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 16,
+          "sha256": "61cd32ab26cadf4e9ddd5d59f44bca8943d8ea606221678aac83356c18d979ea"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 9,
+          "sha256": "bcdfe6fe3a5abb7d83b98ac2924b2173135b4c03747510eaf6a2e76150e15820"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 4,
+          "sha256": "7e3e7a960a77277a002d513b7527f3f8f7efc1d1310faa915370b0a504ebd8f9"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 10,
+          "sha256": "25f71e9ef7088ca8ec0d7085c12fd5f25923d00a30f449f49ad5ae5daadfa934"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 25,
+          "sha256": "ef4cad4485f1926c8ed744e2d2b0984c8361be999a13ca7047201a40905d9773"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 7,
+          "sha256": "9683f21bc1717ade243283acf29545932855df143fd398f756435e3fa290d3fe"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 12,
+          "sha256": "b4af2ff7ce14f007f9bbc63b51c39d84a9212b35647229a79d759fcfb48ab047"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 12,
+          "sha256": "09ff55e364a26acc7182ef13a214ab73bd61aa2e567a4a96154019817590d758"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 9,
+          "sha256": "e38701e1fac3546d1364270a10e9e0ce80d234f233479c4bc7aacfcf6dd6e101"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 8,
+          "sha256": "cd745fe4886607c2a2e14499fe53ab8859a09e1458113659171eaa6ead0c761f"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 7,
+          "sha256": "ee5e0caa7d92dbcab6ce35c9c7b93136ddb6b1d7b7379b8eb118ea8c38ffefeb"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 11,
+          "sha256": "0730a201393af1421d1de58ab1215f3b338aa47463a52787c6ad1a5806a95de0"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 9,
+          "sha256": "e38609232681d90671b2e06bb3a8c3124d3e07b1f6de7ca5c9db492ab8f6099a"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 7,
+          "sha256": "ecb13a7e041a193ac75672396fdc4271a3769973a682d8f9f41b1fe782e5abb6"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 4,
+          "sha256": "7dc0b471115def34cb015f7cf3e65a6d2879d93e3bc0bcd72677d340508defba"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 10,
+          "sha256": "3b7095fc2398491111966213d0696d1ce19494de6f3903c50b2a84b31a65d6f7"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 4,
+          "sha256": "ca4c211a59688104186e53f2e5db8ab2ab63711dbbbcc648ad0ef40eef4bee2e"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 12,
+          "sha256": "12952c1bad14195fddbaf6aef7324c4605f12d85f782768659b3767e775e5351"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 15,
+          "sha256": "db24648fd5b3e521e2939cb8649c12df383f5b6c9b7af91be7ca2389328d03d6"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 11,
+          "sha256": "812a7bbfcef7e2978b131995e0e47efe42a0622c17d6b9f7c91a924d721c062d"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 7,
+          "sha256": "7b6c1b617fbec90844117d587aff4f4816e7de03d08f241d1a8c998f281ae7eb"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 5,
+          "sha256": "d57c3e3f2e843c16c393c7f4c7d8e843c64635b4e0a8bd6fc2df2d26257b8da3"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 7,
+          "sha256": "2f37095f4ed83398bc0552994b0d1f67ac9c0bcf4bc555fcc48031d95c132ba9"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 10,
+          "sha256": "5ec5edc175601c7a2e2622d3706a2872478314b206b9e5b388153a050cb4f679"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 9,
+          "sha256": "d306f72a2c6080808102ddd3f232c5da78e581db780c611931eb40daf1dc7ccb"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 10,
+          "sha256": "42e4126aca244ff4002f6e8f0b5d202535c60600dbcd771d6ae89124f38de5f7"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 11,
+          "sha256": "893905e5ffbf87f634302cec07aae580f1e071dcf09fadcb1e9f6f5af906df5c"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 8,
+          "sha256": "fe92ec5604fd690b0d1deb2334719d905481c1e86ad19a6af85ce7f974306b0c"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 5,
+          "sha256": "9e2a863445d3d6f05f512366505dbcb265b9f33d7cea5a033a1f7f5556bd42ab"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 10,
+          "sha256": "2cfe80422c4bab0d420898bce119bfa8eba4d452ad0a416239914856fd9874a4"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 7,
+          "sha256": "6084187f85f06d609987f55d10a0e2d465ad5d81992b93d6c4dc5a3e0216ae2a"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 6,
+          "sha256": "bc7131afeba49bba2e5a4aa1ab865a700c0a90c5b8845bd50f56bb1c410296c0"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 4,
+          "sha256": "f538c6fef9f4a4c20feb81436ed304cfb4822ff77e68de8e80afde9fccef0b58"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 21,
+          "sha256": "3b97cc77eb91ca8c44e2a1c2b1fa73dd802bc178076b5be242ce53d6db5c3d6f"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 6,
+          "sha256": "2a36e9867fea3d69dd4130786e558b3b11ef8d5f9baf651ce28d0ad82bf1ced3"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 8,
+          "sha256": "f600009bfef7f6f8971c4f3dd9db12c8d670ec4ee4e87dffa3ceb91d4895e41c"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 12,
+          "sha256": "99a0fc6eac8911ede9ecb72ad5c55fe234c851fdd211d49fed3eeaadf2c3dd9f"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 11,
+          "sha256": "29cd9402ea17b0d25f4ed16aee0747f66ec32df11283ce6b90ca787092a2bf5a"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 5,
+          "sha256": "cfebde3f3d5dc952ed616e3f5969b82d2c01517fa909d96d53ac0e3d4aa58eac"
+        }
+      }
+    },
+    "v064_gen_A0_s8": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 8,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794093049.6842334,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1626,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s8.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2817724416,
+        "sha256": "70a021e23a9e7e00adfb3b36ed27413dbfa0433826c5a1029b6234cf6de4c563"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s8",
+      "route_sha256": "d7a680621877f25c25d70536c5acc32756db82361af1d79efb73862782fd12b4",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 1,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "str",
+                "finish_reason": "stop",
+                "reasoning_present": false,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "4c412320300b1f8cafec418ed7662f79debb1efac6a580c7efab324ea4b2a2bc"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 796,
+        "successful_requests": 795,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s8",
+      "service": {
+        "end_sha256": "79253f9f09cb9c90b0e7dca9c39bc96e8b0b0451d690c80b2b361f48a5bbe914",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-7e494f6df8fb4e8380b4604bdfa71e4e.service",
+          "InvocationID": "5eff9ae7d1b241bb92bd530593c899f4"
+        },
+        "start_sha256": "e8029d25ad7128fc587663b972154629224cf2f148ac3ac6e8ae4258b0c542ca",
+        "unit": "gemma-v064-eval-7e494f6df8fb4e8380b4604bdfa71e4e.service"
+      },
+      "sha256": "776a49f2a2a0fe1bcc2164be86ed7b6a191e3f79be5cc067c8bb9bb8cea5674d",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 10,
+          "sha256": "f3495e0d0de653eddd40627f079aaac2a1383c11e1e1a0a7aa887601399f3f28"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 20,
+          "sha256": "61e56a66c48a957261d8430a74c0b20acc727ec5dee272f90ef1e81d6cb702d7"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 16,
+          "sha256": "32efc58f4bed7c57e5cd2b9f9fb32ccb0bb65f1a6b621e07c7ba707b0678ea98"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 6,
+          "sha256": "4888c4c18f84ab4c74ee978d781ec54a4f319cea02d28e0551f4a72c36707a3d"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 8,
+          "sha256": "fc3e9fd42b15576f5a8b34df5dbb7484e913c251b255f431dd1088c04553ad5a"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 12,
+          "sha256": "d2f3ff505ab904899807719b126c131b41cc7d848a78662218e5ea8b10cc457c"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 8,
+          "sha256": "e8194e257c4c39b2a760cdb836f586d9729937134d9bafe283b00fc74b632117"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 29,
+          "sha256": "0ff0fc62adeae877c52024c5f4e9b4164738cf9b2f07a811a7c8cdbedd639485"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 6,
+          "sha256": "3006a8f533338d89ce3c7cdf009ace330fb299efd5e091541f436b47bf0e7121"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 18,
+          "sha256": "d8a796c3dd2278b6153b75d2ea7bd8aff83813c87c43ead36cf3fd2d5608b9c4"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 9,
+          "sha256": "8815b53bd0f1f8d3394a3c4c74aafa7b3e8a1f9b494c25a092095e08c5f9a486"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 23,
+          "sha256": "d50d244ad05a84de979572e5f1c6439389f1588ccd9f876dcd6fa58a0e32b262"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 5,
+          "sha256": "498f799f760a5ef937e0c23ed6b877d4fbd6e6b73bd7f670c71208204510de62"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 10,
+          "sha256": "81f7cdbcf536cb2a2ca8531304ab3cd714f2363077cdea4f59ad45ca0fcd45f5"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 5,
+          "sha256": "199c0852525d38754404eb544b285d88e8cca4aa722963f833933e11c15d4981"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 13,
+          "sha256": "c76fdc5d99f72f5fb362866e3cf88b9b9abc56f8ef59cce97e305e3ab1385f29"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 7,
+          "sha256": "a0a46cdcb2af63615ce8bf2af09a9d0adbca6af9fba5bbfb73a08e898ba29d7d"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 12,
+          "sha256": "a8ae81feb62949b3032a7a149efb37d47c6e1a2fedc4b79a3c3d9d1e3fe1bd8f"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 21,
+          "sha256": "9061e88880d8c2dca3ab939f4a3a55bc748ab0bc33dffa1156126c12b1d145cf"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 11,
+          "sha256": "5fba7496bf7e0e4f68f68b724cc6ecdbe311bc75d8ca73327883bdab43ffbc1a"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 13,
+          "sha256": "6cda97b12057a21c9358dda6760d0a9320d82a25c3a263189c34d77660363509"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 6,
+          "sha256": "ec7329bbc5d23d20590d5f70956c6795b3d629bed84b0c463bf5927c18b40806"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 17,
+          "sha256": "40ae585ea24adfe474b1da81f69bf974bc12498b32450281e958e9d5887240b8"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 8,
+          "sha256": "9225a573ddc0c75d7d0a355039dafe1285e297c0250d37cac3fc2107ddc88d83"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 19,
+          "sha256": "b34571e2115602ad7a236bed6d3d0a996bb87d4e4b45fc836f5a513067aaad04"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 14,
+          "sha256": "3bb6bb3a67733aa4c1d07ce8d64040acffa740ea89967a79d1c85ff6aa0f237f"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 15,
+          "sha256": "3aa8a52b20ff3f643cf34387e35e67f917bd90d0e3c9c161159840d8af4c7079"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 8,
+          "sha256": "7c91df9c6d93a4d730b6e5825ede11a94e29a59d5dbceee9944aff5e5ffabfe6"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 17,
+          "sha256": "61d9596373ee69edd04445fa14cc1aa1f14571da99035a2741574dcc6c7d08ba"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 15,
+          "sha256": "84f05d385bb2b9dc2f6d895b6045e9f931e71d0c532ae293041c4d4c19c24cdf"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 6,
+          "sha256": "28e6d9ee07555e4d5baa983c778c60cd477e778cede55655f667d3495790122e"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 7,
+          "sha256": "a7bdb265bd393beb3ec89791663c4543566c26c5fb03e10e1d529077e685c958"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 4,
+          "sha256": "0cd117d3046da4d25302dbbb140188c15192c0ac8842c558b2353be356e69c63"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 13,
+          "sha256": "819efa28948f4073b5a690497270111a71e8d302984d67d4508557e70ca6aa77"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 5,
+          "sha256": "f07db0b122766439b402409b569ae3ea8462e312ae9019e7201063e5f1d1115f"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 13,
+          "sha256": "b9ae806bbd206c4a6dab54ce0c43a432f63bce16c8313c8e5c5ce659e072cfc7"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 16,
+          "sha256": "b5a7b9434813fd247ad6fdd241dc06d89f1e2e0711e3a38ff10168028f3e044a"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 28,
+          "sha256": "696c97b57c4cb6fcd323c052744a5827a575b91c4c3e72360da52559fdf7d72a"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 3,
+          "sha256": "e7e920437408d291b5e3bf833c9246f08210d77cb143e979163973e8ca8e127f"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 5,
+          "sha256": "c61f3f1f4e24603f414f34fc47f2e8b482a8fbd7c0ebda9be6eb211651d62d15"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 7,
+          "sha256": "cbd50843fad16c25e977d810605e3dc9cb4f0efd093422dd37756795d3ee5e04"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 24,
+          "sha256": "f2c63401bf0d2222bf64fabefd65870f494f608e03d497ca837b3889b6cec791"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 10,
+          "sha256": "4202794b20d76fd0aace0c27c6278d57a393c6f5ba27b257840c79afb380948b"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 19,
+          "sha256": "daa92f4dbf767825469f61f615682f0785441f0b79e6ee6b897ae0dcb6eccb21"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 10,
+          "sha256": "55d1f4a5883b4aaef840214e31fee927e8449f8df255a8388b6046e61035782f"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 7,
+          "sha256": "2d553bc21d832c4c4677af7c39eee3b82adb94c6cd542709b899c09dc97c40ef"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 5,
+          "sha256": "6846b795e3e856d767aa3d0604d7a2896616002a4b69f169e569f42dc8ac55dd"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 23,
+          "sha256": "548883cb96264b8f4013b90c028f19dcd84fd8fb5e776ed0b3ed7665afa049b3"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 6,
+          "sha256": "7ae36e4ae258901bd3a130ac62a3c6cb248399066f36a045b0ad9b84695ff91c"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 25,
+          "sha256": "fccfd30a9b860980043c422abfc0b8ed18889e186db6b0583911fd3fb009d5a4"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 5,
+          "sha256": "51299eae3d7c81c50814a4383a069961576cd006351c9692b0befbc33dad76fd"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 11,
+          "sha256": "a358ceb2e6da3632a32fe1d3e5249d44b00b4cc1efbbb0cb5ba96937c0c18857"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 6,
+          "sha256": "6437774b741a87d9b3bb45df76b0f5a7ddb83b83ae9eb747ebf0b9a0e17a5e39"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 22,
+          "sha256": "93785b69f11f82571cdd45e92feb5e1f84b40e870423d2fed54d9f0cce054959"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 11,
+          "sha256": "5f7f646b2cf07395a05866a6a29cfc36e401d34501251327d5e2f1b2274b9a0e"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 9,
+          "sha256": "fd448d0c6a4b2405d7bfdc45e98c097f085846e23cb52c46c6aa787d9d8e0924"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 7,
+          "sha256": "9a663c96f448e69d73baf0a689f2aaf028af4913bd6b4117ddc0306cf3764762"
+        }
+      }
+    },
+    "v064_gen_A0_s9": {
+      "alias": "gemma-4-e4b-it-qat-w4a16-ct",
+      "arm": "A0",
+      "decoding_seed": 9,
+      "generation": "v064",
+      "global_oom_check": {
+        "checked_at": 1794093969.1238954,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=17c905;b=6efd82b9fad64f13b49ecaa98348fd0d;m=4571d447edf;t=65fb6cde5dec8;x=cd44a0d774c9d9f0"
+      },
+      "memory_guard": {
+        "command_count": 1635,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/scale/evaluation/v064_gen_A0_s9.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 2797010944,
+        "sha256": "e1ae4db02703831d95197a9b2b6c1b713854d21fa0ae6e68bc7fad8a8d55ab6a"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_gen_A0_s9",
+      "route_sha256": "141f725577ab08e41ba441191a49ec3f72ffb041c99a317fdb9bc68399995903",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 3,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "a806b9be127097e85f26f6c71808d4bd2e6e2f9ad7e191b81cd87cc6d6ce6cc6"
+          },
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "044f4eee340151c51c11a490ba7895cf3103c022d6a4586acb7697b525ed22c0"
+          },
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "53b73b74a2a6435725b4cedcd76275adfa850e0ba2bfa4d412c1f09e037faac2"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "gemma-4-e4b-it-qat-w4a16-ct",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 800,
+        "successful_requests": 797,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+      "scientific_name": "v064_gen_A0_s9",
+      "service": {
+        "end_sha256": "c464515aa1b5fe4ec9d42ee6ef8eb2f3e3b9d8458bd5b06430f5a71623bc4896",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064-eval-1177e753a83f4c6eb8241cfd6e13ccc2.service",
+          "InvocationID": "d52f94cb437349e68cc2736edf62b267"
+        },
+        "start_sha256": "f01e6d24f651737763db4b541b4dc00d30b7388ae3d6d867e27ae22d1f357d32",
+        "unit": "gemma-v064-eval-1177e753a83f4c6eb8241cfd6e13ccc2.service"
+      },
+      "sha256": "d4d6a8692088247026480fcbbd29df9fe89449630168f5f274f31a09618240c2",
+      "staged_sha256": "4e161eaafc4a3ddcdd317befd66ddab268a01fd90a81bc1b460950cffe17729e",
+      "strict_canary": false,
+      "task_ids": [
+        "fastapi_11355",
+        "fastapi_12942",
+        "fastapi_13207",
+        "fastapi_13537",
+        "fastapi_13713",
+        "fastapi_13786",
+        "fastapi_13920",
+        "fastapi_14099",
+        "fastapi_14246",
+        "fastapi_14258",
+        "fastapi_14262",
+        "fastapi_14266",
+        "fastapi_14297",
+        "fastapi_14301",
+        "fastapi_14303",
+        "fastapi_14306",
+        "fastapi_14349",
+        "fastapi_14360",
+        "fastapi_14361",
+        "fastapi_14371",
+        "fastapi_14372",
+        "fastapi_14419",
+        "fastapi_14430",
+        "fastapi_14448",
+        "fastapi_14455",
+        "fastapi_14458",
+        "fastapi_14459",
+        "fastapi_14463",
+        "fastapi_14479",
+        "fastapi_14482",
+        "fastapi_14485",
+        "fastapi_14487",
+        "fastapi_14492",
+        "fastapi_14512",
+        "fastapi_14583",
+        "fastapi_14605",
+        "fastapi_14609",
+        "fastapi_14616",
+        "fastapi_14786",
+        "fastapi_14791",
+        "fastapi_14794",
+        "fastapi_14873",
+        "fastapi_14953",
+        "fastapi_14978",
+        "fastapi_14986",
+        "fastapi_15023",
+        "fastapi_15030",
+        "fastapi_15280",
+        "fastapi_15588",
+        "fastapi_15589",
+        "fastapi_15661",
+        "fastapi_15800",
+        "fastapi_5077",
+        "fastapi_5624",
+        "fastapi_9425",
+        "fastapi_9555",
+        "fastapi_9753"
+      ],
+      "task_rows": 57,
+      "traces": {
+        "fastapi_11355": {
+          "parsed_tool_calls": 16,
+          "sha256": "1e08f0772749ffd1727691e1b3fe4bb2b7d560237c58ead305b43f364a798b9c"
+        },
+        "fastapi_12942": {
+          "parsed_tool_calls": 14,
+          "sha256": "be629a56f39d9b1f11504b717274120fc65ffdbcbfb0b93ca84d3a9f0f4f6a52"
+        },
+        "fastapi_13207": {
+          "parsed_tool_calls": 15,
+          "sha256": "f129eaf00cea82e4396f2f7495bf9ce2d2e382b42b8a64f06a7f78d44f3709fd"
+        },
+        "fastapi_13537": {
+          "parsed_tool_calls": 14,
+          "sha256": "c7e09c3dfb9ac2d0ad9067f495e2006e328ed7aa20ed16235364c014e29f0e93"
+        },
+        "fastapi_13713": {
+          "parsed_tool_calls": 11,
+          "sha256": "93533663a64661af1789aa81624cbc88ae2cce61714dd00244e29d83b809b046"
+        },
+        "fastapi_13786": {
+          "parsed_tool_calls": 14,
+          "sha256": "f959dc80f9db7725a616152ef1091bca1f18f8e3365a9342fd6c587f16390517"
+        },
+        "fastapi_13920": {
+          "parsed_tool_calls": 8,
+          "sha256": "37241ad58dd56d2a09a35d6dc381c2c71b77cf284f7bf159794e95e9bf20a7f6"
+        },
+        "fastapi_14099": {
+          "parsed_tool_calls": 18,
+          "sha256": "9c9c14b656bc857f289da4fb3b402e642898549c49a35868dd8a99bfc7cee9c0"
+        },
+        "fastapi_14246": {
+          "parsed_tool_calls": 17,
+          "sha256": "1fd746721ec6fce11610fee93c153356fd55dce7c9c208cd57f425f73ccbcacd"
+        },
+        "fastapi_14258": {
+          "parsed_tool_calls": 16,
+          "sha256": "710d33cf4856f30cc140f65d7e7fc98b7e76c1f89dd29efcbdc5e79f03d2b36f"
+        },
+        "fastapi_14262": {
+          "parsed_tool_calls": 6,
+          "sha256": "6f456dcb5a3f3f5acf77573a18b7374cfad175a64835f3f3d264adae0b33f1eb"
+        },
+        "fastapi_14266": {
+          "parsed_tool_calls": 30,
+          "sha256": "ed31bd3d78a2632be34c17c2efd3d6ce11c109b6bcdbbd9407b2f4c12beee79f"
+        },
+        "fastapi_14297": {
+          "parsed_tool_calls": 5,
+          "sha256": "c8433d1e37dba27e51fd13a28fc7677edf78f290ed6f48e4842ce49366569459"
+        },
+        "fastapi_14301": {
+          "parsed_tool_calls": 6,
+          "sha256": "dd63875cce55e715c0f6463f5fa0819748fc063d47b53a25797e443e287f277d"
+        },
+        "fastapi_14303": {
+          "parsed_tool_calls": 5,
+          "sha256": "5bc2f0c6940f8eaf1c4ea71b29b2246f96dbebf261992f36f82253784b3a14fb"
+        },
+        "fastapi_14306": {
+          "parsed_tool_calls": 27,
+          "sha256": "3bc628b32ebac0e7aea544783841c52a4ffbc70abe93aa31d8df52cad8663cab"
+        },
+        "fastapi_14349": {
+          "parsed_tool_calls": 10,
+          "sha256": "689ebf7a39bedac83c35d7940fd850cf6603122ea801bdff7f7a23297aeca31f"
+        },
+        "fastapi_14360": {
+          "parsed_tool_calls": 19,
+          "sha256": "db6d9ef6fa6217f9e43895fb5970aa3cd7c762871cb28283c4b89997babd408d"
+        },
+        "fastapi_14361": {
+          "parsed_tool_calls": 10,
+          "sha256": "1aaa2655ba0668290bf055226bf5f46c6694159d390c5cb7156461f35e7e9f07"
+        },
+        "fastapi_14371": {
+          "parsed_tool_calls": 11,
+          "sha256": "48a00d784a320dea925d32515df65f5c70bf9efaf8241ec430f72318cb7edf67"
+        },
+        "fastapi_14372": {
+          "parsed_tool_calls": 8,
+          "sha256": "e78b6a2e799e3a4dfcce7f24777b6dede317e15b195aa43ec09fcc9c4cb0ea77"
+        },
+        "fastapi_14419": {
+          "parsed_tool_calls": 11,
+          "sha256": "8bc6f77bf317db9a9debacb3a9703a36cbd5f9988331d1b4cb47b49a3f78ac76"
+        },
+        "fastapi_14430": {
+          "parsed_tool_calls": 20,
+          "sha256": "7bf17ad3d8fbea25a6bda3889e1721ceff7e5a123016a0874b205617852732e6"
+        },
+        "fastapi_14448": {
+          "parsed_tool_calls": 7,
+          "sha256": "0807721aff2c242e827fd757a17b058156a20faefc4657c1beaf14463d27c70a"
+        },
+        "fastapi_14455": {
+          "parsed_tool_calls": 9,
+          "sha256": "213c45edfc77d45ef506532ca6593608a04b9afc35f85a3d6b9f0b7722ec6ac9"
+        },
+        "fastapi_14458": {
+          "parsed_tool_calls": 14,
+          "sha256": "ec308b2dc0904032fa8edd74a483784f92d932cfb642038b735c305f37f4238f"
+        },
+        "fastapi_14459": {
+          "parsed_tool_calls": 11,
+          "sha256": "b92e269b4c92dd909718f9372fc5c148812e5d4c846b2cdb4d3cb8c207cb5487"
+        },
+        "fastapi_14463": {
+          "parsed_tool_calls": 6,
+          "sha256": "3c90233c77dea3bc597d90bf53b5339a6552eea9d0d8890a5e657f15499631b9"
+        },
+        "fastapi_14479": {
+          "parsed_tool_calls": 13,
+          "sha256": "ae5b3cf7ac3334febf3effdd5cd4d02b58f7357cada80d937ea660c0dd7098c8"
+        },
+        "fastapi_14482": {
+          "parsed_tool_calls": 19,
+          "sha256": "7d985ed1cc3445f779a88e200332b02e75cb7760564a21a19557179deaf1aced"
+        },
+        "fastapi_14485": {
+          "parsed_tool_calls": 16,
+          "sha256": "340694e0d56b1cb28a98303faeb34aa5715bc2768cc9da088e8fc0f05f4b6e97"
+        },
+        "fastapi_14487": {
+          "parsed_tool_calls": 16,
+          "sha256": "be3dd410c53f8390e33599c8591475cd8a6df89e0d4a877ffa0c5d78bd5c78c8"
+        },
+        "fastapi_14492": {
+          "parsed_tool_calls": 6,
+          "sha256": "81033ac0d65efd7e5129279b1e5eb270ee3e2d1c169b5a25e4741fa3a6d530c6"
+        },
+        "fastapi_14512": {
+          "parsed_tool_calls": 20,
+          "sha256": "aa833c123e0d41e0993c09439feec9e3e3a0027487116642cb4eb55b6669810e"
+        },
+        "fastapi_14583": {
+          "parsed_tool_calls": 6,
+          "sha256": "7776fed4ccafeaedc9dd762ce02ac2b0f324f5dec52c6a56724006e8c7c8e28b"
+        },
+        "fastapi_14605": {
+          "parsed_tool_calls": 14,
+          "sha256": "d376fd30515c1fba8bba2a34ff5bdd5bab15185232e89c0bc1e15596c0f42424"
+        },
+        "fastapi_14609": {
+          "parsed_tool_calls": 12,
+          "sha256": "6b2c00ec6211041545c041b873b9e7f902f351cde96b7ee33ddc8906e405cdbc"
+        },
+        "fastapi_14616": {
+          "parsed_tool_calls": 16,
+          "sha256": "0eed6421c231c529fa50754e8a3aa7c36c82f0e84672b7c0db36aa1265aaf665"
+        },
+        "fastapi_14786": {
+          "parsed_tool_calls": 3,
+          "sha256": "c4788e2d1a07e9d73bdcc4389b8010024cecd8830e7d91a641d3afcc3265395d"
+        },
+        "fastapi_14791": {
+          "parsed_tool_calls": 3,
+          "sha256": "e2e358b09f498ae99a4512a98405486c52832ea06ba8c4ef3ed28bef6183994f"
+        },
+        "fastapi_14794": {
+          "parsed_tool_calls": 10,
+          "sha256": "945161b6b09225da740526c68fe080d21dcc830bf663ec15ae8ea263007b36ae"
+        },
+        "fastapi_14873": {
+          "parsed_tool_calls": 15,
+          "sha256": "43aee4d8a1ddd44a352a31ccb95ac9d1208f0c98b47639925e79e56c39d34f59"
+        },
+        "fastapi_14953": {
+          "parsed_tool_calls": 11,
+          "sha256": "6bbb16a47f2be80df51fbf35326a632610f983e6d7d3bb3be4c9eba14e844b2a"
+        },
+        "fastapi_14978": {
+          "parsed_tool_calls": 6,
+          "sha256": "fad23bc438e943c7dfdf7a174afe446321e76508c48f7e183256fce05db166d2"
+        },
+        "fastapi_14986": {
+          "parsed_tool_calls": 8,
+          "sha256": "280389e44d6da87af12c3311831b183a53174fb84d220a9bd0802772249d3f95"
+        },
+        "fastapi_15023": {
+          "parsed_tool_calls": 23,
+          "sha256": "dfe841cc56c59b1999a2c0a4894af581248db9dfa6f9e754212876b0fce9b9e4"
+        },
+        "fastapi_15030": {
+          "parsed_tool_calls": 10,
+          "sha256": "a3f2d07d28f6a4164e3c69955a5a3155c3dc9aa1280fbaf8859c0d4b8dcea44f"
+        },
+        "fastapi_15280": {
+          "parsed_tool_calls": 15,
+          "sha256": "5f6efab9a57522af8b30fa2c06a32835e8421d8ca2a8343db512271fcc71d21c"
+        },
+        "fastapi_15588": {
+          "parsed_tool_calls": 7,
+          "sha256": "dc55d81d270fb84c9ecdb92186676fa660c69a719225d66cf34d734c55c69404"
+        },
+        "fastapi_15589": {
+          "parsed_tool_calls": 10,
+          "sha256": "039e416bf5a11260721783c275607c87b82743148a819b4ace201344676bdd2c"
+        },
+        "fastapi_15661": {
+          "parsed_tool_calls": 10,
+          "sha256": "db26aca68a9b3e79b2cf1eb348975f7acf3cfefebf1fda65748b03d52437421d"
+        },
+        "fastapi_15800": {
+          "parsed_tool_calls": 29,
+          "sha256": "bc9f06265f9d198f5f783b07d3b78d1401c2d18fe4ae36db8293ae76fad9a1e5"
+        },
+        "fastapi_5077": {
+          "parsed_tool_calls": 7,
+          "sha256": "ae9a32d77ef1b7687c3896fe306381ca4b9c787456694f9fb6e962a108d005cf"
+        },
+        "fastapi_5624": {
+          "parsed_tool_calls": 8,
+          "sha256": "b38e6ca660cafe30a95e1f303e89d04f701ecef3d00b247fdb25610515cd991e"
+        },
+        "fastapi_9425": {
+          "parsed_tool_calls": 8,
+          "sha256": "9884bdfef25d788dd1c195f09ecc1a17d51a4aaa9748a2ebdcad766d241e4e60"
+        },
+        "fastapi_9555": {
+          "parsed_tool_calls": 10,
+          "sha256": "2e176c2f6f71a3f446474d9fbb62f39bb96bfc3a535301f3301e06db8245d461"
+        },
+        "fastapi_9753": {
+          "parsed_tool_calls": 10,
+          "sha256": "83e6d1ecafeb8a09f83f2e0b1903c3421c059590879d54555f511111729f609f"
+        }
+      }
+    }
+  },
+  "runs_incomplete": [],
+  "runtime_sha256": "fc4d316fb4477c227d48f20862eb3bd87f70b11cf66038f5fa21948ce94b9a1d",
+  "server_seconds": 6093.675098619424,
+  "stage_started_at": "2026-11-07T21:58:51Z",
+  "status": "scale_runs_qualified",
+  "submission_started": false
+}

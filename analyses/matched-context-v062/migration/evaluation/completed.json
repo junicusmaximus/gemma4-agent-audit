@@ -1,0 +1,1314 @@
+{
+  "admission_receipts": {
+    "byte_compatibility": true,
+    "controls_path": "PROJECT_ROOT/gemma4/analysis/oom-controls-v043/final48/report.json",
+    "controls_sha256": "a3b4548bc5ed0a3f67fca47b28391804e69fbb592fc1b41606725ff929418708",
+    "gold_primary40": 40,
+    "original8_classified": true,
+    "replay_path": "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/report.json",
+    "replay_sha256": "536e2c3e9dba04ca6d3aee87cb2671e643d0f950739fc7ae73f301f1a125642c"
+  },
+  "analysis_pending": true,
+  "byte_check_sha256": "2c18d46c48126ef7314d327dabe68000873d0d4060f0b3f8f646803fa95ecd3a",
+  "canaries": {
+    "v062_M1qmc_s1": {
+      "accepted_budget_exhaustion": true,
+      "alias": "v062_M1q_s1",
+      "arm": "M1q",
+      "budget_exhaustion_category": "turns",
+      "canary_episode_error": "Agent exceeded turns budget (80 turns)",
+      "decoding_seed": 1,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794054077.8995454,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 24,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_canary_v062_M1qmc_s1.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 703975424,
+        "sha256": "26c88e97f27a0e6122f6d02c1dec9e64c357bb52cdc39505b3db15e8a832f00a"
+      },
+      "original_row_sha256": "e9402164bef6b6ab65b169320a70d1406f1c40ad33f5830bc84a88895038d16b",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_canary_v062_M1qmc_s1",
+      "route_sha256": "5489b012dd8dd36de9f5bea06a7e196add60ec38db40e1e853043b1b6b28b7f3",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s1",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 81,
+        "successful_requests": 81,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s1",
+      "service": {
+        "end_sha256": "715f2395414205d565ab9620e4cd90cebd38efa82d4e6cf7316d1182322a0ce5",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-ef5ae3c31ef947e9a345cf466ee593f8.service",
+          "InvocationID": "6c2dce77a6dc46efbe21462b2e2855a1"
+        },
+        "start_sha256": "e7d953682d75b1b904d05a6819073a0912213e8fac41f720c45d8e7bcbd70f1a",
+        "unit": "gemma-v062-eval-ef5ae3c31ef947e9a345cf466ee593f8.service"
+      },
+      "sha256": "e9402164bef6b6ab65b169320a70d1406f1c40ad33f5830bc84a88895038d16b",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 80,
+          "sha256": "a90fe5542bd835a2aa6680be975b3eab6d7ab4d5faa53df684c2731863d7a6aa"
+        }
+      }
+    },
+    "v062_M1qmc_s2": {
+      "accepted_budget_exhaustion": true,
+      "alias": "v062_M1q_s2",
+      "arm": "M1q",
+      "budget_exhaustion_category": "turns",
+      "canary_episode_error": "Agent exceeded turns budget (80 turns)",
+      "decoding_seed": 2,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794054161.2011502,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 10,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_canary_v062_M1qmc_s2.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 704950272,
+        "sha256": "273397be4e8fd9dfad803e6560702020c8a6773c687c7973e5e0f08df493e961"
+      },
+      "original_row_sha256": "12c8323f61e72b21972b1405acda8f639354f5db269ba72922fc984beb4556bb",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_canary_v062_M1qmc_s2",
+      "route_sha256": "c6fdf96e11684bd00bf95da3d89e2ee4b3b9d061a89bca6e53a1adc9c87f1dc6",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s2",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 84,
+        "successful_requests": 84,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s2",
+      "service": {
+        "end_sha256": "c2bc9df6150a66bd02822909ebfe67be04e5e44533a58c0f04e49d97d701b5d9",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-8b309bdf9da2474e8b07895ef0c4f1eb.service",
+          "InvocationID": "4bbcfcc651634251a4fd3f1f343227b0"
+        },
+        "start_sha256": "8c0075010c2a594c7903da11831cf5a9960e352587bc0d56b154331af18eb0e6",
+        "unit": "gemma-v062-eval-8b309bdf9da2474e8b07895ef0c4f1eb.service"
+      },
+      "sha256": "12c8323f61e72b21972b1405acda8f639354f5db269ba72922fc984beb4556bb",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 80,
+          "sha256": "fe878b58f69d0896ae5ceafb95443144c15e026526daceb22360f2d159e6a1fa"
+        }
+      }
+    },
+    "v062_M1qmc_s3": {
+      "accepted_budget_exhaustion": true,
+      "alias": "v062_M1q_s3",
+      "arm": "M1q",
+      "budget_exhaustion_category": "turns",
+      "canary_episode_error": "Agent exceeded turns budget (80 turns)",
+      "decoding_seed": 3,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794054220.3298354,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 123,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_canary_v062_M1qmc_s3.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 704155648,
+        "sha256": "3074e9ad8024d1b0387912fee50c5df8bc9b139c249fce75ccc86385c3f7b8b5"
+      },
+      "original_row_sha256": "b2fde5131c64ce80de1ea03408138f5a918df5249a04c8966935112a14c742ed",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_canary_v062_M1qmc_s3",
+      "route_sha256": "be28f26557471e452130d27b55175df289ce673ea9b31201b5b4e240bdd6403f",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s3",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 82,
+        "successful_requests": 82,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s3",
+      "service": {
+        "end_sha256": "89bf4124740c7df970c5697ed98dadb3efeea457bd6388cb3f18c4eff420f4bf",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-f76fc15955794fcaaf3181c5ec073bc6.service",
+          "InvocationID": "7d857def000b4c33a7d117176e3823d4"
+        },
+        "start_sha256": "8633af04aac0cbc70183e59d5039a15e08d1f9e1ecdadfca7814bdb8bfd580ec",
+        "unit": "gemma-v062-eval-f76fc15955794fcaaf3181c5ec073bc6.service"
+      },
+      "sha256": "b2fde5131c64ce80de1ea03408138f5a918df5249a04c8966935112a14c742ed",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 80,
+          "sha256": "ea4b7fdc42dd6b5a0891d9ee9e20aa029ef8f3a81f79d4268ec8bc2ff5081824"
+        }
+      }
+    }
+  },
+  "cleanup_completed": true,
+  "elapsed_seconds": 5279.755357127637,
+  "evidence_hashes": {
+    "activation.json": "ee2bb7bed6f4e1f618f64889f9b4c2f86485e331d6f43d38eb016d0d6afc1fa1",
+    "byte-check.json": "2c18d46c48126ef7314d327dabe68000873d0d4060f0b3f8f646803fa95ecd3a",
+    "global-oom-final.json": "f6be72c24ffcc4d820a20afdb7e324ee6fa6011888c32b88f709a9439b191e40",
+    "server-cleanup.json": "c94197591ce5b4c0f17fa9b8001bdb3b1b303671cd0b128a2bd14a826098cfaf",
+    "server-launched.json": "2bf2df3c6dc933e36c3e1efca192f222cca5d45b35a3c60d8cf540943556e464",
+    "server-ready.json": "7f65cffe61c4c5b8fb1c88d91c4286e7caf8e6dd35a8411198a6209d86fe36e6",
+    "server-registry.json": "b84efc0d72e7a4bdebc2a5e40b5f890b934c73e052996fefa8b3ec8b051cdac0",
+    "staged-inputs.json": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+    "v062_M1qmc_s1-complete.json": "650d961cfaf9930db325a207e6911974f16d53aae0eb4638a3e90a1f69af90b6",
+    "v062_M1qmc_s1-oom-check.json": "2d5efb4f3fbc921e815b732457d80bda02cb1caa6d6e50e7809b6fcd01cda6bf",
+    "v062_M1qmc_s1.log.memory-guard.json": "6ef74a57a0a44e2ebd6469e3824b154a0fc905a6b38846740d712ce2cda0af79",
+    "v062_M1qmc_s1.log.service-end.json": "08a788e9f9c34488a9df88ce6b31aacee1d1c5329596b44d381cf8274ccc1360",
+    "v062_M1qmc_s1.log.service-start.json": "3284560cf67d295a11fd63d39176c7ef25e279ed438a3e6da707d41b8c548f31",
+    "v062_M1qmc_s2-complete.json": "e7502a19db624f5d59f1ada242fc3f1fb7d5bd47ea579c8d34739352a86d32de",
+    "v062_M1qmc_s2-oom-check.json": "4b604efd5c706973d597fdf00c2d09ca3a0ac9cb00e5f242608701627ee17351",
+    "v062_M1qmc_s2.log.memory-guard.json": "22afcf50f487c6bb28e0024203edf8315f0af680d0fc73c334293beab0efedc7",
+    "v062_M1qmc_s2.log.service-end.json": "01d577b58ba9aa58b831ce5aac49f1fc541ea6aec6d89361bc64750c7ebabaa8",
+    "v062_M1qmc_s2.log.service-start.json": "f89935b8f4c986eb5775492d0dd71872cd8d3809d794345877d1ca17513b180c",
+    "v062_M1qmc_s3-complete.json": "cdce552acee6323ffb00bcd30801dbce99879d6af3e15bf7dd7eda6a3e2cc7a8",
+    "v062_M1qmc_s3-oom-check.json": "d3ac948c05d30c2f738cc1c698198f2fb358ad4ebd4ccf5e32a3b4c2ed962769",
+    "v062_M1qmc_s3.log.memory-guard.json": "9a863514fbca9e8b24d0077ad844d42abaadeec3e2c2c475d26ed4300f4ee74b",
+    "v062_M1qmc_s3.log.service-end.json": "25f5e68996e2bc5ee78f1e2a605476e0af298bf519c0677e789b28aede8f10e2",
+    "v062_M1qmc_s3.log.service-start.json": "183d8fc64ca0db61dc9e4d0c43729bc0b2cbb6181c92255222510bdc95b639b3",
+    "v062_canary_v062_M1qmc_s1-complete.json": "28391af933fd87a5f55db297f3eb84c07d984b61834516eeaffb73f1b9fab70e",
+    "v062_canary_v062_M1qmc_s1-oom-check.json": "a73b02cbf095f3b1be5b913b3966779a4ec16e111113837bb70ee3911025b4fc",
+    "v062_canary_v062_M1qmc_s1.log.memory-guard.json": "26c88e97f27a0e6122f6d02c1dec9e64c357bb52cdc39505b3db15e8a832f00a",
+    "v062_canary_v062_M1qmc_s1.log.service-end.json": "715f2395414205d565ab9620e4cd90cebd38efa82d4e6cf7316d1182322a0ce5",
+    "v062_canary_v062_M1qmc_s1.log.service-start.json": "e7d953682d75b1b904d05a6819073a0912213e8fac41f720c45d8e7bcbd70f1a",
+    "v062_canary_v062_M1qmc_s2-complete.json": "7b7f0222d0df02ec3c45db9c0ef399c46bdd55116ea52bba6b0693d61a642bb7",
+    "v062_canary_v062_M1qmc_s2-oom-check.json": "6b0ed75f28789616660c8aabd8c83326c48ef44d098dd5ea46a06694d585198c",
+    "v062_canary_v062_M1qmc_s2.log.memory-guard.json": "273397be4e8fd9dfad803e6560702020c8a6773c687c7973e5e0f08df493e961",
+    "v062_canary_v062_M1qmc_s2.log.service-end.json": "c2bc9df6150a66bd02822909ebfe67be04e5e44533a58c0f04e49d97d701b5d9",
+    "v062_canary_v062_M1qmc_s2.log.service-start.json": "8c0075010c2a594c7903da11831cf5a9960e352587bc0d56b154331af18eb0e6",
+    "v062_canary_v062_M1qmc_s3-complete.json": "7444d8202ce361504c08a8d1a950e072890cef6ae54f3552c1db0fbbd7ec146a",
+    "v062_canary_v062_M1qmc_s3-oom-check.json": "ed2f13ea9f3cbc4ef935f2480b0b3384669bb557d2a4bf0bb1821e488cbd2a05",
+    "v062_canary_v062_M1qmc_s3.log.memory-guard.json": "3074e9ad8024d1b0387912fee50c5df8bc9b139c249fce75ccc86385c3f7b8b5",
+    "v062_canary_v062_M1qmc_s3.log.service-end.json": "89bf4124740c7df970c5697ed98dadb3efeea457bd6388cb3f18c4eff420f4bf",
+    "v062_canary_v062_M1qmc_s3.log.service-start.json": "8633af04aac0cbc70183e59d5039a15e08d1f9e1ecdadfca7814bdb8bfd580ec"
+  },
+  "generation": "v062",
+  "m1q_training": {
+    "adapter_tensors": 516,
+    "artifacts": {
+      "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062/adapter_config.json": "719962632066bf26518295a8d5b97ca5e002d0cfd3b75a528a3f4b0993bac0a5",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062/adapter_model.safetensors": "44ab871070c41b97a54b802f35354c00151d008349b84a3639d075a48812485b",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062/meta.json": "bcc4497281d2c241e17c6234b54840e5a36df6d10e0b9be77c3fe067baa0ef72",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_M1q_v062/train_log.jsonl": "100f13951f0466adc61f02ff17381998a9ed7d7b59a80169b8832cfb1ede672a"
+    },
+    "base_model_name_or_path": "google/gemma-4-e4b-it-qat-w4a16-ct",
+    "data_files_sha256": {
+      "M0.jsonl": "2dfcce44965c1454cddb668a46b8458ed9f7de6744b1a17443a31ab36ef2648b",
+      "M1.jsonl": "490803441d45ace4f556caaf0a368cacbeff4aabe906f9d0c810f9faf8fd595e",
+      "identity_ledger.jsonl": "385e4a4d2bd519497232deb0fffe299d8d96774835047668fd2df61eea499be1",
+      "manifest.json": "81606298845fdb1ab9680f0f1778679a3a6ffc6ad73dc49a7798734dbc806d17",
+      "update_groups.json": "575736953fe357e0891a49344268bdec4759909829cb3ba4fdfed6a46e719000"
+    },
+    "dequant_manifest_sha256": "20f1c2f9a52eea099c7ab95fca57c150d4e3b1946663136f11d11e0f50849ce5",
+    "initial_sha256": "9dfc7ccc71fc4631d51a61dad8a889040e76bd9c87a2546fe24ec3b769e20066",
+    "m0_base_model_name_or_path": "google/gemma-4-e4b-it-qat-w4a16-ct",
+    "receipt": "v062 wrapper meta.json + train_log.jsonl are the training receipts",
+    "summary": {
+      "adapter_tensors": 516,
+      "gates_pass": true,
+      "initial_trainable_parameters_sha256": "9dfc7ccc71fc4631d51a61dad8a889040e76bd9c87a2546fe24ec3b769e20066",
+      "lora_modules": 258,
+      "loss_first": 0.47084,
+      "loss_last": 0.2417,
+      "mode": "m1q-main",
+      "names_match_probe": true,
+      "seconds": 16151.1,
+      "updates": 208
+    },
+    "training_contract_sha256": "5fdeb16dc2c9da909be260f0a371b28d68b99016776ded55fa7a057de0078abe",
+    "updates": 208,
+    "wrapper_sha256": "31eed42ba5c0165b6663ce657685a36fe04d91a42e64e61937d561144313ea59"
+  },
+  "memory_correction": {
+    "comparability": "Frozen numerical thresholds retained descriptively; this infrastructure correction is not evidence of historical exchangeability",
+    "exceptions": "Direct manager.start git/materialization and other direct subprocess host helpers remain under the outer 48GiB service cap only",
+    "global_oom_policy": "No kernel CONSTRAINT_NONE events after admission journal cursor through final cleanup",
+    "host_min_available_bytes": 68719476736,
+    "outer_memory_events_local_zero": [
+      "max",
+      "oom",
+      "oom_kill",
+      "oom_group_kill"
+    ],
+    "per_sandbox": {
+      "memory_max": 4294967296,
+      "memory_swap_max": 0
+    },
+    "scope": "Commands routed through SubprocessManager.exec: agent, verification pytest, and setup commands using that path",
+    "service": {
+      "Delegate": "memory",
+      "DelegateSubgroup": "supervisor",
+      "MemoryMax": 51539607552,
+      "MemorySwapMax": 0,
+      "OOMPolicy": "continue"
+    },
+    "version": "v043_sandbox_cgroup_v1"
+  },
+  "readout_sha256": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+  "runs": {
+    "v062_M1qmc_s1": {
+      "alias": "v062_M1q_s1",
+      "arm": "M1q",
+      "decoding_seed": 1,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794055835.3638198,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 2492,
+        "oom_command_count": 1,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_M1qmc_s1.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 4975730688,
+        "sha256": "6ef74a57a0a44e2ebd6469e3824b154a0fc905a6b38846740d712ce2cda0af79"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s1",
+      "route_sha256": "57147bd53e9c2c0a0a42e4b320b9984f82071a3cf849da833db65f63a50018c7",
+      "routing": {
+        "cancelled_upstream_requests": 11,
+        "client_disconnects": 11,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s1",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 2918,
+        "successful_requests": 2918,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s1",
+      "service": {
+        "end_sha256": "08a788e9f9c34488a9df88ce6b31aacee1d1c5329596b44d381cf8274ccc1360",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-1482cecee2794298af5b1a704923ffb2.service",
+          "InvocationID": "5074133fa7bd4a4f87ba34c5849b7859"
+        },
+        "start_sha256": "3284560cf67d295a11fd63d39176c7ef25e279ed438a3e6da707d41b8c548f31",
+        "unit": "gemma-v062-eval-1482cecee2794298af5b1a704923ffb2.service"
+      },
+      "sha256": "9831aed8e9256b4315d4de33fbd44b4686666a9d51f027d2829e1e3be0cce3ee",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 39,
+          "sha256": "fb35079738a12143ca627bf40d2e98e9270dfbeccdf1857c0a954c3bd5f3eaca"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 80,
+          "sha256": "09804628a8a8b1cc8485c298ea9ba775eb7093b1cdd1d27d5557a1c074698832"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 23,
+          "sha256": "7580d9a162b699d42512f2e381ed52cc5304f1c3a81e8d90f7ffb6d5c81d7a75"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 80,
+          "sha256": "16608001edf97bb715fd5ff8e8a5240289cf1b1b732837ac4317942021efb025"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 80,
+          "sha256": "e15e0aca28673878358714f9b38fcceb4968da628032cd38bd0176a51d654ced"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 79,
+          "sha256": "9bb4fd3d4c3c630ff356737a4c36e23c556c988b5b8d4cddc678b852715523e6"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 80,
+          "sha256": "b93647f174eaa718f11a0c9fc2a2967acfe9adac240cdcb6dc0596ff4a1dc560"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 21,
+          "sha256": "0c312e66a8e7f4f1ed996604542bf987e36c24254ef69b366a4c2e21a7f4b0b7"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 27,
+          "sha256": "a6ffbdd7cc302f2413764ab24ae40823e5d41b59f72b098d2ccc75736732dce5"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 80,
+          "sha256": "b6b8b2911b8e229a8cefab0b1a5a6c03ca561c628622b4ac94726f54e47e65cd"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 80,
+          "sha256": "add96627e36ea5cac685c688dea6ef7b3cafdf972a383bb6379d87f0a656d8d0"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 80,
+          "sha256": "1a73a4c12915d8ae7789940278ffa2e605c968bb0214f3a970a8e35e2c64c8b8"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 14,
+          "sha256": "20eebfcac0b7fe6fd23e50430b27ce4485ad3ea5d1c2c3ab4282387f577f0330"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 30,
+          "sha256": "aaa1d6d13c2a6521f48b554d88f78986d04d6a00e1ee88f80de1ffd7554724e2"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 80,
+          "sha256": "5d1207f2dcc1f4548763e582644f224b71ba85c43964bbd946b8679e0de22585"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 80,
+          "sha256": "599208a9d81de8eaf9cec106c0518df3ca2a8e2d1b797304ef59f2e4c0502657"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 21,
+          "sha256": "2092f31e39882df23928818066ab6c29395143ec4ea905ecad050c982f79a42c"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 80,
+          "sha256": "eae0d75be8a0ed639f252df16083a4e82b2a3c3544f88a0e4abfc5d8b5033694"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 80,
+          "sha256": "dbf2ef515704742dfd490ad3748db111270ec356c0a7c94f5994b2edd771c0b0"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 80,
+          "sha256": "b4352c3ec6a5cec78f7047d60204c9e919987fbcc9df125885e5e22db003cbad"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 15,
+          "sha256": "e85fd81daf5c7560118d4597561e41ab5d1aa2a6c2a859541752974feeb617a9"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 80,
+          "sha256": "c1538ac91a2e6a7e7cbe7e49ae0ff24069423192aaa7d3be44881d0a9ada72df"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 19,
+          "sha256": "497ad308a0d738f84ab261e555b2fafb74d73dc05b8a7c869bb064dd4ef605a5"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 21,
+          "sha256": "6f2e6e066697edbdcf7d930f0cefd79ce6ce831019e02dfa14c0fdc371b753fd"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 80,
+          "sha256": "1cc77746f85a1bba48265d58bffcc79aa5a841901dccd9e5aebc4f694e5f106c"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 80,
+          "sha256": "e298bc36e286d411fbc7a35b3bed323a2fb7039852d7633fb932701dc4b1d6fa"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 80,
+          "sha256": "c44f4e8a9bd55de4262fb1c26f55b4e36f7446d241e477932e425dbc113459f0"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 80,
+          "sha256": "1b93a65f92da8451a3661d74a4f4a0d5b9ee78c570a375cc8eb13466aa9c6e5a"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 53,
+          "sha256": "0d0277d805313f1c470fc380ab612200428bec93aef38e2bab17ad5f9d9813d4"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 80,
+          "sha256": "c2c91d1b23b8530a1b77b35bcfdad01bd32d78d7f1f136179b5752b55069c315"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 80,
+          "sha256": "ff82f64e504d5e920eb492c9a25de55f0c7463cf977aacf6ff135aecae7056a8"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 20,
+          "sha256": "73e1564fc2d6c94c813d9dbbbb34f640e93232847988b991cd76aedb650d372a"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 79,
+          "sha256": "bc5297601a424dcb1bd2d2fbc774cbbc4a4e76f091251310b98cb433c2f0732b"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 80,
+          "sha256": "f06fbae9e7a8bd8b43ab69863fd86bd378c2d298da0f5717612ff5652108077d"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 80,
+          "sha256": "112477aa4a1fedf60162e06eebb4027d2cab2bddbd8769705529d7332802a08c"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 80,
+          "sha256": "5cc5b0a8db6dd393c1b85753dac0a99eb9c0ee9ffb34f61b3d01bcb1624f6d89"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 80,
+          "sha256": "97b49231a08ad23283aaa7f26ef34d48ff0adde29dcf1b42d6807bcd2e248eab"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 15,
+          "sha256": "0b1fb604dc172f22381a673effb4249089290eb20def2953817768274fe41eb6"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 80,
+          "sha256": "4b2b295d7a15766ccaba5972673d3e6653cf029d8dd59f8cc53900abc31f9f34"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 79,
+          "sha256": "5d59fd517d6621378a9fd5f232f38757ed49f2aca3823359dadab19641502f1a"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 30,
+          "sha256": "8e7e29b36ea6e7408acd8690a82f40d8411e0f603bfa42cf310ac29be3b4bd35"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 30,
+          "sha256": "7ec0d310933b3c4480f0bd1558a2e3d0e32b8922afe8fb17694bf47f57476370"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 11,
+          "sha256": "ebf55af661ff9fea1c2bba7132e711ebaf1d0cc61fc85ad9f563d440c87db4a7"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 2,
+          "sha256": "600bf1503daef68acc40ddac429eef6e86fc1a4385f097c15ab95281dc951371"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 80,
+          "sha256": "63cf4599ab83b0b07c92d686ba2d69510c65a590c9a462379293affd0a0f0069"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 80,
+          "sha256": "4ebc81544cfef1bf251fbf79ee36ea33a5d1d26c2be1e5efbced680d536bee0e"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 80,
+          "sha256": "57cd478c997fc43983657fa835b94f3354ad5ece3aac0cfd95c0e53b61b65927"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 16,
+          "sha256": "bc03ea0f65cc16ad94d462bcfaf3a0e865b1340cfc5cfe6d08d5ccfbd5113edc"
+        }
+      }
+    },
+    "v062_M1qmc_s2": {
+      "alias": "v062_M1q_s2",
+      "arm": "M1q",
+      "decoding_seed": 2,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794057469.7610142,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 2608,
+        "oom_command_count": 6,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_M1qmc_s2.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 4993994752,
+        "sha256": "22afcf50f487c6bb28e0024203edf8315f0af680d0fc73c334293beab0efedc7"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s2",
+      "route_sha256": "134b8fa71eadc1086e9d20a230699391f7375a06b5b037bedcde267805dc0e26",
+      "routing": {
+        "cancelled_upstream_requests": 8,
+        "client_disconnects": 8,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s2",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 3353,
+        "successful_requests": 3353,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s2",
+      "service": {
+        "end_sha256": "01d577b58ba9aa58b831ce5aac49f1fc541ea6aec6d89361bc64750c7ebabaa8",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-d672666f7a9648428284ca3451a1615b.service",
+          "InvocationID": "019489c5408c45249b144fd2d696d9e8"
+        },
+        "start_sha256": "f89935b8f4c986eb5775492d0dd71872cd8d3809d794345877d1ca17513b180c",
+        "unit": "gemma-v062-eval-d672666f7a9648428284ca3451a1615b.service"
+      },
+      "sha256": "890dd5825333dd772015b7b93a85137338d96c53a8ab573ac34f2570bbc725e5",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 80,
+          "sha256": "12ee011351eb68753e22e9b7e299cd75b616eed5390342fb81e00b51e31b8899"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 80,
+          "sha256": "af659ca01da941d0ce653eb93da10f0999af6ee8e826c8a91f5ddc12bc2353ea"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 80,
+          "sha256": "75beed4605e364f1795ecc7afa6d0d426f13bb65c346b920f191e68a493415ed"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 80,
+          "sha256": "98c1b81a3ffe64e82a2b070e813da09797fc65faf986b1ddd895c9de98fcf61c"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 80,
+          "sha256": "433bf8de39fbf9d1ec20675db83deeecb54d1a58eb4ecc700aac283a26af0256"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 80,
+          "sha256": "7e8563d443dfbcc35300710793c63e48c2b0ca93aded18053531b4b2c941b833"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 80,
+          "sha256": "dbe1c87b84397e59d192df836af5c854752803ed506f93eea49df29dbd944fb9"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 80,
+          "sha256": "03c3fab234356e17b4ea788f95c76b3dcae7adbbefdada6efff8e8aa0a8040bc"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 80,
+          "sha256": "be43eb99db469992b448ba28b2532364f88d2ac4957111256ea602dde6001191"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 80,
+          "sha256": "a386a3e08ddfe4642a861fe1584258b1d1b697df7cdfedc6c92cf4b1d564db02"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 79,
+          "sha256": "79ff375540b198287422d698f093548f58c63bd4a203ee3549f059ae8f177cf9"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 30,
+          "sha256": "a433833a8f98f15cac0c7960aeeaa26579104c0da0ae7df3911893be44c40da3"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 38,
+          "sha256": "58e8d14c112503f6ffd38d56ef26f9021cc9fc2ed71e3550fbbfe546a4f0dc02"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 49,
+          "sha256": "4e2c3a340306d2810d02ab8e005b3efd9495828d42e7a801d1bd54fb1b00902a"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 79,
+          "sha256": "65d2ed15dfdf55450e122104701d41ed49239bef0b96c81231ad678d0c12006a"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 80,
+          "sha256": "4316d79871c9f2b92a91d4ca1d5f74311aa971f28c329dccf7301a7ff4932beb"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 63,
+          "sha256": "ed197d1e3a709b8f92f4318542eee5a92c0ddac549aaabc89a34706b7b518b72"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 80,
+          "sha256": "3f4f83c60fcd3af01ff1f8eabbcaf90cc98def5bb273f799dc8f3f40d2f694ac"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 80,
+          "sha256": "a678933dd1689f07a9bc3896dc065a0cdae58d9bc573fac6b60f503dd21cde38"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 80,
+          "sha256": "c65857a4037b4babbf23550537f3678ec436a7051662557fe4bd47d556ba6101"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 79,
+          "sha256": "31a582ac832d065690245fc7257b49c667b9507dff7b435356402faeda224f12"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 80,
+          "sha256": "413914dbfec81bc95c8d2ece26a64a0979e07e2da95734037445c5921d8c9b10"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 80,
+          "sha256": "c1de7582d1a74611f6b169e644eb890e7fb9e16f8a49d568b64c52ed3c5c09e2"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 80,
+          "sha256": "f7d611bc9293842c62492eb412f87c3bdf9f6c7060fe51e2986c4733dc61d396"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 10,
+          "sha256": "6429da8a754a56897731bc01455688d425093feaffb168c1abdca1a323d4c5a8"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 80,
+          "sha256": "d5f9f6aa031bb2b246ec0dfdca6120ea09fb92fd863c643b3929f0aa55a7d456"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 78,
+          "sha256": "bba446f5ab2615e2f7e38092e5f1a616ddf595492d1ee31bd780adddd18faaba"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 80,
+          "sha256": "91f75cdccb5250f32978c897d848c37233cbfc5e12d6c9cc56624904005b75ae"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 12,
+          "sha256": "79857586448a8c0dcd0a8084cfba1e304da392c130c070f636e91a4e3d2d0e12"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 80,
+          "sha256": "f3a093cf906387041ea3fe8b7ba4d95079e347bf5fed9210289b05e1fdcde10e"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 80,
+          "sha256": "57c39afd0d1bb64141e9decc795065f4543232ad0d63cc03c7e47dc410fc70ff"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 80,
+          "sha256": "d541e24b23656618adbd0daa205e08fea91fbe0867e520941a0cec9f95a6ad06"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 80,
+          "sha256": "4c7a6f144e3b966b1f1d32c994fa37a548c6de1523ba283bd413727e94a2059e"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 79,
+          "sha256": "72c9d81cd130b773eea8d682389bc942bf2d245bdb1d2e78747effaea3e81116"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 25,
+          "sha256": "6ba905ded26503652ada590872a08a71766335664e6a3222a7266138b5436b15"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 27,
+          "sha256": "2a8b7e4ff5aec676f10b6073b7b4fb64f0a0a1e742383a3e5e5153d94cbc17ce"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 80,
+          "sha256": "f28c6bb44e799379cb051ed4c24148ada255d88f99f2c954bca681dfe9776bea"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 18,
+          "sha256": "029408d8b572540d1f2cbb9ea294a2221ae6dcfd44becdfc2e64cf720c5ab7c3"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 80,
+          "sha256": "8158a0c2b59452db928e89e582b8b6bb92b1a57569fa55c8c80a43b747fb3433"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 80,
+          "sha256": "241a32dd38dbe3ba38ee1dbfb15cf8702b460288dfb41392520d4b5575dba22a"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 20,
+          "sha256": "1195dc57af1afbd621dbe66718d874690009888984e722fd2b4e02882e8b900f"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 17,
+          "sha256": "23b63bf50495463d4604a4d082bbadd7e6c14cf9c0afff979b4aae1959f2aeb5"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 80,
+          "sha256": "a18d03fc4769352253d608ad2c7637fba331fbf217e01e8cb21e2fe05552b1e7"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 80,
+          "sha256": "f9bf527f89638ca0d35e961b2a79e45359fb252c6c39cc4151ea0f49be2b6d5a"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 80,
+          "sha256": "b5b0bb55474b10839268e1a9d375602a59060ed24c0db757503d08c65a12c410"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 80,
+          "sha256": "6ef9c780dfa2bad950a4536cdb48e6633c8f93b51cd235bdd97a87e49d68e1ff"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 80,
+          "sha256": "357918731e536732452a984cb6b176f779e6b6205c6643f20c3b974aeca1fd88"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 48,
+          "sha256": "d59aa48f851eb466a936ca364994e06642d2e4efdf4da48ba69c1a81bf256580"
+        }
+      }
+    },
+    "v062_M1qmc_s3": {
+      "alias": "v062_M1q_s3",
+      "arm": "M1q",
+      "decoding_seed": 3,
+      "generation": "v062",
+      "global_oom_check": {
+        "checked_at": 1794059220.4390297,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=178f47;b=6efd82b9fad64f13b49ecaa98348fd0d;m=44f0b2de6b4;t=65faebbcf469d;x=8b5307086180c385"
+      },
+      "memory_guard": {
+        "command_count": 2898,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/v062_M1qmc_s3.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 1104687104,
+        "sha256": "9a863514fbca9e8b24d0077ad844d42abaadeec3e2c2c475d26ed4300f4ee74b"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v062_M1qmc_s3",
+      "route_sha256": "312e3249a0041e65e46324084bc1cf167974c23f4ce91361ddd5973cb7d44349",
+      "routing": {
+        "cancelled_upstream_requests": 10,
+        "client_disconnects": 10,
+        "empty_actions": 1,
+        "empty_response_metadata": [
+          {
+            "choices": [
+              {
+                "content_length": 0,
+                "content_type": "NoneType",
+                "finish_reason": "stop",
+                "reasoning_present": true,
+                "role": "assistant",
+                "tool_calls_count": 0,
+                "tool_calls_type": "list"
+              }
+            ],
+            "choices_count": 1,
+            "sha256": "de2bba3279fb23f07774e3c7297e7656e3a4a3f9671fd45a33537ebff3414cdb"
+          }
+        ],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v062_M1q_s3",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 2928,
+        "successful_requests": 2927,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "scientific_name": "v062_M1q_s3",
+      "service": {
+        "end_sha256": "25f5e68996e2bc5ee78f1e2a605476e0af298bf519c0677e789b28aede8f10e2",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v062-eval-2f487801e1e44b29baa3644584e031d7.service",
+          "InvocationID": "eb2352c1ae1b4f77baa0f89c6081c5b5"
+        },
+        "start_sha256": "183d8fc64ca0db61dc9e4d0c43729bc0b2cbb6181c92255222510bdc95b639b3",
+        "unit": "gemma-v062-eval-2f487801e1e44b29baa3644584e031d7.service"
+      },
+      "sha256": "7c88f849fbfe35d55a74ea21a28050e977bc9a28732ae56c475895bf2a63dd36",
+      "staged_sha256": "f7e9a6e4e1c652a36e87a92557e2d2bb61bfe52a5ee5802f047f5dc1117dcb56",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 30,
+          "sha256": "56746948836e61033697803f26d658967539b51b6a5db35500d4986ee3f2d117"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 80,
+          "sha256": "6eb67380231aa286f5cc9e169aee029b7f3ba43ae4212761af37577b8a745d9e"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 32,
+          "sha256": "199a242ceccedd0bba5f56b48e69689edd9efe8c0ff59189e2981c92742e07bb"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 80,
+          "sha256": "05d25a76ad94787116e0945c29ed9ff90384401c36623edb8408e8f6eb658b81"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 15,
+          "sha256": "f8c6c597dd16313f394a131183d5d4f7da5194508085cf5f88b10f33f9b70a4d"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 80,
+          "sha256": "82131a954e59647686e1493154b577551696a85eb81a3844d7885add5f9b57de"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 80,
+          "sha256": "dab23ca122a793c1306cb276c1c21ac8f60dc02b2725dec26e141bd325e9486e"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 80,
+          "sha256": "cfd55f4f1e87ce0353367aa1964723855a7b529e739544907b0640515f9e584c"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 80,
+          "sha256": "a4ea4f53cae7a8dce9b2bece2078a15a143362aa8e4de04d196afcb1643720c8"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 80,
+          "sha256": "db6a2ab8a35e80360f02b4ad861c820bba0111b12902d0dfe13450ece6b1c828"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 80,
+          "sha256": "6cfbf4257979f76fe7bc5b0b145d421f11a36b07ca1affb260097f4e9e08be24"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 9,
+          "sha256": "35d0650d87773fa7ba33f1021c51ad47895d3d75d53caded4335ebefde46a4ae"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 12,
+          "sha256": "560db086948a129d0a1ea077a341829e717531d8b1990f1fac2dfa7288a3e306"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 80,
+          "sha256": "cdc5f3c2d7c1478a9cc8054d61ffb3ca4904ee814a42f38c9d18f118bb2c94ba"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 15,
+          "sha256": "479ffbb3f14f9ea4cbbe1011125c9bad41818847176c46107d1a153dcbd19427"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 80,
+          "sha256": "6ed878b91cb4529cf4c80cd44cb49785f90a61a344c6d93bbcba6f59d9feecaa"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 80,
+          "sha256": "aa8efd1bd5290c37b831b03178661501f065d1d09036de87bdd0d9bab20ad963"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 80,
+          "sha256": "4f1353fee818469c0545214ee3c12a3f34bb5a3d68d2389b6174977560f91877"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 80,
+          "sha256": "e17e29405b87fa69e76f51954c7cb2d472efd99b41fdb1c944ea4d5dd46f4cbd"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 80,
+          "sha256": "e13f99b0c1f9634d6990a06a73d797a108f391e7339151c4ebe6f2ad69f2fbf7"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 80,
+          "sha256": "faf43079a8dd9b58f41d495a4cd58c10e6829fd9845116af4513be8985b6c9d6"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 13,
+          "sha256": "f365de7e2ab210eea56706ead978cbcf6f4b50b253386037745eb5abcc676941"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 7,
+          "sha256": "f6cbaecb1cdf770d8fb20f30401b6744f615f28c2af899f24f405592ab5dd23b"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 18,
+          "sha256": "d22ea495092a37dd5b8f864ea0163a437748fa8f6d58192801284949823f8aa4"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 53,
+          "sha256": "41f35f8c752bcaf394c362d6c60d641a83383b2fe6313e95f43eb55cc7841bc6"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 19,
+          "sha256": "5b2e339d57c1edd4c21a54eb19f6ef83c93eb944c0b18487dc2071ee8be5ae21"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 31,
+          "sha256": "923917d65bc11196c4fdab405b8c95a4b5d911e500296ae5593af8dd10785970"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 80,
+          "sha256": "798e55ae8088d176a8c100823d672a873178736bedb5017e2f528bf09f3bc934"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 80,
+          "sha256": "fd6d4cdd190c8af51e70cd3d2fa0f134e2356d3ae6341cc8cd57abbd5e0a50b0"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 80,
+          "sha256": "cfa239746e2182e1b9f7c642f65b995159bec1d504482720325938cee2f43774"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 80,
+          "sha256": "d152977d79d7e832201a33983b5d418b085a707483b66c9f52817dcce0cbcd6e"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 80,
+          "sha256": "c60afcd0df2f03b5e8fe1bd8e00f9b96d416c9a9e5f4d3edecd946ed2a5a5392"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 80,
+          "sha256": "199a0518af354c4a32cb9fad23aba753efd3a6fed2c60ed192aebe5873bf784e"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 7,
+          "sha256": "4d3f16a58df61aeb0e6c55037898987a228be1423b7e7b05e45ed9709bf82216"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 80,
+          "sha256": "b6a8cda6f7d241b2410dcd43d21cd5ae182d31a1de005215eb57e5fc8166a26f"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 80,
+          "sha256": "f1487127bac98713c7adf634a439ee4a6fc3c17d09349636bcbe87d32df54007"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 80,
+          "sha256": "726af51827e22603bf252921e8fc53e69926f3c73507a519bca55efab462c5a4"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 13,
+          "sha256": "377c1e4a968f3017cd18c8aabdba43092774da8fadfc5a3e0b87d02b06b33423"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 80,
+          "sha256": "6b756c1efc6f9ee03b90d616ef315e87ae2f9ee26a7a081b81ebea920b7e8ef2"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 80,
+          "sha256": "ae080449008d4ef27bc13cb0bb750999144d3dc44310d95af5c1ebdf13108bef"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 28,
+          "sha256": "32ba400f35a8d0b2ae128e8fb7954e8c5722ac8276f6eaac4d08ca92faa4657f"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 6,
+          "sha256": "82d150690c88af6f4a8009ad697e69827c6af3336aa420d55dfe6de4e2823125"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 28,
+          "sha256": "f52cd841c1e4f13bb1deceee62fe0f80abd79678c02c7e86546080c4f8a0824c"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 80,
+          "sha256": "094b9adfc54d2ca514918f28e0243a5435cee253cd1b3bf07965c2984de684f0"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 80,
+          "sha256": "69374d2f938803386b43fa0dcf5906e5731eb07a43a7d57fe3f72ea3c933d466"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 80,
+          "sha256": "71ba042a9fdec337c1850569fb30c945a435da6e51a788e4eac3bd87686984f4"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 80,
+          "sha256": "1a997554edf959acc1a5b44fcf8e33224db86931c7b4fab674f172a70ccae304"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 80,
+          "sha256": "86a888966c723a860d239908531d42f38e8d5ccfedcb9b628121311cdfde3a2c"
+        }
+      }
+    }
+  },
+  "runtime_sha256": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+  "status": "all_three_m1qmc_evaluations_qualified",
+  "submission_started": false
+}

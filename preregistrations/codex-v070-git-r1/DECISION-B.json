@@ -1,0 +1,21 @@
+{
+  "schema": "v070-git-fallback-decision-v1",
+  "utc": "2026-11-09T13:28:05.791287+00:00",
+  "decision": "B",
+  "status": "NOT_RUN",
+  "amendment_sha256": "8ca2602bb353e1ab146de875cb00e93787ae48e061a50b1ead523ac525d1b188",
+  "frozen_rule": "A failed real control triggers B",
+  "control_report_sha256": "bf2eed1fd8a3277699dfab8342f9ac27383d6394c4519a0a15809ebfffcfb6fe",
+  "controls_planned": 24,
+  "controls_attempted": 4,
+  "automated_controls_passed": 3,
+  "validator_rejected": 1,
+  "unattempted": 20,
+  "scientific_rollouts": 0,
+  "runtime_pinned": false,
+  "gpu_started": false,
+  "advisor": "momus confirmed frozen B; no post-control rescue exception",
+  "forensic_record": "PROJECT_ROOT/codex/experiments/v070-git-r1/forensics/pypika-empty-exact-identity.json",
+  "next_claim_scope": "K9 Rich holdout only; no external confirmation",
+  "future_continuation_requires": "Explicit separate transparent post-control amendment/decision, not completion of this generation"
+}

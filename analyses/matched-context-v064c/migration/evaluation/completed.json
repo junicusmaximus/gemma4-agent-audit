@@ -1,0 +1,1304 @@
+{
+  "admission_receipts": {
+    "byte_compatibility": true,
+    "controls_path": "PROJECT_ROOT/gemma4/analysis/oom-controls-v043/final48/report.json",
+    "controls_sha256": "a3b4548bc5ed0a3f67fca47b28391804e69fbb592fc1b41606725ff929418708",
+    "gold_primary40": 40,
+    "original8_classified": true,
+    "replay_path": "PROJECT_ROOT/gemma4/analysis/oom-replay-v043/report.json",
+    "replay_sha256": "536e2c3e9dba04ca6d3aee87cb2671e643d0f950739fc7ae73f301f1a125642c"
+  },
+  "analysis_pending": true,
+  "arm_training": {
+    "adapter_tensors": 516,
+    "artifacts": {
+      "PROJECT_ROOT/gemma4/contracts/onpolicy-confirmation-v064r2-APPROVED.json": "f214de6f600b9a11a444e15ad1b7958ef27f67fad4c976acead774b34fd28f83",
+      "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/M0.jsonl": "455f43747aa4286e5ec80010b8f8195260ecd608631a12e5403f56bfb74b3f90",
+      "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/identity_ledger.jsonl": "7e8814e66aed8dd30d53a36f6d6b606ab57b82b4927924f5469991828bda9744",
+      "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/manifest.json": "c1b63a142b37e879e58f6c98c828adbe3cc565a9120e373e60947e2516df9467",
+      "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/trajectories.jsonl": "23338ebe6e9e475fa6bc8b1a20349217bf33b1da15ab6634f68388982307d2ec",
+      "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol/update_groups.json": "da0e41b84f13359364b3d39057ff523d803731fa5bfd20baeed52e58177c67c1",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_s2_v064/adapter_config.json": "719962632066bf26518295a8d5b97ca5e002d0cfd3b75a528a3f4b0993bac0a5",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_s2_v064/adapter_model.safetensors": "f9e0664295ea7cf6a60f964330726ad2d6c0f220160d64aef1abb01c867107a3",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_s2_v064/meta.json": "5f7a30884aacfb7c22db5de8958481fbe1c8ac6cacfd7c38bc75f1819d5b53f6",
+      "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_s2_v064/train_log.jsonl": "80b7ce1c07107bc4dd53cdbfe29d41ce90f2d069d85790924b5d36843caa0dc3"
+    },
+    "base_model_name_or_path": "google/gemma-4-e4b-it-qat-w4a16-ct",
+    "data_files_sha256": {
+      "M0.jsonl": "455f43747aa4286e5ec80010b8f8195260ecd608631a12e5403f56bfb74b3f90",
+      "identity_ledger.jsonl": "7e8814e66aed8dd30d53a36f6d6b606ab57b82b4927924f5469991828bda9744",
+      "manifest.json": "c1b63a142b37e879e58f6c98c828adbe3cc565a9120e373e60947e2516df9467",
+      "trajectories.jsonl": "23338ebe6e9e475fa6bc8b1a20349217bf33b1da15ab6634f68388982307d2ec",
+      "update_groups.json": "da0e41b84f13359364b3d39057ff523d803731fa5bfd20baeed52e58177c67c1"
+    },
+    "dequant_manifest_sha256": "20f1c2f9a52eea099c7ab95fca57c150d4e3b1946663136f11d11e0f50849ce5",
+    "initial_sha256": "e0073edd262b416d41f2260c2a0af7b3531b360f8836e8b15da0fb449df54ce7",
+    "m0_base_model_name_or_path": "google/gemma-4-e4b-it-qat-w4a16-ct",
+    "receipt": "confirmation wrapper meta.json + train_log.jsonl are the training receipts",
+    "summary": {
+      "adapter_tensors": 516,
+      "gates_pass": true,
+      "initial_trainable_parameters_sha256": "e0073edd262b416d41f2260c2a0af7b3531b360f8836e8b15da0fb449df54ce7",
+      "lora_modules": 258,
+      "loss_first": 0.24144,
+      "loss_last": 0.16203,
+      "mode": "v064r2-A_onpol-s2-main",
+      "names_match_probe": true,
+      "seconds": 2728.6,
+      "updates": 43
+    },
+    "training_contract_sha256": "f214de6f600b9a11a444e15ad1b7958ef27f67fad4c976acead774b34fd28f83",
+    "updates": 43,
+    "wrapper_sha256": "8a43a115d67441d4e32497de215dda36cbd7cecfc76f2166f14b6a3f3f466ab4"
+  },
+  "byte_check_sha256": "7482328f87fb073fd19bffbbc2952850352b1276dc5b89d978304ec218411107",
+  "canaries": {
+    "v064_A_onpol_c2_s1": {
+      "accepted_budget_exhaustion": false,
+      "alias": "v064_A_onpol_c2_s1",
+      "arm": "A_onpol",
+      "budget_exhaustion_category": null,
+      "canary_episode_error": null,
+      "decoding_seed": 1,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794117879.8169866,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 38,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064c_canary_v064_A_onpol_c2_s1.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 749813760,
+        "sha256": "1c144b5633db83ba477e70ae21858d57316ddd170492a2c0546898462595d78e"
+      },
+      "original_row_sha256": "e3bc9c093e7d105f6efe6ea3e3b4415b760f9fe46ffd9c57717d5b5344f21a54",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064c_canary_v064_A_onpol_c2_s1",
+      "route_sha256": "dc36d62990bef6afe91694e28fa31980c342814ed59ae970b06ea325fec2f6b2",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s1",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 31,
+        "successful_requests": 31,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s1",
+      "service": {
+        "end_sha256": "f467f308106575a2959259659758b58887ccfc1d52f98d9eae8615c8da519836",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-0d42af5e63f7441ea934ab5b69e20483.service",
+          "InvocationID": "9418ea8a63a94e2ebd41633bcf09d4f4"
+        },
+        "start_sha256": "ffd684da48f55f115a397d5e32723e3d98fb467844bb108d5937c8ea2f796f90",
+        "unit": "gemma-v064c-eval-0d42af5e63f7441ea934ab5b69e20483.service"
+      },
+      "sha256": "e3bc9c093e7d105f6efe6ea3e3b4415b760f9fe46ffd9c57717d5b5344f21a54",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 28,
+          "sha256": "7875bedf3858c452255a388e36f7dc9bf6c7473019e2142d077f0dc024657adf"
+        }
+      }
+    },
+    "v064_A_onpol_c2_s2": {
+      "accepted_budget_exhaustion": false,
+      "alias": "v064_A_onpol_c2_s2",
+      "arm": "A_onpol",
+      "budget_exhaustion_category": null,
+      "canary_episode_error": null,
+      "decoding_seed": 2,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794117946.5016613,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 32,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064c_canary_v064_A_onpol_c2_s2.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 750592000,
+        "sha256": "45be82fb9c2e814971f923a44f4f9b9bba53ef96a45c2c7e57fde2455a857312"
+      },
+      "original_row_sha256": "d84590385f005480bf48b8a83e0cf05c9da8dae4684bf5da21a404baaa637cf7",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064c_canary_v064_A_onpol_c2_s2",
+      "route_sha256": "d2bc675ca59e58132383c3749466738d1dd8b4d0575da00fa26616c1855127c4",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s2",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 18,
+        "successful_requests": 18,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s2",
+      "service": {
+        "end_sha256": "820f8eea50d384ed656d4f18c6ed3828940d3ffaf93302abae10f81e523fc872",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-8f4cfd1e58dd424ca4cd3a2aa497ef06.service",
+          "InvocationID": "2b2b4f6a9d53426482f6d0f00f413352"
+        },
+        "start_sha256": "ec861d32bcee9515b770be6791f5ffa9a3a0ecf929148b83864203c2e46a8046",
+        "unit": "gemma-v064c-eval-8f4cfd1e58dd424ca4cd3a2aa497ef06.service"
+      },
+      "sha256": "d84590385f005480bf48b8a83e0cf05c9da8dae4684bf5da21a404baaa637cf7",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 16,
+          "sha256": "f85f7b46339311ee933b4965f114bbdb9080cea6a7c74621fe545be9fb4b2424"
+        }
+      }
+    },
+    "v064_A_onpol_c2_s3": {
+      "accepted_budget_exhaustion": false,
+      "alias": "v064_A_onpol_c2_s3",
+      "arm": "A_onpol",
+      "budget_exhaustion_category": null,
+      "canary_episode_error": null,
+      "decoding_seed": 3,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794118015.5712337,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 38,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064c_canary_v064_A_onpol_c2_s3.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 750841856,
+        "sha256": "4fa9915391ed9039859f651b93b78174c99558256f3e7a0e825252bdfffe1a7c"
+      },
+      "original_row_sha256": "4862dca921c49c95ca359fb2abbcef7a5c31715b176c2f2f4251d58a5f2b2263",
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064c_canary_v064_A_onpol_c2_s3",
+      "route_sha256": "4c6161c4ad4347938388a1130e5539a6d25534a4ae091ddcb192ecfdde57dfe1",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s3",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 28,
+        "successful_requests": 28,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s3",
+      "service": {
+        "end_sha256": "f162679567864a9acc2b99f6cec3a2676ecd713be1bbe2aa160ec4bce419942b",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-d7f4ce0b32774d3393e72aa65d404243.service",
+          "InvocationID": "e7ba91d29b064447975cf6754c109c72"
+        },
+        "start_sha256": "20c66873bd5798bd0d41b4cb7988f2b1594532ccde707b3f83330569fe176059",
+        "unit": "gemma-v064c-eval-d7f4ce0b32774d3393e72aa65d404243.service"
+      },
+      "sha256": "4862dca921c49c95ca359fb2abbcef7a5c31715b176c2f2f4251d58a5f2b2263",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": true,
+      "task_ids": [
+        "fastapi_11194"
+      ],
+      "task_rows": 1,
+      "traces": {
+        "fastapi_11194": {
+          "parsed_tool_calls": 26,
+          "sha256": "b6df9c0349c40087064f6300c3eb14766889e0452168bd319f1431452f47ce43"
+        }
+      }
+    }
+  },
+  "cleanup_completed": true,
+  "elapsed_seconds": 3053.541259581223,
+  "evidence_hashes": {
+    "activation.json": "34b7ad8584a9a06602fa77adc9754c6828e0a1eddd2dbba3925427d9f3c7e84f",
+    "byte-check.json": "7482328f87fb073fd19bffbbc2952850352b1276dc5b89d978304ec218411107",
+    "global-oom-final.json": "b3bdb18905a3b157abb987076b52fd849139e9893050351829fca9ff6c9a2e7c",
+    "server-cleanup.json": "0fd3d81fb7a37f94cfe2cc845edb2fcb6d762a10fff621ec486d159f761f00cf",
+    "server-launched.json": "a2aaf5c7e1d2909d8ac6ed9d1d43e692e56666fc3e20cb2c43bbe21a1f333238",
+    "server-ready.json": "cd978a879e8d172e08e1ecbb51ba6332da56d026d3b639c46a54a30408e48622",
+    "server-registry.json": "75f4f3093ee5bf3752079c1e8454167cfcbd391d5aacc432c72daf6896a4649a",
+    "staged-inputs.json": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+    "v064_A_onpol_c2_s1-complete.json": "a5ba3878db952dc543069b495e530532b037b572f5e30f7cac4d1f1a35feac73",
+    "v064_A_onpol_c2_s1-oom-check.json": "9fe19780460f3e4ca2f27bd797d0b4b0974f05c67e3d81d696728107ab11f3c6",
+    "v064_A_onpol_c2_s1.log.memory-guard.json": "16b9aa475b74f6208804aa85e6af508f7a339d5cce6b6823652412bd9984bfa6",
+    "v064_A_onpol_c2_s1.log.service-end.json": "ab2b61cfffbbe6e1b79a3eead547dc7a44126a97b544dd6440ff461365cf7fea",
+    "v064_A_onpol_c2_s1.log.service-start.json": "ddacd62a8f8e24a5d06df0a6cf5aa815975e015bf6887d23268f52836eee4737",
+    "v064_A_onpol_c2_s2-complete.json": "f64b29dd789e9782ad9e24704979d920a3f9cf10a27f0455f4969b3509da5942",
+    "v064_A_onpol_c2_s2-oom-check.json": "05c0aca5fcb0fb159bc81f442306c6cc160099793155c74d4da279fbeaca50b6",
+    "v064_A_onpol_c2_s2.log.memory-guard.json": "6aa31ce1ededa0401d2bc636022517d9ab35a78b591bd744dbc1ed11e30b91c2",
+    "v064_A_onpol_c2_s2.log.service-end.json": "fec567c97b76639fa1bba7cf707f618cb4d2a703abf61898036d2b8afe1fb6e7",
+    "v064_A_onpol_c2_s2.log.service-start.json": "03354f9b12462b5a3131091c3aed84635804af2eb76323cf4f8bf5b3b1de1676",
+    "v064_A_onpol_c2_s3-complete.json": "6276a451f75dfb33df5f147c7ee148ebacfba6428fc7ec0a044921c0d5870149",
+    "v064_A_onpol_c2_s3-oom-check.json": "b0501d2eda18374f5ebbf0a379c7bc44681cc0925b128519445872b1434be4d3",
+    "v064_A_onpol_c2_s3.log.memory-guard.json": "67d2e9b7bb76a2280fc6587cd8cc9dcccf6a85b553c1f2084dcfb8d08a38aff1",
+    "v064_A_onpol_c2_s3.log.service-end.json": "8b4036c62204e5b39840778ecbe55579f0ef400924c8c02e2a9a94321602b159",
+    "v064_A_onpol_c2_s3.log.service-start.json": "8f563befd4e5c7ac317c711e16db16fdca73bde7677b601a850c1af9bd456b87",
+    "v064c_canary_v064_A_onpol_c2_s1-complete.json": "7760ae350f772826f5df1d68a2e5f52599572be1f87a765ecc6ad8fe4a9918db",
+    "v064c_canary_v064_A_onpol_c2_s1-oom-check.json": "a88dcfd5fb630769aaf7899b49ba650ce7f74c98800ebcea18fb320140eecf73",
+    "v064c_canary_v064_A_onpol_c2_s1.log.memory-guard.json": "1c144b5633db83ba477e70ae21858d57316ddd170492a2c0546898462595d78e",
+    "v064c_canary_v064_A_onpol_c2_s1.log.service-end.json": "f467f308106575a2959259659758b58887ccfc1d52f98d9eae8615c8da519836",
+    "v064c_canary_v064_A_onpol_c2_s1.log.service-start.json": "ffd684da48f55f115a397d5e32723e3d98fb467844bb108d5937c8ea2f796f90",
+    "v064c_canary_v064_A_onpol_c2_s2-complete.json": "76da332bbc84cda2b018d946a0dd8746f15822232ce22451c8428094fe4b5c8a",
+    "v064c_canary_v064_A_onpol_c2_s2-oom-check.json": "ab771a0fd33014675f83d804a3674c4d0d39e2852cb3a27264509b5078c8b389",
+    "v064c_canary_v064_A_onpol_c2_s2.log.memory-guard.json": "45be82fb9c2e814971f923a44f4f9b9bba53ef96a45c2c7e57fde2455a857312",
+    "v064c_canary_v064_A_onpol_c2_s2.log.service-end.json": "820f8eea50d384ed656d4f18c6ed3828940d3ffaf93302abae10f81e523fc872",
+    "v064c_canary_v064_A_onpol_c2_s2.log.service-start.json": "ec861d32bcee9515b770be6791f5ffa9a3a0ecf929148b83864203c2e46a8046",
+    "v064c_canary_v064_A_onpol_c2_s3-complete.json": "6490d10665e160a2047f09aace5786852ca1514696b5dcf46fb9c8eba4aadf7e",
+    "v064c_canary_v064_A_onpol_c2_s3-oom-check.json": "5ebee15c8fc8c8e6fba67375eb9c81e2e15ee5232f54ba30e33aafc74e1d6041",
+    "v064c_canary_v064_A_onpol_c2_s3.log.memory-guard.json": "4fa9915391ed9039859f651b93b78174c99558256f3e7a0e825252bdfffe1a7c",
+    "v064c_canary_v064_A_onpol_c2_s3.log.service-end.json": "f162679567864a9acc2b99f6cec3a2676ecd713be1bbe2aa160ec4bce419942b",
+    "v064c_canary_v064_A_onpol_c2_s3.log.service-start.json": "20c66873bd5798bd0d41b4cb7988f2b1594532ccde707b3f83330569fe176059"
+  },
+  "generation": "v064c",
+  "memory_correction": {
+    "comparability": "Frozen numerical thresholds retained descriptively; this infrastructure correction is not evidence of historical exchangeability",
+    "exceptions": "Direct manager.start git/materialization and other direct subprocess host helpers remain under the outer 48GiB service cap only",
+    "global_oom_policy": "No kernel CONSTRAINT_NONE events after admission journal cursor through final cleanup",
+    "host_min_available_bytes": 68719476736,
+    "outer_memory_events_local_zero": [
+      "max",
+      "oom",
+      "oom_kill",
+      "oom_group_kill"
+    ],
+    "per_sandbox": {
+      "memory_max": 4294967296,
+      "memory_swap_max": 0
+    },
+    "scope": "Commands routed through SubprocessManager.exec: agent, verification pytest, and setup commands using that path",
+    "service": {
+      "Delegate": "memory",
+      "DelegateSubgroup": "supervisor",
+      "MemoryMax": 51539607552,
+      "MemorySwapMax": 0,
+      "OOMPolicy": "continue"
+    },
+    "version": "v043_sandbox_cgroup_v1"
+  },
+  "readout_sha256": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+  "runs": {
+    "v064_A_onpol_c2_s1": {
+      "alias": "v064_A_onpol_c2_s1",
+      "arm": "A_onpol",
+      "decoding_seed": 1,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794118875.5347934,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 1382,
+        "oom_command_count": 0,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064_A_onpol_c2_s1.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 1103912960,
+        "sha256": "16b9aa475b74f6208804aa85e6af508f7a339d5cce6b6823652412bd9984bfa6"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_A_onpol_c2_s1",
+      "route_sha256": "7ee7dccdc051b381af91c99baeadc763b54fb2640d79274e9e3ab360c22a62af",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s1",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 642,
+        "successful_requests": 642,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s1",
+      "service": {
+        "end_sha256": "ab2b61cfffbbe6e1b79a3eead547dc7a44126a97b544dd6440ff461365cf7fea",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-46a75ab3a7a04e338704bb08d057aabf.service",
+          "InvocationID": "1b57933cd96e4880ba8fc0c86ddeb524"
+        },
+        "start_sha256": "ddacd62a8f8e24a5d06df0a6cf5aa815975e015bf6887d23268f52836eee4737",
+        "unit": "gemma-v064c-eval-46a75ab3a7a04e338704bb08d057aabf.service"
+      },
+      "sha256": "93657f742ad7cbac086e09a19587d5f9c7eed80ceeb49c91c8140834f91ecb36",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 6,
+          "sha256": "d443f183f9f82de95266f09d8550705b9687263004895a44a5699dc8fb9427ae"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 21,
+          "sha256": "dac9d048b0330ea4cc49c03d652efb933138288edb2331e6b476dfc33a9c8874"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 5,
+          "sha256": "5784f9f797b6ee330774b44818607b3a43d44a059950dff067012e6ba7de2cfb"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 14,
+          "sha256": "a7a245908ce577e888e5454d909cf4b89747bfab6b7a20b0f879ff1b233ba5df"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 16,
+          "sha256": "10c1f2b130f6f6b4087cfd286006512403711b9362790d5ff4e718ab1fe190d1"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 19,
+          "sha256": "7a7cb493b742bbab09db1d57c5b1518b33e306c889e6f1ebe25afc59c3a3e7a0"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 12,
+          "sha256": "e0fadef0cab401308586c7c19cd19fd91f7d9e9c82b41eff3425f7c6f74b5730"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 14,
+          "sha256": "7fdb5efcfeec2bfe7a03fd26e170abbc8af33205629685d7ade2611673b97977"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 32,
+          "sha256": "73be0c5ff2d2fd52b74f3034827957b5f330eebd775fc246130753a3cbefc295"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 13,
+          "sha256": "abf26fcdd1734afb462ffd69ee1f918e8cb2eed5e5ab50bc8f69b500279cb893"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 11,
+          "sha256": "50b3e7ca99bf66cbb6bd2950c9999e5fe51626b791ab8ecc4596a230f3dcc8d4"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 9,
+          "sha256": "4f0d029b53f4360cacf1f01c9eddd825366014448a510e4486eaf3296c39e0db"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 10,
+          "sha256": "a9f8e67de0d57907f5d92d8c620553036afc79bec6aac2af157f77cc81f78088"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 6,
+          "sha256": "9a2f3669a228859ac292be4b36d61b4223a04902324f1357be870b5a3a147f4d"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 9,
+          "sha256": "a2c0913c9b7470714778831e0ab0c028c4e0df6acc3982ce8547c5f0d67ec98f"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 7,
+          "sha256": "9f42dca5af68b8803acdcca24d4299d9e69ed2ad85ff2d98b4d34c17568895d5"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 11,
+          "sha256": "cc274769caf832ea292768c910c25554479dc0fcc082906e9744215a84109249"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 10,
+          "sha256": "4b861ba95d109ad6d80d841d38b6ac66808645df11d7bb5a20738e25528b6246"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 12,
+          "sha256": "11909fb89b347afb07c631a7c08a0122b682dfa365d470d3c59480f73e3d4691"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 11,
+          "sha256": "91cda2009fed0f680ab4ce0392f54ed3da5ec974d6d5eabec84fb5e32812f7e8"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 20,
+          "sha256": "009da26e79d1bb0fbb9f537a6c7bd1572ed1de154149f54c5d967c4319afaf45"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 3,
+          "sha256": "f50bfc74fa89429c99fb51dea669d70bb11fd916c120bf28fd447f1fd3abba5e"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 6,
+          "sha256": "5e53797c05248265ceaeedd1a26c1b076b8fe1a413e783c574ca55e013a3f102"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 19,
+          "sha256": "ac78cd9b328cafc99d7f1e35ab38f6d719ddd326b85379f4d41f6454a03b09a3"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 5,
+          "sha256": "41021611c3b3931f5b07cc3c80b8bf57b5a13a783ca7d74c9e320b122911ac94"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 10,
+          "sha256": "ea053bb16653019d789bc89a64b0b2a73201d209625eb0b1994e9dfa022a4511"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 9,
+          "sha256": "8583475cb34bb80bdb0b6387c9742812238a94dfda5e659f22837eb1b124107a"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 6,
+          "sha256": "02b6fc4b6e586a4657ed1a8c858fd02d575f191c60f1616366263fa6fdb725f3"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 5,
+          "sha256": "98793a6fe0f90a9e85195faa0e01258b6a5cea7b06ea36f006b40f4a270e766d"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 11,
+          "sha256": "a3019cee3982045615adff1bea1d866d88daccaba7d53f524f45c54bee3f405e"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 7,
+          "sha256": "9f6710017b66380dbc1707231189bd9d168e4091d1d15425774d73b1d02a9b6c"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 4,
+          "sha256": "3196fd6bd8df81dbb5cb9a67f41bde584294bdfe3fba9c9eb19f728ae9876bd6"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 15,
+          "sha256": "0d6b14dd71449ab7263a0a61ad9ec9854f4336b0bc2ea358fd96778118ded3e3"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 4,
+          "sha256": "dec8a8039c20a631066921ef910bac3d318c4a8c29b847ae3bae2df75faacae6"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 9,
+          "sha256": "cfa15512b1f0f3e4761555cd36dd3c9c7d105e7cd8e3df38ac3b5a4339059690"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 11,
+          "sha256": "5d7cacb3faa38925e4914438ecc345af13efbebbd51c47cc36948dcd7a905431"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 6,
+          "sha256": "8d903eee5df567f9e187a659c1138983c0e0cd8c141ede501ea9f19e60d20c92"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 7,
+          "sha256": "6a4f45882cea0850e6167239fd81f4d9eb655704804d77a7ffc16fb4932f0759"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 23,
+          "sha256": "c9d753699e0299aa0a7d21ddb11fa0c722c09fd86b3d8555b02d4ab6c8cb74f1"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 9,
+          "sha256": "ad8e61867c88afca2d951cc8e8d28c23338c093065a7c7a458d9f33f108db9f2"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 11,
+          "sha256": "94c7085f39db7f489c753e5fd910f76f0ce1c4d15b2423324e1da326f99638be"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 12,
+          "sha256": "b0b28a88b31a2f8f3b7c73c3f8bdbfb8cd01a38ee8d0aa3537f2c0a39f1e3274"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 11,
+          "sha256": "b9d22e1305158f44ba32275238df4dc825ce51beaf46f4563de75dcc5968934e"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 29,
+          "sha256": "222f6c63f0ed27cbcdf3870a531d4a291c2dc7469df24ef5fd934f0a01daa23d"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 13,
+          "sha256": "29e2b56c5d3b23ee208e7fd821c0ff0cc3417a3395dfcaa6c09cb0509e4ec6dc"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 6,
+          "sha256": "a77c73de6f75fc16af9709ff5a5534cc7308871506adda8c9fd92a44d6bd5845"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 21,
+          "sha256": "cd1ac41b9893ee262c2e64a5f6887e3782eadb991cd88c61a71a87cf1e3ce99f"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 21,
+          "sha256": "efde4971b02cfc142ee4afc3c8c8c75df47e01b17336bc3bb87d56bd820d14b3"
+        }
+      }
+    },
+    "v064_A_onpol_c2_s2": {
+      "alias": "v064_A_onpol_c2_s2",
+      "arm": "A_onpol",
+      "decoding_seed": 2,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794119861.8265705,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 1404,
+        "oom_command_count": 2,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064_A_onpol_c2_s2.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 4959916032,
+        "sha256": "6aa31ce1ededa0401d2bc636022517d9ab35a78b591bd744dbc1ed11e30b91c2"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_A_onpol_c2_s2",
+      "route_sha256": "1a0692238a690787a7d34b3ee9d2ea74f7bdc629455e196da4970bd1bfd68634",
+      "routing": {
+        "cancelled_upstream_requests": 1,
+        "client_disconnects": 1,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s2",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 698,
+        "successful_requests": 698,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s2",
+      "service": {
+        "end_sha256": "fec567c97b76639fa1bba7cf707f618cb4d2a703abf61898036d2b8afe1fb6e7",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-757a70dd74da4c5db02d05f1858ef078.service",
+          "InvocationID": "32554468e11e4336b853a95e4e2e35e0"
+        },
+        "start_sha256": "03354f9b12462b5a3131091c3aed84635804af2eb76323cf4f8bf5b3b1de1676",
+        "unit": "gemma-v064c-eval-757a70dd74da4c5db02d05f1858ef078.service"
+      },
+      "sha256": "c7103162f4cefd9cd224d5a572f538de5ed44df3cde9a48df5d1bbf7ede7f330",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 18,
+          "sha256": "1c4469f11a8dc854be2e60f244b147f329be1a061712ad0ac94de06610e52ec0"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 12,
+          "sha256": "4be3afcf0fef4bbfc2569fa44100d61446c221b76e287f98cfff00e17a077a1c"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 5,
+          "sha256": "6084dcab2a343aa4d5843d702803421e316cd324987e3ed092c31efb71ecd64c"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 13,
+          "sha256": "37c23dae2ca238f8b2ef63171b8f345e27e27051eb74fad5a2100a9bdfc6a7ce"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 12,
+          "sha256": "7206caa8aca799c78fdc3803452c6980449f9b2c625508c91480d9c38c6735d9"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 21,
+          "sha256": "8fe510da767522a375a7fee360221523c7d5c827560cd5eadd884cd2c935536a"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 11,
+          "sha256": "4ec75b64726c0089ce6cbad779a9fe6d4a89f149d8b37708d4ff5814e73a2cd1"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 12,
+          "sha256": "9300266cfa606c7487938588ac123d20224ce2580f086ae38d23605afe12a202"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 27,
+          "sha256": "96cc9a9652e9e050d07d072eaacd2a02d7eab797a15967d5e8a470f60d315267"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 16,
+          "sha256": "3f600e83d142fbf3126bd98b0a83db112d022b00d23e2a763e89b3e2ddc726f7"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 13,
+          "sha256": "03848c06e30d7305ab75534f9983ff49e6208e8ab2cdb34399963d3a3d59d90a"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 6,
+          "sha256": "30a9b1ce0bbafea1159994e4d826cec95a07c6bba449e7c18eafc28868efbad4"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 10,
+          "sha256": "3821b835ed1ffa6dec0cbb81e3409bed555baba6976f6ed6393ff92358a7f27a"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 8,
+          "sha256": "11804f584acb0fd84f96cc379eb61c878f02a7e25a111366322e256aca7874da"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 20,
+          "sha256": "585ad97a9e797562a623b2bfc91f4e8354c03a2e41e1cc6c6012f1267aa5c9a7"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 18,
+          "sha256": "0d1829b5cbec4413df85492db361346050fcac68db22e613820922dcac9079a5"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 22,
+          "sha256": "dbd7bb02f4bda0137d83a97b062c92e1540b107dc79f8c13cde57bfde63d54da"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 12,
+          "sha256": "6dea6c3e66b0642e2c1bf8dda0b7cbedc5043834e5b489b55d3e52eb453f662a"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 17,
+          "sha256": "365d3663d48bbb7a87c3a26d6694acd1183e32262ac16e2da3defa82e154fce2"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 17,
+          "sha256": "6e656a50d360dae94988f4e1b12e6123ae53a2c2acba534a1f4c214e2ed5f277"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 10,
+          "sha256": "7afdab19c3d1ca7a3fc20cc5e7cebe690a557675992be9b519109091b424e331"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 8,
+          "sha256": "9a8b8a385055f4d81c8a12e845270678e41303eed4333411d47e497594e65eb4"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 5,
+          "sha256": "26a2f04d98dc997aa78ec5c6f6ac8babde42a08de4b77b85c5ccc2e594c294da"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 15,
+          "sha256": "87781ddb6d44a7abc2db9c5e2735220e1b4a500f19055585d1dc96476d17da05"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 16,
+          "sha256": "c4165fa306b4ec379012c856f2617603ab7673617e5325dc5e7dc8eae777feea"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 23,
+          "sha256": "e2321afca00a408be2b6bb171f9e0f6d9736573f76695ddf6124fc717c78425c"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 10,
+          "sha256": "dd0c185cc680535202347302248617bd620f5f18e3f7d6b49c5370eeab532ea7"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 8,
+          "sha256": "7eb2eff5a36e037e1171cd6a9da83b704a6e0483351a027376d77515869072d2"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 10,
+          "sha256": "134a6a2555f9620011af4d623b5e16e644c107778fca4b71ab9ffe709431aa79"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 10,
+          "sha256": "9933ec8d53f12792c83744104f8ece5421720e3782f49e5341765a5dd5405f94"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 10,
+          "sha256": "4b4660eacda84c47d1f86b6a893c34a10050b36fe1c1db004f095fc27d7a3f84"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 6,
+          "sha256": "58113080e4bc13c47a3cbc6bf9671803c01f31ec51c6b619666130bc4e9e228e"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 7,
+          "sha256": "aaa8d4641fb78469cd854ab6ba2b0b05e85e75e1a62eab3b49e45022803e1f00"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 5,
+          "sha256": "060e046257b69cc0d7048b26b836e56d4e0193ab2135fedbd2975fb2998c1fad"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 27,
+          "sha256": "61a48f331477596921be2fd2acf25049f2fed46afe7ba2e05ebd2555b82d8f39"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 10,
+          "sha256": "41b4e66da1dda027be6ba253a5fd47487e7ab8def17a6340c026e71d6491ffef"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 7,
+          "sha256": "3af747b876f361a7664110bd7942145879747986cf2ab003f50f741e7f5277c4"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 5,
+          "sha256": "2757d83bbf99a89dd5e257584484d9400779d57c077512157ab44b6d9071ce6a"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 11,
+          "sha256": "44f9a21b7a84cfa2daf7c73f322984992f29dcbcb61bcfeea183be3f675f29fc"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 9,
+          "sha256": "1ad98f5cf3db8b6e99569bcb5236d2b705f0a9642a2713ebdc1b679b14509028"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 16,
+          "sha256": "84463a1f2db901ed3f21a9f86b7ba25e9b56f290cb3a9e6cffb83ff89b9123da"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 11,
+          "sha256": "51582178579e73b177f9e71b91ff0869c8cbc59fd520bbef92e36ba1c77b685c"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 9,
+          "sha256": "593076d10a75d6a35e21a5bdca6d7853fe41b2aa4bca6d3209aba1e2415fc5f5"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 30,
+          "sha256": "fb10d98aefb240f07e19582f361f404862ac7b9ded9942a6c34c983d50630694"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 8,
+          "sha256": "104ffc79157746c94eacd2375527d6e4819ae46d072cd7175fa9f76752361368"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 9,
+          "sha256": "6cf66d16bd5e2a2fbd49b8fef549c93a734ad51c95e96dea78b903913891ee8b"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 13,
+          "sha256": "edcde09c134e146d29090fd354ad6898b78dfc1cc2c3269feb92521a44856721"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 13,
+          "sha256": "6f67014045bbf31e2a9d497d970e99317195055e05100cf540ae8f4ba7563fb4"
+        }
+      }
+    },
+    "v064_A_onpol_c2_s3": {
+      "alias": "v064_A_onpol_c2_s3",
+      "arm": "A_onpol",
+      "decoding_seed": 3,
+      "generation": "v064c",
+      "global_oom_check": {
+        "checked_at": 1794120780.581072,
+        "no_global_oom": true,
+        "start_cursor": "s=7f6a821b91064b34a47e9c2cdcb57944;i=180519;b=6efd82b9fad64f13b49ecaa98348fd0d;m=45de4c7b984;t=65fbd9569196d;x=4c48c012d553941e"
+      },
+      "memory_guard": {
+        "command_count": 1377,
+        "oom_command_count": 2,
+        "outer_memory_events_local_after": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "outer_memory_events_local_before": {
+          "high": 0,
+          "low": 0,
+          "max": 0,
+          "oom": 0,
+          "oom_group_kill": 0,
+          "oom_kill": 0,
+          "sock_throttled": 0
+        },
+        "path": "PROJECT_ROOT/gemma4/migration/matched-context-v064c/evaluation/v064_A_onpol_c2_s3.log.memory-guard.json",
+        "recursive_cleanup": true,
+        "service_memory_peak": 4960083968,
+        "sha256": "67d2e9b7bb76a2280fc6587cd8cc9dcccf6a85b553c1f2084dcfb8d08a38aff1"
+      },
+      "result_dir": "PROJECT_ROOT/gemma4/results/v064_A_onpol_c2_s3",
+      "route_sha256": "0c98c081febd8580f3d757e3cecd98d43fea219eadc028ca5c07d1cddecd52a0",
+      "routing": {
+        "cancelled_upstream_requests": 0,
+        "client_disconnects": 0,
+        "empty_actions": 0,
+        "empty_response_metadata": [],
+        "errors": 0,
+        "invalid_response_metadata": [],
+        "model": "v064_A_onpol_c2_s3",
+        "request_timeouts": 0,
+        "schema_accepted_responses": 670,
+        "successful_requests": 670,
+        "task_http_errors": []
+      },
+      "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+      "scientific_name": "v064_A_onpol_c2_s3",
+      "service": {
+        "end_sha256": "8b4036c62204e5b39840778ecbe55579f0ef400924c8c02e2a9a94321602b159",
+        "identity": {
+          "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/gemma-v064c-eval-7a51d03bf335472d84e691100b13f95f.service",
+          "InvocationID": "95324d71c6b74df18ea48c8c23f20448"
+        },
+        "start_sha256": "8f563befd4e5c7ac317c711e16db16fdca73bde7677b601a850c1af9bd456b87",
+        "unit": "gemma-v064c-eval-7a51d03bf335472d84e691100b13f95f.service"
+      },
+      "sha256": "65f6c4b243ee684223d1df1a7689a747d01328f461475ef5bb3afc82273ca20e",
+      "staged_sha256": "0173569be1f74859dcca1042d4dbedbcce5487e4ef0f5c0e284a99e20261c671",
+      "strict_canary": false,
+      "task_ids": [
+        "rich_2725",
+        "rich_2943",
+        "rich_3006",
+        "rich_3043",
+        "rich_3052",
+        "rich_3061",
+        "rich_3063",
+        "rich_3064",
+        "rich_3067",
+        "rich_3105",
+        "rich_3130",
+        "rich_3180",
+        "rich_3278",
+        "rich_3296",
+        "rich_3454",
+        "rich_3468",
+        "rich_3469",
+        "rich_3470",
+        "rich_3471",
+        "rich_3472",
+        "rich_3480",
+        "rich_3486",
+        "rich_3506",
+        "rich_3518",
+        "rich_3521",
+        "rich_3535",
+        "rich_3675",
+        "rich_3676",
+        "rich_3718",
+        "rich_3772",
+        "rich_3777",
+        "rich_3782",
+        "rich_3882",
+        "rich_3894",
+        "rich_3905",
+        "rich_3930",
+        "rich_3934",
+        "rich_3935",
+        "rich_3938",
+        "rich_3942",
+        "rich_3944",
+        "rich_3953",
+        "rich_4006",
+        "rich_4070",
+        "rich_4075",
+        "rich_4076",
+        "rich_4077",
+        "rich_4079"
+      ],
+      "task_rows": 48,
+      "traces": {
+        "rich_2725": {
+          "parsed_tool_calls": 15,
+          "sha256": "f2fb113be3911a850e56e652141d737570920cf78b16fcc63a09fc94f840baed"
+        },
+        "rich_2943": {
+          "parsed_tool_calls": 12,
+          "sha256": "02afc807bff7b6559d7a9b1f5e777ddae0f2fd99bc363affa69cf99c58949d82"
+        },
+        "rich_3006": {
+          "parsed_tool_calls": 6,
+          "sha256": "2a6f61391464fc168483b4b730fa149511b076b729dcd99b03645be584cc683a"
+        },
+        "rich_3043": {
+          "parsed_tool_calls": 9,
+          "sha256": "c6f8dee942bf2a37f17fa84384be48affad2b3c87d705e45e681459e4795bfdd"
+        },
+        "rich_3052": {
+          "parsed_tool_calls": 6,
+          "sha256": "77631ddb807febff6e1b1b3cbfeee284bc01bcc4f95e46a05c6c8d5c28b87f14"
+        },
+        "rich_3061": {
+          "parsed_tool_calls": 14,
+          "sha256": "eea4d732e0a5000b365e2a5585346383996a2b4272e835554a200d6450f660fd"
+        },
+        "rich_3063": {
+          "parsed_tool_calls": 12,
+          "sha256": "dd05b54635a8a8920796e8a993873fcb2a89d838bb1a219051287203642eabc5"
+        },
+        "rich_3064": {
+          "parsed_tool_calls": 20,
+          "sha256": "899d17c27ab97515e6aa2e0e3d6fed01002b11ae3650f6975e5e86a7d86a8baa"
+        },
+        "rich_3067": {
+          "parsed_tool_calls": 12,
+          "sha256": "d806d55c8bed4c6bc14ff13deed5457cef695dc84307730906a7a94e31f67d9d"
+        },
+        "rich_3105": {
+          "parsed_tool_calls": 17,
+          "sha256": "7e9b0eaf1348be37f594003054108aeaf92a04c218deb394b6afe479748ced8d"
+        },
+        "rich_3130": {
+          "parsed_tool_calls": 23,
+          "sha256": "196d11aa7f4b4cd3655c1846cc4978cf159079ac410ea8707f145e25749e20ea"
+        },
+        "rich_3180": {
+          "parsed_tool_calls": 7,
+          "sha256": "df0944d2bd4befb0bc35863368186a822902c28f87912f8dad98daf344bd8ae2"
+        },
+        "rich_3278": {
+          "parsed_tool_calls": 11,
+          "sha256": "d3c374973b8ca80d4b846428bb9e3ac70a5473e7e4955136d33f738029e0eb41"
+        },
+        "rich_3296": {
+          "parsed_tool_calls": 25,
+          "sha256": "7e5f749d5941a45e74d4fcbb0a9c6cd1108aca44ee83fdf1d2289f1836ff4dae"
+        },
+        "rich_3454": {
+          "parsed_tool_calls": 10,
+          "sha256": "76470cceaa6f8f76ff9205e5e8d3e5eff5c97762545514f8b7bad036b0368454"
+        },
+        "rich_3468": {
+          "parsed_tool_calls": 14,
+          "sha256": "d304c7a6557a9fd48924bf5da3e407100864075a832a384213daa9302784200a"
+        },
+        "rich_3469": {
+          "parsed_tool_calls": 8,
+          "sha256": "7dcf58a264fb5ceefe22633619bf63f1afee8179a6a0f1a699eab09d62f23dca"
+        },
+        "rich_3470": {
+          "parsed_tool_calls": 22,
+          "sha256": "e66e5ed4f408eb0e78ad66f604d12840d56c56dcb2f516753bd5c3aec4a7a794"
+        },
+        "rich_3471": {
+          "parsed_tool_calls": 8,
+          "sha256": "77f707e67ffd5210f79ffe884056893b9505f908724071fe2895f17c6919aedb"
+        },
+        "rich_3472": {
+          "parsed_tool_calls": 14,
+          "sha256": "e079603dc979433ad9ac45c1ef87f330b5224537cc74a6fdaf6d599130e3fd19"
+        },
+        "rich_3480": {
+          "parsed_tool_calls": 6,
+          "sha256": "933da054810aa0548757816e5a668ccd09d27c57c599b729f5dc253781c77474"
+        },
+        "rich_3486": {
+          "parsed_tool_calls": 18,
+          "sha256": "853acb64689d47b7c3f1e0f1ba6ec40d3c74ef754cca31bd7deb403cbe8960fa"
+        },
+        "rich_3506": {
+          "parsed_tool_calls": 5,
+          "sha256": "d0a232e81277808cb43e23253a81dfd70dc746f8c11acf290b5b54ea18ff8fd2"
+        },
+        "rich_3518": {
+          "parsed_tool_calls": 8,
+          "sha256": "447f2c6ce0c7b89aebf9a9d19fbca6a29f496198b22cb269bc9289a9abc62d40"
+        },
+        "rich_3521": {
+          "parsed_tool_calls": 5,
+          "sha256": "c886abf00f68fd727563edd9c23e874c1c277f7373ee0cda96c973335f06c30c"
+        },
+        "rich_3535": {
+          "parsed_tool_calls": 13,
+          "sha256": "9caa30b69b0ea722c7491e8f37ae6cc9fee219ab6cddfa114ca39f58fece56e8"
+        },
+        "rich_3675": {
+          "parsed_tool_calls": 12,
+          "sha256": "151b3a73ee910e1549c2b11d9233235262fb61d583b7c1cfe7a6c89e536bbe22"
+        },
+        "rich_3676": {
+          "parsed_tool_calls": 5,
+          "sha256": "2bb080148466ce984e4f6800b0652e389dab69782601a5445fadd2665953bc45"
+        },
+        "rich_3718": {
+          "parsed_tool_calls": 13,
+          "sha256": "828772142634d417435f68a320df3feba1cbe8a303415367974bb68ccbb33414"
+        },
+        "rich_3772": {
+          "parsed_tool_calls": 16,
+          "sha256": "6dc3fe231aa064bfff761476647efc81fb5fb91e21d296bd1fec51a288b81b7e"
+        },
+        "rich_3777": {
+          "parsed_tool_calls": 25,
+          "sha256": "37b7726616a0016cdd9e1c62cade6eed79dfb9cd637b4923d8ab46dced2ee462"
+        },
+        "rich_3782": {
+          "parsed_tool_calls": 10,
+          "sha256": "bed3c2c8824e9d0eb90b3024062ca11e00e7fc5fcf67cb6991ab5685ca3a7a06"
+        },
+        "rich_3882": {
+          "parsed_tool_calls": 19,
+          "sha256": "2c00fec3eeb0378db13d6148e7daa377956058d9f71c301737628d8b7f4bdb35"
+        },
+        "rich_3894": {
+          "parsed_tool_calls": 5,
+          "sha256": "48902eee4a73cd7fa80567776e8812018c80492ef0235f7565fb7f4e099d04dd"
+        },
+        "rich_3905": {
+          "parsed_tool_calls": 8,
+          "sha256": "5a11bd86776a5eb544bebf2130976d1620049a6154cb9767c8dcd54e7c16f2e9"
+        },
+        "rich_3930": {
+          "parsed_tool_calls": 13,
+          "sha256": "209fb1ac68497085bfb10804203a4bd8ce4bf745663f0a618bbf924126d56be4"
+        },
+        "rich_3934": {
+          "parsed_tool_calls": 7,
+          "sha256": "872e41c6475fbdc6d2b1e9e972874fd96cc5c8121446f465be1c342a0cb2fe38"
+        },
+        "rich_3935": {
+          "parsed_tool_calls": 5,
+          "sha256": "71c085d61e971f05fff8cf0b589e877ffc90beca592a2c74e90d28f7227240d5"
+        },
+        "rich_3938": {
+          "parsed_tool_calls": 22,
+          "sha256": "fe86ff9ff55ffab502271f665b4f1ec4afb7f5e34a31c60cec68df8863526848"
+        },
+        "rich_3942": {
+          "parsed_tool_calls": 6,
+          "sha256": "027390d2387a2119cb9ecc373237f9e64740951350e2fc8a0a1a7972a96dd3d9"
+        },
+        "rich_3944": {
+          "parsed_tool_calls": 9,
+          "sha256": "fee6da6bfade7bbbc9d584659082904113a7ade629e00f3bdeaaad96fc2bf854"
+        },
+        "rich_3953": {
+          "parsed_tool_calls": 10,
+          "sha256": "68fb3fb6e0cbc6956a6ab13f438fbfb050eb65989d821a21e028534f77215ad6"
+        },
+        "rich_4006": {
+          "parsed_tool_calls": 10,
+          "sha256": "722b967827b9ad1b658825ea8a6653228a975c3b06dab9750354d2f33cfe0383"
+        },
+        "rich_4070": {
+          "parsed_tool_calls": 18,
+          "sha256": "fb0b1e4234e3d006fb55883cd4fe53f5a641b168a244c4a2eab981fa1eec653b"
+        },
+        "rich_4075": {
+          "parsed_tool_calls": 7,
+          "sha256": "060c06c636f013112e316c3f5f2d2a4fc51dab5b1a1d20af3716524f31f226df"
+        },
+        "rich_4076": {
+          "parsed_tool_calls": 15,
+          "sha256": "37f2f1d627b046e258ffb2b29e95100741f1ad7761c869ec3bd1adb3178829dd"
+        },
+        "rich_4077": {
+          "parsed_tool_calls": 15,
+          "sha256": "170ef4b44637fff3525c268b0249e455a3ec616d494002addad7cc737f8eacef"
+        },
+        "rich_4079": {
+          "parsed_tool_calls": 12,
+          "sha256": "ac3f78382d4a20a6821249228fb3ec68e3675b5c20403e6caaa5769b67cb8b95"
+        }
+      }
+    }
+  },
+  "runtime_sha256": "898b52549d29ad345b682355ea9bc7b858c2d220b15884a31bb0035d6d38107f",
+  "status": "all_three_a_onpol_c2_evaluations_qualified",
+  "submission_started": false
+}

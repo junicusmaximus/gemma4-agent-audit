@@ -1,0 +1,542 @@
+[
+  {
+    "run": "a0_e4b_s1",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.9020038228097439,
+    "thinking_steps": 612,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.0,
+    "max_repeat_median": 1.0,
+    "distinct_ratio_mean": 0.9338463906091615,
+    "submit_rate": 1.0,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.0,
+      "repro_script_opener": 0.0,
+      "other": 1.0,
+      "no_tool_call": 0.0
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.02241161616161616,
+        "n_tasks": 44
+      },
+      "silent": {
+        "mean_repeat_rate": 0.013640873015873016,
+        "n_tasks": 48
+      },
+      "normal": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 40
+      }
+    },
+    "thought_tokens_median": 170.25,
+    "thought_chars_median": 692.25,
+    "thought_n_tasks": 48,
+    "taxonomy_counts": {
+      "loop": 0,
+      "no_parsed_tool_call": 0,
+      "submitted": 48,
+      "neither": 0
+    },
+    "label_totals": {
+      "tool_call": 564,
+      "truncated": 2,
+      "unparseable": 2,
+      "other_text": 99,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 0,
+      "turn_cap": 0,
+      "context_overflow": 0,
+      "no_submit": 0,
+      "other": 0,
+      "none": 48
+    },
+    "empty_patch_count": 3,
+    "mean_total_llm_calls": 12.8125,
+    "mean_duration_seconds": 74.68979166666666
+  },
+  {
+    "run": "a0_e4b_s2",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.9028436689991772,
+    "thinking_steps": 573,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.0,
+    "max_repeat_median": 1.0,
+    "distinct_ratio_mean": 0.931295906893817,
+    "submit_rate": 1.0,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.0,
+      "repro_script_opener": 0.0,
+      "other": 1.0,
+      "no_tool_call": 0.0
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.04678130511463845,
+        "n_tasks": 45
+      },
+      "silent": {
+        "mean_repeat_rate": 0.006060606060606061,
+        "n_tasks": 48
+      },
+      "normal": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 44
+      }
+    },
+    "thought_tokens_median": 167.0,
+    "thought_chars_median": 683.5,
+    "thought_n_tasks": 48,
+    "taxonomy_counts": {
+      "loop": 0,
+      "no_parsed_tool_call": 0,
+      "submitted": 48,
+      "neither": 0
+    },
+    "label_totals": {
+      "tool_call": 526,
+      "truncated": 0,
+      "unparseable": 0,
+      "other_text": 98,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 0,
+      "turn_cap": 0,
+      "context_overflow": 0,
+      "no_submit": 0,
+      "other": 0,
+      "none": 48
+    },
+    "empty_patch_count": 3,
+    "mean_total_llm_calls": 11.958333333333334,
+    "mean_duration_seconds": 70.15625
+  },
+  {
+    "run": "a0_e4b_s3",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.9066611027969458,
+    "thinking_steps": 576,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.0,
+    "max_repeat_median": 1.0,
+    "distinct_ratio_mean": 0.9457206372373707,
+    "submit_rate": 1.0,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.0,
+      "repro_script_opener": 0.0,
+      "other": 1.0,
+      "no_tool_call": 0.0
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.03695652173913044,
+        "n_tasks": 46
+      },
+      "silent": {
+        "mean_repeat_rate": 0.0057692307692307696,
+        "n_tasks": 48
+      },
+      "normal": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 41
+      }
+    },
+    "thought_tokens_median": 159.75,
+    "thought_chars_median": 670.0,
+    "thought_n_tasks": 48,
+    "taxonomy_counts": {
+      "loop": 0,
+      "no_parsed_tool_call": 0,
+      "submitted": 48,
+      "neither": 0
+    },
+    "label_totals": {
+      "tool_call": 528,
+      "truncated": 1,
+      "unparseable": 1,
+      "other_text": 96,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 0,
+      "turn_cap": 0,
+      "context_overflow": 0,
+      "no_submit": 0,
+      "other": 0,
+      "none": 48
+    },
+    "empty_patch_count": 1,
+    "mean_total_llm_calls": 12.020833333333334,
+    "mean_duration_seconds": 63.93333333333334
+  },
+  {
+    "run": "v025_a1_e4b_s1",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.5625,
+    "max_repeat_median": 8.5,
+    "distinct_ratio_mean": 0.24244383596349534,
+    "submit_rate": 0.4166666666666667,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.6666666666666666,
+      "other": 0.020833333333333332,
+      "no_tool_call": 0.2916666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.5791419349634652,
+        "n_tasks": 32
+      },
+      "silent": {
+        "mean_repeat_rate": 0.024509803921568627,
+        "n_tasks": 34
+      },
+      "normal": {
+        "mean_repeat_rate": 0.583264504855414,
+        "n_tasks": 22
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 27,
+      "no_parsed_tool_call": 14,
+      "submitted": 0,
+      "neither": 7
+    },
+    "label_totals": {
+      "tool_call": 1452,
+      "truncated": 80,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 30,
+      "turn_cap": 10,
+      "context_overflow": 4,
+      "no_submit": 0,
+      "other": 0,
+      "none": 4
+    },
+    "empty_patch_count": 16,
+    "mean_total_llm_calls": 31.916666666666668,
+    "mean_duration_seconds": 234.49479166666666
+  },
+  {
+    "run": "v025_a1_e4b_s2",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.5625,
+    "max_repeat_median": 11.5,
+    "distinct_ratio_mean": 0.2767092046774364,
+    "submit_rate": 0.5,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.6666666666666666,
+      "other": 0.0,
+      "no_tool_call": 0.3125
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.6270399642534374,
+        "n_tasks": 31
+      },
+      "silent": {
+        "mean_repeat_rate": 0.020606060606060607,
+        "n_tasks": 33
+      },
+      "normal": {
+        "mean_repeat_rate": 0.1994265425468433,
+        "n_tasks": 21
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 27,
+      "no_parsed_tool_call": 15,
+      "submitted": 1,
+      "neither": 5
+    },
+    "label_totals": {
+      "tool_call": 1754,
+      "truncated": 82,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 28,
+      "turn_cap": 15,
+      "context_overflow": 1,
+      "no_submit": 0,
+      "other": 0,
+      "none": 4
+    },
+    "empty_patch_count": 16,
+    "mean_total_llm_calls": 38.25,
+    "mean_duration_seconds": 233.06833333333336
+  },
+  {
+    "run": "v025_a1_e4b_s3",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.5625,
+    "max_repeat_median": 25.5,
+    "distinct_ratio_mean": 0.20931692011344724,
+    "submit_rate": 0.5416666666666666,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.041666666666666664,
+      "repro_script_opener": 0.6666666666666666,
+      "other": 0.0,
+      "no_tool_call": 0.2916666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.37413997060350873,
+        "n_tasks": 30
+      },
+      "silent": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 33
+      },
+      "normal": {
+        "mean_repeat_rate": 0.24113756613756612,
+        "n_tasks": 12
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 27,
+      "no_parsed_tool_call": 14,
+      "submitted": 0,
+      "neither": 7
+    },
+    "label_totals": {
+      "tool_call": 2062,
+      "truncated": 80,
+      "unparseable": 0,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 22,
+      "turn_cap": 22,
+      "context_overflow": 4,
+      "no_submit": 0,
+      "other": 0,
+      "none": 0
+    },
+    "empty_patch_count": 15,
+    "mean_total_llm_calls": 44.625,
+    "mean_duration_seconds": 228.61291666666668
+  },
+  {
+    "run": "v025_a2_e4b_s1",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.6458333333333334,
+    "max_repeat_median": 45.5,
+    "distinct_ratio_mean": 0.2180466646764184,
+    "submit_rate": 0.625,
+    "opener_shares": {
+      "find_opener": 0.0,
+      "wrapper_opener": 0.4166666666666667,
+      "repro_script_opener": 0.2916666666666667,
+      "other": 0.041666666666666664,
+      "no_tool_call": 0.25
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.8783400739313055,
+        "n_tasks": 28
+      },
+      "silent": {
+        "mean_repeat_rate": 0.16213517665130567,
+        "n_tasks": 31
+      },
+      "normal": {
+        "mean_repeat_rate": 0.5569445850006122,
+        "n_tasks": 31
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 31,
+      "no_parsed_tool_call": 12,
+      "submitted": 0,
+      "neither": 5
+    },
+    "label_totals": {
+      "tool_call": 2263,
+      "truncated": 79,
+      "unparseable": 2,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 13,
+      "turn_cap": 24,
+      "context_overflow": 10,
+      "no_submit": 0,
+      "other": 0,
+      "none": 1
+    },
+    "empty_patch_count": 32,
+    "mean_total_llm_calls": 48.833333333333336,
+    "mean_duration_seconds": 201.80437500000002
+  },
+  {
+    "run": "v025_a2_e4b_s2",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.8958333333333334,
+    "max_repeat_median": 77.0,
+    "distinct_ratio_mean": 0.07159601123208718,
+    "submit_rate": 0.3125,
+    "opener_shares": {
+      "find_opener": 0.7291666666666666,
+      "wrapper_opener": 0.125,
+      "repro_script_opener": 0.041666666666666664,
+      "other": 0.020833333333333332,
+      "no_tool_call": 0.08333333333333333
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.820628728949545,
+        "n_tasks": 44
+      },
+      "silent": {
+        "mean_repeat_rate": 0.0,
+        "n_tasks": 16
+      },
+      "normal": {
+        "mean_repeat_rate": 0.6801687588615694,
+        "n_tasks": 9
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 43,
+      "no_parsed_tool_call": 4,
+      "submitted": 0,
+      "neither": 1
+    },
+    "label_totals": {
+      "tool_call": 3401,
+      "truncated": 20,
+      "unparseable": 1,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 3,
+      "turn_cap": 42,
+      "context_overflow": 3,
+      "no_submit": 0,
+      "other": 0,
+      "none": 0
+    },
+    "empty_patch_count": 46,
+    "mean_total_llm_calls": 71.29166666666667,
+    "mean_duration_seconds": 84.36458333333333
+  },
+  {
+    "run": "v025_a2_e4b_s3",
+    "n_tasks": 48,
+    "missing_traces": 0,
+    "think_rate_mean": 0.0,
+    "thinking_steps": 0,
+    "thinking_empty_steps": 0,
+    "loop_rate": 0.8958333333333334,
+    "max_repeat_median": 49.5,
+    "distinct_ratio_mean": 0.06609811324899655,
+    "submit_rate": 0.875,
+    "opener_shares": {
+      "find_opener": 0.6041666666666666,
+      "wrapper_opener": 0.020833333333333332,
+      "repro_script_opener": 0.22916666666666666,
+      "other": 0.041666666666666664,
+      "no_tool_call": 0.10416666666666667
+    },
+    "nonrecovery": {
+      "error": {
+        "mean_repeat_rate": 0.7222345095057495,
+        "n_tasks": 43
+      },
+      "silent": {
+        "mean_repeat_rate": 0.09110065636424061,
+        "n_tasks": 40
+      },
+      "normal": {
+        "mean_repeat_rate": 0.5137159137159137,
+        "n_tasks": 5
+      }
+    },
+    "thought_tokens_median": null,
+    "thought_chars_median": null,
+    "thought_n_tasks": 0,
+    "taxonomy_counts": {
+      "loop": 43,
+      "no_parsed_tool_call": 5,
+      "submitted": 0,
+      "neither": 0
+    },
+    "label_totals": {
+      "tool_call": 3139,
+      "truncated": 29,
+      "unparseable": 2,
+      "other_text": 0,
+      "empty": 0
+    },
+    "error_class_counts": {
+      "timeout": 12,
+      "turn_cap": 32,
+      "context_overflow": 1,
+      "no_submit": 0,
+      "other": 0,
+      "none": 3
+    },
+    "empty_patch_count": 36,
+    "mean_total_llm_calls": 66.04166666666667,
+    "mean_duration_seconds": 121.26791666666666
+  }
+]

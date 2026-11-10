@@ -1,0 +1,22 @@
+{
+  "actual_external_controls_run": false,
+  "amendment_sha256": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99",
+  "completed_utc": "2026-11-09T14:01:38.045619+00:00",
+  "control_plan_prepared": false,
+  "evidence_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/unit-test-report.json": "9004975a5971cd43b6a1b59becdcb2a76f1c77f0e80107f7379ff731958ae31a",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/unit-test-report.json": "c6ab39f51b52c078cbf197c0fb96338fb1343ebe7a93e830b51835a4ab59e018"
+  },
+  "schema": "v070-git-r2-controls-implementation-v1",
+  "semantic_change": "Only control-validator full exact file/class/complete-parameterized-name identity; admission predicate factored without changing conditions.",
+  "source_pins": {
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/control_case_v070.py": "c22f40a09039129d83a7145a4536769bff9293c6383e2f3e0079ea0662ca738d",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/run_controls_v070.py": "0f97c1719aa45af4528e6ff70595e86f1945d5799cfb7e858cee99689c255de2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/run_synthetic_fixture_v070.py": "4d527fa67c9fc1c035e0bdbd3dc40ec8eb225b0dec1f85c6f1f264d1700942f6",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/controls/test_control_helpers_v070.py": "f40317ec5f147806cc50af060c4f048e35f26cb1bd62b856912510fa1ab312e2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/git_baseline_v070.py": "b6d21a5483f1c74effbdeace595e284842945c4405b3c662741f743d5723d2c2",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/run_guarded_git_v070.py": "c788810937d19f7ecabf49116e8608be3fced4fc1c9eba96ce6cea69aa991040",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/wrapper/test_git_baseline_v070.py": "92ba4d65926f299a9d27836d5ece3783de06f4bb395bdaa28c7830aa491c55da"
+  },
+  "synthetic_r2_run": false
+}

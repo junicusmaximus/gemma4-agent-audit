@@ -1,0 +1,1211 @@
+{
+ "generation": "compaction-audit-boss-v050",
+ "threshold": 14336,
+ "retention": 5,
+ "loop_threshold": 5,
+ "runs": [
+  "v043_M0_s1",
+  "v043_M0_s2",
+  "v043_M0_s3",
+  "v043_M1_s1",
+  "v043_M1_s2",
+  "v043_M1_s3",
+  "a0_e4b_s1",
+  "a0_e4b_s2",
+  "a0_e4b_s3"
+ ],
+ "inputs": {
+  "sha256": {
+   "analysis/serialization-audit-boss-v046/audit.py": "5d26f4cdc9aafa2e9ffc1f527fd88d1ccd58497770f6b4a626b04ef5078cee98",
+   "tools/mechanism_metrics_v032.py": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+   "analysis/mask-control-v043/per_task.jsonl": "c4e51b4819351823f85ced2cf07c7f9132b0b53bdbb1b8c7084eef41f42b6a42",
+   "analysis/mechanism-v032/per_task_all48.jsonl": "8c150c9833e95e9d34f5f122883cd874f019cf02c6ac07c5d072455fa6de9439",
+   "analysis/mechanism-v032/primary40_ids.txt": "c71257437c5c518ab0077f2ee59d61d1b2653a1a4a1ba2ded36f682ccda0cba2",
+   "run_eval.py": "4182a5516e9c14d97630fc36bcc2e94916988db4661bb502a392f6c7ad5496ef",
+   "subs/e4b_budgetfit_s1/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+   "subs/e4b_budgetfit_s2/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+   "subs/e4b_budgetfit_s3/agent.yaml": "2b66d4e370e8ed7924101acb91b3822514fe4d63611c4a443ab84f2dd3de051d",
+   "subs/v043_M0_s1/agent.yaml": "23f4e1c96863648890b9a262ce0c0524b0bcc2a8e41590faf937e632512d6f4c",
+   "subs/v043_M0_s2/agent.yaml": "260ff5f84c81d437561f914356b89599b18f445d2019eeb881482d470748686f",
+   "subs/v043_M0_s3/agent.yaml": "7fb9d3605b89b602fa8935977b8ee9f0fc3a4ef770c06744ecf651eb005c0251",
+   "subs/v043_M1_s1/agent.yaml": "fdd3d0924a00d414e50e5b03a3a28c000d0a8db594fc46a8e1d042b9f3cb4771",
+   "subs/v043_M1_s2/agent.yaml": "26d4a2d51db6b9c91e1eb1a7b81f96a35811414471f5d439c11e351b1766d787",
+   "subs/v043_M1_s3/agent.yaml": "062e42fd7ba70d6212790b9c54884842bed38895632ea3e95fbd170817daab30"
+  },
+  "adk_sha256": {
+   "apps/compaction.py": "a80fbd53ecc372c3811ed79533dff031ddbc3402447bfdfc212c73b8f36d8682",
+   "apps/llm_event_summarizer.py": "51ca4af8bda8b7d2a547ca1c85008a43eb63b8213fdee68f7a250b03413cd9e4",
+   "flows/llm_flows/compaction.py": "dc18428fb7740e516af97a192b3f797c31e39846f83b11bf0d48d3ad262b01d0",
+   "flows/llm_flows/contents.py": "f0441e4903e0f9f41cd99b6f8fdbfdac9843923dabc1d998e19112d20d2ce6fa",
+   "runners.py": "a11c78a44fa7b1cbb8aaaddd999e6c986879835172f3f70338ca961be24e2f7f",
+   "models/lite_llm.py": "2f28c6afa110006e0fdec46c9ac7c6b614d74c81e0d0bf6fda2b0d6353111098"
+  },
+  "versions": {
+   "google-adk": "1.36.1",
+   "transformers": "5.13.1",
+   "litellm": "1.106.6"
+  }
+ },
+ "reproduction_check": {
+  "available": true,
+  "expected": {
+   "first_compaction_call": 6,
+   "class": "empty_dropped",
+   "vllm_prompt_tokens": 3731,
+   "dropped_form_tokens": 3731,
+   "context_loss_calls": [
+    6,
+    47,
+    42
+   ],
+   "user_turns_in_those_calls": [
+    0
+   ]
+  },
+  "observed": {
+   "first_compaction_call": 6,
+   "class": "empty_dropped",
+   "vllm_prompt_tokens": 3731,
+   "dropped_form_tokens": 3731,
+   "context_loss_calls": [
+    6,
+    47,
+    42
+   ],
+   "user_turns_in_those_calls": [
+    0
+   ]
+  },
+  "reproduced": true
+ },
+ "cross_checks": {
+  "max_repeat_sealed_equals_recomputed": [
+   432,
+   432
+  ],
+  "submit_sealed_equals_trace": [
+   432,
+   432
+  ],
+  "calls_exact": [
+   7221,
+   14272
+  ],
+  "calls_exact_or_delta": [
+   13932,
+   14272
+  ],
+  "unexplained_mismatch_calls": [
+   4,
+   14272
+  ],
+  "unexplained_mismatch_where": {
+   "a0_e4b_s1/rich_3061": [
+    23
+   ],
+   "a0_e4b_s1/rich_3506": [
+    3
+   ],
+   "a0_e4b_s2/rich_3506": [
+    6
+   ],
+   "a0_e4b_s3/rich_3506": [
+    6
+   ]
+  },
+  "traces_with_unmapped_steps": [
+   0,
+   432
+  ]
+ },
+ "evidence": {
+  "M0": {
+   "events": 149,
+   "classes": {
+    "empty_dropped": 4,
+    "summary_present": 145
+   },
+   "inferred_summary_tokens_min_median_max": [
+    17,
+    153,
+    17884
+   ],
+   "inferred_summary_tokens_bins": {
+    "<50": 26,
+    "50-499": 76,
+    "500-1999": 28,
+    ">=2000": 15
+   },
+   "prompt_after_compaction_above_uncompacted_form": 4,
+   "vllm_minus_dropped_form_min": 29,
+   "events_with_nudge_before": 1,
+   "post_invocation_timing": 0,
+   "post_compaction_deltas_ok": [
+    4270,
+    4270
+   ]
+  },
+  "M1": {
+   "events": 131,
+   "classes": {
+    "summary_present": 129,
+    "empty_dropped": 2
+   },
+   "inferred_summary_tokens_min_median_max": [
+    16,
+    352,
+    14398
+   ],
+   "inferred_summary_tokens_bins": {
+    "<50": 6,
+    "50-499": 82,
+    "500-1999": 23,
+    ">=2000": 18
+   },
+   "prompt_after_compaction_above_uncompacted_form": 1,
+   "vllm_minus_dropped_form_min": 28,
+   "events_with_nudge_before": 3,
+   "post_invocation_timing": 0,
+   "post_compaction_deltas_ok": [
+    2229,
+    2229
+   ]
+  },
+  "A0": {
+   "events": 100,
+   "classes": {
+    "summary_present": 100
+   },
+   "inferred_summary_tokens_min_median_max": [
+    18,
+    340.0,
+    1605
+   ],
+   "inferred_summary_tokens_bins": {
+    "<50": 2,
+    "50-499": 87,
+    "500-1999": 11,
+    ">=2000": 0
+   },
+   "prompt_after_compaction_above_uncompacted_form": 0,
+   "vllm_minus_dropped_form_min": 30,
+   "events_with_nudge_before": 1,
+   "post_invocation_timing": 0,
+   "post_compaction_deltas_ok": [
+    459,
+    460
+   ]
+  }
+ },
+ "aggregates": {
+  "all48": {
+   "M0 s1": {
+    "traces": 48,
+    "traces_with_crossing": 26,
+    "traces_with_compaction": 26,
+    "events": {
+     "empty_dropped": 4,
+     "summary_present": 36,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 4,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2158,
+    "context_loss_calls": 195,
+    "calls_without_raw_task_prompt": 1238,
+    "mean_context_loss_share": 0.067,
+    "mean_share_traces": 48,
+    "loops": 32,
+    "loops_with_compaction": 24,
+    "loop_onset_after_first_compaction": 8,
+    "loops_with_context_loss": 3,
+    "loop_onset_after_context_loss": 1,
+    "loop_nth_after_context_loss": 2,
+    "submit_with_context_loss": [
+     3,
+     4
+    ],
+    "submit_without_context_loss": [
+     27,
+     44
+    ],
+    "submit_after_context_loss": [
+     3,
+     4
+    ]
+   },
+   "M0 s2": {
+    "traces": 48,
+    "traces_with_crossing": 24,
+    "traces_with_compaction": 24,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 43,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1388,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 1093,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 20,
+    "loops_with_compaction": 20,
+    "loop_onset_after_first_compaction": 4,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     20,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M0 s3": {
+    "traces": 48,
+    "traces_with_crossing": 35,
+    "traces_with_compaction": 35,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 66,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2566,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 2088,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 34,
+    "loops_with_compaction": 32,
+    "loop_onset_after_first_compaction": 8,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     33,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M0 all": {
+    "traces": 144,
+    "traces_with_crossing": 85,
+    "traces_with_compaction": 85,
+    "events": {
+     "empty_dropped": 4,
+     "summary_present": 145,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 4,
+    "traces_with_undetermined_regime": 0,
+    "calls": 6112,
+    "context_loss_calls": 195,
+    "calls_without_raw_task_prompt": 4419,
+    "mean_context_loss_share": 0.0223,
+    "mean_share_traces": 144,
+    "loops": 86,
+    "loops_with_compaction": 76,
+    "loop_onset_after_first_compaction": 20,
+    "loops_with_context_loss": 3,
+    "loop_onset_after_context_loss": 1,
+    "loop_nth_after_context_loss": 2,
+    "submit_with_context_loss": [
+     3,
+     4
+    ],
+    "submit_without_context_loss": [
+     80,
+     140
+    ],
+    "submit_after_context_loss": [
+     3,
+     4
+    ]
+   },
+   "M1 s1": {
+    "traces": 48,
+    "traces_with_crossing": 38,
+    "traces_with_compaction": 38,
+    "events": {
+     "empty_dropped": 1,
+     "summary_present": 64,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 1,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2279,
+    "context_loss_calls": 59,
+    "calls_without_raw_task_prompt": 1194,
+    "mean_context_loss_share": 0.0154,
+    "mean_share_traces": 48,
+    "loops": 34,
+    "loops_with_compaction": 33,
+    "loop_onset_after_first_compaction": 3,
+    "loops_with_context_loss": 1,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     1,
+     1
+    ],
+    "submit_without_context_loss": [
+     5,
+     47
+    ],
+    "submit_after_context_loss": [
+     1,
+     1
+    ]
+   },
+   "M1 s2": {
+    "traces": 48,
+    "traces_with_crossing": 23,
+    "traces_with_compaction": 23,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 33,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2123,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 493,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 34,
+    "loops_with_compaction": 19,
+    "loop_onset_after_first_compaction": 4,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     5,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M1 s3": {
+    "traces": 48,
+    "traces_with_crossing": 21,
+    "traces_with_compaction": 21,
+    "events": {
+     "empty_dropped": 1,
+     "summary_present": 32,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 1,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1992,
+    "context_loss_calls": 38,
+    "calls_without_raw_task_prompt": 673,
+    "mean_context_loss_share": 0.0099,
+    "mean_share_traces": 48,
+    "loops": 31,
+    "loops_with_compaction": 18,
+    "loop_onset_after_first_compaction": 2,
+    "loops_with_context_loss": 1,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     1
+    ],
+    "submit_without_context_loss": [
+     8,
+     47
+    ],
+    "submit_after_context_loss": [
+     0,
+     1
+    ]
+   },
+   "M1 all": {
+    "traces": 144,
+    "traces_with_crossing": 82,
+    "traces_with_compaction": 82,
+    "events": {
+     "empty_dropped": 2,
+     "summary_present": 129,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 2,
+    "traces_with_undetermined_regime": 0,
+    "calls": 6394,
+    "context_loss_calls": 97,
+    "calls_without_raw_task_prompt": 2360,
+    "mean_context_loss_share": 0.0084,
+    "mean_share_traces": 144,
+    "loops": 99,
+    "loops_with_compaction": 70,
+    "loop_onset_after_first_compaction": 9,
+    "loops_with_context_loss": 2,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     1,
+     2
+    ],
+    "submit_without_context_loss": [
+     18,
+     142
+    ],
+    "submit_after_context_loss": [
+     1,
+     2
+    ]
+   },
+   "A0 s1": {
+    "traces": 48,
+    "traces_with_crossing": 27,
+    "traces_with_compaction": 27,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 35,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 615,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 201,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     48,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 s2": {
+    "traces": 48,
+    "traces_with_crossing": 27,
+    "traces_with_compaction": 27,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 33,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 574,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 182,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     48,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 s3": {
+    "traces": 48,
+    "traces_with_crossing": 25,
+    "traces_with_compaction": 25,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 32,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 577,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 177,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 48,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     48,
+     48
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 all": {
+    "traces": 144,
+    "traces_with_crossing": 79,
+    "traces_with_compaction": 79,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 100,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1766,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 560,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 144,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     144,
+     144
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   }
+  },
+  "primary40": {
+   "M0 s1": {
+    "traces": 40,
+    "traces_with_crossing": 23,
+    "traces_with_compaction": 23,
+    "events": {
+     "empty_dropped": 4,
+     "summary_present": 32,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 4,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1920,
+    "context_loss_calls": 195,
+    "calls_without_raw_task_prompt": 1116,
+    "mean_context_loss_share": 0.0804,
+    "mean_share_traces": 40,
+    "loops": 27,
+    "loops_with_compaction": 21,
+    "loop_onset_after_first_compaction": 6,
+    "loops_with_context_loss": 3,
+    "loop_onset_after_context_loss": 1,
+    "loop_nth_after_context_loss": 2,
+    "submit_with_context_loss": [
+     3,
+     4
+    ],
+    "submit_without_context_loss": [
+     24,
+     36
+    ],
+    "submit_after_context_loss": [
+     3,
+     4
+    ]
+   },
+   "M0 s2": {
+    "traces": 40,
+    "traces_with_crossing": 21,
+    "traces_with_compaction": 21,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 38,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1167,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 936,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 17,
+    "loops_with_compaction": 17,
+    "loop_onset_after_first_compaction": 4,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     17,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M0 s3": {
+    "traces": 40,
+    "traces_with_crossing": 30,
+    "traces_with_compaction": 30,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 57,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2212,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 1808,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 30,
+    "loops_with_compaction": 28,
+    "loop_onset_after_first_compaction": 5,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     28,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M0 all": {
+    "traces": 120,
+    "traces_with_crossing": 74,
+    "traces_with_compaction": 74,
+    "events": {
+     "empty_dropped": 4,
+     "summary_present": 127,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 4,
+    "traces_with_undetermined_regime": 0,
+    "calls": 5299,
+    "context_loss_calls": 195,
+    "calls_without_raw_task_prompt": 3860,
+    "mean_context_loss_share": 0.0268,
+    "mean_share_traces": 120,
+    "loops": 74,
+    "loops_with_compaction": 66,
+    "loop_onset_after_first_compaction": 15,
+    "loops_with_context_loss": 3,
+    "loop_onset_after_context_loss": 1,
+    "loop_nth_after_context_loss": 2,
+    "submit_with_context_loss": [
+     3,
+     4
+    ],
+    "submit_without_context_loss": [
+     69,
+     116
+    ],
+    "submit_after_context_loss": [
+     3,
+     4
+    ]
+   },
+   "M1 s1": {
+    "traces": 40,
+    "traces_with_crossing": 32,
+    "traces_with_compaction": 32,
+    "events": {
+     "empty_dropped": 1,
+     "summary_present": 57,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 1,
+    "traces_with_undetermined_regime": 0,
+    "calls": 2123,
+    "context_loss_calls": 59,
+    "calls_without_raw_task_prompt": 1162,
+    "mean_context_loss_share": 0.0184,
+    "mean_share_traces": 40,
+    "loops": 29,
+    "loops_with_compaction": 28,
+    "loop_onset_after_first_compaction": 3,
+    "loops_with_context_loss": 1,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     1,
+     1
+    ],
+    "submit_without_context_loss": [
+     5,
+     39
+    ],
+    "submit_after_context_loss": [
+     1,
+     1
+    ]
+   },
+   "M1 s2": {
+    "traces": 40,
+    "traces_with_crossing": 18,
+    "traces_with_compaction": 18,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 20,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1845,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 300,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 29,
+    "loops_with_compaction": 14,
+    "loop_onset_after_first_compaction": 1,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     3,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "M1 s3": {
+    "traces": 40,
+    "traces_with_crossing": 19,
+    "traces_with_compaction": 19,
+    "events": {
+     "empty_dropped": 1,
+     "summary_present": 29,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 1,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1707,
+    "context_loss_calls": 38,
+    "calls_without_raw_task_prompt": 583,
+    "mean_context_loss_share": 0.0119,
+    "mean_share_traces": 40,
+    "loops": 26,
+    "loops_with_compaction": 16,
+    "loop_onset_after_first_compaction": 2,
+    "loops_with_context_loss": 1,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     1
+    ],
+    "submit_without_context_loss": [
+     7,
+     39
+    ],
+    "submit_after_context_loss": [
+     0,
+     1
+    ]
+   },
+   "M1 all": {
+    "traces": 120,
+    "traces_with_crossing": 69,
+    "traces_with_compaction": 69,
+    "events": {
+     "empty_dropped": 2,
+     "summary_present": 106,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 2,
+    "traces_with_undetermined_regime": 0,
+    "calls": 5675,
+    "context_loss_calls": 97,
+    "calls_without_raw_task_prompt": 2045,
+    "mean_context_loss_share": 0.0101,
+    "mean_share_traces": 120,
+    "loops": 84,
+    "loops_with_compaction": 58,
+    "loop_onset_after_first_compaction": 6,
+    "loops_with_context_loss": 2,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     1,
+     2
+    ],
+    "submit_without_context_loss": [
+     15,
+     118
+    ],
+    "submit_after_context_loss": [
+     1,
+     2
+    ]
+   },
+   "A0 s1": {
+    "traces": 40,
+    "traces_with_crossing": 20,
+    "traces_with_compaction": 20,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 25,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 482,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 134,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     40,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 s2": {
+    "traces": 40,
+    "traces_with_crossing": 23,
+    "traces_with_compaction": 23,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 28,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 475,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 145,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     40,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 s3": {
+    "traces": 40,
+    "traces_with_crossing": 19,
+    "traces_with_compaction": 19,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 23,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 456,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 122,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 40,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     40,
+     40
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   },
+   "A0 all": {
+    "traces": 120,
+    "traces_with_crossing": 62,
+    "traces_with_compaction": 62,
+    "events": {
+     "empty_dropped": 0,
+     "summary_present": 76,
+     "no_compaction_event": 0,
+     "undetermined": 0,
+     "no_candidates": 0
+    },
+    "traces_with_context_loss": 0,
+    "traces_with_undetermined_regime": 0,
+    "calls": 1413,
+    "context_loss_calls": 0,
+    "calls_without_raw_task_prompt": 401,
+    "mean_context_loss_share": 0.0,
+    "mean_share_traces": 120,
+    "loops": 0,
+    "loops_with_compaction": 0,
+    "loop_onset_after_first_compaction": 0,
+    "loops_with_context_loss": 0,
+    "loop_onset_after_context_loss": 0,
+    "loop_nth_after_context_loss": 0,
+    "submit_with_context_loss": [
+     0,
+     0
+    ],
+    "submit_without_context_loss": [
+     120,
+     120
+    ],
+    "submit_after_context_loss": [
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "context_loss_cases": [
+  {
+   "run": "v043_M0_s1",
+   "task": "rich_2725",
+   "primary40": true,
+   "calls": 48,
+   "first_loss_call": 6,
+   "loss_calls": 42,
+   "loss_calls_exact": 42,
+   "loss_calls_without_user_turn": 42,
+   "loop": true,
+   "max_repeat": 19,
+   "onset_first_nth": [
+    9,
+    13
+   ],
+   "onset_vs_loss": "after",
+   "submit": true,
+   "submit_after_loss": true
+  },
+  {
+   "run": "v043_M0_s1",
+   "task": "rich_3772",
+   "primary40": true,
+   "calls": 80,
+   "first_loss_call": 10,
+   "loss_calls": 71,
+   "loss_calls_exact": 71,
+   "loss_calls_without_user_turn": 71,
+   "loop": true,
+   "max_repeat": 64,
+   "onset_first_nth": [
+    3,
+    11
+   ],
+   "onset_vs_loss": "before",
+   "submit": true,
+   "submit_after_loss": true
+  },
+  {
+   "run": "v043_M0_s1",
+   "task": "rich_3934",
+   "primary40": true,
+   "calls": 80,
+   "first_loss_call": 12,
+   "loss_calls": 69,
+   "loss_calls_exact": 69,
+   "loss_calls_without_user_turn": 69,
+   "loop": true,
+   "max_repeat": 67,
+   "onset_first_nth": [
+    2,
+    11
+   ],
+   "onset_vs_loss": "before",
+   "submit": true,
+   "submit_after_loss": true
+  },
+  {
+   "run": "v043_M0_s1",
+   "task": "rich_3935",
+   "primary40": true,
+   "calls": 22,
+   "first_loss_call": 10,
+   "loss_calls": 13,
+   "loss_calls_exact": 13,
+   "loss_calls_without_user_turn": 12,
+   "loop": false,
+   "max_repeat": 3,
+   "onset_first_nth": [
+    null,
+    null
+   ],
+   "onset_vs_loss": null,
+   "submit": false,
+   "submit_after_loss": false
+  },
+  {
+   "run": "v043_M1_s1",
+   "task": "rich_3772",
+   "primary40": true,
+   "calls": 80,
+   "first_loss_call": 22,
+   "loss_calls": 59,
+   "loss_calls_exact": 59,
+   "loss_calls_without_user_turn": 59,
+   "loop": true,
+   "max_repeat": 74,
+   "onset_first_nth": [
+    6,
+    10
+   ],
+   "onset_vs_loss": "before",
+   "submit": true,
+   "submit_after_loss": true
+  },
+  {
+   "run": "v043_M1_s3",
+   "task": "rich_2725",
+   "primary40": true,
+   "calls": 80,
+   "first_loss_call": 25,
+   "loss_calls": 38,
+   "loss_calls_exact": 38,
+   "loss_calls_without_user_turn": 38,
+   "loop": true,
+   "max_repeat": 46,
+   "onset_first_nth": [
+    8,
+    15
+   ],
+   "onset_vs_loss": "before",
+   "submit": false,
+   "submit_after_loss": false
+  }
+ ],
+ "undetermined_events": []
+}

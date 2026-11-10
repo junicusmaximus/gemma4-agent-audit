@@ -1,0 +1,86 @@
+{
+  "completed_at": "2026-11-04T12:05:11Z",
+  "final_server": {
+    "group": 2958332,
+    "listener_inode": "127714742",
+    "listener_owners": [
+      2958364
+    ],
+    "manifest": "PROJECT_ROOT/gemma4/subs/e4b_v032_original_manifest",
+    "members": {
+      "2958332": {
+        "argv": [
+          "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+          "PROJECT_ROOT/gemma4/serve_vllm.py",
+          "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct",
+          "gemma-4-e4b-it-qat-w4a16-ct",
+          "PROJECT_ROOT/gemma4/subs/e4b_v032_original_manifest"
+        ],
+        "parent": 2933108,
+        "pid": 2958332,
+        "start": "447417533"
+      },
+      "2958364": {
+        "argv": [
+          "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-w4a16-ct",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8000",
+          "--max-model-len",
+          "32768",
+          "--dtype",
+          "bfloat16",
+          "--gpu-memory-utilization",
+          "0.85",
+          "--enable-auto-tool-choice",
+          "--tool-call-parser",
+          "gemma4",
+          "--reasoning-parser",
+          "gemma4",
+          "--reasoning-config",
+          "{\"reasoning_start_str\": \"<|channel>\", \"reasoning_end_str\": \"<channel|>\"}",
+          "--no-scheduler-reserve-full-isl",
+          "--enable-lora",
+          "--max-loras",
+          "2",
+          "--max-lora-rank",
+          "16",
+          "--lora-modules",
+          "A1=PROJECT_ROOT/gemma4/subs/e4b_v032_original_manifest/adapters/A1",
+          "A2=PROJECT_ROOT/gemma4/subs/e4b_v032_original_manifest/adapters/A2",
+          "--served-model-name",
+          "gemma-4-e4b-it-qat-w4a16-ct"
+        ],
+        "parent": 2958332,
+        "pid": 2958364,
+        "start": "447417677"
+      },
+      "2958469": {
+        "argv": [
+          "HOME_DIR/miniconda3/envs/swegemma/bin/python",
+          "-c",
+          "from multiprocessing.resource_tracker import main;main(44)"
+        ],
+        "parent": 2958364,
+        "pid": 2958469,
+        "start": "447419390"
+      },
+      "2958470": {
+        "argv": [
+          "VLLM::EngineCore"
+        ],
+        "parent": 2958364,
+        "pid": 2958470,
+        "start": "447419390"
+      }
+    },
+    "pid": 2958332,
+    "start": "447417533"
+  },
+  "plan_sha256": "d1b13d9873f44f967114c566fff81880c31357c2f6db3d1b811687ac792f2630"
+}

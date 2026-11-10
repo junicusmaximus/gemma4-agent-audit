@@ -1,0 +1,111 @@
+{
+  "schema": "m1q-vs-a0mc-v067-analysis-contract-v1",
+  "status": "DRAFT",
+  "generation": "v067-A",
+  "root": "PROJECT_ROOT/gemma4",
+  "output": "PROJECT_ROOT/gemma4/analysis/m1q-vs-a0mc-v067",
+  "analyzer": {
+    "path": "PROJECT_ROOT/gemma4/tools/analyze_m1q_vs_a0mc_v067.py",
+    "sha256": "911e4ab9c959baaa2c0c6ff0acbb147a13f2c16873d1232124499bd0488e4e62"
+  },
+  "preregistration": {
+    "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-seed2-and-a0mc-branches-v067.md",
+    "sha256": "766c1e45386f93121fd29e8beca7de30526b9bb8f52482644608e49d17ce2b46",
+    "section": "## (A) M1q \u2212 A0mc reading (before the A0mc report is read)"
+  },
+  "labels": {
+    "M0": "v066_A0mc",
+    "M1": "v062_M1qmc"
+  },
+  "sign": "M1 - M0 = v062_M1qmc - v066_A0mc (the unchanged v042 resolution_report takes slot M1 as treated)",
+  "slots": {
+    "M0": {
+      "generation": "v066",
+      "arm": "A0mc",
+      "run_prefix": "v066_A0mc_s",
+      "runner": "PROJECT_ROOT/gemma4/tools/run_matched_context_v066.py",
+      "runner_sha": "0542edbf7d8e3ee57c605b75e15f0d8bd9a090d9fddd9d37fff7abc0c2f72e8a",
+      "runtime": "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-runtime-PINNED.json",
+      "runtime_sha": "0f5e04b257ffe1544633f90fba4e51e377dae82a82f97bb029d1b8c3d49944e5",
+      "analysis": "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-analysis-PINNED.json",
+      "analysis_sha": "a070f299535872e3231a079b76b8e17f352e83cf2fc2f1b143795b732ac19a67",
+      "completed": "PROJECT_ROOT/gemma4/migration/matched-context-v066/evaluation/completed.json",
+      "completed_sha": "fb1bf16f96bbb5002d77e0bda8b4a81a5a9c81a40bdd95b6616e72009f4f7500",
+      "status": "all_three_a0mc_evaluations_qualified",
+      "report_dir": "PROJECT_ROOT/gemma4/analysis/matched-context-v066",
+      "report_status": "qualified_descriptive_matched_context_a0mc_readout"
+    },
+    "M1": {
+      "generation": "v062",
+      "arm": "M1q",
+      "run_prefix": "v062_M1qmc_s",
+      "runner": "PROJECT_ROOT/gemma4/tools/run_matched_context_v062.py",
+      "runner_sha": "621cd9363e0523ed6391705c9329d003213c09f34eb8d3ff3ab78047d059da2b",
+      "runtime": "PROJECT_ROOT/gemma4/contracts/matched-context-v062-runtime-PINNED.json",
+      "runtime_sha": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+      "analysis": "PROJECT_ROOT/gemma4/contracts/matched-context-v062-analysis-PINNED.json",
+      "analysis_sha": "91295f7cde58104928f6d72aef9f4124a2d2413323edb9005f007d0d0af27a0f",
+      "completed": "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/completed.json",
+      "completed_sha": "5a41099813ddf91985ac21bc16de560cf9b49dc7903d3ce6ef595938d9dbb677",
+      "status": "all_three_m1qmc_evaluations_qualified",
+      "report_dir": "PROJECT_ROOT/gemma4/analysis/matched-context-v062",
+      "report_status": "qualified_exploratory_matched_context_m1q_readout",
+      "report_sha": "70f20fc0055cedbb0a4a0c1e2cc82dd1b3afa2d3430084b83e3cac664713ba1d",
+      "per_task_sha": "2f991e816fc6ce373c597f2a6431b0ea5bbec82a9f01ef7140924e80deb61927"
+    }
+  },
+  "statistic": {
+    "function": "v042 resolution_report with the v025 paired_bootstrap (both unchanged and pinned)",
+    "unit": "resolved from task_results, three decoding seeds per task",
+    "pairing": "by task; seeds grouped as task means; task-level bootstrap",
+    "draws": 20000,
+    "seed": 20261103,
+    "interval": "95% percentile, numpy quantile method linear",
+    "primary": "primary40",
+    "sensitivities": [
+      "all48_sensitivity",
+      "control_clean36_sensitivity"
+    ],
+    "populations_source": "frozen readout 6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909 via v042 validate_populations",
+    "boundary_abs_tolerance_pp": 1e-12
+  },
+  "sentences": {
+    "lower_bound_above_zero": "the masked arm on the QAT base resolved more tasks than the same-template base (x/120 vs y/120; +d pp [l, u]) \u2014 one training seed, known holdout",
+    "upper_bound_below_zero": "the masked arm resolved fewer tasks than the same-template base (x/120 vs y/120; d pp [l, u])",
+    "otherwise": "relative to the same-template base the difference is uncertain (x/120 vs y/120; d pp [l, u])"
+  },
+  "sentence_rule": "primary40 CI: lower > 0 -> lower_bound_above_zero; upper < 0 -> upper_bound_below_zero; otherwise -> otherwise; bounds within 1e-12 pp of 0 count as 0; exactly one applies; chosen by the CI, never after inspection",
+  "number_format": "x, y = pooled resolved of M1 (v062_M1qmc) and M0 (v066_A0mc) on primary40, of 120; d = effect in pp, 2 decimals (the + is the template literal in lower_bound_above_zero, otherwise signed); l, u = CI bounds in pp, signed, 2 decimals",
+  "never": [
+    "recovery",
+    "partial recovery",
+    "closed the gap",
+    "masking restores / causes repair",
+    "no-collapse"
+  ],
+  "v066_report_rule": "report.json, report.md and per_task.jsonl under PROJECT_ROOT/gemma4/analysis/matched-context-v066 must exist with matching .sha256 sidecars, status qualified_descriptive_matched_context_a0mc_readout, analysis_manifest_sha256 a070f299535872e3231a079b76b8e17f352e83cf2fc2f1b143795b732ac19a67 and evaluation_completion.v066 equal to the pinned completed.json; their shas are recorded in the output",
+  "reproduction_check": "before any v066 row is used, the sealed v062 per_task resolved arrays (v055_M0qmc, v062_M1qmc) run through the same function must reproduce the sealed v062 effect, CI, seed effects and per-seed counts in all three populations; the re-qualified v062 rows must equal the sealed v062_M1qmc arrays",
+  "termination_metrics": "descriptive only, copied verbatim: v062 readings.inputs_primary40_three_seed_means.v062_M1qmc and v066 readings.descriptive_by_population.<population>.v066_A0mc; no label, threshold or contrast",
+  "pins": {
+    "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-m1q-seed2-and-a0mc-branches-v067.md": "766c1e45386f93121fd29e8beca7de30526b9bb8f52482644608e49d17ce2b46",
+    "PROJECT_ROOT/gemma4/tools/analyze_mask_control_v042.py": "23915fb00c2836b00fe14e3adfeecb865bdf52eb34e1fe3a04c4093cffdaf376",
+    "PROJECT_ROOT/gemma4/tools/analyze_contract_v02_v025.py": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+    "PROJECT_ROOT/gemma4/contracts/mask-control-v035-readout.json": "6319262b25c19ddcbb0e34a33f5e97325a7d6117a7b8faad8d4a4c7ff772c909",
+    "PROJECT_ROOT/gemma4/tools/run_matched_context_v066.py": "0542edbf7d8e3ee57c605b75e15f0d8bd9a090d9fddd9d37fff7abc0c2f72e8a",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-runtime-PINNED.json": "0f5e04b257ffe1544633f90fba4e51e377dae82a82f97bb029d1b8c3d49944e5",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v066-a0mc-analysis-PINNED.json": "a070f299535872e3231a079b76b8e17f352e83cf2fc2f1b143795b732ac19a67",
+    "PROJECT_ROOT/gemma4/migration/matched-context-v066/evaluation/completed.json": "fb1bf16f96bbb5002d77e0bda8b4a81a5a9c81a40bdd95b6616e72009f4f7500",
+    "PROJECT_ROOT/gemma4/tools/run_matched_context_v062.py": "621cd9363e0523ed6391705c9329d003213c09f34eb8d3ff3ab78047d059da2b",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v062-runtime-PINNED.json": "3717c8d036ae17cf2f4713458b5fe31a36cff95903dadf4e9175eb2efee9aefe",
+    "PROJECT_ROOT/gemma4/contracts/matched-context-v062-analysis-PINNED.json": "91295f7cde58104928f6d72aef9f4124a2d2413323edb9005f007d0d0af27a0f",
+    "PROJECT_ROOT/gemma4/migration/matched-context-v062/evaluation/completed.json": "5a41099813ddf91985ac21bc16de560cf9b49dc7903d3ce6ef595938d9dbb677",
+    "PROJECT_ROOT/gemma4/analysis/matched-context-v062/report.json": "70f20fc0055cedbb0a4a0c1e2cc82dd1b3afa2d3430084b83e3cac664713ba1d",
+    "PROJECT_ROOT/gemma4/analysis/matched-context-v062/per_task.jsonl": "2f991e816fc6ce373c597f2a6431b0ea5bbec82a9f01ef7140924e80deb61927"
+  },
+  "outputs": [
+    "report.json",
+    "report.md",
+    "report.json.sha256",
+    "report.md.sha256"
+  ]
+}

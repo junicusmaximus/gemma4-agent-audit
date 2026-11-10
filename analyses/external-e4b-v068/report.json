@@ -1,0 +1,697 @@
+{
+ "arms": [
+  "A0mc",
+  "M0q",
+  "M1q",
+  "M1qs2"
+ ],
+ "canary": [
+  {
+   "agent_patch_size": 0,
+   "arm": "A0mc",
+   "decoding_seed": 1,
+   "duration_seconds": 179.05,
+   "empty_actions": 1,
+   "error": "Agent exceeded turns budget (80 turns)",
+   "guard_command_count": 76,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "rank": 0,
+   "repository": "mpmath/mpmath",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "successful_requests": 86,
+   "test_exit_code": -1,
+   "tool_calls": 7,
+   "total_llm_calls": 80
+  },
+  {
+   "agent_patch_size": 0,
+   "arm": "M0q",
+   "decoding_seed": 1,
+   "duration_seconds": 146.71,
+   "empty_actions": 0,
+   "error": "Agent exceeded turns budget (80 turns)",
+   "guard_command_count": 41,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "rank": 0,
+   "repository": "mpmath/mpmath",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "successful_requests": 82,
+   "test_exit_code": -1,
+   "tool_calls": 28,
+   "total_llm_calls": 80
+  },
+  {
+   "agent_patch_size": 0,
+   "arm": "M1q",
+   "decoding_seed": 1,
+   "duration_seconds": 241.16,
+   "empty_actions": 0,
+   "error": "Agent exceeded session timeout (4.0 min)",
+   "guard_command_count": 17,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "rank": 0,
+   "repository": "mpmath/mpmath",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "successful_requests": 62,
+   "test_exit_code": -1,
+   "tool_calls": 28,
+   "total_llm_calls": 58
+  },
+  {
+   "agent_patch_size": 0,
+   "arm": "M1qs2",
+   "decoding_seed": 1,
+   "duration_seconds": 76.25,
+   "empty_actions": 0,
+   "error": "Agent exceeded turns budget (80 turns)",
+   "guard_command_count": 24,
+   "guard_oom_command_count": 0,
+   "instance_id": "mpmath__mpmath-854",
+   "rank": 0,
+   "repository": "mpmath/mpmath",
+   "request_timeouts": 0,
+   "resolved": false,
+   "state": "completed",
+   "successful_requests": 82,
+   "test_exit_code": -1,
+   "tool_calls": 28,
+   "total_llm_calls": 80
+  }
+ ],
+ "canary_task": "mpmath__mpmath-854",
+ "descriptive": {
+  "A0mc": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 0.5833333333333334,
+     "m5_error": 0.5600809246800708,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_A0mc_s1",
+     "submit": 0.9166666666666666,
+     "tasks": 12,
+     "think": 0.7153360279728092
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.16666666666666666,
+     "m5_error": 0.286969696969697,
+     "m5_error_tasks": 10,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_A0mc_s2",
+     "submit": 0.9166666666666666,
+     "tasks": 12,
+     "think": 0.7451881344323205
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.4166666666666667,
+     "m5_error": 0.38053613053613056,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_A0mc_s3",
+     "submit": 1.0,
+     "tasks": 12,
+     "think": 0.7345551122688508
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.3888888888888889,
+    "m5_error": 0.4091955840619661,
+    "repro": 0.0,
+    "submit": 0.9444444444444443,
+    "think": 0.7316930915579934
+   }
+  },
+  "M0q": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 1.0,
+     "m5_error": 0.4884410834282272,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M0q_s1",
+     "submit": 0.75,
+     "tasks": 12,
+     "think": 0.0
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.6666666666666666,
+     "m5_error": 0.26740658527561967,
+     "m5_error_tasks": 10,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M0q_s2",
+     "submit": 0.25,
+     "tasks": 12,
+     "think": 0.0
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.8333333333333334,
+     "m5_error": 0.35575797357733974,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M0q_s3",
+     "submit": 0.6666666666666666,
+     "tasks": 12,
+     "think": 0.0
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.8333333333333334,
+    "m5_error": 0.37053521409372886,
+    "repro": 0.0,
+    "submit": 0.5555555555555555,
+    "think": 0.0
+   }
+  },
+  "M1q": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 0.9166666666666666,
+     "m5_error": 0.742721828884817,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M1q_s1",
+     "submit": 0.3333333333333333,
+     "tasks": 12,
+     "think": 0.8375
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.8333333333333334,
+     "m5_error": 0.5089410690743251,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.08333333333333333,
+     "run": "v068a2_M1q_s2",
+     "submit": 0.5833333333333334,
+     "tasks": 12,
+     "think": 0.7554315476190476
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.9166666666666666,
+     "m5_error": 0.4121696149829142,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M1q_s3",
+     "submit": 0.8333333333333334,
+     "tasks": 12,
+     "think": 0.673745727133944
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.8888888888888888,
+    "m5_error": 0.5546108376473521,
+    "repro": 0.027777777777777776,
+    "submit": 0.5833333333333334,
+    "think": 0.7555590915843305
+   }
+  },
+  "M1qs2": {
+   "runs": [
+    {
+     "decoding_seed": 1,
+     "loop": 0.9166666666666666,
+     "m5_error": 0.6928705742047011,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M1qs2_s1",
+     "submit": 0.5,
+     "tasks": 12,
+     "think": 0.7633855267591826
+    },
+    {
+     "decoding_seed": 2,
+     "loop": 0.8333333333333334,
+     "m5_error": 0.7616272616272617,
+     "m5_error_tasks": 11,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M1qs2_s2",
+     "submit": 0.3333333333333333,
+     "tasks": 12,
+     "think": 0.5862268518518519
+    },
+    {
+     "decoding_seed": 3,
+     "loop": 0.9166666666666666,
+     "m5_error": 0.742400372195355,
+     "m5_error_tasks": 12,
+     "missing_traces": 0,
+     "repro": 0.0,
+     "run": "v068a2_M1qs2_s3",
+     "submit": 0.5,
+     "tasks": 12,
+     "think": 0.8251243279569893
+    }
+   ],
+   "three_seed_mean": {
+    "loop": 0.8888888888888888,
+    "m5_error": 0.7322994026757726,
+    "repro": 0.0,
+    "submit": 0.4444444444444444,
+    "think": 0.7249122355226746
+   }
+  }
+ },
+ "eligible_tasks": [
+  "mpmath__mpmath-854",
+  "kayak__pypika-267",
+  "python-semver__python-semver-264",
+  "python-attrs__attrs-888",
+  "pycqa__docformatter-313",
+  "more-itertools__more-itertools-892",
+  "wtforms__wtforms-694",
+  "delgan__loguru-1299",
+  "tox-dev__pipdeptree-274",
+  "pallets__jinja-2033",
+  "pallets__werkzeug-2997",
+  "ipython__traitlets-727"
+ ],
+ "invocations": {
+  "completed": 144,
+  "planned": 144
+ },
+ "not_claimed": [
+  "A panel statement only: never a hidden-set estimate; no generalisation beyond these repositories; no mechanism; no pooling across seeds or arms; no recovery, restores or causes wording; with small n_e an absence of repair is not evidence of absence.",
+  "After this read DEV14 is relabelled as a main-track development set (declared exposure); CONFIRM14 stays sealed."
+ ],
+ "not_eligible": [
+  {
+   "instance_id": "apiflask__apiflask-659",
+   "rank": 10,
+   "status": "INCOMPLETE_probe"
+  },
+  {
+   "instance_id": "googleapis__python-api-core-197",
+   "rank": 11,
+   "status": "INCOMPLETE_probe"
+  }
+ ],
+ "pin": {
+  "bridge": {
+   "delgan__loguru": {
+    "admission_sha256": "b7cbe2d6b5ebd5516696e93cf882d5f1a00c2df19eb810f92410dd32f710bb58",
+    "bridge_candidate_count": 6,
+    "bridge_sha256": "b7cbe2d6b5ebd5516696e93cf882d5f1a00c2df19eb810f92410dd32f710bb58",
+    "cache_file_count": 211,
+    "environment_id": "delgan__loguru",
+    "files": 1188,
+    "filtered_sha256": "8ab76cae8fdfc4abf4fafc22e12ca7b5b3bce94532e23977650e48295e9446af",
+    "full_sha256": "5f5d97cc41e658c9b6f031d5eb817e175c4f0a3143ae16428d088d9d3df5e3bd",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/delgan__loguru/site-packages"
+   },
+   "ipython__traitlets": {
+    "admission_sha256": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+    "cache_file_count": 188,
+    "environment_id": "ipython__traitlets",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/ipython__traitlets/site-packages"
+   },
+   "kayak__pypika": {
+    "admission_sha256": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+    "cache_file_count": 188,
+    "environment_id": "kayak__pypika",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/kayak__pypika/site-packages"
+   },
+   "more-itertools__more-itertools": {
+    "admission_sha256": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+    "cache_file_count": 188,
+    "environment_id": "more-itertools__more-itertools",
+    "files": 1098,
+    "filtered_sha256": "ac52db195023cf60994a6229d640a87bc609d0a947cebb12deffa488bccc9d20",
+    "full_sha256": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/more-itertools__more-itertools/site-packages"
+   },
+   "mpmath__mpmath": {
+    "admission_sha256": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+    "cache_file_count": 188,
+    "environment_id": "mpmath__mpmath",
+    "files": 2765,
+    "filtered_sha256": "2f2527694b64f605474f0e997110153ffbc91cd316c93d181eaebf89f1af5a50",
+    "full_sha256": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/mpmath__mpmath/site-packages"
+   },
+   "pallets__jinja": {
+    "admission_sha256": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+    "cache_file_count": 189,
+    "environment_id": "pallets__jinja",
+    "files": 2234,
+    "filtered_sha256": "cd527ddab1a677fa0d6a447a5f06c7cfac34af8aaed97750ec1890d0ed0a231f",
+    "full_sha256": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pallets__jinja/site-packages"
+   },
+   "pallets__werkzeug": {
+    "admission_sha256": "59bddd96ad6d15ceac489b5402eb24b834bef2996d6953222e5d91fdf51933b1",
+    "bridge_candidate_count": 13,
+    "bridge_sha256": "59bddd96ad6d15ceac489b5402eb24b834bef2996d6953222e5d91fdf51933b1",
+    "cache_file_count": 203,
+    "environment_id": "pallets__werkzeug",
+    "files": 1403,
+    "filtered_sha256": "6440af4877969a6114c041fdf828cda412ab102808452161c01775e4fbcfcd41",
+    "full_sha256": "cf5d127cde3038e210256b62f832e083be8bf4a7eeb9b965e510580b196c5891",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pallets__werkzeug/site-packages"
+   },
+   "pycqa__docformatter": {
+    "admission_sha256": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+    "cache_file_count": 189,
+    "environment_id": "pycqa__docformatter",
+    "files": 1133,
+    "filtered_sha256": "cbb6c0f476c454e0143c6becbfaccd4cdc8f98bdf148a557d4cbd51d8bfe4d57",
+    "full_sha256": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/pycqa__docformatter/site-packages"
+   },
+   "python-attrs__attrs": {
+    "admission_sha256": "3a10a195f0adf8bba65efb76e7ccfca6f2e31be54f85489cc3b2f033b3984d66",
+    "bridge_candidate_count": 2,
+    "bridge_sha256": "3a10a195f0adf8bba65efb76e7ccfca6f2e31be54f85489cc3b2f033b3984d66",
+    "cache_file_count": 191,
+    "environment_id": "python-attrs__attrs",
+    "files": 1110,
+    "filtered_sha256": "065b8753f986c5ecf4d7dcf803e3c8068d6d2d2262b20f390ae13338f08adde6",
+    "full_sha256": "672e49af85bef22715e8ba530711af52de25380ea14d04dda1c3976a1c36c2bf",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/python-attrs__attrs/site-packages"
+   },
+   "python-semver__python-semver": {
+    "admission_sha256": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+    "bridge_candidate_count": 0,
+    "bridge_sha256": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+    "cache_file_count": 188,
+    "environment_id": "python-semver__python-semver",
+    "files": 1198,
+    "filtered_sha256": "ab95fb5962ac35ef272d5d612ce26554cfb3d4f6ef04de8b4022ec2ec8a2cfa5",
+    "full_sha256": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/python-semver__python-semver/site-packages"
+   },
+   "tox-dev__pipdeptree": {
+    "admission_sha256": "7251d8b63ee7cad69fbad9869cee1b437793d8a045f70db96c9ba841f0245147",
+    "bridge_candidate_count": 75,
+    "bridge_sha256": "7251d8b63ee7cad69fbad9869cee1b437793d8a045f70db96c9ba841f0245147",
+    "cache_file_count": 269,
+    "environment_id": "tox-dev__pipdeptree",
+    "files": 1432,
+    "filtered_sha256": "9c01ad69293522ab2bf50018a12d57354f9559652657131147e5df914c45c441",
+    "full_sha256": "36af78d51af34d9e022ba96271e18cdd9c6157d8f84a4169162b824145f71a7b",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/tox-dev__pipdeptree/site-packages"
+   },
+   "wtforms__wtforms": {
+    "admission_sha256": "4c379ca014b262a1a0768ca7a812f20585fdebd81c2a67e02281289bb71d71ab",
+    "bridge_candidate_count": 1,
+    "bridge_sha256": "4c379ca014b262a1a0768ca7a812f20585fdebd81c2a67e02281289bb71d71ab",
+    "cache_file_count": 202,
+    "environment_id": "wtforms__wtforms",
+    "files": 2452,
+    "filtered_sha256": "ec259c32992cc1a0083a8c3a7a7ca24f59e3c2f03ae42000bf7f1d591d8c62da",
+    "full_sha256": "05f790c5b38fb56fc0e2917568c0928f0b2a922a8b0f6da5b2cd02483c4d128b",
+    "tree": "PROJECT_ROOT/gemma4/results/extctl_v060/_rebuild/envs/wtforms__wtforms/site-packages"
+   }
+  },
+  "m1qs2": {
+   "adapter_sha256": "167a609c4dbdc1e25283bba0ee5e74133be951801a7371f07b0d2a35dbb913cc",
+   "gates_pass_at_pin": true,
+   "included": true,
+   "meta_sha256": "24df0f429d5a9ade9a8373ee0c1eda76f41f16cd7009fd320e8714e58f4b9344",
+   "rule": "included iff sft/runs/A1_M1q_s2_v067/meta.json shows gates_pass true when --pin runs"
+  },
+  "supersedes": [],
+  "tree_evidence": {
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-delgan__loguru.json": "62d0394174cf17ecd06eeb47d64aaf973cc9730a158e79c7a2b70819cc97266a",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-delgan__loguru.txt": "5f5d97cc41e658c9b6f031d5eb817e175c4f0a3143ae16428d088d9d3df5e3bd",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-ipython__traitlets.json": "9e5ca3e9fd2d9e31f6382e87104fa871a1a73c5276ef9bae7d6af552997e0309",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-ipython__traitlets.txt": "8f3f532ec836e6c44edf4c680544296399a5cf9bd521ac45cebaaa75a489540d",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-kayak__pypika.json": "e5594fcfadf6f6dfc7c6de1aa1d8d9de22c9d8e9997ff1a68a94317202e59346",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-kayak__pypika.txt": "79f0116c9c5d63c1a4f40dfba9cf790a5fd222a06f1a6485e64dc4ec4532f6c2",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-more-itertools__more-itertools.json": "da08b137ca791911d6c1ae68f91fea4582b627f90b335674013019351ee102db",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-more-itertools__more-itertools.txt": "791ae4ae0f5be585838522ca1929012883ef549b43339207f8b01eff0517c789",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-mpmath__mpmath.json": "75a7007e4fc0898a97afaf3818ef5cf16e87919acc086c0d4f297b2a9734f085",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-mpmath__mpmath.txt": "04f6e1f2939ce2f279360026cd0f9e18606ba0877602da17d7d0d943b69b5f3c",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pallets__jinja.json": "8d430a35c586499723666a20c7433080827986c6c3f5543f572804c4b5bf140e",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pallets__jinja.txt": "6d27ca16b79ed92d8e91b5520538c9dafbc3f342b79f69de8685b425887a1542",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pallets__werkzeug.json": "00791f5c6862814f6f1b9f229dd0f44d01ecbd618cacc8e77e21f22544b2d8ba",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pallets__werkzeug.txt": "cf5d127cde3038e210256b62f832e083be8bf4a7eeb9b965e510580b196c5891",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pycqa__docformatter.json": "84a2248ae15b0f15399d63561e4641b15781a0b6185b464cb78f580a50ceec4b",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-pycqa__docformatter.txt": "517b82aae61ba57a5331b81a20bd4873053239cf65eecbe9313815e1ffab8c6f",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-python-attrs__attrs.json": "d7cef9de8f3d19d5015d68b4a0b8e6de900a7315b01e4ab808ee35b3c0f35e14",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-python-attrs__attrs.txt": "672e49af85bef22715e8ba530711af52de25380ea14d04dda1c3976a1c36c2bf",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-python-semver__python-semver.json": "77d44d523d9ef876856f69e8ddb3ec2316bea6b6541046e014f510053344f6e5",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-python-semver__python-semver.txt": "4ba4f5f4aeb76408c55773bd685e8c7f75039ad1dc8b224122608b956f824faa",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-tox-dev__pipdeptree.json": "423d981c9e2240742b2e77399ec1e8c70e73ff3f2584ababad4d1697950ec573",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-tox-dev__pipdeptree.txt": "36af78d51af34d9e022ba96271e18cdd9c6157d8f84a4169162b824145f71a7b",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-wtforms__wtforms.json": "d3f0c019d3bea24b00405da05a66704f0f1b3aebff7608435f54c9de3eaa393b",
+   "PROJECT_ROOT/gemma4/migration/external-e4b-v068/attempt2/evaluation/pin-tree-wtforms__wtforms.txt": "05f790c5b38fb56fc0e2917568c0928f0b2a922a8b0f6da5b2cd02483c4d128b"
+  }
+ },
+ "pooled": {
+  "A0mc": {
+   "all_rows": {
+    "completed": 36,
+    "errors": {
+     "Agent completed execution without calling submit_patch.": 32,
+     "Agent exceeded turns budget (80 turns)": 4
+    },
+    "excluded": 0,
+    "guard_oom_command_count": 0,
+    "not_run": 0,
+    "resolved_of_completed": 0
+   },
+   "complete_tasks": {
+    "denominator": 36,
+    "per_seed": {
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "resolved": 0,
+    "resolved_count_distribution": {
+     "0": 12
+    },
+    "tasks_resolved_at_least_once": 0
+   }
+  },
+  "M0q": {
+   "all_rows": {
+    "completed": 36,
+    "errors": {
+     "Agent exceeded session timeout (4.0 min)": 8,
+     "Agent exceeded tool call budget (28 calls)": 1,
+     "Agent exceeded turns budget (80 turns)": 27
+    },
+    "excluded": 0,
+    "guard_oom_command_count": 0,
+    "not_run": 0,
+    "resolved_of_completed": 0
+   },
+   "complete_tasks": {
+    "denominator": 36,
+    "per_seed": {
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "resolved": 0,
+    "resolved_count_distribution": {
+     "0": 12
+    },
+    "tasks_resolved_at_least_once": 0
+   }
+  },
+  "M1q": {
+   "all_rows": {
+    "completed": 36,
+    "errors": {
+     "Agent exceeded session timeout (4.0 min)": 7,
+     "Agent exceeded tool call budget (28 calls)": 3,
+     "Agent exceeded turns budget (80 turns)": 26
+    },
+    "excluded": 0,
+    "guard_oom_command_count": 0,
+    "not_run": 0,
+    "resolved_of_completed": 0
+   },
+   "complete_tasks": {
+    "denominator": 36,
+    "per_seed": {
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "resolved": 0,
+    "resolved_count_distribution": {
+     "0": 12
+    },
+    "tasks_resolved_at_least_once": 0
+   }
+  },
+  "M1qs2": {
+   "all_rows": {
+    "completed": 36,
+    "errors": {
+     "Agent exceeded session timeout (4.0 min)": 6,
+     "Agent exceeded tool call budget (28 calls)": 3,
+     "Agent exceeded turns budget (80 turns)": 27
+    },
+    "excluded": 0,
+    "guard_oom_command_count": 0,
+    "not_run": 0,
+    "resolved_of_completed": 0
+   },
+   "complete_tasks": {
+    "denominator": 36,
+    "per_seed": {
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "resolved": 0,
+    "resolved_count_distribution": {
+     "0": 12
+    },
+    "tasks_resolved_at_least_once": 0
+   }
+  }
+ },
+ "preregistration": {
+  "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-external-panel-m1q-v068.md",
+  "sha256": "8061b917294dc8406f68f40740c832e424c8f167ebba18fab0ea26f52e351f7e"
+ },
+ "readings": {
+  "cells": {
+   "m1qs2_beside": {
+    "cell": "z = 0",
+    "counts": {
+     "x": 0,
+     "y": 0,
+     "z": 0
+    },
+    "denominator": 36,
+    "sentence": "on the external panel the base resolved nothing (0/36), so the panel cannot inform the trained arms (M1q 0, M0q 0)",
+    "tasks": 12
+   },
+   "primary": {
+    "cell": "z = 0",
+    "counts": {
+     "x": 0,
+     "y": 0,
+     "z": 0
+    },
+    "denominator": 36,
+    "sentence": "on the external panel the base resolved nothing (0/36), so the panel cannot inform the trained arms (M1q 0, M0q 0)",
+    "tasks": 12
+   }
+  },
+  "complete_tasks": [
+   "mpmath__mpmath-854",
+   "kayak__pypika-267",
+   "python-semver__python-semver-264",
+   "python-attrs__attrs-888",
+   "pycqa__docformatter-313",
+   "more-itertools__more-itertools-892",
+   "wtforms__wtforms-694",
+   "delgan__loguru-1299",
+   "tox-dev__pipdeptree-274",
+   "pallets__jinja-2033",
+   "pallets__werkzeug-2997",
+   "ipython__traitlets-727"
+  ],
+  "contrasts": [
+   {
+    "baseline": "M0q",
+    "ci95_pp": [
+     0.0,
+     0.0
+    ],
+    "draws": 20000,
+    "effect_pp": 0.0,
+    "name": "M1q - M0q",
+    "reading": "uncertain",
+    "seed": 20261103,
+    "seed_effects_pp": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tasks": 12,
+    "treated": "M1q"
+   },
+   {
+    "baseline": "A0mc",
+    "ci95_pp": [
+     0.0,
+     0.0
+    ],
+    "draws": 20000,
+    "effect_pp": 0.0,
+    "name": "M1q - A0mc",
+    "reading": "uncertain",
+    "seed": 20261103,
+    "seed_effects_pp": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "tasks": 12,
+    "treated": "M1q"
+   }
+  ],
+  "incomplete_statement": null,
+  "n_c": 12,
+  "n_e": 12,
+  "sentence": "on the external panel the base resolved nothing (0/36), so the panel cannot inform the trained arms (M1q 0, M0q 0)"
+ },
+ "record": {
+  "excluded": {},
+  "file": "completed.json",
+  "sha256": "8d6079ae00db83893a8502272503b5942c3e1fbbd7e8494e5eb3c6990519aafd",
+  "status": "all_v068_evaluations_qualified",
+  "stop": null
+ },
+ "runtime_sha256": "9788264284a296e36ec07da7726259db1aae87759a487fd3b889a90ce80f3db2",
+ "schema": "external-e4b-v068-r21-report",
+ "seeds": [
+  1,
+  2,
+  3
+ ],
+ "statement": "readings, contrasts and sentences are those of the frozen v068 pre-registration; descriptive rates are not contrasts"
+}

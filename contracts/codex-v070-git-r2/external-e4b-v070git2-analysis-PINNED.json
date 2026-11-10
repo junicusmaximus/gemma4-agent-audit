@@ -1,0 +1,103 @@
+{
+  "amendment": {
+    "path": "PROJECT_ROOT/codex/experiments/v070-git-r2/amendment-FROZEN.md",
+    "sha256": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99"
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 20261103
+  },
+  "cache_rule": "k-disclose",
+  "cache_rules": {
+    "k-disclose": "cache state is not an identity leaf: the cache files that differ between the starting cache list of v070 and that of v068 attempt 2 are disclosed as declared difference (k) and the comparator follows the frozen identity leaves only",
+    "k-strict": "the comparator is shown only if the starting cache list of v070 equals that of v068 attempt 2 (path, sha256); otherwise no comparator is shown and the differing cache files are listed"
+  },
+  "comparator": {
+    "arm": "A0mc",
+    "reason": "v068 path invalid; no reused rows or CIs",
+    "shown": false,
+    "withheld": true
+  },
+  "comparator_forbidden_words": [
+    "improved",
+    "improvement",
+    "recovered",
+    "recovery",
+    "recovers",
+    "non-inferior",
+    "equivalent",
+    "equivalence"
+  ],
+  "comparator_label": "A0mc-ext is withheld: v068 had an invalid submit path; no reused comparator rows or confidence intervals are reported.",
+  "declared_difference_k": "(k) v070 starts with the bytecode caches present after v068 attempt 2, so its starting cache list can differ from the starting list of attempt 2. Python reads .pyc files: a module whose cache changed may load from the cache instead of being compiled from source. Leaving cache files out of the dependency-tree hash is not a claim that caches cannot affect execution.",
+  "execution_authorized": false,
+  "forbidden_words": [
+    "prevents collapse",
+    "on-policy learning",
+    "improved",
+    "equivalent",
+    "the contrast replicated",
+    "causes"
+  ],
+  "generation": "v070git2",
+  "identity_leaves": [
+    "pin.ledger_digest",
+    "eligible list and order",
+    "decoding seeds",
+    "evaluation budgets",
+    "chat_template sha",
+    "server_script_sha256",
+    "vLLM, swegemma and harness versions (server_environment)",
+    "base model id (--served-model-name)",
+    "LoRA rank (--max-lora-rank)"
+  ],
+  "limitations": [
+    "Execution order: v070 ran after v068 attempts 1 and 2 on the same environment trees.",
+    "Cache accumulation: bytecode caches written by the earlier attempts were present at v070's start; their differences from attempt 2's start are listed under (k)."
+  ],
+  "output": "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/readout",
+  "pins": {
+    "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-08-external-contrast-onpolicy-v070.md": "b7b4d4be49973aa01407f4b40e0e9e71bdb90f10b342f62837e0bee837a929cb",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/amendment-FROZEN.md": "dff250b2870b185069ec5a86b9b7a2e811ed9fc0b65a728049f93049e8d57a99",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/analyze_external_e4b_v070git2.py": "b201fd38f426bb31d3fc6021a0c4cd5233dce13550b80b31a78bdd87adde73a8",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/analysis/test_v070git2_analysis.py": "e1709f6dfedeb2775c778e61d9dd56d559238dc1739027cd8e877f5b9f549197",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/runner/run_external_e4b_v070git2.py": "bc255acd6f36300f527338c8b243b10c72eb0a6baa493d5051e710ad53e71994",
+    "PROJECT_ROOT/codex/experiments/v070-git-r2/runner/test_v070git2_runtime.py": "385e22306544fd141f80d611a75cbe05e36b599fab64aab17d35b4dd5419486a",
+    "PROJECT_ROOT/gemma4/tools/analyze_contract_v02_v025.py": "20208c74cc921d9dd4975b1b6a7129b6a4b55825f17930429a4fa624935e229c",
+    "PROJECT_ROOT/gemma4/tools/mechanism_metrics_v032.py": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d"
+  },
+  "preregistration": {
+    "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-08-external-contrast-onpolicy-v070.md",
+    "sha256": "b7b4d4be49973aa01407f4b40e0e9e71bdb90f10b342f62837e0bee837a929cb",
+    "verbatim": [
+      "the termination contrast was also observed on an n_c-task external panel (A_onpol training seeds 1 and 2: loop a1 and a2, submit b1 and b2; T_sub, one training seed: loop c, submit d)",
+      "no external contrast: the teacher subset did not meet the collapse criteria on the external panel (loop c, submit d; label L), while both A_onpol training seeds did not either (loop a1 and a2, submit b1 and b2)",
+      "the self-generated arm's non-collapse was not observed externally in training seed k (loop a, submit b; label L)",
+      "incomplete (m of 9\u00b7n_e rollouts; n_c of n_e complete tasks)",
+      "NON-COLLAPSED = loop \u2264 0.30 \u2227 submit \u2265 0.80; COLLAPSED = loop > 0.40 \u2228 submit < 0.70; otherwise INTERMEDIATE",
+      "20,000 draws, seed 20261103",
+      "The planned paired set is complete iff n_c = n_e and no row was excluded"
+    ]
+  },
+  "requires": "A qualified v070 generation (finished or stopped by a rule) and the explicit --runtime-sha and --analysis-sha of the pinned contracts.",
+  "result_freeze_utc": "2026-11-10T09:00:00Z",
+  "root": "PROJECT_ROOT/gemma4",
+  "runtime": {
+    "contract": "PROJECT_ROOT/codex/experiments/v070-git-r2/contracts/external-e4b-v070git2-runtime-PINNED.json",
+    "draft": "PROJECT_ROOT/codex/experiments/v070-git-r2/contracts/external-e4b-v070git2-runtime-DRAFT.json",
+    "sha256": "d495a1bca2d568105c09d6f33c705a7767a7e1dc574c632067285c577abc9218"
+  },
+  "status": "PINNED",
+  "thresholds": {
+    "COLLAPSED": {
+      "loop_above": 0.4,
+      "submit_below": 0.7
+    },
+    "NON-COLLAPSED": {
+      "loop_max": 0.3,
+      "submit_min": 0.8
+    },
+    "boundary_abs_tolerance": 1e-12
+  },
+  "version": "external-e4b-v070git2-analysis"
+}

@@ -1,0 +1,286 @@
+{
+  "arm_ids_missing_from_data": {
+    "all_resolved": 0,
+    "arm_ordinary_tokmatched": 0,
+    "arm_short": 0
+  },
+  "arms": {
+    "all_resolved": {
+      "arm": "all_resolved",
+      "distinct_ratio_mean": 0.9260683862383986,
+      "generating_model_counts": {
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": 1567,
+        "gemma-4-31b-it-qat-w4a16-ct": 103
+      },
+      "header_think_token": {
+        "all_chain_headers": 1670,
+        "first_header": 1670,
+        "n": 1670
+      },
+      "loop_count": 13,
+      "loop_rate": 0.007784431137724551,
+      "max_repeat_mean": 2.31437125748503,
+      "max_repeat_median": 2.0,
+      "n": 1670,
+      "n_malformed": 0,
+      "n_steps_mean": 33.953293413173654,
+      "n_steps_median": 35.0,
+      "n_summarizer_steps": 45,
+      "n_tool_calls_mean": 33.864670658682634,
+      "n_tool_calls_median": 35.0,
+      "nonrecovery": {
+        "error": {
+          "eligible_transitions": 3641,
+          "identical_transitions": 26,
+          "mean_repeat_rate": 0.0024170470422238454,
+          "n_trajectories": 1414,
+          "pooled_repeat_rate": 0.007140895358418017,
+          "share_trajectories": 0.8467065868263473
+        },
+        "normal": {
+          "eligible_transitions": 29280,
+          "identical_transitions": 4,
+          "mean_repeat_rate": 0.00016198157499358026,
+          "n_trajectories": 1668,
+          "pooled_repeat_rate": 0.0001366120218579235,
+          "share_trajectories": 0.9988023952095808
+        },
+        "silent": {
+          "eligible_transitions": 21924,
+          "identical_transitions": 4,
+          "mean_repeat_rate": 0.0002539792210450893,
+          "n_trajectories": 1670,
+          "pooled_repeat_rate": 0.00018244845831052726,
+          "share_trajectories": 1.0
+        }
+      },
+      "opener_counts": {
+        "find_opener": 1567,
+        "no_tool_call": 0,
+        "other": 103,
+        "repro_script_opener": 0,
+        "wrapper_opener": 0
+      },
+      "opener_shares": {
+        "find_opener": 0.9383233532934132,
+        "no_tool_call": 0.0,
+        "other": 0.061676646706586825,
+        "repro_script_opener": 0.0,
+        "wrapper_opener": 0.0
+      },
+      "submit_count": 1670,
+      "submit_rate": 1.0,
+      "thought": {
+        "model_turns": 56702,
+        "nonempty_turns": 1795,
+        "per_trajectory_mean": 0.062308016303240246,
+        "pooled_rate": 0.03165673168494938,
+        "trajectories_with_any": 117
+      },
+      "tier_counts": {
+        "external_A": 14,
+        "external_B": 729,
+        "external_B2": 824,
+        "native": 103
+      },
+      "tier_shares": {
+        "external_A": 0.008383233532934131,
+        "external_B": 0.4365269461077844,
+        "external_B2": 0.4934131736526946,
+        "native": 0.061676646706586825
+      },
+      "unknown_excluded_transitions": 39
+    },
+    "arm_ordinary_tokmatched": {
+      "arm": "arm_ordinary_tokmatched",
+      "distinct_ratio_mean": 0.9286839482824597,
+      "generating_model_counts": {
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": 689,
+        "gemma-4-31b-it-qat-w4a16-ct": 37
+      },
+      "header_think_token": {
+        "all_chain_headers": 726,
+        "first_header": 726,
+        "n": 726
+      },
+      "loop_count": 5,
+      "loop_rate": 0.006887052341597796,
+      "max_repeat_mean": 2.3457300275482096,
+      "max_repeat_median": 2.0,
+      "n": 726,
+      "n_malformed": 0,
+      "n_steps_mean": 34.709366391184574,
+      "n_steps_median": 36.0,
+      "n_summarizer_steps": 19,
+      "n_tool_calls_mean": 34.63223140495868,
+      "n_tool_calls_median": 36.0,
+      "nonrecovery": {
+        "error": {
+          "eligible_transitions": 1617,
+          "identical_transitions": 16,
+          "mean_repeat_rate": 0.002413933448416207,
+          "n_trajectories": 609,
+          "pooled_repeat_rate": 0.009894867037724181,
+          "share_trajectories": 0.8388429752066116
+        },
+        "normal": {
+          "eligible_transitions": 13067,
+          "identical_transitions": 0,
+          "mean_repeat_rate": 0.0,
+          "n_trajectories": 725,
+          "pooled_repeat_rate": 0.0,
+          "share_trajectories": 0.9986225895316805
+        },
+        "silent": {
+          "eligible_transitions": 9716,
+          "identical_transitions": 2,
+          "mean_repeat_rate": 0.000259000259000259,
+          "n_trajectories": 726,
+          "pooled_repeat_rate": 0.0002058460271716756,
+          "share_trajectories": 1.0
+        }
+      },
+      "opener_counts": {
+        "find_opener": 689,
+        "no_tool_call": 0,
+        "other": 37,
+        "repro_script_opener": 0,
+        "wrapper_opener": 0
+      },
+      "opener_shares": {
+        "find_opener": 0.9490358126721763,
+        "no_tool_call": 0.0,
+        "other": 0.05096418732782369,
+        "repro_script_opener": 0.0,
+        "wrapper_opener": 0.0
+      },
+      "submit_count": 726,
+      "submit_rate": 1.0,
+      "thought": {
+        "model_turns": 25199,
+        "nonempty_turns": 685,
+        "per_trajectory_mean": 0.052221434725410014,
+        "pooled_rate": 0.027183618397555457,
+        "trajectories_with_any": 49
+      },
+      "tier_counts": {
+        "external_A": 12,
+        "external_B": 426,
+        "external_B2": 251,
+        "native": 37
+      },
+      "tier_shares": {
+        "external_A": 0.01652892561983471,
+        "external_B": 0.5867768595041323,
+        "external_B2": 0.34573002754820936,
+        "native": 0.05096418732782369
+      },
+      "unknown_excluded_transitions": 17
+    },
+    "arm_short": {
+      "arm": "arm_short",
+      "distinct_ratio_mean": 0.9318373744873362,
+      "generating_model_counts": {
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct": 714,
+        "gemma-4-31b-it-qat-w4a16-ct": 50
+      },
+      "header_think_token": {
+        "all_chain_headers": 764,
+        "first_header": 764,
+        "n": 764
+      },
+      "loop_count": 3,
+      "loop_rate": 0.003926701570680628,
+      "max_repeat_mean": 2.282722513089005,
+      "max_repeat_median": 2.0,
+      "n": 764,
+      "n_malformed": 0,
+      "n_steps_mean": 34.13743455497382,
+      "n_steps_median": 35.0,
+      "n_summarizer_steps": 16,
+      "n_tool_calls_mean": 34.05104712041885,
+      "n_tool_calls_median": 35.0,
+      "nonrecovery": {
+        "error": {
+          "eligible_transitions": 1627,
+          "identical_transitions": 8,
+          "mean_repeat_rate": 0.0016008999653859466,
+          "n_trajectories": 642,
+          "pooled_repeat_rate": 0.004917025199754148,
+          "share_trajectories": 0.8403141361256544
+        },
+        "normal": {
+          "eligible_transitions": 13576,
+          "identical_transitions": 2,
+          "mean_repeat_rate": 0.00020803428405001144,
+          "n_trajectories": 763,
+          "pooled_repeat_rate": 0.0001473187978786093,
+          "share_trajectories": 0.9986910994764397
+        },
+        "silent": {
+          "eligible_transitions": 10036,
+          "identical_transitions": 1,
+          "mean_repeat_rate": 0.00014543339150668993,
+          "n_trajectories": 764,
+          "pooled_repeat_rate": 9.964129135113592e-05,
+          "share_trajectories": 1.0
+        }
+      },
+      "opener_counts": {
+        "find_opener": 714,
+        "no_tool_call": 0,
+        "other": 50,
+        "repro_script_opener": 0,
+        "wrapper_opener": 0
+      },
+      "opener_shares": {
+        "find_opener": 0.9345549738219895,
+        "no_tool_call": 0.0,
+        "other": 0.06544502617801047,
+        "repro_script_opener": 0.0,
+        "wrapper_opener": 0.0
+      },
+      "submit_count": 764,
+      "submit_rate": 1.0,
+      "thought": {
+        "model_turns": 26081,
+        "nonempty_turns": 838,
+        "per_trajectory_mean": 0.06640403793494133,
+        "pooled_rate": 0.03213066983627928,
+        "trajectories_with_any": 60
+      },
+      "tier_counts": {
+        "external_A": 10,
+        "external_B": 508,
+        "external_B2": 196,
+        "native": 50
+      },
+      "tier_shares": {
+        "external_A": 0.013089005235602094,
+        "external_B": 0.6649214659685864,
+        "external_B2": 0.25654450261780104,
+        "native": 0.06544502617801047
+      },
+      "unknown_excluded_transitions": 12
+    }
+  },
+  "arms_requested": [
+    "arm_ordinary_tokmatched",
+    "arm_short",
+    "all_resolved"
+  ],
+  "inputs": {
+    "arms_file": "PROJECT_ROOT/gemma4/sft/data/arms.json",
+    "arms_file_sha256": "52e7132acd9725229304f52d7624ce8cbf3d3e8ad1752b0fcc06519127888657",
+    "data": "PROJECT_ROOT/gemma4/sft/data/trajectories.jsonl",
+    "data_sha256": "2ecfcb22d3fcc7cb2fa94092c4dea7cd94dfa4a4ae743afa03b3a16ff39230b3",
+    "data_size_bytes": 675530976,
+    "loop_threshold": 5,
+    "reference_module": "mechanism_metrics_v032.py",
+    "reference_sha256": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d"
+  },
+  "malformed_samples": [],
+  "malformed_trajectories": 0,
+  "unreadable_line_samples": [],
+  "unreadable_lines": 0
+}

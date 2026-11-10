@@ -1,0 +1,18 @@
+{
+  "draws": 20000,
+  "label": "exploration-informed secondary analysis after primary outcomes and behavioral aggregates were known",
+  "m5": "comparison-specific common-support tasks; observed-seed arm means; complete-three-seed sensitivity; undefined CI for fewer than 2 pairs",
+  "method": "paired whole-task cluster percentile bootstrap",
+  "multiplicity": "descriptive intervals; no familywise or confirmatory mechanism claim",
+  "output_dir": "PROJECT_ROOT/gemma4/analysis/mechanism-ci-v031",
+  "pins": {
+    "analysis/mechanism-v032/input-manifest.json": "f4800e6897d040005ee96ee27c4240d0389ff219412b4f4ea106e0dc3ca62eeb",
+    "tools/analyze_mechanism_v031.py": "821f2294661bf8928979d3df7da6c94fd8f662ee2ed17621a8c8dfaa06207478",
+    "tools/mechanism_metrics_v032.py": "36042f6da4718e9b5873d0f294dd79f2a99c56384936261c03382326972da73d",
+    "tools/test_analyze_mechanism_v031.py": "c907da676c6c3116966dcfff4b53010e70f2ba5fa5f521a164afab09d0174a39"
+  },
+  "quantiles": "linear",
+  "recorded_at_utc": "2026-11-04T10:16:22.156850+00:00",
+  "rng": "NumPy PCG64",
+  "seed": 20261103
+}

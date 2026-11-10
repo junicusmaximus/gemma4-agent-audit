@@ -1,0 +1,118 @@
+{
+  "created_at_utc": "2026-11-08T05:11:18.421888+00:00",
+  "status": "qualified_v064_onpolicy_cells_reading",
+  "contract_sha256": "066e0b78cc6d10a2f02fcef3637a3a6225ae4b9fa9e080780c6cc572300f25e1",
+  "analyzer_sha256": "2623bd1184469ea1d7b301d2b490084ee813e3322abb4f0274454de2c574392d",
+  "preregistration": {
+    "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-onpolicy-vs-teacher-subset-v064-r2.md",
+    "sha256": "0893728c3d763990d5b3a4bd64c0d6b37b55eb0b555ecd2727f36a636c6f4b60",
+    "section": "## Readouts (primary40 three-seed means; all48 and clean36 sensitivities; v058/v062 thresholds)"
+  },
+  "training_contract": {
+    "path": "PROJECT_ROOT/gemma4/contracts/onpolicy-training-v064r2-APPROVED.json",
+    "sha256": "8e13817b0ff51d60046f97b47df1eafbf3b11f086f8c2696eb0e96fa2813fd24",
+    "T_sub_unmatched": false
+  },
+  "arms": {
+    "A_onpol": {
+      "label": "NON-COLLAPSED",
+      "loop": 0.008333333333333333,
+      "submit": 0.9583333333333334,
+      "pooled_resolved": 10,
+      "denominator": 120,
+      "effect_pp": -1.6666666666666667,
+      "ci95_pp": [
+        -6.666666666666667,
+        2.5
+      ],
+      "ci_wording": "uncertain relative to the base",
+      "minimum_observation": true,
+      "updates": 43,
+      "trajectories": 30,
+      "tasks": 13,
+      "sensitivities": {
+        "all48_sensitivity": {
+          "label": "NON-COLLAPSED",
+          "pooled_resolved": 10,
+          "denominator": 144,
+          "ci_wording": "uncertain relative to the base"
+        },
+        "control_clean36_sensitivity": {
+          "label": "NON-COLLAPSED",
+          "pooled_resolved": 10,
+          "denominator": 108,
+          "ci_wording": "uncertain relative to the base"
+        }
+      }
+    },
+    "T_sub": {
+      "label": "COLLAPSED",
+      "loop": 0.6833333333333332,
+      "submit": 0.1416666666666667,
+      "pooled_resolved": 0,
+      "denominator": 120,
+      "effect_pp": -10.0,
+      "ci95_pp": [
+        -17.520833333333314,
+        -3.3333333333333335
+      ],
+      "ci_wording": "worse than the base",
+      "minimum_observation": false,
+      "updates": 43,
+      "trajectories": 18,
+      "tasks": 18,
+      "sensitivities": {
+        "all48_sensitivity": {
+          "label": "COLLAPSED",
+          "pooled_resolved": 0,
+          "denominator": 144,
+          "ci_wording": "worse than the base"
+        },
+        "control_clean36_sensitivity": {
+          "label": "COLLAPSED",
+          "pooled_resolved": 0,
+          "denominator": 108,
+          "ci_wording": "worse than the base"
+        }
+      }
+    }
+  },
+  "cell": {
+    "key": "CONTRAST",
+    "sentence": "under this recipe and update count, the self-generated-trajectory arm did not meet the collapse criteria while the teacher-subset arm did; the difference follows the declared data bundle, not a single member",
+    "rule": "pre-written cell, prereg v064-r2 Readouts"
+  },
+  "confirmation_trigger": {
+    "rule": "A NC \u2227 \u2265 4/120 (primary40)",
+    "fires": true,
+    "A_onpol_label": "NON-COLLAPSED",
+    "A_onpol_pooled_resolved": 10,
+    "consequence": "a pre-registered second training seed before any \"no-collapse\" prose; \"improved\" prose additionally needs the CI lower bound > 0 on the confirmation"
+  },
+  "rules": {
+    "cell": "primary40 termination labels of the two sealed per-arm reports: (NON-COLLAPSED, COLLAPSED) -> CONTRAST; both NON-COLLAPSED -> both_NC; both COLLAPSED -> both_C; any other pair (INTERMEDIATE, UNDEFINED or COLLAPSED with NON-COLLAPSED) -> direction_only; T_sub UNMATCHED in the approved training contract -> T_sub_unmatched (A_onpol alone, no cell)",
+    "fill": "both_NC: U = the update count both reports carry; both_C: n = A_onpol trajectories and t = A_onpol tasks (its data manifest counts), U, a and b = A_onpol primary40 loop and submit, c and d = T_sub primary40 loop and submit (three decimals); CONTRAST is verbatim",
+    "direction": "direction_only: per metric (primary40 loop, submit) the sign of A_onpol - T_sub (equal within 1e-12; undefined when a value is not finite); no sentence and no CI",
+    "trigger": "A NC \u2227 \u2265 4/120 on primary40: A_onpol NON-COLLAPSED and pooled resolved >= 4 of 120; when it fires: a pre-registered second training seed before any \"no-collapse\" prose; \"improved\" prose additionally needs the CI lower bound > 0 on the confirmation",
+    "never": "the arms are never pooled; no causal claim beyond the cell wording; no single-member attribution"
+  },
+  "inputs": {
+    "A_onpol": {
+      "report.json": "8f32f58bc4c9ce3f5b59cdd107c395d64164e0f8e399acbcb4fc07e18430bc25",
+      "report.md": "dd855d04664362982daa4234f87d711fe9d00229ba5433d5db24fa43c980d3a4",
+      "per_task.jsonl": "28015851d67cdcc134250c38b3231501c8abb54a421beff758f2802c5e73e95c",
+      "manifest": "ae461ea43882a09a3d2ef2e7adbc0121a772eb287c2ca291b44cf5cc82199cc4"
+    },
+    "T_sub": {
+      "report.json": "e99fcb88d39e3d715ae97b0f6c77e8e84c1027e39a6553b65f3b76bb7e35fa2f",
+      "report.md": "588b91914a954e4981123ad248fc78c88ca4f1d7b706943d8be339053081855d",
+      "per_task.jsonl": "65be666277b449dd8004c983c46cfa054a382d8d0857ed0337e21aa6e09b6e10",
+      "manifest": "20758db0ce53dc2b52b1eafbb5f8167e109e1ff2d21f9615a52ba8acbb2445e0"
+    },
+    "pins": {
+      "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-onpolicy-vs-teacher-subset-v064-r2.md": "0893728c3d763990d5b3a4bd64c0d6b37b55eb0b555ecd2727f36a636c6f4b60",
+      "PROJECT_ROOT/gemma4/tools/analyze_matched_context_v064a.py": "b33958febff6f503a250f1d1f1a8d66ecf531be39b44c97b3a89bec6c2fea122",
+      "PROJECT_ROOT/gemma4/tools/analyze_matched_context_v064t.py": "d24d8fb2e66dc52b4041ad086a0a01f6a8b6a0f9b456bf4f7b357ed77e02a906"
+    }
+  }
+}

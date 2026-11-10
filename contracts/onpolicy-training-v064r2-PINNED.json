@@ -1,0 +1,158 @@
+{
+ "status": "DRAFT",
+ "generation": "v064",
+ "revision": "r2",
+ "prereg_label": "prereg v064-r2",
+ "variant": "M0",
+ "purpose": "LoRA training of A_onpol (on-policy rejection SFT on resolved E4B base rollouts) and T_sub (a matched subset of the M0q training trajectories) on the M0q recipe, one pass of U updates each: the same optimizer update count U for both arms",
+ "prereg": {
+  "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-onpolicy-vs-teacher-subset-v064-r2.md",
+  "sha256": "0893728c3d763990d5b3a4bd64c0d6b37b55eb0b555ecd2727f36a636c6f4b60"
+ },
+ "wrapper": {
+  "path": "PROJECT_ROOT/gemma4/sft/train_onpolicy_v064r2.py",
+  "sha256": "c21c07498d9e4bfc0e4f03cbec418cc64ff1bd70bd1f577735a8db897c4e3363"
+ },
+ "pinned_files": {
+  "addendum": {
+   "path": "PROJECT_ROOT/briefing/research/gemma-4-2026/prereg-2026-11-07-addendum-confirmation-and-gate-rules-v064r2-v065.md",
+   "sha256": "b602a5d366002bc5335fcc7a94ada72cba71535b3a63551f74d28bd9a8f39a56"
+  },
+  "eligible": {
+   "path": "PROJECT_ROOT/gemma4/migration/onpolicy-v064/eligible.json",
+   "sha256": "78b856a2382068b86a1f5b3ea0624ef01b5962f4b1c98ecdf38f32edeb082625"
+  }
+ },
+ "eligible_list_sha256": "533c64a760716f8cb794de510931c36fbc0d6b737badffe409a217b1395c6ae1",
+ "supersedes": {
+  "path": "PROJECT_ROOT/gemma4/contracts/onpolicy-training-v064-DRAFT.json",
+  "sha256": "d2c15632ff803fd15f1a5df3dae6ab4341329a9828b69328d7ca18b58b14e786",
+  "why": "pins prereg addd2519, superseded by v064-r2 before any stage ran"
+ },
+ "reference_contract": {
+  "path": "PROJECT_ROOT/gemma4/contracts/mask-control-v0351-APPROVED.json",
+  "sha256": "02e0a25ebb6c74220caf1c590fc08da46833399d3e8eab53fe174e9fd8bb0fde"
+ },
+ "sealed_runs": {
+  "m0q": {
+   "path": "PROJECT_ROOT/gemma4/sft/runs/A1_M0q_v053/meta.json",
+   "sha256": "35259bc83c3ce6398a24d2badb45d24376910b7102320d487f15a26c5e1551cc"
+  }
+ },
+ "base": {
+  "dir": "PROJECT_ROOT/gemma4/models/gemma-4-e4b-it-qat-dequant-bf16",
+  "manifest_sha256": "20f1c2f9a52eea099c7ab95fca57c150d4e3b1946663136f11d11e0f50849ce5"
+ },
+ "initial_trainable_parameters_sha256": "9dfc7ccc71fc4631d51a61dad8a889040e76bd9c87a2546fe24ec3b769e20066",
+ "hyperparameters": {
+  "rank": 16,
+  "alpha": 16,
+  "lr": 0.0001,
+  "epochs": 1,
+  "max_seq_len": 16384,
+  "grad_accum": 8,
+  "warmup_ratio": 0.05,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "seed": 20261103
+ },
+ "leases": {
+  "paths": [
+   "PROJECT_ROOT/gemma4/migration/recovery-screen-v034/evaluation.lock",
+   "PROJECT_ROOT/gemma4/migration/mask-control-v0351/training.lock"
+  ]
+ },
+ "code_sha256": {
+  "trainer": "a10122ebd349a7e67143a001d04edb32bdb9d5ec8f65c3dc631c075c2aadd6c0",
+  "codex_trainer": "54825da527a4ead87dfaed12663644537809c3d58731113d73ee8e087933f9f5",
+  "prepare": "e35d3caf3749b1f2262bfc31a94fe21e71da7214a591e68a3527469ff8b7ffde",
+  "packer": "1064a6add5d36ebbbfa1af9f5fbe0b8ed0c347746e472b5385d9699986ece399",
+  "converter": "0fe3485f9e25c6a5fc1f44f13fb3ef2bcc0fccd24280df16d15525516eba2913",
+  "build_arms": "ba4c27dacbcbf2f8d241722faccd9e0ec10aa35f712db4ed5d163d5e0ce11b1e"
+ },
+ "code_paths": {
+  "trainer": "PROJECT_ROOT/gemma4/sft/train_lora.py",
+  "codex_trainer": "PROJECT_ROOT/gemma4/sft/train_mask_control_v035.py",
+  "prepare": "PROJECT_ROOT/gemma4/sft/prepare_mask_control_v035.py",
+  "packer": "PROJECT_ROOT/gemma4/sft/build_sft.py",
+  "converter": "PROJECT_ROOT/gemma4/sft/onpolicy_v064/convert_traces_r2.py",
+  "build_arms": "PROJECT_ROOT/gemma4/sft/onpolicy_v064/build_arms_r2.py"
+ },
+ "arms": {
+  "A_onpol": {
+   "data": {
+    "trajectories": 30,
+    "packed_sequences": 38,
+    "duplication_m": 9,
+    "sequences": 342,
+    "updates": 43,
+    "shifted_targets": 949914,
+    "input_tokens": 3806037,
+    "dir": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/A_onpol",
+    "expected_sha256": {
+     "trajectories.jsonl": "23338ebe6e9e475fa6bc8b1a20349217bf33b1da15ab6634f68388982307d2ec",
+     "M0.jsonl": "455f43747aa4286e5ec80010b8f8195260ecd608631a12e5403f56bfb74b3f90",
+     "identity_ledger.jsonl": "7e8814e66aed8dd30d53a36f6d6b606ab57b82b4927924f5469991828bda9744",
+     "update_groups.json": "da0e41b84f13359364b3d39057ff523d803731fa5bfd20baeed52e58177c67c1",
+     "manifest.json": "c1b63a142b37e879e58f6c98c828adbe3cc565a9120e373e60947e2516df9467"
+    }
+   },
+   "stages": {
+    "smoke": {
+     "out": "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_v064_smoke",
+     "updates": 3
+    },
+    "main": {
+     "out": "PROJECT_ROOT/gemma4/sft/runs/A1_onpol_v064",
+     "updates": 43
+    }
+   }
+  },
+  "T_sub": {
+   "data": {
+    "trajectories": 18,
+    "packed_sequences": 38,
+    "duplication_m": 9,
+    "sequences": 342,
+    "updates": 43,
+    "shifted_targets": 1018314,
+    "input_tokens": 4618863,
+    "dir": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/T_sub",
+    "expected_sha256": {
+     "trajectories.jsonl": "ef15c8f8718ac37b063016f422d3b2cb9fb057f1cb309071b504c71a62c7dc3c",
+     "M0.jsonl": "e51031a433980fc34e02298cba4b3a59b2424204c0489ed81ff8e7ad935109f8",
+     "identity_ledger.jsonl": "061b96232bb73fdf0a101070a28a134dab5a6de17397405afd476ab5991ccd8c",
+     "update_groups.json": "cc09b8906f7fcd854980a66f97e274b427e1a19d16fe50c2bfc61194f74de925",
+     "manifest.json": "d7c62ddb6df9d966a7bfad44bd5d9c80c95c967e1b4c62899c858da37ab9ad8a"
+    }
+   },
+   "stages": {
+    "smoke": {
+     "out": "PROJECT_ROOT/gemma4/sft/runs/A1_tsub_v064_smoke",
+     "updates": 3
+    },
+    "main": {
+     "out": "PROJECT_ROOT/gemma4/sft/runs/A1_tsub_v064",
+     "updates": 43
+    }
+   }
+  }
+ },
+ "data_rules": {
+  "selection": "resolved and eligible and convertible by convert_traces_r2.py, then per task the 3 lowest seeds; Unsupported rows dropped before the cap and listed; the runner's selected flag is informational and every difference is listed (Boss, pre-data operational decision 11:3xZ)",
+  "s1": "after conversion exclusions and the cap: >= 30 trajectories and >= 10 distinct tasks, else neither arm is built and the refusal is recorded",
+  "plan": "m = ceil(320 / S_A); U = ceil(S_A * m / 8); every trajectory duplicated m times, copy-major; both arms train the same optimizer update count U",
+  "draw": "T_sub: tier-stratified Random(20261103) order of the 726 pool; first prefix with ceil(S_T*m/8) = U; on a skip the first later trajectory landing inside; else unmatched (build_arms_r2.py doc)",
+  "pin": "after BUILD DATA v064 and Boss's G1 reproduction, build_arms_r2.py --pin fills each arm's data leaf (dir, five file shas, trajectories, packed_sequences, duplication_m, sequences, updates, shifted_targets, input_tokens) and its main updates into contracts/onpolicy-training-v064r2-PINNED.json; T_sub becomes UNMATCHED when it was not built"
+ },
+ "data_build": {
+  "build_json": {
+   "path": "PROJECT_ROOT/gemma4/sft/data/onpolicy_v064/build.json",
+   "sha256": "d5c389f0db444c5b0b7cfa57f5004bc804f1ad2450206f78f01f0621f7b8d7a8"
+  },
+  "draft": {
+   "path": "PROJECT_ROOT/gemma4/contracts/onpolicy-training-v064r2-DRAFT.json",
+   "sha256": "f0e8107d32d1916be114b0ae0df40affba863d0faa8fa9ad8ac61d8907f746d4"
+  }
+ }
+}
